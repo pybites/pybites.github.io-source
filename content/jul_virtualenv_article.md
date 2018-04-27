@@ -20,7 +20,7 @@ Best practice would be to create a venv within your project and use it to run yo
 Let's create a venv called "awesome-test". You'd preferably run the following commands in your project root dir:
 
 ~~~~
-# python3 -m venv awesome-test
+# python -m venv awesome-test
 # ls
 awesome-test
 ~~~~
@@ -33,9 +33,9 @@ Activating the venv puts you into a standalone Python instance that has pretty m
 ~~~~
 # cd awesome-test
 # ls
-bin		include		lib		pyvenv.cfg
+Include/	Lib/	pyvenv.cfg  Scripts/
 #
-# source bin/activate
+# source Scripts/activate
 (awesome-test) #
 (awesome-test) # echo YAY!
 YAY!
