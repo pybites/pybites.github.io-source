@@ -1,11 +1,11 @@
-Title: Code Challenge 47 - PyBites First Year in Data (Special)
-Date: 2017-12-22 22:00
+Title: Code Challenge -- - Olympic Games Medals
+Date: 2018-18-10 22:00
 Category: Challenge
-Tags: data analysis, data visualization, anniversary, special, Twitter, Github, Pelican
-Slug: codechallenge47
-Authors: PyBites
-Summary: Hi Pythonistas, can you believe [it’s been a full year of PyBites](https://pybit.es/special-birthday-new-platform.html) already?! To commemorate our 1st birthday we figured the next challenge should be around… us!
-cover: images/featured/pb-challenge.png
+Tags: data analysis, data visualization, Olympic Games, Kaggle
+Slug: ---
+Authors: Andrea
+Summary: --
+cover: ---
 
 > It's not that I'm so smart, it's just that I stay with problems longer. - A. Einstein
 
@@ -13,7 +13,7 @@ cover: images/featured/pb-challenge.png
 
 ## The Challenge
 
-The challenge is open in that you’re welcome to use whatever floats your boat. The requirement however, is that you analyse PyBites data!
+The challenge is open in that you’re welcome to use whatever floats your boat. The requirement however, is that you analyse Olumpic Medals data!
 
 1. Data gathering
 
