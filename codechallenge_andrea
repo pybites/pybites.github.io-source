@@ -1,1 +1,53 @@
+Title: Code Challenge -- - Analyze Olympic Games Data
+Date: 2017-10-18 13:00
+Category: Challenge
+Tags: codechallenges, Pandas, Olympic Games
+Slug: ---
+Authors: ---
+Summary: Hi Pythonistas, a new week, a new 'bite' of Python programming. To keep it [#100DaysOfDjango](https://pybit.es/tag/100daysofdjango.html), this week we let you get some more practice with this awesome web framework. Last time we had an open Django challenge, for this one we have you choose between 3 specific apps. 
+cover: images/featured/pb-challenge.png
 
+> Life is about facing new challenges - Kostya Tszyu
+
+Hi Pythonistas, a new week, a new 'bite' of Python programming. To keep it [#100DaysOfDjango](https://pybit.es/tag/100daysofdjango.html), this week we let you get some more practice with this awesome web framework. Last time we had an open Django challenge, for this one we have you choose between 3 specific apps. 
+
+## The Challenge
+
+### Basic
+
+* Analyse statistics of Olympic Games in a CSV file that you can find on Kaggle (https://www.kaggle.com/the-guardian/olympic-games):
+
+	* Find out the (male and female) athlete who won most medals in all the Summer Olympic Games (1896-2014)
+	* Display the first 10 countries that won most medals
+	* Use matplotlib to build line plots of the 10 most awarded countries in 1896-2014 span time for the 10 most popular summer Olympics disciplines (you can decide criteria for most popular)
+	
+	One requirement: use pandas to create a dataframe you can work on 
+
+### Don't be shy
+
+	* You can create a map and choose colors for each Country, pointing out the ones which won most medals
+
+
+### Bonus:
+
+	* 	Create a barplot which shows the total medals won for each sport during the summer Olympics. 
+
+## Get credit!
+
+__Take notice__: the coolest working apps get a place under the __#100DaysOfDjango__ project on [our projects page](https://pybit.es/pages/projects.html)!
+
+See [our INSTALL doc](https://github.com/pybites/challenges/blob/master/INSTALL.md) how to fork [our challenges repo](https://github.com/pybites/challenges) to get cracking.
+
+This doc also provides you with instructions how you can submit your code to our community branch via a Pull Request (PR). We will feature your PRs in our start-of-the-week challenge review ([previous editions](http://pybit.es/pages/challenges.html)).
+
+### Feedback
+
+If you have ideas for a future challenge or find any issues, open a [GH Issue](https://github.com/pybites/challenges/issues) or [reach out](http://pybit.es/pages/about.html) directly.
+
+Last but not least: there is no best solution, only learning more and better Python. Good luck!
+
+---
+
+Keep Calm and Code in Python!
+
+-- Bob and Julian
