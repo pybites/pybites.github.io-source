@@ -4,12 +4,11 @@ Category: Challenge
 Tags: codechallenges, Pandas, Olympic Games
 Slug: ---
 Authors: ---
-Summary: Hi Pythonistas, a new week, a new 'bite' of Python programming. To keep it [#100DaysOfDjango](https://pybit.es/tag/100daysofdjango.html), this week we let you get some more practice with this awesome web framework. Last time we had an open Django challenge, for this one we have you choose between 3 specific apps. 
-cover: images/featured/pb-challenge.png
+Summary: Hi Pythonistas, a new week, a new 'bite' of Python programming. You can use Python and all the libraries you need to analyze the data of Olympic Games and find out interesting things and present them to everyone with libraries such as matpolib
 
 > Life is about facing new challenges - Kostya Tszyu
 
-Hi Pythonistas, a new week, a new 'bite' of Python programming. To keep it [#100DaysOfDjango](https://pybit.es/tag/100daysofdjango.html), this week we let you get some more practice with this awesome web framework. Last time we had an open Django challenge, for this one we have you choose between 3 specific apps. 
+Hi Pythonistas, a new week, a new 'bite' of Python programming. 
 
 ## The Challenge
 
@@ -25,12 +24,11 @@ Hi Pythonistas, a new week, a new 'bite' of Python programming. To keep it [#100
 
 ### Don't be shy
 
-	* You can create a map and choose colors for each Country, pointing out the ones which won most medals
-
+	* 	Create a barplot which shows the total medals won for each sport during the summer Olympics. 
 
 ### Bonus:
 
-	* 	Create a barplot which shows the total medals won for each sport during the summer Olympics. 
+	* You can create a map and choose colors for each Country, pointing out the ones which won most medals
 
 ## Get credit!
 
@@ -49,5 +47,4 @@ Last but not least: there is no best solution, only learning more and better Pyt
 ---
 
 Keep Calm and Code in Python!
-
--- Bob and Julian
+ 
