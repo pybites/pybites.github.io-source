@@ -20,7 +20,8 @@ Hi Pythonistas, a new week, a new 'bite' of Python programming.
 	* Display the first 10 countries that won most medals
 	* Use matplotlib to build line plots of the 10 most awarded countries in 1896-2014 span time for the 10 most popular summer Olympics disciplines (you can decide criteria for most popular)
 	
-	One requirement: use pandas to create a dataframe you can work on 
+	One requirement: use pandas to create a dataframe you can work on. https://pandas.pydata.org/
+	(You can directly install Jupyter to work on a notebook environment)  
 
 ### Don't be shy
 
@@ -30,13 +31,6 @@ Hi Pythonistas, a new week, a new 'bite' of Python programming.
 
 	* You can create a map and choose colors for each Country, pointing out the ones which won most medals
 
-## Get credit!
-
-__Take notice__: the coolest working apps get a place under the __#100DaysOfDjango__ project on [our projects page](https://pybit.es/pages/projects.html)!
-
-See [our INSTALL doc](https://github.com/pybites/challenges/blob/master/INSTALL.md) how to fork [our challenges repo](https://github.com/pybites/challenges) to get cracking.
-
-This doc also provides you with instructions how you can submit your code to our community branch via a Pull Request (PR). We will feature your PRs in our start-of-the-week challenge review ([previous editions](http://pybit.es/pages/challenges.html)).
 
 ### Feedback
 
