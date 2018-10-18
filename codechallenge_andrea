@@ -4,6 +4,7 @@ Category: Challenge
 Tags: codechallenges, Pandas, Olympic Games
 Slug: ---
 Authors: ---
+
 Summary: Hi Pythonistas, a new week, a new 'bite' of Python programming. You can use Python and all the libraries you need to analyze the data of Olympic Games and find out interesting things and present them to everyone with libraries such as matpolib
 
 > Life is about facing new challenges - Kostya Tszyu
@@ -21,6 +22,7 @@ Hi Pythonistas, a new week, a new 'bite' of Python programming.
 	* Use matplotlib to build line plots of the 10 most awarded countries in 1896-2014 span time for the 10 most popular summer Olympics disciplines (you can decide criteria for most popular)
 	
 	One requirement: use pandas to create a dataframe you can work on. https://pandas.pydata.org/
+
 	(You can directly install Jupyter to work on a notebook environment)  
 
 ### Don't be shy
