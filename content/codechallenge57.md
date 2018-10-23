@@ -49,5 +49,4 @@ Last but not least: there is no best solution, only learning more and better Pyt
 
 Keep Calm and Code in Python!
 
--- [Andrea](pages/guests.html#andreamammoliti
- 
+-- [Andrea](pages/guests.html#andreamammoliti)
