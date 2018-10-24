@@ -48,7 +48,7 @@ Why do we think this is cool? There are a couple of subtasks here:
 
 2. You learn how to convert and calculate mm:ss (minutes/seconds) timings, which will hone your `datetime` skills.
 
-3. As far as we know Python cannot extract audio meta data natively (yet), so you probably want to try a tool like [FFmpeg](https://www.ffmpeg.org) which is cool because then you need to know how to call an external command with Python and parse its output. You probably want to check out `subprocess` for this:
+3. Check out the _[Cheese Shop](https://pypi.org/)_ for packages that can read mp3 / mp4 meta data or use an external tool like [FFmpeg](https://www.ffmpeg.org) which gives you the opportunity to play with `subprocess`:
 
 	> The `subprocess` module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. - [docs](https://docs.python.org/3/library/subprocess.html)
 
