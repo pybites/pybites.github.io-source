@@ -75,6 +75,13 @@ status: hidden
         <p>Erik's <a href="https://pybit.es/author/erik-oshaughnessy.html">posts</a>.</p>
 </div>
 
+<div id="andreamammoliti">
+
+        <h3><a name="andreamammoliti">Andrea Mammoliti</a></h3>
+		<p>Italian living in Shanghai. Actually working as management Consultant. Pythonista, interested in all Python applications from Django/Flask to Machine Learning. You can follow Andrea <a href="https://github.com/AndreusSH" target="_blank">on Github</a></p>
+        <p>Andrea's <a href="https://pybit.es/author/andrea-mammoliti.html">posts</a>.</p>
+</div>
+
 <hr>
 
 <p>And to read about PyBites co-creators Bob and Julian you can head over to our <a href="https://pybit.es/pages/about.html">about page</a>.</p>
