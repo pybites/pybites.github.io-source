@@ -24,11 +24,11 @@ Analyse statistics of Olympic Games in a CSV file that you can find [on Kaggle](
 
 2. Display the first 10 countries that won most medals:
 
-	* The order for men will be: USA, Russia (considering that before was USSR), UK,France, Italy, Sweden , Germany, Hungary, Australia, Japan.
+	* The order for men will be: USA, RUS, GBR, GER, FRA, ITA, SWE, HUN, AUS, JPN
 
-	* The order for women will be: USA, Russia, China, Australia, Germany(it would be third if we sum the results with the German Democratic Republic), Netherlands, Romania, UK, Japan, Hungary.
+	* The order for women will be: USA, RUS, GER, CHN, AUS, NED, ROU, GBR, JPN, HUN
 
-3. Use `matplotlib` to build line plots of the 10 most awarded countries for time span 1896-2014. Use the 10 most popular summer Olympics disciplines where _most popular_ you can define yourself.
+3. Use `matplotlib` to build line plots of the 10 most awarded countries for time span 1896-2012. Use the 10 most popular summer Olympics disciplines where _most popular_ you can define yourself.
 
 One *requirement*: use [`pandas`](https://pandas.pydata.org/) to create a dataframe you can work on.
 
