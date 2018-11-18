@@ -1,7 +1,7 @@
 Title: PyBites Twitter Digest - Issue 36, 2018
 Date: 2018-11-18 10:50
 Category: Digest
-Tags: twitter, news, pybites, Github, TensorFlow, Anaconda, Google, courses, Python3, frameworks, Django, Flask, PSF, pycon, dictionaries, JSON, OpenCV, YOLO, packaging, CLI,  
+Tags: twitter, news, pybites, Github, TensorFlow, Anaconda, Google, courses, frameworks, Django, Flask, PSF, pycon, dictionaries, JSON, OpenCV, YOLO, packaging, CLI,  
 Slug: twitter_digest_201836
 Authors: PyBites
 Summary: Every weekend we share a curated list of 15 cool things (mostly Python) that we found / tweeted throughout the week.
