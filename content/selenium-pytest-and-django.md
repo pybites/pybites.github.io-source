@@ -61,9 +61,9 @@ Next let's create a `pytest.ini` file to set the `DJANGO_SETTINGS_MODULE` enviro
 
 Overall I don't need the DB for Selenium testing but for some tests it would be nice to match up the page elements with what's in the DB, for example the amount of Bite exercises shown on the page vs records in the DB.
 
-Another use case I found while writing more Selenium code for our platform was the activation link when users add their email. No real email gets send from my localhost and/or when testing so I needed to query the user's object to retrieve the newly generated link.  
+Another use case I found while writing more Selenium code for our platform was the activation link when users add their email. No real email gets sent from my localhost and/or when testing so I needed to query the user's object to retrieve the newly generated link.  
 
-It took me a bit of trial and error how to use a real database because `pytest-django` [takes a conservative approach](https://pytest-django.readthedocs.io/en/latest/database.html).
+It took me a bit of trial and error to figure out how to use a real database because `pytest-django` [takes a conservative approach](https://pytest-django.readthedocs.io/en/latest/database.html).
 
 I ended up using a `conftest.py` file (in the main app folder) as specified in the documentation:
 
