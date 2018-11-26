@@ -285,7 +285,9 @@ It takes time to write extended Selenium tests but the exciting part is that you
 
 **Update 26th of Nov 2018**: I took this concept a bit further and started a serious regression test suite for [our platform](http://codechalleng.es/). Here you can see multiple users (tiers) logged in, going through various workflows, pretty exciting stuff!
 
-<iframe src="https://www.youtube.com/embed/Jpwn2yOppPo" frameborder="0" allowfullscreen class="video"></iframe>
+<div class="container">
+	<iframe src="https://www.youtube.com/embed/Jpwn2yOppPo" frameborder="0" allowfullscreen class="video"></iframe>
+</div>
 
 ---
 
