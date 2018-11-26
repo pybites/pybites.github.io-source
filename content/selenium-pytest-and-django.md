@@ -281,6 +281,12 @@ In the debugger it's easier to Selenium's methods on the website in _frozen_ sta
 
 It takes time to write extended Selenium tests but the exciting part is that you build up your regression suite that will catch future bugs for you, saving you time and assuring you write more reliable code!
 
+### Using Selenium on CodeChalleng.es
+
+**Update 26th of Nov 2018**: I took this concept a bit further and started a serious regression test suite for [our platform](http://codechalleng.es/). Here you can see multiple users (tiers) logged in, going through various workflows, pretty exciting stuff!
+
+<iframe src="https://youtu.be/Jpwn2yOppPo" frameborder="0" allowfullscreen class="video"></iframe>
+
 ---
 
 Keep Calm and Code|Test in Python!
