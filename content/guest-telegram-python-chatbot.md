@@ -5,7 +5,7 @@ Tags: bots, code challenge, guest, DisAtBot, chatbots, opensource, Telegram, Mex
 Slug: guest-telegram-python-chatbot
 Authors: Rodolfo Ferro
 Summary: Rodolfo recently joined our [Code Challenges](https://pybit.es/pages/challenges.html) and built *Disaster Attention Bot (DisAtBot)*, a chatbot that helps people affected by natural disasters. In this article he shows how he built this bot with Telegram and (of course) Python. Show him some love because who knows, this could be a life saver (pun intended)! We are delighted to have him show this interesting project he submitted for [Code Challenge 43](https://pybit.es/codechallenge43.html) which earned him a book on chatbots. /Rod please share ...
-cover: images/featured/pb-guesst.png
+cover: images/featured/pb-guest.png
 
 Rodolfo recently joined our [Code Challenges](https://pybit.es/pages/challenges.html) and built *Disaster Attention Bot (DisAtBot)*, a chatbot that helps people affected by natural disasters. In this article he shows how he built this bot with Telegram and (of course) Python. Show him some love because who knows, this could be a life saver (pun intended)! We are delighted to have him show this interesting project he submitted for [Code Challenge 43](https://pybit.es/codechallenge43.html) which earned him a book on chatbots. /Rod please share ...
 
