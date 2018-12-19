@@ -55,7 +55,7 @@ YAY!
 # cd awesome-test
 # dir
 Include/	Lib/	pyvenv.cfg  Scripts/
-# source Scripts/activate
+# Scripts\activate
 (awesome-test) #
 (awesome-test) # echo YAY!
 YAY!
@@ -85,7 +85,7 @@ When you're done using the venv you then exit (deactivate) it using the deactiva
 
 ###Windows Command
 ~~~~
-(awesome-test) # Scripts/deactivate
+(awesome-test) # Scripts\deactivate
 #
 ~~~~
 
