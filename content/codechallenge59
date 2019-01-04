@@ -1,1 +1,12 @@
+Title: Code Challenge 59 - Build your own Shell - Part I Date: 2019-01-06 09:40 Category: Challenge Tags: code challenge, challenges Slug: codechallenge58 Authors: Mridu Bhatnagar Summary: Hi Pythonistas, Welcome to Pybites Code Challenge 59! In this challenge pick the modules which fit the best, with only one end goal in mind To build your own Shell.
 
+LEVEL 0
+1. Build an command line interface for your python application. It should be able to function like the bash commands.
+You can replicate command of your own choice. Have a nice helper function for the complete application.
+
+Example
+
+```
+python <filename.py> --help
+```
+This should list all the possible commands. Along with there usage description.
