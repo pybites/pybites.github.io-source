@@ -6,8 +6,6 @@ You can replicate command of your own choice. Have a nice helper function for th
 
 Example
 
-```
-python <filename.py> --help
-
+```python <filename.py> --help
 ```
 This should list all the possible commands. Along with there usage description.
