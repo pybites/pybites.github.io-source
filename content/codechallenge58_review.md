@@ -31,7 +31,7 @@ remote: Total 504 (delta 213), reused 176 (delta 170), pack-reused 247
 
 <!-- -->
 
-> Nice challenge! I scraped Talk Python's RSS feed (requests/ feedparser) getting the transcripts from GH, saved all this in a `sqlite3` DB, also wrote a function to generate an HTML for consumption on my Kindle (after Save-to-PDF on Mac). Some details: `decode("utf-8")` to work around some transcripts being stored as `bytes` (required some debugging), `f'{episode_id:0>3}'` as alternative for `zfill`, cur.executemany is awesome as it works flawlessly with a generator of namedtuples, to get row dicts from sqlite use `conn.row_factory = sqlite3.Row`, I also used `writelines` for the first time!
+> Nice challenge! I scraped Talk Python's RSS feed (requests/ feedparser) getting the transcripts from GH, saved all this in a `sqlite3` DB, also wrote a function to generate an HTML for consumption on my Kindle (after Save-to-PDF on Mac). Some details: `decode("utf-8")` to work around some transcripts being stored as `bytes` (required some debugging), `f'{episode_id:0>3}'` as alternative for `zfill`, cur.executemany is awesome as it works flawlessly with a generator of namedtuples, to get row dicts from sqlite use `conn.row_factory = sqlite3.Row`, I also used `writelines` for the first time! - [PR](https://github.com/pybites/challenges/pull/471)
 
 ### Reading Code for Fun and Profit
 
