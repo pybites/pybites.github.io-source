@@ -81,7 +81,7 @@ Thanks to everyone for your participation in our blog code challenges! [Keep the
 
 Master Python through Code Challenges:
 
-* Subscribe to our blog (sidebar) to get a new PyBites Code Challenge (PCC) in your inbox every week.
+* Subscribe to our blog (sidebar) to get new PyBites Code Challenges (PCCs) in your inbox.
 
 * Take any of our 50+ challenges [on our platform](https://codechalleng.es/challenges/). 
 

@@ -37,7 +37,7 @@ remote: Total 504 (delta 213), reused 176 (delta 170), pack-reused 247
 
 The best way to learn/improve programming is to read and write a lot of code. Apart from following along with our review posts, you can look at [all submitted PRs](https://github.com/pybites/challenges/pulls?q=is%3Apr+is%3Aclosed) and/or checking our [our Community branch](https://github.com/pybites/challenges/tree/community) where we merge in all solutions.  
 
-Here are the Pythonic learnings we spotted in Pull Requests made during the last week: 
+Here are the Pythonic learnings we spotted in Pull Requests made during the last month: 
 
 #### [PCC01](http://codechalleng.es/challenges/01)
 
@@ -149,13 +149,13 @@ Here are the Pythonic learnings we spotted in Pull Requests made during the last
 
 ---
 
-Thanks to everyone for your participation in our blog code challenges! [Keep the PRs coming](https://codechalleng.es/challenges/) and **include a README.md with one or more screenshots if you want to be featured in this weekly review post**.
+Thanks to everyone for your participation in our blog code challenges! [Keep the PRs coming](https://codechalleng.es/challenges/) and **include a README.md with one or more screenshots if you want to be featured in this review post**.
 
 ## Become a Python Ninja
 
 Master Python through Code Challenges:
 
-* Subscribe to our blog (sidebar) to get a new PyBites Code Challenge (PCC) in your inbox every week.
+* Subscribe to our blog (sidebar) to get new PyBites Code Challenges (PCCs) in your inbox.
 
 * Take any of our 50+ challenges [on our platform](https://codechalleng.es/challenges/). 
 

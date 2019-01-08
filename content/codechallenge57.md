@@ -52,7 +52,7 @@ Last but not least: there is no best solution, only learning more and better Pyt
 
 At PyBites you get to *master Python* through Code Challenges:
 
-* Subscribe to our blog (sidebar) to get a new PyBites Code Challenge (PCC) in your inbox every week.
+* Subscribe to our blog (sidebar) to get new PyBites Code Challenges (PCCs) in your inbox.
 
 * Apart from this blog code challenge we have a growing collection of 50+, check them out [on our platform](https://codechalleng.es/challenges/). 
 
