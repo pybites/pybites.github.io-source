@@ -1,7 +1,7 @@
 Title: Code Challenge 58 - Analyze Podcast Transcripts with NLTK - Part I - Review
 Date: 2019-01-07 19:00
 Category: Challenges
-Tags: code challenge, challenges, NLTK, podcast, text parsing, data mining, data science, talk python
+Tags: code challenge, challenges, NLTK, podcast, text parsing, data mining, data science, talk python, itertools, sqlite3, dictionary comprehensions, list comprehensions, splitlines, iterators, SequenceMatcher, OrderedDict, praw, collections, defaultdict, namedtuple, Counter, JSON, XML, pomodoro, Flask, regex, datetime, timedelta, CLI applications, f-strings, feedparser, requests
 Slug: codechallenge58_review
 Authors: PyBites
 Summary: In this article we review our [PCC58 - Analyze Podcast Transcripts with NLTK - Part I](http://pybit.es/codechallenge58.html) code challenge. 
