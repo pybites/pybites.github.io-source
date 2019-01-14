@@ -59,6 +59,7 @@ LINKS = (
   ('Code Challenges', '/pages/challenges.html'),
   ('#100DaysOfCode', '/pages/courses.html'),
   ('Python News', '/pages/news.html'),
+  ('Reading', '/pages/reading.html'),
   ('Search', '/pages/search.html'),
 )
 
