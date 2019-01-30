@@ -201,7 +201,7 @@ Simplistically but potentially it could look like this:
 			yield '{}.{}'.format(net, i)
 
 	# consume it
-	for node in get_nodes():
+	for node in get_nodes(net):
 		print('Checking IP {}'.format(node))
 		try:
 			ssh = paramiko.SSHClient()
