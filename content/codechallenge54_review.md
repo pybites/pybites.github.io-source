@@ -78,7 +78,7 @@ Keep the PRs coming, again this month it counts for __[Hacktoberfest](https://ha
 
 ## Need more Python Practice?
 
-Subscribe to our blog (sidebar) to get a new PyBites Code Challenge (PCC) in your inbox every start of the week.
+Subscribe to our blog (sidebar) to get periodic PyBites updates.
 
 And/or take any of our 50+ challenges [on our platform](https://codechalleng.es/challenges/). 
 
