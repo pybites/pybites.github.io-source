@@ -13,9 +13,9 @@ Hey Pythonistas,
 
 ##Changing the PCC game a bit
 
-Let's be honest here: we slacked off a bit on our blog code challenges! Apart from the increased workload overall, our _synchronous_ approach of solving a challenge before launching a next one, is holding us back.
+Let's be honest: we slacked off a bit on our blog code challenges! Apart from the increased workload overall, our _synchronous_ approach of solving a challenge before launching a next one, is holding us back.
 
-So we are going to change our approach a bit. We keep launching PyBites Code Challenges (PCCs) on our blog, because most importantly this is what gets **YOU to write Python code**!
+So we are going to change our approach a bit. We're going to keep launching PyBites Code Challenges (PCCs) on our blog, because most importantly this is what gets **YOU to write Python code**!
 
 However we are dropping hard deadlines and review posts. Solving them is an ongoing thread and you can see merged solutions [on the community branch](https://github.com/pybites/challenges/tree/community) (each challenge # has a dedicated folder).
 
@@ -29,7 +29,7 @@ However we think it would be really cool to give each PR a bit more of a code ch
 
 So if you want to help out merging PRs into our challenges branch, become a moderator. You can volunteer [on Slack](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU).
 
-It's a great chance to read other people's code honing your code review skills, and (last but not least!) become a mentor building up great relationships with other Pythonistas. Sounds fair enough?
+It's a great chance to read other people's code honing your code review skills, and (last but not least!) become a mentor building up great relationships with other Pythonistas.
 
 ---
 
