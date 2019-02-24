@@ -23,7 +23,7 @@ cover: images/featured/pb-news.png
 <blockquote class="twitter-tweet"><p>I wrote an article about scraping hidden HTML using <a href="https://twitter.com/search/#Selenium's" target="_blank">#Selenium's</a> headless mode, deploying the script to <a href="https://twitter.com/search/#Heroku." target="_blank">#Heroku.</a> It… <a href="https://t.co/AA5GEDR7pb" title="https://t.co/AA5GEDR7pb" target="_blank">https://t.co/AA5GEDR7pb</a></p>— Bob Belderbos (@bbelderbos) <a href="https://twitter.com/bbelderbos/status/1098151204981534720" data-datetime="2019-02-20T09:23:44+00:00">February 20, 2019</a></blockquote>
 
 
-###Nice! PyCharm takes the spot as the top Python editor
+###Nice! PyCharm takes top spot as preferred Python editor
 
 <blockquote class="twitter-tweet"><p><a href="https://t.co/N0bBPVUXZ0" title="https://t.co/N0bBPVUXZ0" target="_blank">https://t.co/N0bBPVUXZ0</a> <a href="https://twitter.com/search/#pythondevsurvey" target="_blank">#pythondevsurvey</a> says the top Python editors are PyCharm, VS Code, Vim, and Sublime Text .… <a href="https://t.co/qd5YtVrNpr" title="https://t.co/qd5YtVrNpr" target="_blank">https://t.co/qd5YtVrNpr</a></p>— Python Software (@ThePSF) <a href="https://twitter.com/ThePSF/status/1099209497480962048" data-datetime="2019-02-23T07:29:01+00:00">February 23, 2019</a></blockquote>
 
