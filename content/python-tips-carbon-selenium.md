@@ -35,13 +35,13 @@ At the time of this writing we have [92 tips on our platform](https://codechalle
 
 ![pybites tips page]({filename}/images/selenium-carbon/pybites-tips.png)
 
-Let's inspect the html we need to parse with BeautifulSoup:
+Let's inspect the tip html we need to parse with BeautifulSoup:
 
 ![html of each tip]({filename}/images/selenium-carbon/tip-html.png)
 
 Each tip is wrapped in a `tr` where the tip text is in a `blockquote` and the code in `pre` tags.
 
-We also want to know if a tip has already been shared out by inspecting the Twitter link. In this example it has _pybites/status_ which means we did share it out.
+We also want to know if a tip has already been shared out by inspecting the Twitter link. In this example it has _pybites/status_ which means we did.
 
 ![check if there is a twitter link href]({filename}/images/selenium-carbon/twitter-href.png)
 
@@ -115,29 +115,25 @@ Before scraping the tips page, let's define the overall structure of the script:
 
 OK step by step:
 
-- We are going to use some nice stdlib modules like `collections` and `random`.
+- We are going to use some nice stdlib modules like `collections` and `random`. Secondly we import the external modules we just installed.
 
-- Secondly we import the external modules we just installed.
+- We define some constants. `TWEET` is the template of the tweet we want to build. I will explain why we need `TWEET_BTN_CLASS` when we get to the carbon section ...
 
-- We define some constants. I will explain why we need `TWEET_BTN_CLASS` when we get to the carbon section ...
+- I define a `namedtuple` (basically a `class` without behavior) to hold a tip.
 
-- `TWEET` is the template of the tweet we want to build.
+- We are going to do the work in two functions: `retrieve_tips` and `get_carbon_image` (I probably should add some [type hinting](https://docs.python.org/3/library/typing.html) on the next iteration ...)
 
-- I define a `namedtuple` (basically a `class` without methods or behavior) to hold one tip.
+- Under `if __name__ == '__main__'` (aka "I, the script, am called, not imported") I define two ways to call the script:
 
-- We are going to do the work in two functions: `retrieve_tips` and `get_carbon_image` (I could add some [type hinting](https://docs.python.org/3/library/typing.html) on the next iteration ...)
+	- with exactly one argument (`len(sys.argv) == 2`, `sys.argv[0]` is the script name), retrieving the tip by numeric ID (see the first column of the [tips table](https://codechalleng.es/tips)).
 
-- Under `if __name__ == '__main__'` (aka "I, the script, am called, not imported") I define two modes of operation:
+	- with any other number of arguments, taking a random tip from the retrieved `dict` using `random.choice`.
 
-	- called with exactly one argument (`len(sys.argv) == 2`, `sys.argv[0]` is the script name), it retrieves the tip by numeric ID (see the left column on the tips page).
-
-	- called with any other number of arguments, it takes a random tip from the retrieved `dict`. `random.choice` is really nice for this.
-
-- It retrieves the tip from the `tips dict` and creates the tweet using the `TWEET` template and prints it to stdout. For now I am happy to manually post it. See a demo towards the end of this article.
+- It retrieves the tip from the `tips dict` and creates the tweet using the `TWEET` template and prints it to stdout. For now I am happy to manually post it (see demo at the end).
 
 ## Parsing the tips
 
-At this point the code at best will throw an `AttributeError`, because our tips `dict` is empty. So let's write `retrieve_tips` to fix that:
+At this point the code at best will throw an `AttributeError`, because our tips `dict` is empty. So let's write `retrieve_tips` to populate it:
 
 	def retrieve_tips():
 		"""Grab and parse all tips from https://codechalleng.es/tips
@@ -152,15 +148,15 @@ We then instantiate a `BeautifulSoup` object passing it in the response text and
 
 		soup = BeautifulSoup(html.text, 'html.parser')
 
-As we saw all tips are in a table, each one in a table row or `tr`, so let's get all those:
+As we saw all the tips are in a table, each one in a table row or `tr`, so let's get all of them:
 
 		trs = soup.findAll("tr")
 
-Next let's use return data structure. At first I used a `list` but later I wanted to index by tip ID, so a `dict` turned out to be more appropriate:
+Next let's use a data structure to store the tips. At first I used a `list` but later I wanted to index by tip ID, so a `dict` turned out to be more appropriate:
 
 		tips = {}
 
-Next let's loop through the rows and make a Tip `namedtuple` object:
+Next let's loop through the rows, creating Tip `namedtuple`s and adding them to our `tips dict`:
 
 		for tr in trs:
 			tds = tr.find_all("td")
@@ -184,21 +180,22 @@ Next let's loop through the rows and make a Tip `namedtuple` object:
 
 Step by step:
 
-- First I get al table cells or `td` elements in the table row.
+- First I get all table cells or `td` elements in the table row.
 
 - I parse the tip ID from the first cell, stripping off the dot and storing it in a variable called `id_`.
 
 - The tip html is in the second table cell.
 
-- I see if there any links in the tips html. As you scroll down on the [tips page](https://codechalleng.es/tips) there is always a share link (<img src="https://codechalleng.es/static/img/icon-twitter.9f5315ee958c.png" alt="twitter icon">), and optionally a second resource link (<img src="https://codechalleng.es/static/img/info.5b6dc8a26e88.png" alt="more info" title="check out additional info">).
+- I check if there are any links in the tips html. As you scroll down on the [tips page](https://codechalleng.es/tips) there is always a share link (<img src="https://codechalleng.es/static/img/icon-twitter.9f5315ee958c.png" alt="twitter icon">), and an optional second resource link (<img src="https://codechalleng.es/static/img/info.5b6dc8a26e88.png" alt="more info" title="check out additional info">).
 
 - I put the tip code in a variable called `code`.
 
-- Then I check if the tip was already shared on Twitter by checking if `PYBITES_HAS_TWEETED` (_pybites/status_) is in the share link, or the tip does not contain any code. In these instances we want to exclude it.
+- Then I check if the tip was already shared on Twitter by checking if `PYBITES_HAS_TWEETED` (_pybites/status_) is in the share link, or if the tip does not contain any code (some are just quotes). In these instances we want to exclude the tip.
 
 - Next we put the tip text in a variable called `tip`.
 
 - We add the resource link in a variable called `src`. As it's optional we first check the length of the `links` list.
+
 - Finally we make the `Tip namedtuple` and assign it as value to the `id_` key in the `tips dict`.
 
 Lastly we return the tips `dict`:
@@ -221,11 +218,9 @@ Meet [carbon](https://carbon.now.sh/):
 
 ![carbon home]({filename}/images/selenium-carbon/carbon-home.png)
 
-It allows you to add code, choose a language and configure other settings, then generate the image and/or tweet it out. Really awesome!
+It allows you to add code, choose a language and configure other settings, then generate the image and/or tweet it out. It's really nice!
 
-Of course we want to automate some of this. While playing with the interface I found that clicking the Tweet button it would generate a shareable picture hosted on Twitter :)
-
-For example clicking the Tweet button I get this popup:
+While playing with the interface I found that clicking the _Tweet_ button it would generate a shareable picture hosted on Twitter. For example clicking the _Tweet_ button I get this popup:
 
 ![clicking tweet button]({filename}/images/selenium-carbon/clicking-tweet-button.png)
 
@@ -233,7 +228,7 @@ And that Twitter link shows the generated code snippet image:
 
 ![resulting carbon image]({filename}/images/selenium-carbon/resulting-carbon-image.png)
 
-This is why I made the `TWEET_BTN_CLASS` constant. We will use Selenium next to target this button to generate the image for us.
+We can automate this using Selenium to click the _Tweet_ button, capturing the generated image link. This is why I defined the `TWEET_BTN_CLASS` constant which is the class set on this button.
 
 ## Use Selenium to create tip code image
 
@@ -244,15 +239,15 @@ Let's write the second function `get_carbon_image`:
 		and grab and return the Twitter picture url
 		"""
 
-First we need to encode the code, basically replace special characters. `urllib.parse`'s `quote_plus` (in addition to `quote`) _also replaces spaces by plus signs, as required for quoting HTML form values when building up a query string to go into a URL_ (see [docs](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote_plus)).
+First we need to encode (replace special characters) the tip code snippet. `quote_plus` (from `urllib.parse`) _also replaces spaces by plus signs, as required for quoting HTML form values when building up a query string to go into a URL_ (see [docs](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote_plus)).
 
 		code = urllib.parse.quote_plus(tip.code)
 
-We define the full url:
+With that done we define the full url:
 
 		url = CARBON.format(code=code)
 
-We then start the Chromedriver. Unlike [last time](https://pybit.es/selenium-headless-on-heroku.html) I am not going to use _headless_ mode here, because I am OK with Selenium opening a browser (`driver.get(url)`) so I can see what is happening:
+We then start the Chromedriver. Unlike [last time](https://pybit.es/selenium-headless-on-heroku.html) I am not going to use _headless_ mode here, because I'd actually like to see what Selenium is doing:
 
 		driver = webdriver.Chrome()
 		driver.get(url)
@@ -261,20 +256,20 @@ Here we locate mentioned `TWEET_BTN_CLASS` (_jsx-2739697134_) button and click o
 
 		driver.find_element_by_class_name(TWEET_BTN_CLASS).click()
 
-Trial and error taught me that this might have a slight delay so let's `sleep` a bit:
+Trial and error taught me that this might take a bit so I use `sleep`:
 
 		sleep(5)
 
 ## Retrieve the image from popup
 
-And here is the tricky part. The Tweet button opened a popup but the driver is still on the main browser page window (see second 15 and 41 of the demo below).
+And here is the tricky part. The _Tweet_ button opened a popup but the driver is still on the main browser page window (see seconds 15 and 41 of the demo below).
 
-You can use the `driver`'s `switch_to.window` though to switch to it:
+You can toggle windows though using `driver.switch_to.window`:
 
 		window_handles = driver.window_handles
 		driver.switch_to.window(window_handles[1])
 
-Now I am on the popup window and I can target the status ID field and grab the image URL from it:
+Now I am on the Twitter popup window and I can target the _status_ ID field and grab the image URL from it:
 
 		status = driver.find_element_by_id('status')
 		img = status.text.split(' ')[-1]
@@ -286,7 +281,7 @@ Finally I quit the `driver` (this closes the browser) and return the image strin
 
 ## See it in action
 
-Here you can see this automation script in action, generating an image from a random tip as well as a specified tip ID:
+Here you can see this automation script in action, generating an image from a random tip as well as when specifying a specific ID:
 
 <div class="container">
 ▸␣␣␣<iframe src="https://www.youtube.com/embed/V3-7RvipiSU" frameborder="0" allowfullscreen class="video"></iframe>
@@ -294,7 +289,7 @@ Here you can see this automation script in action, generating an image from a ra
 
 And voilà: two new tips I could post to our Twitter ([here](https://twitter.com/pybites/status/1100343735299252225) and [here](https://twitter.com/pybites/status/1100342422473719809)).
 
-After manually tweeting it out as [@pybites](https://twitter.com/pybites), we set the obtained tweet URL on the tip (in the DB) so it's not selected upon next run (the `if PYBITES_HAS_TWEETED in share_link: ... continue` part above):
+Note that after manually tweeting it out as [@pybites](https://twitter.com/pybites), we set the obtained tweet URL on the tip (in the DB) so it's not selected upon next run (the `if PYBITES_HAS_TWEETED in share_link` check above).
 
 ### Room for improvement
 
@@ -309,13 +304,11 @@ Feel free to PR any of this [here](https://github.com/pybites/blog_code/pulls).
 
 ---
 
-I hope you enjoyed this and it inspired you to build your own automation script. To learn how to run Selenium in headless mode on Heroku, check out [our article from last week](https://pybit.es/selenium-headless-on-heroku.html).
+I hope you enjoyed this and it inspired you to build your own automation scripts. To learn how to run Selenium in headless mode on Heroku, check out [our article from last week](https://pybit.es/selenium-headless-on-heroku.html).
 
 Feel free to share more Python tips [on our platform](https://codechalleng.es/inbox/new/pytip/).
 
-What would you like us to write about more? You can leave a request [here](https://codechalleng.es/inbox/new/feature/) or just [drop us an email](mailto:pybitesblog@gmail.com).
-
-Or to brainstorm with us and our amazing community [join our Slack](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU).
+Question: what would you like us to write about more? You can [drop us an email](mailto:pybitesblog@gmail.com) or brainstorm with us and our amazing community [on our Slack](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU). We do accept [guest posts](https://pybit.es/pages/guests.html)!
 
 ---
 
