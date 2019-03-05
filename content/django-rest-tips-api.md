@@ -2,7 +2,7 @@ Title: Building a Python Tips API with Django REST Framework and Deploying it to
 Date: 2019-03-05 12:30
 Category: Django
 Tags: Django, APIs, Django REST Framework, tips, Digital Ocean, Django Commands, Postman, Nginx, postgres, Gunicorn, BeautifulSoup, requests, curl, SSH, Linux, deployment
-Slug: django-rest-tips-api-slack-slash-command
+Slug: django-rest-tips-api-digital-ocean
 Authors: Bob
 Summary: In this article I will show you how to build a simple API for our growing collection of Python tips. First we make a simple Django app, defining the model. Next we use Django REST Framework to make an API supporting common CRUD operations. Then we will test it out using curl, Postman and Django REST's browser front-end. Lastly we deploy the API to Digital Ocean so we can start using it via our Slack with a Slash Command, which I will cover in the next article. Sounds exciting? You bet it is! Let's jump straight in!
 cover: images/featured/pb-article.png
