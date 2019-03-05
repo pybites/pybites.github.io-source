@@ -1,7 +1,7 @@
 Title: Building a Python Tips API with Django REST Framework and Deploying it to Digital Ocean
 Date: 2019-03-05 12:30
 Category: Django
-Tags: Django, APIs, Django REST Framework, tips, Digital Ocean, Django Commands, Postman, Nginx, postgres, Gunicorn, BeautifulSoup, requests, curl, SSH
+Tags: Django, APIs, Django REST Framework, tips, Digital Ocean, Django Commands, Postman, Nginx, postgres, Gunicorn, BeautifulSoup, requests, curl, SSH, Linux, deployment
 Slug: django-rest-tips-api-slack-slash-command
 Authors: Bob
 Summary: In this article I will show you how to build a simple API for our growing collection of Python tips. First we make a simple Django app, defining the model. Next we use Django REST Framework to make an API supporting common CRUD operations. Then we will test it out using curl, Postman and Django REST's browser front-end. Lastly we deploy the API to Digital Ocean so we can start using it via our Slack with a Slash Command, which I will cover in the next article. Sounds exciting? You bet it is! Let's jump straight in!
@@ -30,12 +30,12 @@ First we make [a virtual environment](https://pybit.es/the-beauty-of-virtualenv.
 So here we go:
 
 	[bobbelderbos@imac code]$ mkdir tips_api && cd $_
-	[bobbelderbos@imac carbon]$ alias pvenv
+	[bobbelderbos@imac tips_api]$ alias pvenv
 	alias pvenv='/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7 -m venv venv && source venv/bin/activate'
-	[bobbelderbos@imac carbon]$ pvenv
-	(venv) [bobbelderbos@imac carbon]$ python -V
+	[bobbelderbos@imac tips_api]$ pvenv
+	(venv) [bobbelderbos@imac tips_api]$ python -V
 	Python 3.7.0
-	(venv) [bobbelderbos@imac carbon]$ pip install -r requirements.txt
+	(venv) [bobbelderbos@imac tips_api]$ pip install -r requirements.txt
 	...
 
 Let's set the following 2 environment variables as referenced in Django's `settings.py` file later on:
@@ -43,7 +43,7 @@ Let's set the following 2 environment variables as referenced in Django's `setti
 	(venv) [bobbelderbos@imac tips_api (master)]$ deactivate
 	[bobbelderbos@imac tips_api (master)]$ vi venv/bin/activate
 	...
-	export SECRET_KEY='assasd893232i3902andkja'
+	export SECRET_KEY='some-secret-string'
 	export DEBUG=True
 
 Then activate the venv:
@@ -55,11 +55,11 @@ It's also important to set `ALLOWED_HOSTS`, but as we will see later I have it d
 
 ## Create a Django project and app
 
-Let's make a Django project in the current (`.`) directory:
+Let's make a Django project in the current directory (`.`):
 
 	(venv) [bobbelderbos@imac tips_api]$ django-admin.py startproject tips .
 
-Ignoring my virtual env folder, Django created this minimalistic project folder with our main _tips_ app:
+Ignoring my virtual env folder, Django created this minimalistic project folder structure, _tips_ being our main app:
 
 	$ tree -I venv
 	.
@@ -89,7 +89,7 @@ And let's make our api _app_ to keep it isolated from the rest:
 	│   └── views.py
 	...
 
-Lastly tell Django about both apps in `tips/settings.py` -> `INSTALLED_APPS`. We also add `rest_framework` here:
+Lastly we need to tell Django about both apps in `tips/settings.py` -> `INSTALLED_APPS`. We also add `rest_framework` here for later use:
 
 	INSTALLED_APPS = [
 		...
@@ -105,9 +105,13 @@ Looking at the original model on our platform we see the following fields:
 
 ![design]({filename}/images/django-rest-digital-ocean/design.png)
 
+As we saw [last time](https://pybit.es/python-tips-carbon-selenium.html) the `share_link` is to be populated by an admin when we share out a tip with a nice [carbon](https://www.django-rest-framework.org/) image.
+
 Let's build our model `tips/models.py` using these fields. 
 
-Additionally I am making an `Author` model to store Twitter and Slack handles from future contibuting users. The former to give credit when we share their tips, the latter to store the author of the tip when we start receiving them from Slack (next article). Thinking about (predicting) tomorrow's requirement is one of the fascinating things about software development!
+I am also creating an `Author` model to store Twitter and Slack handles from future contributing users. The former to give credit when we share their tips on Twitter, the latter to store the author of the tip when we start receiving them from Slack (next article).
+
+Thinking about (predicting) tomorrow's requirement is one of the fascinating things about software development!
 
 	from django.contrib.auth.models import User
 	from django.db import models
@@ -150,13 +154,13 @@ Additionally I am making an `Author` model to store Twitter and Slack handles fr
 
 The `Tip` model should be pretty straightforward. Note the `User` ForeignKey in `Tip` to give them _owners_.
 
-I added `@receiver`s to Django-native `User` model to detect when a new user gets created. When that happens a new `Author` instance is created as well.
+I added `@receiver`s to Django's native `User` model to detect when a new user gets created. When that happens a new `Author` instance is created as well.
 
 This is one way to extend Django's `User` model which I learned about [here](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html). 
 
 Now it's time to make the migration files and migrate (sync) the two new models to the database.
 
-As it's the first time we call `migrate` all models that come with Django get synced to the DB as well. I am using the default sqlite3 DB for now.
+As it's the first time we call `migrate` all models that come with Django out of the box, get synced to the DB as well. I am using the default `sqlite3` DB for now, but I should probably change that to Postgres to mirror deployment to Digital Ocean.
 
 	(venv) [bobbelderbos@imac tips_api (master)]$ python manage.py makemigrations tips
 	Migrations for 'tips':
@@ -194,7 +198,7 @@ Let's create a `superuser` _pybites_ to access the app and see if the `Author` e
 	Password (again):
 	Superuser created successfully.
 
-Great: that created both a User and an Author instance in the DB:
+Great: that created both a `User` and an `Author` instance in our DB. I am using [DB Browser for SQLite](https://sqlitebrowser.org) to query my local DB here:
 
 ![auth user]({filename}/images/django-rest-digital-ocean/auth_user.png)
 
@@ -276,7 +280,9 @@ Here is the code I mostly re-used from last week's article: [Generating Beautifu
 
 It scrapes the page with `requests` and `BeautifulSoup`. Originally I kept a list of `Tip` objects and used Django's ORM `bulk_create` method to write them to the DB in one transaction which is neat. 
 
-However I found it nicer to make it work like an update script, in case the platform gets new tips in the interim. Calling the script again should just insert the newer tips. For that reason I went with Django's handy `Tip.objects.get_or_create` which will create the tip if nothing matches the `kwargs` passed in, otherwise it will return the object (which I ignore using `_`). This way it will only create a tip if not already in the DB. 
+However I found it nicer to make it work like an update script, in case the platform gets new tips in the interim. Calling the script again should just insert the newer tips.
+
+For that reason I went with Django's handy `Tip.objects.get_or_create` which will create the tip if nothing matches the `kwargs` passed in, otherwise it will return the object (which I ignore using `_`). This way it will only create a tip if not already in the DB. 
 
 Let's run this:
 
@@ -287,15 +293,15 @@ Let's run this:
 
 ![a single tip]({filename}/images/django-rest-digital-ocean/import2.png)
 
-Awesome: we have our tips in the DB and you now know how to write a Django Command! Just extend `BaseCommand`, implement `handle` and save the script in `management/commands`.
+Awesome: we have our tips in the DB and you now know how to write a Django Command! Just extend `BaseCommand`, implement `handle` and save the script in a subdirectory called `management/commands` in your app folder.
 
 ## Build an API with Django REST Framework
 
-Let's build the API next. We already added `rest_framework` to `INSTALLED_APPS`. Let's also set [permissions](https://www.django-rest-framework.org/api-guide/permissions/) to `DjangoModelPermissionsOrAnonReadOnly` which seems to match what we want:
+Let's build the API next. We already added `rest_framework` to `INSTALLED_APPS`. Let's also set the [permissions](https://www.django-rest-framework.org/api-guide/permissions/) to `DjangoModelPermissionsOrAnonReadOnly` which seems to match what we want:
 
 > Similar to `DjangoModelPermissions` (permission class ties into Django's standard `django.contrib.auth` model permissions), but also allows unauthenticated users to have read-only access to the API.
 
-In `tips/settings.py` I am adding this setting:
+In `tips/settings.py` I am adding the `REST_FRAMEWORK dict`, setting `DEFAULT_PERMISSION_CLASSES`:
 
 	REST_FRAMEWORK = {
 		# Use Django's standard `django.contrib.auth` permissions,
@@ -325,9 +331,11 @@ In `api/serializers.py` I added this code which should look familiar if you have
 			model = Tip
 			fields = ('tip', 'code', 'link', 'author', 'approved', 'share_link')
 
+You probably don't have to define `fields` if you want them all, but being explicit is usually not a bad thing.
+
 ### Views
 
-Next the views. Again Django REST Framework's great level of abstraction saves us a lot of boilerplate code. We can just extend some very useful classes defined in `generics`:
+Next the views. Again Django REST Framework's great level of abstraction saves us a lot of boilerplate code. We can just extend some useful classes defined in `generics`:
 
 	from rest_framework import generics
 
@@ -363,7 +371,7 @@ Next the views. Again Django REST Framework's great level of abstraction saves u
 		queryset = Tip.objects.all()
 		serializer_class = TipSerializer
 
-Note that I structured the _docstrings_ in a way to easily add documentation using a tool like [Swagger](https://swagger.io/) in the future: 
+Note that I structured the _docstrings_ in a way to easily add documentation using a tool like [Swagger](https://swagger.io/) in the future.
 
 ### Routes
 
@@ -379,7 +387,7 @@ And finally to be able to access the routes let's set up our `urlpatterns` in `a
 		path('admin/', include('rest_framework.urls')),
 	]
 
-And in the main app include this API router file, so in `tips/urls.py` add this:
+And in the main app's router file (`tips/urls.py`) include the `api` one like this:
 
 	from django.urls import path, include
 
@@ -399,12 +407,14 @@ We can consume our API with various tools:
 
 ### `curl`
 
+Nice and easy:
+
 	[bobbelderbos@imac ~]$ curl http://127.0.0.1:8000/api/4
 	{"tip":"Q: difference between __str__ and __repr__ in #Python? A: \"My rule of thumb:  __repr__ is for developers, __str__ is for customers.\" (Ned Batchelder on SO)","code":null,"link":"https://stackoverflow.com/a/1438297","user":1,"approved":true,"share_link":null}
 
 ### Postman
 
-_Postman Simplifies API Development._, download it [here](https://www.getpostman.com/)
+_Postman Simplifies API Development_. You can download it [here](https://www.getpostman.com/).
 
 Get all tips:
 
@@ -428,7 +438,7 @@ As I am an _anonymous_ user I don't see any edit options:
 
 ![Django rest front-end]({filename}/images/django-rest-digital-ocean/django-rest-browser2.png)
 
-When I log in as my _superuser_ though a form and delete button show up:
+When I log in as my _superuser_ though, a form and delete button show up:
 
 ![Django rest front-end]({filename}/images/django-rest-digital-ocean/django-rest-browser3.png)
 
@@ -460,28 +470,30 @@ However the [latest Django from APT](https://packages.ubuntu.com/bionic/python-d
 
 ### SSH access and keys
 
-First hurdle you might find is not being able to SSH in as root (I should have remembered this from the old Sun/ Solaris days ...):
+First hurdle you might find is not being able to SSH in as root (I should have remembered this from my old SunOS days ...):
 
 	$ ssh root@159.203.186.209
 	root@159.203.186.209: Permission denied (publickey).
 
 `PermitRootLogin` was already set to `yes` in `/etc/ssh/sshd_config`, but I also had to set `PasswordAuthentication` to `yes` opening a Console session from Digital Ocean's BUI, followed by a `sudo service ssh restart`. Now I was able to SSH in as root.
 
-I [uploaded a SSH public key](https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/to-account/) and enabled the option when creating the droplet to have it saved to `~/.ssh/authorized_keys`. Locally I made an alias to make login as easy as typing `ssh dioc`, putting this into my `.ssh/config`:
+I [uploaded a SSH public key](https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/to-account/) to Digital Ocean's account page and had it added to the droplet upon creaton. This populated `~/.ssh/authorized_keys` with my public key.
+
+Locally I then made an alias in `.ssh/config` to be able to login using the alias `ssh dioc`:
 
 	Host dioc
 	HostName 159.203.186.209
 	User root
 	IdentityFile ~/.ssh/DO
 
-(where `/.ssh/DO` is my private key)
+(Where `/.ssh/DO` is my private key stored locally.)
 
 ### Upgrade
 
 Best practice is to first upgrade the OS because it was behind on important security fixes. This required a reboot:
 
-	apt-get update && apt-get -y upgrade
-	reboot
+	root@ubuntu-s-1vcpu-1gb-nyc1-01:~# apt-get update && apt-get -y upgrade
+	root@ubuntu-s-1vcpu-1gb-nyc1-01:~# reboot
 
 Logging in again I followed Digital Ocean's [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) creating a user: `adduser bob` and granting `sudo` rights: `usermod -aG sudo bob`
 
@@ -508,7 +520,7 @@ Next I enabled the firewall:
 
 ### SSH part II
 
-Next I made sure my new user (`bob`) could login.
+Next I made sure my new user (`bob`) could login as well.
 
 As I use SSH keys for logging in as root, I copied over the `.ssh` folder to my new user's home folder using `rsync`:
 
@@ -523,7 +535,7 @@ And locally I made a new SSH shortcut in `.ssh/config`:
 	User bob
 	IdentityFile ~/.ssh/DO
 
-At this point `bob` could SSH in with the key as well using the alias `ssh diocu`:
+At this point `bob` could SSH in using the alias `ssh diocu`:
 
 	(venv) [bobbelderbos@imac tips_api (master)]$ ssh diocu
 	Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-45-generic x86_64)
@@ -533,15 +545,15 @@ At this point `bob` could SSH in with the key as well using the alias `ssh diocu
 
 	bob@ubuntu-s-1vcpu-1gb-nyc1-01:~$
 
-Next I followed Digital Ocean's useful: [How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04)
+Next I followed Digital Ocean's useful article: [How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04).
 
-This guide shows you how to install Django within a virtual environment which I think is the best way to go, _Namespaces are one honking great idea -- let's do more of those!_
+This guide shows you how to install Django within a virtual environment which I think is the best way to go, _Namespaces are one honking great idea -- let's do more of those!_ (Zen of Python)
 
-What follows is mostly the same as the steps outlined in this guide, but through the lens of me doing it for our app. 
+What follows is mostly the same as the steps outlined in that guide, but through the lens of me doing it for our API. 
 
 ### Python 3
 
-First we need to install the following packages, upgrade `pip` and grab `virtualenv`:
+First we need to install the following packages, upgrade `pip` and grab `virtualenv`. Note I logged in as `bob` so any _admin_ commands need to be preceded by `sudo`:
 
 	sudo apt update
 	sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
@@ -569,7 +581,7 @@ We want to use a postgres DB and user:
 
 ### Pull in the Django API code
 
-Not part of the guide, but we need to pull in our code from Github. In `$HOME`:
+Not part of the guide, but at this point I pulled in our code from Github saving it to my `$HOME` folder:
 
 	git clone https://github.com/pybites/tips_api
 	cd tips_api
@@ -629,7 +641,7 @@ With my venv enabled let's install the dependencies:
 
 ### Static files
 
-To support static file handling by Nginx we need to set the following to constants in `tips/settings.py`:
+To support static file handling by Nginx we need to set the following two constants in `tips/settings.py`:
 
 	STATIC_URL = '/static/'
 	STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
@@ -663,7 +675,7 @@ Next we sync the models/migrations to the newly created postgres DB:
 
 Great!
 
-Note that Django migrations are comitted to source code so I did not have to generate them (`makemigrations`) again!
+Note that Django migrations are committed to source code so I did not have to generate them (`makemigrations`) again!
 
 ### Superuser
 
@@ -681,7 +693,7 @@ And import the tips from our platform:
 	(venv) bob@ubuntu-s-1vcpu-1gb-nyc1-01:~/tips_api$ python manage.py sync_tips
 	Done: 92 tips imported
 
-Perfect. Let's collect the static files (_but it's an API?_ you might ask ... well, Django's Admin back-end and Django REST Framework's browser UI have static files!)
+Perfect. Let's collect the static files (_but it's an API?_ you might ask ... well, Django's Admin back-end and Django REST Framework's browser UI use quite a few static files!)
 
 	(venv) bob@ubuntu-s-1vcpu-1gb-nyc1-01:~/tips_api$ python manage.py collectstatic
 	155 static files copied to '/home/bob/tips_api/static'.
@@ -850,7 +862,7 @@ And voilà: we have our PyBites API hosted on Digital Ocean!
 
 This was a fun exercise! We managed to turn PyBites Tips into its own service hosted in the cloud!
 
-The only challenge was `gunicorn` not picking up environment variables from a file, but we got around that and it all work nicely now ...
+The only challenge was `gunicorn` not picking up environment variables from a file, but we got around that and it all works nicely now ...
 
 Now go build your own API with the [Django REST Framework](https://www.django-rest-framework.org/) and [PR us your code here](https://codechalleng.es/challenges/34/).
 
