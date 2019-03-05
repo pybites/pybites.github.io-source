@@ -375,9 +375,9 @@ Note that I structured the _docstrings_ in a way to easily add documentation usi
 
 ### Permissions
 
-Here we used a customized permission class called `IsOwnerOrReadOnly` which we need to define in `api/permissions.py`.
+In the `TipDetail` view we defined a customized _permission class_ called `IsOwnerOrReadOnly` which we need to define next in `api/permissions.py` (code from second example [here](https://www.django-rest-framework.org/api-guide/permissions/#examples)).
 
-The following code will grant read access to any safe methods (`GET`, `OPTIONS` and `HEAD`) as well as edit right for users that have authored tip (I adapted this code from the second example [here](https://www.django-rest-framework.org/api-guide/permissions/#examples)):
+The following code in that module will grant read access to any safe methods (`GET`, `OPTIONS` and `HEAD`) and edit right for users that have authored ("own") tips. 
 
 	from rest_framework import permissions
 
