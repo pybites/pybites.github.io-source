@@ -105,7 +105,7 @@ Looking at the original model on our platform we see the following fields:
 
 ![design]({filename}/images/django-rest-digital-ocean/design.png)
 
-As we saw [last time](https://pybit.es/python-tips-carbon-selenium.html) the `share_link` is to be populated by an admin when we share out a tip with a nice [carbon](https://www.django-rest-framework.org/) image.
+As we saw [last time](https://pybit.es/python-tips-carbon-selenium.html) the `share_link` is to be populated by an admin when we share out a tip with a nice [carbon](https://carbon.now.sh) image.
 
 Let's build our model `tips/models.py` using these fields. 
 
@@ -372,6 +372,35 @@ Next the views. Again Django REST Framework's great level of abstraction saves u
 		serializer_class = TipSerializer
 
 Note that I structured the _docstrings_ in a way to easily add documentation using a tool like [Swagger](https://swagger.io/) in the future.
+
+### Permissions
+
+Here we used a customized permission class called `IsOwnerOrReadOnly` which we need to define in `api/permissions.py`.
+
+The following code will grant read access to any safe methods (`GET`, `OPTIONS` and `HEAD`) as well as edit right for users that have authored tip (I adapted this code from the second example [here](https://www.django-rest-framework.org/api-guide/permissions/#examples)):
+
+	from rest_framework import permissions
+
+
+	class IsOwnerOrReadOnly(permissions.BasePermission):
+		"""
+		Make sure only owners of tips can edit them.
+		"""
+
+		def has_object_permission(self, request, view, obj):
+			# Read permissions are allowed to any request,
+			# so we'll always allow GET, HEAD or OPTIONS requests.
+			if request.method in permissions.SAFE_METHODS:
+				return True
+
+			# Instance must have an attribute named `owner`.
+			return obj.user == request.user
+
+`obj.user` refers to the `ForeignKey` we defined on the `Tip` model:
+
+▸␣␣␣class Tip(models.Model):
+	...
+▸␣␣␣▸␣␣␣user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 ### Routes
 
