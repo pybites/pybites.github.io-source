@@ -398,9 +398,9 @@ The following code in that module will grant read access to any safe methods (`G
 
 `obj.user` refers to the `ForeignKey` we defined on the `Tip` model:
 
-▸␣␣␣class Tip(models.Model):
-	...
-▸␣␣␣▸␣␣␣user = models.ForeignKey(User, on_delete=models.CASCADE)
+	class Tip(models.Model):
+		...
+		user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 ### Routes
 
