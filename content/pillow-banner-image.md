@@ -47,12 +47,12 @@ _Disclaimer_: we just write it in a procedural way to get something working. We 
 
 Create a `banner.py` and add the following code:
 
-	import os
+	from pathlib import Path
 	from PIL import Image, ImageDraw, ImageFont
 
 	ASSET_DIR = 'assets'
-	PB_CHALLENGE_IMG = os.path.join(ASSET_DIR, 'pybites-challenges.png')
-	PILLOW_IMG = os.path.join(ASSET_DIR, 'pillow-logo.png')
+	PB_CHALLENGE_IMG = Path(ASSET_DIR, 'pybites-challenges.png')
+	PILLOW_IMG = Path(ASSET_DIR, 'pillow-logo.png')
 	DEFAULT_WIDTH = 600
 	DEFAULT_HEIGHT = 150
 	DEFAULT_CANVAS_SIZE = (DEFAULT_WIDTH, DEFAULT_HEIGHT)
@@ -68,7 +68,7 @@ Create a `banner.py` and add the following code:
 
 	image.save('out.png')
 
-We do our imports and set up some constants. `os.path.join` is always best practice to join directories and filenames to make it compatible across different operating systems.
+We do our imports and set up some constants. `pathlib.Path` is always best practice to join directories and filenames to make it compatible across different operating systems.
 
 We create a new canvas with `Image.new` stating the dimensions and background color. We put (`image.paste`) the Pybites challenges logo at an offset of left=0, top=15. And we store the image's width use height in variables for later use.
 
@@ -112,7 +112,7 @@ Add this code:
 
 	...
 	BLACK = (0, 0, 0)
-	TEXT_FONT_TYPE = os.path.join(ASSET_DIR, 'SourceSansPro-Regular.otf')
+	TEXT_FONT_TYPE = Path(ASSET_DIR, 'SourceSansPro-Regular.otf')
 	TEXT_SIZE = 24
 	TEXT_PADDING_HOR = 20
 	TEXT_PADDING_VERT = 40
