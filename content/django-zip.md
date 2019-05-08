@@ -261,7 +261,7 @@ archive/views.py
 
 We use Django's `HttpResponse` object which we have to give a `Content-Disposition` attribute. To directly serve up the resulting zipfile, not writing it to disk, I use `zipfile`'s `writestr`. Getting the snippets from Django's ORM is as easy as: `Script.objects.all()`. I also added a _README_ file.
 
-Now visit the download endpoint: http://localhost:8000/download -> A zipfile should automatically download to your desktop:
+Now visit the download endpoint: http://localhost:8000/download -> a zipfile should automatically download to your desktop:
 
 ![download the zipfile]({filename}/images/django-zip/download-endpoint.png)
 
@@ -318,11 +318,13 @@ One enhancement would be to lock this down for users that are not logged in. Dja
 
 		... 
 
-The full code for this blog post is [here](http://github.com/pybites/blog_code/django-archive).
+The full code for this blog post is [in our blog code repo](https://github.com/pybites/blog_code/tree/master/django-archive).
 
 ---
 
-If you saved some code for Bite exercises [on our platform](http://codechalleng.es) you can check out this feature scrolling to the bottom of [the settings page](http://codechalleng.es/settings) ...
+If you saved some code for Bite exercises [on our platform](http://codechalleng.es) you can check out this feature scrolling to the bottom of [the settings page](http://codechalleng.es/settings):
+
+![the new platform code zip export button]({filename}/images/django-zip/platform-export.png)
 
 I hope this was useful and let us know if there are other Django related topics you'd like to see covered here ...
 
