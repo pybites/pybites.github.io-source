@@ -1,14 +1,12 @@
-Title: How to create and serve zip files from Django
-Date: 2019-04-27 19:58
+Title: How to Create and Serve Zipfiles from Django
+Date: 2019-05-08 08:00
 Category: Django
-Tags: django, zip, snippets, archive
-Slug: django-zip
+Tags: Django, zipfile, snippets, archive, response, request, admin, DB, sqlite3, migrations, virtualenv
+Slug: django-zipfiles
 Authors: Bob
-Summary: In this article I will show you how to serve zipfiles from Django. We will make a simple app, a download endpoint, add code snippets in the admin back-end, and zip them up in the view. We just used this technique to allow users to export all their committed code on our platform, so I thought it would be useful to share this useful feature!
-cover: images/featured/pb-article.png
-status: draft
+Summary: We added support [to our platfom](https://codechalleng.es) for bulk downloading of all your code submissions. This feature required creating and serving up zipfiles through Django. In this article I show you how to do it creating a simple Django app collecting code snippets through the admin interface, and serving them up in a zipfile via a download endpoint. Let's dive straight in ...
 
-In this article I will show you how to serve zipfiles from Django. We will make a simple app, a download endpoint, add code snippets in the admin back-end, and zip them up in the view. We just used this technique to allow users to export all their committed code on our platform, so I thought it would be useful to share this useful feature!
+We added support [to our platfom](https://codechalleng.es) for bulk downloading of all your code submissions. This feature required creating and serving up zipfiles through Django. In this article I show you how to do it creating a simple Django app collecting code snippets through the admin interface, and serving them up in a zipfile via a download endpoint. Let's dive straight in ...
 
 ## Setup
 
@@ -16,8 +14,6 @@ First we make a virtual env, set a secret key in our venv and install Django:
 
 	[bobbelderbos@imac code]$ mkdir django-archive
 	[bobbelderbos@imac code]$ cd $_
-	[bobbelderbos@imac django-archive]$ alias pvenv
-	alias pvenv='/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7 -m venv venv && source venv/bin/activate'
 	[bobbelderbos@imac django-archive]$ python3.7 -m venv venv
 	[bobbelderbos@imac django-archive]$ echo "export SECRET_KEY='abc123.;#'" >> venv/bin/activate
 	[bobbelderbos@imac django-archive]$ source venv/bin/activate
@@ -26,13 +22,10 @@ First we make a virtual env, set a secret key in our venv and install Django:
 	...
 	Successfully installed django-2.2 pytz-2019.1 sqlparse-0.3.0
 
-Now let's create a project and app in Django:
+Now let's create a project and app in Django. Don't forget the extra dot in the `startproject` command to not create an extra subdirectory.
 
 	(venv) [bobbelderbos@imac django-archive]$ django-admin startproject snippets .
 	(venv) [bobbelderbos@imac django-archive]$ django-admin startapp archive
-
-The dot is to prevent Django from making an extra folder. I end up with the following files:
-
 	(venv) [bobbelderbos@imac django-archive]$ tree -L 2
 	.
 	├── archive
@@ -50,13 +43,7 @@ The dot is to prevent Django from making an extra folder. I end up with the foll
 	│   ├── urls.py
 	│   └── wsgi.py
 	└── venv
-		├── bin
-		├── include
-		├── lib
-		├── pip-selfcheck.json
-		└── pyvenv.cfg
-
-	7 directories, 13 files
+		...
 
 Make sure we add the new app to Django's config:
 
@@ -68,7 +55,11 @@ snippets/settings.py
 		'archive',
 	]
 
-Lastly let's sync the DB and create a superuser to login to Django's admin back-end:
+While here, let's also load the secret key from our venv (`venv/bin/activate`) as defined earlier:
+
+	SECRET_KEY = os.environ['SECRET_KEY']
+
+Lastly let's sync the pending migrations to our default sqlite DB and create a superuser to access Django's admin back-end:
 
 	(venv) [bobbelderbos@imac django-archive]$ python manage.py migrate
 	Operations to perform:
@@ -103,7 +94,7 @@ Lastly let's sync the DB and create a superuser to login to Django's admin back-
 
 ## Create routes
 
-In the main app that was created with the `startproject` command we add the following routes:
+In the main app `snippets`, that was created with the `startproject` command, we add the following routes:
 
 snippets/urls.py
 
@@ -115,7 +106,7 @@ snippets/urls.py
 		path('', include('archive.urls', namespace='archive')),
 	]
 
-I use the admin app that Django comes equipped with and make a new link to the `urls.py` file of the `archive` app we created. Let's create that one next:
+Apart from the default admin routes (`admin.site.urls`), we namespace the `archive` app's routes, defining them in the app:
 
 archive/urls.py
 
@@ -123,16 +114,16 @@ archive/urls.py
 
 	from . import views
 
-	app_name = 'bites'
+	app_name = 'archive'
 	urlpatterns = [
 		path('download/', views.download, name='download')
 	]
 
-This will be the download endpoint we will write later in `views.py`. Let's first define a model to hold the code snippets.
+This will be the download endpoint that will serve the zipfile, we will write that code in a bit. First let's define the model (DB table) that will hold our code snippets.
 
 ## Create a Script model
 
-In our `archive` app we make a simple model which we will sync to a real DB table and it will hold code snippets:
+In our `archive` app we make this simple model and sync it to the DB:
 
 archive/models.py
 
@@ -150,16 +141,16 @@ archive/models.py
 		class Meta:
 			ordering = ['-added']
 
-We inherit all goodness from Django's `Model` class, define `__str__` as best practice when debugging objects, and add `ordering` so last added snippets will show up first.
+We inherit all goodness from Django's `Model` class. The `added` datetime gets automatically populated upon insert. Defining a `__str__` on the class makes it easier to inspect the objects when debugging (or in Django's interactive shell). And we can use the inner `Meta` class to set further behaviors, in this case let's show most recently added snippets first. 
 
-Now we have to commit this model to the DB so we use the `manage.py` interface again
+Now we have to commit ("migrate") this model to the DB which is easy using Django's `manage.py`. However first we need to stub out the `download` function we defined in `archive/urls.py`, otherwise we get: `AttributeError: module 'archive.views' has no attribute 'download'` upon migration. Add this code to `archive/views.py`:
 
-First we need to stub out the `downloads` function otherwise we get: `AttributeError: module 'archive.views' has no attribute 'download'`, so add this to archive/views.py:
+archive/views.py
 
 	def download(request):
 		pass
 
-Then run:
+Now it should work:
 
 	(venv) [bobbelderbos@imac django-archive]$ python manage.py makemigrations
 	Migrations for 'archive':
@@ -182,9 +173,9 @@ I am just using the default `sqlite` DB, we can use schema to see what `migrate`
 	sqlite> .schema  archive_script
 	CREATE TABLE IF NOT EXISTS "archive_script" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "code" text NOT NULL, "added" datetime NOT NULL);
 
-## Add some code snippets via Django's admin interface
+## Django's admin interface
 
-To be able to work with the new model from the admin interface we need to register it:
+To be able to work with the new model from the admin interface we need to register it. Add this code to the `archive/admin.py` module:
 
 archive/admin.py
 
@@ -197,43 +188,147 @@ archive/admin.py
 		pass
 	admin.site.register(Script, ScriptAdmin)
 
-Now let's serve up the app:
+Now let's spin up the dev server. As I leave it running in the foreground I use a second terminal:
 
-$ python manage.py runserver
-Watching for file changes with StatReloader
-Performing system checks...
+	$ cd /Users/bbelderbos/code/django-archive
+	$ source venv/bin/activate
+	(venv) [bbelderbos@imac django-archive]$ python manage.py runserver
+	Watching for file changes with StatReloader
+	Performing system checks...
 
-System check identified no issues (0 silenced).
-April 27, 2019 - 16:30:55
-Django version 2.2, using settings 'snippets.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CONTROL-C.
+	System check identified no issues (0 silenced).
+	May 08, 2019 - 02:17:32
+	Django version 2.2, using settings 'snippets.settings'
+	Starting development server at http://127.0.0.1:8000/
+	Quit the server with CONTROL-C.
 
-Going to `http://localhost:8000/admin` and login with the superuser I created, I can add code snippets to our new Script model / table:
+Now I can access `http://localhost:8000/admin` and login with the superuser I created earlier. At this point we should see the new model:
+
+![new model in admin]({filename}/images/django-zip/admin.png)
+
+Let's add some small code snippets from [our tips page](https://codechalleng.es/tips):
+
+![3 snippets added]({filename}/images/django-zip/3-snippets.png)
+
+![adding snippet 1]({filename}/images/django-zip/snippet1.png)
+
+![adding snippet 2]({filename}/images/django-zip/snippet2.png)
+
+![adding snippet 3]({filename}/images/django-zip/snippet3.png)
+
+## Serving up a zipfile
+
+Now let's create a zipfile with all the code snippets stored in the DB. We do this in the `download` view we stubbed out earlier:
+
+archive/views.py
+
+	import zipfile
+
+	from django.http import HttpResponse
+
+	from .models import Script
+
+	README_NAME = 'README.md'
+	README_CONTENT = """
+	## PyBites Code Snippet Archive
+
+	Here is a zipfile with some useful code snippets.
+
+	Produced for blog post https://pybit.es/django-zipfiles.html
+
+	Keep calm and code in Python!
+	"""
+	ZIPFILE_NAME = 'pybites_codesnippets.zip'
 
 
-Let's add some snippets from some Bites I coded lately ;)
+	def download(request):
+		"""Download archive zip file of code snippets"""
+		response = HttpResponse(content_type='application/zip')
+		zf = zipfile.ZipFile(response, 'w')
 
+		# create the zipfile in memory using writestr
+		# add a readme
+		zf.writestr(README_NAME, README_CONTENT)
 
+		# retrieve snippets from ORM and them to zipfile
+		scripts = Script.objects.all()
+		for snippet in scripts:
+			zf.writestr(snippet.name, snippet.code)
 
-## Serve up a zipfile with all code snippets in the view
+		# return as zipfile
+		response['Content-Disposition'] = f'attachment; filename={ZIPFILE_NAME}'
+		return response
 
+We use Django's `HttpResponse` object which we have to give a `Content-Disposition` attribute. To directly serve up the resulting zipfile, not writing it to disk, I use `zipfile`'s `writestr`. Getting the snippets from Django's ORM is as easy as: `Script.objects.all()`. I also added a _README_ file.
 
+Now visit the download endpoint: http://localhost:8000/download -> A zipfile should automatically download to your desktop:
 
+![download the zipfile]({filename}/images/django-zip/download-endpoint.png)
+
+Let's see if it worked by unzipping the obtained zipfile into a tmp directory:
+
+	[bbelderbos@imac Downloads]$ mkdir tmp
+	[bbelderbos@imac Downloads]$ mv pybites_codesnippets.zip tmp
+	[bbelderbos@imac Downloads]$ cd tmp
+	[bbelderbos@imac tmp]$ unzip pybites_codesnippets.zip
+	Archive:  pybites_codesnippets.zip
+	extracting: README.md
+	extracting: flatten.py
+	extracting: zipping.py
+	extracting: enumerate.py
+
+	[bbelderbos@imac tmp]$ cat README.md
+
+	## PyBites Code Snippet Archive
+
+	Here is a zipfile with some useful code snippets.
+
+	Produced for blog post https://pybit.es/django-zipfile
+
+	Keep calm and code in Python!
+
+	[bbelderbos@imac tmp]$ for i in *py; do echo "== $i =="; cat $i; echo ; done
+	== enumerate.py ==
+	names = 'bob julian tim sara'.split()
+	for i, name in enumerate(names, 1):
+		print(i, name)
+	== flatten.py ==
+	list_of_lists = [[1, 2], [3], [4, 5], [6, 7, 8]]
+	flattened = sum(list_of_lists, [])
+	print(flattened)
+	== zipping.py ==
+	names = 'bob julian tim sara'.split()
+	ages = '11 22 33 44'.split()
+	print(dict(zip(names, ages)))
 
 ---
 
-That's it, a small admin tailored app to serve code files in zipfile via a Django endpoint. 
+Cool! So there you have it: a small Django app with a single model and view to serve zipfiles :)
 
-One enhancement would be to lock this down to users not logged in. Django makes this easy, just add this snippet at the top of `download` returning a 401 (not authorized):
+One enhancement would be to lock this down for users that are not logged in. Django makes this easy, just add this the following code at the top of the `download` function, returning a 401 (and _toast_ message) if the user is not authenticated:
 
-	if not request.user.is_authenticated:
-		return HttpResponse(status=401)
+	from django.contrib import messages
+	...
+	def download(request):
+		"""Download archive zip file of code snippets"""
+		response = HttpResponse(content_type='application/zip')
 
-(`request` already gets passed into the view by default)
+		# add this:
+    	if not request.user.is_authenticated:
+        	messages.error(request, 'Need to be logged in to access this endpoint')
+        	return HttpResponse(status=401)
+		# end
 
-And this is how the feature looks on the platform with real code snippets:
+		... 
+		... 
 
+The full code for this blog post is [here](http://github.com/pybites/blog_code/django-archive).
+
+---
+
+If you saved some code for Bite exercises [on our platform](http://codechalleng.es) you can check out this feature scrolling to the bottom of [the settings page](http://codechalleng.es/settings) ...
+
+I hope this was useful and let us know if there are other Django related topics you'd like to see covered here ...
 
 Keep Calm and Code in Python!
 
