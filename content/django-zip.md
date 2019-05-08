@@ -311,15 +311,11 @@ One enhancement would be to lock this down for users that are not logged in. Dja
 	...
 	def download(request):
 		"""Download archive zip file of code snippets"""
-		response = HttpResponse(content_type='application/zip')
 
-		# add this:
     	if not request.user.is_authenticated:
         	messages.error(request, 'Need to be logged in to access this endpoint')
         	return HttpResponse(status=401)
-		# end
 
-		... 
 		... 
 
 The full code for this blog post is [here](http://github.com/pybites/blog_code/django-archive).
