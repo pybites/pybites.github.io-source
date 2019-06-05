@@ -76,13 +76,13 @@ By offering an alternative solution.
 
 ##CodeChalleng.es for Recruiters
 
-We have a feature on the [codechalleng.es](https://codechalleng.es/bites/pricing/enterprise) platform that allows enterprise customers to create their own exercises (Bites) which they can then use for the purpose of running interviews.
+We have an existing feature on the [codechalleng.es](https://codechalleng.es/bites/pricing/enterprise) platform that allows enterprise customers to create their own exercises (Bites) which they can then use for the purpose of running interviews.
 
-After seeing the massive demand for this at US PyCon 2019 we were compelled to flesh this out.
+After seeing the massive demand for this at US PyCon 2019 we were compelled to flesh it out.
 
 We’ve created a new tier for Recruiters that comes along with some interesting features. More on this below.
 
-Let me discuss why this is so important to us first.
+Let me tell you why this is so important to me.
 
 
 ###My First Coding Interview
@@ -120,7 +120,7 @@ Our goal is to see roles become more accessible to the masses of programmers out
 
 Here’s what’s coming. Get excited.
 
-The Recruiting tier on codechalleng.es will include the following features:
+[The Recruiting tier](https://codechalleng.es/bites/pricing/enterprise) on codechalleng.es will include the following features:
 
 - The ability to create custom Bites (exercises) to interview Python job candidates.
 - Access to copy and use *our* library of Bites for the interviews.
@@ -135,6 +135,8 @@ The Recruiting tier on codechalleng.es will include the following features:
 With these new features and abilities we’re looking to change the coding interview game. This is a real step toward some positive change in this space.
 
 If you’re in the Python recruiting game, check it out and reach out. We’re keen to hear your thoughts.
+
+[You can check out the Recruiting Tier here](https://codechalleng.es/bites/pricing/enterprise).
 
 Keep Calm and Code in Python!
 
