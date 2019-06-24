@@ -1,0 +1,8 @@
+Title: Watermarking photos? "I can do that in Python!"
+Date: 2019-06-24 11:00
+Category: Concepts
+Tags: pillow, images, png, jpg, resize, watermarking, image manipulation, PIL
+Slug: pillow-intro
+Authors: Anthony Lister
+cover: images/featured/pb-guest.png
+Summary: My wife is setting up a business from home and wanted to protect photos of her work submitted to social media sites and the web in general. "I can do that using Python!", I exclaimed, thinking I had seen a tutorial showing how ages ago. Laptop open, I set to work and found my bookmarked tutorial. It was using OpenCV2 and even after ~70 odd days of my #100DaysOfCode journey, I didn't really understand it well enough to configure it myself if I had to make changes. (OpenCV is on my list of things to do after my #100Days). I remembered reading about Pillow, or PIL as it is sometimes known, and started to read the docs for it. Challenge to myself accepted!

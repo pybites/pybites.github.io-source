@@ -47,3 +47,4 @@ traitlets==4.3.1
 Unidecode==0.4.20
 wcwidth==0.1.7
 widgetsnbextension==1.2.6
+pillow
