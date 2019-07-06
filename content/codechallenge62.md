@@ -4,6 +4,7 @@ Category: Challenge
 Tags: code challenge, challenges, web scraping, data analysis, pycon, API, Python Alicante, PyDay, community
 Slug: codechallenge62
 Authors: PyBites
+Status: Draft
 Summary: Hey Pythonistas, in this special live Alicante PyDay challenge you will analyze Pycon speaker data, do we see more women going on stage? Enjoy!
 cover: images/featured/pb-challenge.png
 
