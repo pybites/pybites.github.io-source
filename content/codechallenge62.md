@@ -27,7 +27,7 @@ We'd like to keep to a PyCon theme so let's find out how many female speakers ha
 
 - Bonus 2: Plot the data with your favorite data viz library - did the % of female speakers at Pycon ES go up or down in the past years? How does it compare to the Pycon US/EU findings in Bonus 1?
 
-- PR your work [on our platform](https://codechalleng.es/challenges/) no later than .. of July midnight AoE.
+- [PR your work on our platform](https://codechalleng.es/challenges/62/) no later than 19th of July midnight AoE.
 
 - The Pybites / Python Alicante jury will only look at solutions from Ninjas that PR their work and include code for both bonus items. Submission speed and elegance will be looked at in particular. Winners will receive one of 3 prizes at random: 
 
