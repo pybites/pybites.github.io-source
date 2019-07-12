@@ -1,10 +1,9 @@
 Title: Code Challenge 62 - Women @ Pycon ES
-Date: 2019-07-08 12:00
+Date: 2019-07-12 14:00
 Category: Challenge
 Tags: code challenge, challenges, web scraping, data analysis, pycon, API, Python Alicante, PyDay, community
 Slug: codechallenge62
 Authors: PyBites
-Status: Draft
 Summary: Hey Pythonistas, in this special live Alicante PyDay challenge you will analyze Pycon speaker data, do we see more women going on stage? Enjoy!
 cover: images/featured/pb-challenge.png
 
@@ -12,7 +11,9 @@ cover: images/featured/pb-challenge.png
 
 Hey Pythonistas,
 
-This month we are holding a special challenge in collaboration with Python Alicante. Spin up your favorite editor and start coding in Python!
+Coming thursday, the 18th of July 2019, we will organize a special challenge in collaboration with Python Alicante.
+
+Spin up your favorite editor and start coding in Python!
 
 ## The Challenge
 
