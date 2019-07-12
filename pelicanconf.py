@@ -54,11 +54,11 @@ FAVICON = 'favicon.ico'
 # it also seems the only way to link to external resources (cc.es), see
 # https://appliedcaffeine.org/navbaritems.html
 LINKS = (
-  ('About', '/pages/about.html'),
   ('Articles', '/pages/articles.html'),
-  ('Code Challenges', '/pages/challenges.html'),
-  ('#100DaysOfCode', '/pages/courses.html'),
-  ('Python News', '/pages/news.html'),
+  ('Blog Challenges', '/pages/challenges.html'),
+  ('Python Exercises', 'https://codechalleng.es/'),
+  ('#100DaysOfCode', 'https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python'),
+  ('Join our Slack', 'https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU'),
   ('Search', '/pages/search.html'),
 )
 
