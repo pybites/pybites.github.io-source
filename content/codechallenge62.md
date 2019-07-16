@@ -11,9 +11,13 @@ cover: images/featured/pb-challenge.png
 
 Hey Pythonistas,
 
-Coming thursday, the 18th of July 2019, we will organize a special challenge in collaboration with Python Alicante.
+Coming Thursday, the 18th of July 2019, at 5 PM  CET, we will organize a special **live** challenge in collaboration with [Python Alicante](https://twitter.com/python_alc?lang=en).
 
-Spin up your favorite editor and start coding in Python!
+If you are in the vicinity of Alicante feel free to join us at the [University of Alicante Polytechnic](https://eps.ua.es).
+
+We also encourage you to join the **#pyday** channel on our [PyBites Slack](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU).
+
+Without further ado, spin up your favorite editor and start coding in Python!
 
 ## The Challenge
 
@@ -35,9 +39,9 @@ We'd like to keep to a PyCon theme so let's find out how many female speakers ha
 	- 6 months free access to our [200 Bites of Py exercises](https://codechalleng.es/bites/).
 	- Spend US$50 on [one or more Python books of their choice](https://www.amazon.com/s?k=python&i=stripbooks-intl-ship&ref=nb_sb_noss_2).
 
-We encourage you to join our [PyBites Slack Community](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU) and hop in the #pyday channel to collaborate. Please do not post solutions in this channel. 
+Last but not least: the intent is not to just focus on the _best_ solution. Rather, the priority for all should be to learn and improve your Python skills. 
 
-Last but not least: the intent is not to just focus on the _best_ solution. Rather, the priority for all should be to learn and improve your Python skills. Keep it cool like Fonzie and enjoy the ride!
+Keep it cool like Fonzie and enjoy the ride! Again our [**#pyday** channel](https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU) is great for asking help / mentoring, but please do not post any solutions there.
 
 Ideas for future challenges, channel ideas / requests can be submitted via [GH Issues](https://github.com/pybites/challenges/issues).
 
