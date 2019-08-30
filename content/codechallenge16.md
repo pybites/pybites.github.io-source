@@ -25,7 +25,7 @@ Lack inspiration? Here are some ideas to get you started:
 
 * Make a notification email of series being aired this week, using [TheTVDB](http://thetvdb.com) and/or movies premieres using [TheMovieDB API](https://www.themoviedb.org/?language=en).
 
-* Pull a bunch of movie metadata using [OMDb API](http://www.omdbapi.com/).
+* Pull a bunch of movie metadata using [OMDb API](http://www.omdbapi.com/). Maybe you want to use [TMDb](https://www.themoviedb.org/?language=en-US) instead, as one of our community members commented in his PR for this challenge: _TMDb seems more full featured and better supported_.
 
 * Check reddit for useful (Python) threads using the [their API](https://www.reddit.com/dev/api)
 
