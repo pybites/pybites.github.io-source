@@ -108,6 +108,14 @@ status: hidden
 </div>
 <br>
 
+<div id="giuseppecunsolo">
+        <h3><a name="giuseppecunsolo">Giuseppe Cunsolo</a></h3>
+		<p>Giuseppe is a GNU/Linux and Python enthusiast. He works as sysadmin/SRE and started coding relatively late in his career. His loves learning something new everyday and automating stuff. Follow his work on Twitter at <a href="https://twitter.com/markgreene74" target="_blank">@markgreene74</a>.</p>
+        <p>Giuseppe's <a href="https://pybit.es/author/giuseppe-cunsolo.html">posts</a>.</p>
+</div>
+<br>
+
+
 <hr>
 
 <p>And to read about PyBites co-creators Bob and Julian you can head over to our <a href="https://pybit.es/pages/about.html">about page</a>.</p>
