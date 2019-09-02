@@ -1,5 +1,5 @@
 Title: How I Followed my Heart, Conquered Fear and Became a Public Speaker
-Date: 2019-09-02 10:00
+Date: 2019-09-02 15:00
 Category: Learning
 Tags: public speaking, meetups, community, imposter syndrome, talks, soft skills
 Slug: guest-landing-speaking-gigs
