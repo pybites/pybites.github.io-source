@@ -1,12 +1,11 @@
 Title: How I Followed my Heart, Conquered Fear and Became a Public Speaker
-Date: 2019-09-02 15:00
+Date: 2019-09-04 9:15
 Category: Learning
 Tags: public speaking, meetups, community, imposter syndrome, talks, soft skills
 Slug: guest-landing-speaking-gigs
 Authors: Mridu Bhatnagar
 Summary: In this guest post Mridu shares with us how she got into public speaking, conquering fear and imposter syndrome. What did she learn? And what does she recommend for people starting out? Let's hear from Mridu!
 cover: images/featured/pb-guest.png
-status: draft
 
 In this guest post Mridu shares with us how she got into public speaking, conquering fear and imposter syndrome. What did she learn? And what does she recommend for people starting out? Let's hear from Mridu!
 
@@ -14,15 +13,15 @@ I am everyday thankful for having crossed paths with individuals who are passion
  
 ## How it started
  
-In one of the first community workshops, I crossed paths with another person who loves to teach probably every skill he has. I also met a couple of other passionate folks at a workshop who emphasized the impact of giving talks and mentorship.
+In one of the first community workshops, I crossed paths with another person who loves to teach probably every skill he has.
  
-Their positive influence helped me figure out a list of traits I wanted to possess. Traits, which neither a book, nor a podcast or school would ever be able to teach me. They could only be learned by practice and experience. Hence I neded to learn from these mentors!
+His positive influence helped me figure out a list of traits I wanted to possess. Traits, which neither a book, nor a podcast or school would ever be able to teach me. They could only be learned by practice and experience. Hence I needed to learn from him!
  
-In the workshop, a video was shared on what might be holding you back. It is always our *own thoughts*, self-made stories of what we can do, and (above all) what we cannot do. An important lesson was learned that day!
+He shared a video on what might be holding you back. It's actually always our _own thoughts_ that do, self-made stories of what we can do, and (above all) what we cannot do. I learned an important lesson that day!
  
-## Have no apprehensions, leap
+## Follow your heart. Have no apprehensions, leap
 
-*Follow your heart.* It was August 2018 when I truly felt I should become a speaker at community events. _Feeling_ like doing something is one thing, _doing_ it is a totally different game though. We all have fears. Even imagining being on the other side talking about tech was nothing less than a big leap!
+This was a quote that was shared as well. It was on me though to actually do something with it! It was August 2018 when I truly felt I should give back to the community by becoming a speaker at community events. I could do that by putting small amounts of efforts in to bridge the gap between academics and the corporate world. I could contribute to something I had seen my professor doing. _Feeling_ like doing something is one thing, _doing_ it though is a totally different ball game. We all have our fears. Even imagining being on the other side talking about tech was nothing less than a big leap!
  
 ## Imposter Syndrome?
 
@@ -76,12 +75,12 @@ That day though, the positive influence won over the feeble voice deep inside of
 - Your interest and your friend’s interest might be in sync, or not. Each one of us has different priorities. Go and meet like-minded people.
 
 ## Conclusion
- 
-Looking back on the journey, all I can say is that what is visible to you is a result of different perspectives, guidance and encouragement you get throughout the process. 
+
+Looking back, all I can say is that my journey so far is the result of guidance, encouragement and different perspectives I received throughout the process. 
 
 I have been blessed to be surrounded by people who loved to teach. Try to listen to these kind of people, then practice, learn and teach!
  
-Moving forward, I will be working on the feedback I get, experimenting, telling interesting tales, and of course learning more tech. And teach with the energy and enthusiasm of a teacher :o)
+Moving forward, I will be working on the feedback I get, perform more speaking engagements, and help organizing Pyladies Delhi and DjangoGirls Indore. I hope to bring smiles on a couple of more faces and of course to learn more tech. :o)
 
 ---
 
