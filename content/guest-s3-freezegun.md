@@ -1,12 +1,11 @@
 Title: How to Cleanup S3 Objects and Unittest it
-Date: 2019-09-02 11:00
+Date: 2019-09-02 21:00
 Category: Testing
 Tags: AWS, S3, freezegun, moto, boto3, testing, APIs, paginator, mock
 Slug: guest-cleanup-s3-objects
 Authors: Giuseppe Cunsolo
 Summary: In this guest post Giuseppe shares what he learned having to cleanup a large number of objects in an S3 bucket. He introduces us to some `boto3` as well as `moto` and `freezegun` he used to test his code. Enter Giuseppe ...
 cover: images/featured/pb-guest.png
-status: draft
 
 In this guest post Giuseppe shares what he learned having to cleanup a large number of objects in an S3 bucket. He introduces us to some `boto3` as well as `moto` and `freezegun` he used to test his code. Enter Giuseppe ...
 
@@ -63,4 +62,4 @@ Again you can find the code for this project [here](https://github.com/markgreen
 
 Keep Calm and Code in Python!
 
--- [Giusesppe](pages/guests.html#giuseppecunsolo)
+-- [Giuseppe](pages/guests.html#giuseppecunsolo)
