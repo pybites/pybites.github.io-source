@@ -13,8 +13,6 @@ I am everyday thankful for having crossed paths with individuals who are passion
  
 ## How it started
  
-In one of the first community workshops, I crossed paths with another person who loves to teach probably every skill he has.
- 
 His positive influence helped me figure out a list of traits I wanted to possess. Traits, which neither a book, nor a podcast or school would ever be able to teach me. They could only be learned by practice and experience. Hence I needed to learn from him!
  
 He shared a video on what might be holding you back. It's actually always our _own thoughts_ that do, self-made stories of what we can do, and (above all) what we cannot do. I learned an important lesson that day!
@@ -87,7 +85,7 @@ Looking back, all I can say is that my journey so far is the result of guidance,
 
 I have been blessed to be surrounded by people who loved to teach. Try to listen to these kind of people, then practice, learn and teach!
  
-Moving forward, I will be working on the feedback I get, perform more speaking engagements, and help organizing Pyladies Delhi and DjangoGirls Indore. I hope to bring smiles on a couple of more faces and of course to learn more tech. :o)
+Moving forward, I will be working on the feedback I get, perform more speaking engagements, and organize Pyladies Delhi and DjangoGirls Indore. I hope to bring smiles on a couple of more faces and of course to learn more tech. :o)
 
 ---
 
