@@ -33,11 +33,13 @@ Just for a moment, leaving all "what if" questions aside, exploring the communit
  
 A couple of weeks before the deadline I was opening a talk issue on GitHub for the PyData Delhi Meetup, I did a write-up on _Virtual Environment in Python_. I was fortunate that a colleague reached out to me that I must also include `virtualenvwrapper`, and a cousin recommended I'd cover `Pipenv`. With Introduction to APIs left unfinished, I opened a new issue for this topic. The talk got scheduled, so now the challenge was to come up with the full presentation on the subject!
  
-A part of the initial write-up would be part of the presentation together with the ideas I received from my readers. Things were still not very intuitive though. All I knew was, *when stuck, ask*. So, I reached out to the person I met at a community workshop, sharing my ideas. I took his inputs and finished preparing the presentation. He reviewed the flow and gave me tips on how I needed to practice. The day came, December 2018, my first tech talk at a community meetup!
+A part of the initial write-up would be part of the presentation together with the ideas I received from my readers. Things were still not very intuitive though. All I knew was, *when stuck, ask*. So, I reached out to the person I met at a community workshop, sharing my ideas. I took his inputs and finished preparing the presentation. He reviewed the flow and gave me tips on how I needed to practice.
+
+## My first tech talk
+
+The day came, December 2018, my first tech talk at a community meetup! Luckily positive influence won over the feeble voice deep inside of me which said I should fear the stage. I knew this would be the opportunity to pay it forward. This talk would teach me the traits I always wanted to have. This knowledge was thousand times more powerful than letting fear hold me back. My energy, enthusiasm and happiness during the event was different than usual. I had fun and from then on I started volunteering as a speaker every weekend, grabbing almost every opportunity I could.
  
-That day though, the positive influence won over the feeble voice deep inside of me which said I should fear the stage. I knew this would be the opportunity to pay it forward. This talk would teach me the traits I always wanted to have. This knowledge was thousand times more powerful than letting fear hold me back. My energy, enthusiasm and happiness during the event was different than usual. I had fun and from then on I started volunteering as a speaker every weekend, grabbing almost every opportunity I could.
- 
-8-9 months of weekend community meetups in, I submitted my first proposal to a technical conference (PyData Delhi 2019). And I got selected. It was not my goal from the start to deliver a talk at such a big conference. It happened the way it did though. At this point I wanted to invite the person to the conference who had seen my journey. The person who had made this impact, putting in efforts, adding a positive perspective to a lot of things.
+8-9 months of weekend community meetups in, I submitted my first proposal to a technical conference (PyData Delhi 2019). And I got selected. It was not my goal from the start to deliver a talk at such a big conference. It happened the way it did though. 
  
 ## Why is it worth getting over the fear and just get started?
 
@@ -47,7 +49,7 @@ That day though, the positive influence won over the feeble voice deep inside of
  
 3. You will be valued for your contribution. Out of the blue you will get some random messages of goodwill. 
  
-4. No syllabus is to be completed, no deadlines are to be met. 40 minutes are all yours to experiment. Talk on something you would love to share. Expect smiling faces after your session, thank you’s and happiness overall.
+4. 40 minutes are all yours to experiment. Talk about something you would love to share. Expect smiling faces after your session, thank you’s and happiness overall.
  
 5. You cannot make an impact on everyone in the classroom. This wisdom somebody I look up to shared with me. Can you make an impact on at least one person who actually needs it? This alone brings great satisfaction.
  
@@ -60,19 +62,24 @@ That day though, the positive influence won over the feeble voice deep inside of
 ## Answers to questions that might hold you back
  
 1. What if someone asks me a question and I don’t know the answer?
-- Accept it. No one knows it all.
+
+	- Accept it. No one knows it all.
  
 2. How will I manage the ones who have come to attend?
-- Here is the truth. One question that I am often asked is: "Are you really able to manage the class?". The answer is, there is nothing I actually need to manage. Unlike the traditional learning environments, meetups are places where only the ones enthusiastic to learn hang out.
+
+	- Here is the truth. One question that I am often asked is: "Are you really able to manage the class?". The answer is, there is nothing I actually need to manage. Unlike the traditional learning environments, meetups are places where only the ones enthusiastic to learn hang out.
  
 3. I have never spoken before. What if I am unable to do it?
-- "For everything there is a first time. But you need to get started!" - PyBites' founders Bob and Julian told me this the first time I was hesitant to write my first guest post for them. I have followed this piece of advice ever since. If a full-blown 40 minutes presentation seems intimidating, maybe a lightning talk of 10-15 minutes may be a better place to start. Remember, the community will be supportive, no one is perfect, and everyone is there to learn!
+
+	- "For everything there is a first time. But you need to get started!" - PyBites' founders Bob and Julian told me this the first time I was hesitant to write my first guest post for them. I have followed this piece of advice ever since. If a full-blown 40 minutes presentation seems intimidating, maybe a lightning talk of 10-15 minutes may be a better place to start. Remember, the community will be supportive, no one is perfect, and everyone is there to learn!
  
 4. What if the topic of my talk is too obvious, something everyone already knows?
-- I read somewhere "What might be obvious to you, might be alien to someone else". So, don’t decide on your own, get feedback from others and then decide.
+
+	- I read somewhere "What might be obvious to you, might be alien to someone else". So, don’t decide on your own, get feedback from others and then decide.
  
 5. I have no friends, or a group to go to a conference/meetup with? Will going alone be awkward?
-- Your interest and your friend’s interest might be in sync, or not. Each one of us has different priorities. Go and meet like-minded people.
+
+	- Your interest and your friend’s interest might be in sync, or not. Each one of us has different priorities. Go and meet like-minded people.
 
 ## Conclusion
 
