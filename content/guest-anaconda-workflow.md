@@ -4,10 +4,10 @@ Category: Tools
 Tags: Anaconda, Anaconda workflow, conda, pip, virtual environment, packages, packaging, distribution, configuration, YAML, python3.7
 Slug: guest-anaconda-workflow
 Authors: Martin Uribe
-summary: in this article martin provides an easy-to-follow reference guide of his anaconda workflow. he uses this to make his life easier managing the his python environment and package dependencies. and to great avail as you will soon discover. not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating anaconda, and setting environment variables. warning: this might get you on anaconda, and if you are already you probably want to keep this one nearby for reference. 
+summary: in this article martin provides an easy-to-follow reference guide of his anaconda workflow. he uses this to make his life easier managing the his python environment and package dependencies. and to great avail as you will soon discover. not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating anaconda, and setting environment variables. warning: this might get you on anaconda, and if you are already you probably want to keep this one nearby for reference.
 cover: images/featured/pb-article.png
 
-In this article Martin provides an easy-to-follow reference guide of his Anaconda workflow. He uses this to make his life easier managing the his Python environment and package dependencies. And to great avail as you will soon discover. Not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating Anaconda, and setting environment variables. Warning: this might get you on Anaconda, and if you are already you probably want to keep this one nearby for reference. Enter Martin: 
+In this article Martin provides an easy-to-follow reference guide of his Anaconda workflow. He uses this to make his life easier managing the his Python environment and package dependencies. And to great avail as you will soon discover. Not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating Anaconda, and setting environment variables. Warning: this might get you on Anaconda, and if you are already you probably want to keep this one nearby for reference. Enter Martin:
 
 # My Anaconda Workflow
 I've been working with [Anaconda](https://anaconda.org/) for a while now and I've been relatively pleased with it. I'll admit, there was a bit of a learning curve at first, but hopefully I can get you past that initial hump with this write-up. There are lots of commands and covering them all is better done in the official [documentation](https://docs.anaconda.com/anaconda-cloud/user-guide/).
@@ -82,15 +82,17 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 #
-# To activate this environment, use:
-# > source activate pybites
+# To activate this environment, use
 #
-# To deactivate an active environment, use:
-# > source deactivate
+#     $ conda activate pybites
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
 #
 ```
 
-The comments at the end show you how to activate/deactivate your new environment. I have an alias set in my shell's rc file that maps `activate` to `source activate` so that I don't have to type `source` all of the time.
+The comments at the end show you how to activate/deactivate your new environment.
 
 <a name="list_virtual_environments"></a>
 ## List Virtual Environments
@@ -698,6 +700,8 @@ The next time that you activate your environment, the script in *activate.d* run
 | Task | Command |
 | ----------- | -------:|
 | Create virtual environment | `conda create --name ENVNAME` |
+| Activate environment | `conda activate ENVNAME` |
+| Deactivate environment | `conda deactivate` |
 | List virtual environments | `conda env list` |
 | Remove virtual environment | `conda env remove --name ENVNAME` |
 | Search for packages | `conda search PACKAGENAME` |
