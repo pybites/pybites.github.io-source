@@ -121,7 +121,7 @@ For our [100 Days of Code](https://pybit.es/special-100days-of-code.html) I wrot
 			return resp
 		return wrapped
 
-Another caching example can be found [here](http://flask.pocoo.org/docs/0.12/patterns/viewdecorators/).
+Another caching example can be found [here](http://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/).
 
 For caching / memoization you also might want to learn about [@functools.lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache).
 
@@ -144,7 +144,7 @@ In [Never Forget A Friend’s Birthday with Python, Flask and Twilio](https://ww
 				return redirect(url_for('login'))
 		return wrap
 
-A similar example can be found [here](http://flask.pocoo.org/docs/0.12/patterns/viewdecorators/).
+A similar example can be found [here](http://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/).
 
 Distinguishing between public and private endpoints just takes one line of extra code. It's a nice way of abstracting away the access implementation so it does not clutter and distract from writing the main Flask code:
 
@@ -163,7 +163,7 @@ Distinguishing between public and private endpoints just takes one line of extra
 
 	* `@property` we covered [here](https://pybit.es/property-decorator.html) and it's an awesome decorator.
 	* `@staticmethod` and `@classmethod` you probably want to know about, they are well explained [in this Real Python article](https://realpython.com/blog/python/instance-class-and-static-methods-demystified/).
-	* Another important one to add to your toolbox is [contextlib.contextmanager](https://docs.python.org/2/library/contextlib.html) which we used for [code challenge #09](https://pybit.es/codechallenge09_review.html).
+	* Another important one to add to your toolbox is [contextlib.contextmanager](https://docs.python.org/3.7/library/contextlib.html#contextlib.contextmanager) which we used for [code challenge #09](https://pybit.es/codechallenge09_review.html).
 
 * In the previous section, right above `login_required` was the all too common `@app.route` Flask decorator. [This article](https://ains.co/blog/things-which-arent-magic-flask-part-1.html) explains *how Flask makes it possible to write "@app.route()" at the top of the function*. Another interesting discussion about this decorator and Flask's source in general can be found in [The Hitchhiker's Guide to Python](http://www.amazon.com/dp/1491933178/?tag=pyb0f-20).
 
