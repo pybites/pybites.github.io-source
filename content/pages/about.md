@@ -72,7 +72,7 @@ We'd like to hear from you ...
 
 * You can follow us on [Twitter](https://twitter.com/pybites), [FB](https://www.facebook.com/groups/pybites), [Github](https://github.com/pybites) or parse our [RSS feed](http://pybit.es/feeds/all.rss.xml).
 
-* You know a cool Python(ic) feature, product, idiom, etc? [Email us](mailto:pybitesblog@gmail.com) or log a <a href="https://github.com/pybites/blog_ideas/issues/new" target="_blank">Github issue</a>.
+* You know a cool Python(ic) feature, product, idiom, etc? [Email us](mailto:support@pybit.es) or log a <a href="https://github.com/pybites/blog_ideas/issues/new" target="_blank">Github issue</a>.
 
 
 ## Privacy Policy

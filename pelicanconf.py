@@ -58,7 +58,7 @@ LINKS = (
   ('Blog Challenges', '/pages/challenges.html'),
   ('Python Exercises', 'https://codechalleng.es/'),
   ('#100DaysOfCode', 'https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python'),
-  ('Join our Slack', 'https://join.slack.com/t/pybites/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU'),
+  ('Join our Slack', '/pages/community.html'),
   ('Search', '/pages/search.html'),
 )
 

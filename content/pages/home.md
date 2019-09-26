@@ -48,7 +48,7 @@ Programming is all about people, whether it be fellow developers who read your c
 ![bob + julian + community == pybites]({filename}/images/pybites-community.png){: .profile_pic }
 
 <div style="clear: left;"></div>
-If you are doing our challenges, you like this effort or you want to collaborate, send us an [email](mailto:pybitesblog@gmail.com) with a request to join our community on Slack. We also recommend you sign up for [our newsletter](http://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef) where you will receive a monthly update talking more Python with you.
+If you are doing our challenges, you like this effort or you want to collaborate, send us an [email](mailto:support@pybit.es) with a request to join our community on Slack. We also recommend you sign up for [our newsletter](http://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef) where you will receive a monthly update talking more Python with you.
 
 You can also reach out via: [Twitter](https://twitter.com/pybites) / [Github](https://github.com/pybites) / [Facebook](https://www.facebook.com/groups/pybites)
 
