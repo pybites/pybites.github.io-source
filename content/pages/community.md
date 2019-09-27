@@ -5,7 +5,7 @@ status: hidden
 
 <p>The greatest part of learning is sharing what you've learned with others.</p>
 
-<p>The best way to do this is to join our <strong>Slack Community</strong>. You can use <strong><a href="https://pybites.slack.com/join/shared_invite/enQtNDAxODc0MjEyODM2LTNiZjljNTI2NGJiNWI0MTRkNjY4YzQ1ZWU4MmQzNWQyN2Q4ZTQzMTk0NzkyZTRmMThlNmQzYTk5Y2Y5ZDM4NDU" target="_blank">this invite link</a></strong>.</p>
+<p>The best way to do this is to join our <strong>Slack Community</strong>. You can use <strong><a href="https://join.slack.com/t/pybites/shared_invite/enQtNzY4OTIwNzI4MTEzLWZkMmUxODQ0NmEyN2E0MWI3OGJiNDZmZjMxYTNlNGFiNjg2YjU5MjkyNWQ3ZDEyYjg5YWM2MDIzZjI5YTdkYzQ" target="_blank">this invite link</a></strong>.</p>
 
 <p>If for some reason this link stops working, please <strong><a href="mailto:support@pybit.es">email us</a></strong> and we will invite you manually.</p>
 
