@@ -22,7 +22,7 @@ Most of this challenge is open-ended. We really want to give you creative powers
 
 1. Create an account on [https://developer.marvel.com](https://developer.marvel.com). Upon confirming your email you sould get an API key.
 
-2. Write code to successfully make requests to the API, check out [the docs](https://developer.marvel.com/documentation/authorization).
+2. Write code to successfully make requests to the API, check out [the docs](https://developer.marvel.com/documentation/authorization) and the [boilerplate code provided in the challenge directory](https://github.com/pybites/challenges/tree/community/64) (as usual make your virtual env and install requirements / `requests` for starters!)
 
 3. To be good citizens make a function to download the [main 6 endpoints](https://developer.marvel.com/docs): _characters_, _comics_, _creators_, _events_, _series_, and _stories_. Save the JSON outputs in a data folder.
 
