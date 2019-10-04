@@ -24,7 +24,7 @@ Most of this challenge is open-ended. We really want to give you creative powers
 
 2. Write code to successfully make requests to the API, check out [the docs](https://developer.marvel.com/documentation/authorization) (_Authentication for Server-Side Applications_ section).
 
-3. To be good citizens make a function to cache the data to avoid repeated queries while working with the data. Even so to get the data the API uses pagination so to stay within the API's rate limit you ideally focus on [one endpoint](https://developer.marvel.com/docs) ( _characters_, _comics_, _creators_, _events_, _series_, or _stories_) to work with and save its JSON output locally.
+3. To be good citizens make a function to cache the data to avoid repeated queries while working with the data. To respect the API's rate limits you probably want to focus on just [one or a few endpoints](https://developer.marvel.com/docs) ( _characters_, _comics_, _creators_, _events_, _series_, or _stories_). We [provided a template](https://github.com/pybites/challenges/blob/community/64/marvel.py) with some hints to get started. Save the (JSON) data from the API locally and start analyzing ...
 
 4. Now the fun part, here we let you totally free: look through the data and tell us / our community a story. Make stunning data vizualizations of your collected data and share them on [our Slack](https://pybit.es/pages/community.html), in the #marvel channel. 
 
