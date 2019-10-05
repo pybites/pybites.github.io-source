@@ -46,7 +46,7 @@ Good luck and impress your fellow Pythonistas! Ideas for future challenges? use 
 
 At PyBites we're all about creating Python ninjas through challenges and real-world exercises. Read more about [our story](https://pybit.es/special-learning-python.html).
 
-We are happy and proud to share that we now hear monthly stories from our users that they're landing new Python jobs. For many this is a dream come true, especially as they're often landing roles with significantly higher salaries!
+We are happy and proud to share that we now hear monthly stories from our users that they're landing new Python jobs. For many, this is a dream come true, especially as they're often landing roles with significantly higher salaries!
 
 Our _[200 Bites of Py exercises](https://codechalleng.es/bites/)_ are geared toward instilling the habit of coding frequently, if not daily which will dramatically improve your Python and problem solving skills. This is __THE__ number one skill set necessary to becoming a linchpin in the industry and will enable you to crush it wherever codes need to be written.
 
