@@ -65,36 +65,30 @@ Now that we have my script, let's run flake8 against it.
 
 1. pip install the sucker:
 
-~~~~
-(venv) λ pip install flake8
-~~~~
+		(venv) λ pip install flake8
 
 2. Simply run `flake8` and point it at your script. Given `generic_emailer.py` is in my current directory I'd run the following:
 
-~~~~
-(venv) λ flake8 generic_emailer.py
-~~~~
+		(venv) λ flake8 generic_emailer.py
 
 3. In traditional CLI fashion, if you don't receive any output at all, you have no issues. In my case, yeah, nope. The output I receive when running Flake8 against my script is as follows:
 
-~~~~
-(venv) λ flake8 generic_emailer.py
-generic_emailer.py:2:1: E265 block comment should start with '# '
-generic_emailer.py:3:1: E265 block comment should start with '# '
-generic_emailer.py:4:1: E265 block comment should start with '# '
-generic_emailer.py:14:35: E262 inline comment should start with '# '
-generic_emailer.py:14:80: E501 line too long (86 > 79 characters)
-generic_emailer.py:27:50: E261 at least two spaces before inline comment
-generic_emailer.py:27:51: E262 inline comment should start with '# '
-generic_emailer.py:29:19: E261 at least two spaces before inline comment
-generic_emailer.py:29:20: E262 inline comment should start with '# '
-generic_emailer.py:31:23: E261 at least two spaces before inline comment
-generic_emailer.py:31:24: E262 inline comment should start with '# '
-generic_emailer.py:33:1: E265 block comment should start with '# '
-generic_emailer.py:38:1: E265 block comment should start with '# '
-generic_emailer.py:41:1: E265 block comment should start with '# '
-generic_emailer.py:44:1: E265 block comment should start with '# '
-~~~~
+		(venv) λ flake8 generic_emailer.py
+		generic_emailer.py:2:1: E265 block comment should start with '# '
+		generic_emailer.py:3:1: E265 block comment should start with '# '
+		generic_emailer.py:4:1: E265 block comment should start with '# '
+		generic_emailer.py:14:35: E262 inline comment should start with '# '
+		generic_emailer.py:14:80: E501 line too long (86 > 79 characters)
+		generic_emailer.py:27:50: E261 at least two spaces before inline comment
+		generic_emailer.py:27:51: E262 inline comment should start with '# '
+		generic_emailer.py:29:19: E261 at least two spaces before inline comment
+		generic_emailer.py:29:20: E262 inline comment should start with '# '
+		generic_emailer.py:31:23: E261 at least two spaces before inline comment
+		generic_emailer.py:31:24: E262 inline comment should start with '# '
+		generic_emailer.py:33:1: E265 block comment should start with '# '
+		generic_emailer.py:38:1: E265 block comment should start with '# '
+		generic_emailer.py:41:1: E265 block comment should start with '# '
+		generic_emailer.py:44:1: E265 block comment should start with '# '
 
 
 ##Analysing the Output
@@ -110,7 +104,7 @@ Now what does it all mean?
 Well, the majority of my violations here have to do with the spacing in front of my comments. 
 
 - The E265 violations are simply telling me to add a space after my `#` to satisfy standards.
-- E510 is saying I have too many characters in my line with the limit being 79.
+- E501 is saying I have too many characters in my line with the limit being 79.
 
 You can read the rest!
 
@@ -185,6 +179,17 @@ generic_emailer.py:31:24: E262 inline comment should start with '# '
 
 The rest of the errors are an easy clean up so I'll leave it here.
 
+Another way to ignore errors is [to add a `# noqa: E...`](http://flake8.pycqa.org/en/3.1.1/user/ignoring-errors.html#in-line-ignoring-errors), for example to ignore a very long comment you could add a `# noqa E501` to the end::
+
+	# In some cases, we might not want to ignore an error code (or class of error codes) for the entirety of our project. Instead, ...  # noqa E501
+
+Of course it's even better if you split the comment over multiple lines, but just to make a point.
+
+##Vim shortcut
+
+As highlighted in [5 Vim Tricks to Speed up Your Python Development](https://pybit.es/vim-tricks.html), a handy shortcut to invoke flake8 from within Vim, is adding this to your .vimrc:
+
+	autocmd FileType python map <buffer> ,f :call Flake8()<CR>
 
 ##Flake8 on PyBites CodeChallenges
 
