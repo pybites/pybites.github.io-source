@@ -1,7 +1,7 @@
 Title: PyCon ES 2019 Alicante Highlights
 Date: 2019-10-09 00:55
 Category: PyCon
-Tags: pycon, conference, learning, django, community, katas, marvel
+Tags: pycon, conference, learning, django, community, katas, marvel, coffee, rasa, chatbots, IoT, data artist, data visualization, pycamp, opensource, hacktoberfest, astronomy
 Slug: pycones-2019
 Authors: Bob
 Summary: Last weekend it was Pycon time again, my 6th one so far. This time closer to home: Alicante. I had an awesome time, meeting a lot of nice people, watching interesting talks and getting inspired overall to keep learning more Python. In this post I share 10 highlights, but keep in mind this is a selection only, there are [quite a few more talks](https://2019.es.pycon.org/horario/) I want to check out once they appear on Youtube ...
@@ -92,7 +92,7 @@ Katerin Perdom travelled all the way from Colombia to share her interesting grad
 
 <blockquote class="twitter-tweet"><p>Desde 🇨🇴 a <a href="https://twitter.com/@PyConES" target="_blank">@PyConES</a> <a href="https://twitter.com/search/#PyConEs19" target="_blank">#PyConEs19</a> <a href="https://twitter.com/search/#python" target="_blank">#python</a> <a href="https://twitter.com/search/#womenintech" target="_blank">#womenintech</a> <a href="https://twitter.com/search/#WomenWhoCode" target="_blank">#WomenWhoCode</a> <a href="https://t.co/gJb05037Cq" title="https://t.co/gJb05037Cq" target="_blank">https://t.co/gJb05037Cq</a></p>— Katerin Perdom (@Katerin_Perdom) <a href="https://twitter.com/Katerin_Perdom/status/1180470143765364740" data-datetime="2019-10-05T13:09:49+00:00">October 05, 2019</a></blockquote>
 
-Looking forward to see some code responsible for this project. Also another use case of Raspberry PI ... lot of IoT right now!
+Looking forward to see some code responsible for this project. Also another use case of Raspberry PI ... lot of IoT right now! There was another talk about [How to warm your house using Python](https://github.com/python-spain/PyConES-2019-data/blob/master/files/python-para-calentar-tu-casa/pycones-2019-reduced2.pdf), cool stuff!
 
 ## 8. Data artist
 
@@ -115,13 +115,13 @@ Or check this NBA graph out of 3-pointers scored (I cannot remember the player, 
 
 Apart from IoT and data science, one fascinating field is animation (kids movies). [Ilion animation studios](https://www.ilion.com/) (one of the sponsors), uses a lot of Python behind the scenes. Can't wait to watch their talk [Py2hollywood - usando Python en una producción de películas de animación](https://pycones19.sched.com/event/VdN7/py2hollywood-usando-python-en-una-produccion-de-peliculas-de-animacion-patrocinada?iframe=no&w=100%&sidebar=yes&bg=no) when [it becomes available](https://www.youtube.com/channel/UCyth_6hqft9a7B_thdwYyww/playlists).
 
-Another cool use case for Python are chatbots! I enjoyed Àngel Fernández's [talk about chatops](https://anxodio.github.io/chatops-101-pycones) which of course hit home given our (Slack) [karmabot](https://github.com/pybites/karmabot).
+Another cool use case for Python are chatbots! I enjoyed Àngel Fernández's [talk about chatops](https://anxodio.github.io/chatops-101-pycones) which of course hit home given our (Slack) [karmabot](https://github.com/pybites/karmabot). There was another talk about [creating chatbots using Rasa](https://github.com/python-spain/PyConES-2019-data/blob/master/files/desarrollo-de-chatbots-en-python-rasanlu/desarrollo-de-chatbots-con-rasa.pdf).
 
 <blockquote class="twitter-tweet"><p>Chatops 101 con opsdroid por <a href="https://twitter.com/@anxodio" target="_blank">@anxodio</a> en <a href="https://twitter.com/search/#PyConEs19" target="_blank">#PyConEs19</a> <a href="https://t.co/t2SPog5KOV" title="https://t.co/t2SPog5KOV" target="_blank">https://t.co/t2SPog5KOV</a></p>— Argentina en Python (@argenpython) <a href="https://twitter.com/argenpython/status/1180434428969066496" data-datetime="2019-10-05T10:47:53+00:00">October 05, 2019</a></blockquote>
 
-> Opsdroid is an open source ChatOps bot framework with the moto: Automate boring things!
+> Opsdroid is an open source ChatOps bot framework with the moto: Automate boring things! - [opsdroid project](https://github.com/opsdroid/opsdroid)!
 
-[More stuff to check out](https://github.com/opsdroid/opsdroid)!
+Or what about astronomy?! If that's your thing, check out: [Making a galaxy with Python](https://github.com/python-spain/PyConES-2019-data/blob/master/files/making-a-galaxy-with-python-merits-and-pitfalls-in-probabilistic-programming/vital-makingagalaxywithpython-pycones19-v2.pdf).
 
 ## 10. Experience of a Python core dev
 
