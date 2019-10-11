@@ -49,7 +49,7 @@ There were quite some Django talks:
 
 - Talk: [Django Admin inside Out](https://pycones19.sched.com/event/6984b035af826f45fd7b17fbae37906a) which led me to [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/) which I already could use for work :)
 
-- [Write your own DB backend in Django](https://www.slideshare.net/JavierAbada/extendiendo-django-cmo-escribir-tu-propio-backend-de-base-de-datos-exasol) - eagerly waiting for it [to appear on YouTube](https://www.youtube.com/channel/UCyth_6hqft9a7B_thdwYyww/playlists) for consumption (hey, the hallway + coffee were important too chuckle)
+- [Write your own DB backend in Django](https://www.slideshare.net/JavierAbada/extendiendo-django-cmo-escribir-tu-propio-backend-de-base-de-datos-exasol) - eagerly waiting for it [to appear on YouTube](https://www.youtube.com/channel/UCyth_6hqft9a7B_thdwYyww/playlists) for consumption (hey, the hallway + coffee were important too *chuckle*)
 
 - I did not attend the [Cooking Recipes API with Django Rest Framework](Cooking Recipes API with Django Rest Framework) workshop but good materials to have for reference ([pdf](https://github.com/python-spain/PyConES-2019-data/blob/master/files/cooking-recipes-api-using-django-rest-framework/cooking-recipes-api-with-drf-israel-saeta-perez.pdf)).
 
@@ -78,11 +78,11 @@ There were also quite some talks about testing:
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/@irenuchi" target="_blank">@irenuchi</a> es una auténtica Sra. Miyagi de las katas. Me ha encantado la charla y su manera de explicar las cosas. Y… <a href="https://t.co/cn4enM9vej" title="https://t.co/cn4enM9vej" target="_blank">https://t.co/cn4enM9vej</a></p>— Eun Young Cho-조은영 (@eunEsPlata) <a href="https://twitter.com/eunEsPlata/status/1180777592036745216" data-datetime="2019-10-06T09:31:30+00:00">October 06, 2019</a></blockquote>
 
-Talking about challenges, we released [blog code challenge #64 - PyCon ES 2019 Marvel Challenge](https://codechalleng.es/challenges/64/) for the occation. PR before the end of this week (Friday 11th of Oct. 2019 23.59 AoE) and you can win one of our prizes ...
+Talking about challenges, we released [blog code challenge #64 - PyCon ES 2019 Marvel Challenge](https://codechalleng.es/challenges/64/) for the occasion. PR before the end of this week (Friday 11th of Oct. 2019 23.59 AoE) and you can win one of our prizes ...
 
 ## 6. PyCamp
 
-Interesting initiative by [Manuel Kaufmann](https://twitter.com/reydelhumo) to get together a bunch of Pythonistas in Barcelona, spring 2020, to work on a couple of projects, Hackathon style. I will definitely keep an eye out for [this event](http://pycamp.es/), see if we can contribute / collaborate ...
+Interesting initiative by [Manuel Kaufmann](https://twitter.com/reydelhumo) to get together a bunch of Pythonistas in Barcelona, Spring 2020, to work on a couple of projects, Hackathon style. I will definitely keep an eye out for [this event](http://pycamp.es/), see if we can contribute / collaborate ...
 
 <blockquote class="twitter-tweet"><p>¿Todavía no sabés lo que es el PyCamp? Tomate 3 minutos para ver esta lightning talk en <a href="https://twitter.com/@PyConES" target="_blank">@PyConES</a> <a href="https://twitter.com/search/#PyConEs19" target="_blank">#PyConEs19</a> en dónd… <a href="https://t.co/Asy9CF8syh" title="https://t.co/Asy9CF8syh" target="_blank">https://t.co/Asy9CF8syh</a></p>— PyCamp España (@PyCampES) <a href="https://twitter.com/PyCampES/status/1181528573565382656" data-datetime="2019-10-08T11:15:38+00:00">October 08, 2019</a></blockquote>
 
@@ -92,7 +92,7 @@ Katerin Perdom travelled all the way from Colombia to share her interesting grad
 
 <blockquote class="twitter-tweet"><p>Desde 🇨🇴 a <a href="https://twitter.com/@PyConES" target="_blank">@PyConES</a> <a href="https://twitter.com/search/#PyConEs19" target="_blank">#PyConEs19</a> <a href="https://twitter.com/search/#python" target="_blank">#python</a> <a href="https://twitter.com/search/#womenintech" target="_blank">#womenintech</a> <a href="https://twitter.com/search/#WomenWhoCode" target="_blank">#WomenWhoCode</a> <a href="https://t.co/gJb05037Cq" title="https://t.co/gJb05037Cq" target="_blank">https://t.co/gJb05037Cq</a></p>— Katerin Perdom (@Katerin_Perdom) <a href="https://twitter.com/Katerin_Perdom/status/1180470143765364740" data-datetime="2019-10-05T13:09:49+00:00">October 05, 2019</a></blockquote>
 
-Looking forward to see some code responsible for this project. Also another use case of Raspberry PI ... lot of IoT right now! There was another talk about [How to warm your house using Python](https://github.com/python-spain/PyConES-2019-data/blob/master/files/python-para-calentar-tu-casa/pycones-2019-reduced2.pdf), cool stuff!
+Looking forward to seeing some code responsible for this project. Also another use case of Raspberry PI ... lot of IoT right now! There was another talk about [How to warm your house using Python](https://github.com/python-spain/PyConES-2019-data/blob/master/files/python-para-calentar-tu-casa/pycones-2019-reduced2.pdf), cool stuff! *(Pun intended mate? Hehe - Julian)*
 
 ## 8. Data artist
 
@@ -125,7 +125,7 @@ Or what about astronomy?! If that's your thing, check out: [Making a galaxy with
 
 ## 10. Experience of a Python core dev
 
-Awesome keynote by Pablo Galindo, really inspiring and humbling knowing it's the hard work of core devs and many contributors that makes that Python is in such a great shape / position today!
+Awesome keynote by Pablo Galindo, really inspiring and humbling knowing it's the hard work of core devs and many contributors that has Python in the great shape and position it's in today!
 
 <blockquote class="twitter-tweet"><p>Absolutely outstanding keynote by <a href="https://twitter.com/@pyblogsal" target="_blank">@pyblogsal</a> at <a href="https://twitter.com/search/#PyConES19." target="_blank">#PyConES19.</a> It touches me the passion and dedication he puts everyd… <a href="https://t.co/2t82BNPb7b" title="https://t.co/2t82BNPb7b" target="_blank">https://t.co/2t82BNPb7b</a></p>— Mario Corchero (@mariocj89) <a href="https://twitter.com/mariocj89/status/1180858701537857536" data-datetime="2019-10-06T14:53:48+00:00">October 06, 2019</a></blockquote>
 
@@ -135,11 +135,11 @@ If you can attend a Pycon, be it close or far from home, do it!
 
 You get so much out of just a few days:
 
-- Ideas and inspiration (stay hungry stay foolish).
+- Ideas and inspiration (stay hungry, stay foolish).
 
 - See what's moving in the industry.
 
-- Python / tools/ field / tech knowledge.
+- Python / tools / field / tech knowledge.
 
 - Meet awesome people and opportunities to collaborate.
 
