@@ -30,7 +30,7 @@ Most of this challenge is open-ended. We really want to give you creative powers
 
 5. [PR your work on our platform](https://codechalleng.es/challenges/64/) **before Friday <strike>11th</strike> 27th of Oct. 2019 23.59 [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)** (again remember, this also adds up for that [Hacktoberfest](https://hacktoberfest.digitalocean.com) t-shirt!)
 
-**update:** yes, we updated the deadline, it's a tough one and we really want to give you some more time to get an awesome PR in!
+**Update:** yes, we updated the deadline. It's a tough challenge and we really want to give you some more time to get an awesome PR in!
 
 ## Prizes
 
