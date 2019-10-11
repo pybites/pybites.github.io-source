@@ -28,7 +28,13 @@ Most of this challenge is open-ended. We really want to give you creative powers
 
 4. Now the fun part; here we let you be totally free: look through the data and tell us / our community a story. Make stunning data visualizations of your collected data and share them on [our Slack](https://pybit.es/pages/community.html), in the #marvel channel.
 
-5. [PR your work on our platform](https://codechalleng.es/challenges/64/) **before Friday 11th of Oct. 2019 23.59 [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)** (again remember, this also adds up for that [Hacktoberfest](https://hacktoberfest.digitalocean.com) t-shirt!). The 3 best submissions win one of our prizes:
+5. [PR your work on our platform](https://codechalleng.es/challenges/64/) **before Friday ~~11th~~ 27th of Oct. 2019 23.59 [AoE](https://en.wikipedia.org/wiki/Anywhere_on_Earth)** (again remember, this also adds up for that [Hacktoberfest](https://hacktoberfest.digitalocean.com) t-shirt!)
+
+**update:** yes, we updated the deadline, it's a tough one and we really want to give you some more time to get an awesome PR in!
+
+## Prizes
+
+The 3 best submissions win one of our prizes:
 
 	- a one year subscription to [our 220+ Bites of Py exercises](https://codechalleng.es/bites/)
 
