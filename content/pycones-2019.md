@@ -147,6 +147,12 @@ You get so much out of just a few days:
 
 Join [our slack](https://pybit.es/pages/community.html) and share your own Pycon experience in our #pycon channel, hope to salute you there ...
 
+## Next PyConES
+
+No more excuses to hold off a trip to Spain, next year PyCon Spain will be held in Granada!!
+
+<blockquote class="twitter-tweet"><p>RT <a href="https://twitter.com/@python_granada:" target="_blank">@python_granada:</a> ¡¡¡Sí!!! La <a href="https://twitter.com/search/#PyConEs20" target="_blank">#PyConEs20</a> se viene a Granada. Gracias al apoyo, sobre todo a la <a href="https://twitter.com/@OSLUGR" target="_blank">@OSLUGR</a> y... ¡nos vemos en 2020! <a href="https://t…" title="https://t…" target="_blank">https://t…</a></p>— OSL - UGR (@OSLUGR) <a href="https://twitter.com/OSLUGR/status/1180870645011423232" data-datetime="2019-10-06T15:41:15+00:00">October 06, 2019</a></blockquote>
+
 ---
 
 Keep Calm and Code in Python!
