@@ -30,10 +30,11 @@ When I saw the question, I thought I understood at least part of what was going 
 1. [Read or Experiment?](#read-or-experiment)
 1. [Avengers... Disassemble!](#avengers-disassemble)
 1. [Bonus Round: Outside Python](#bonus-round-outside-python)
+1. [Takeaways and Related Reading](#takeaways-and-related-reading)
 
 ## Simplify
 
-I mentioned that there were a few concepts colliding in the original question. It can be helpful to break down the code that we're trying to understand, and strip out as much noise as possible. So let's remove some concepts like:
+I mentioned that there were a few concepts colliding in the original question. It can be helpful to break down the code that we're trying to understand, and strip out as much noise as possible. So let's remove some elements like:
 
 * Pulling items from a list
 * Using 0 as a boolean (True/False) value
@@ -53,7 +54,7 @@ We still might not be able to explain what's going on yet, but we have a much mo
 
 ## Read or Experiment?
 
-The original question was about operator precedence in Python. One way to answer that question is to check the documentation. The sections on [operator precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence) and [comparison chaining](https://docs.python.org/3/reference/expressions.html#comparisons) are definitely helpful:
+The original question was about operator precedence in Python. One way to answer that question is to check the official Python documentation. The sections on [operator precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence) and [comparison chaining](https://docs.python.org/3/reference/expressions.html#comparisons) are definitely helpful:
 
 >Note that comparisons, membership tests, and identity tests, all have the same precedence and have a left-to-right chaining feature as described in the Comparisons section.
 
@@ -75,15 +76,15 @@ Python treats it like this:
 3 < 1 and 1 == False
 ```
 
-That makes things a lot clearer! Adding parentheses helps turn a series of chained comparisons into separate and explicitly ordered ones.
+That makes things a lot clearer! Adding parentheses helps turn a chained comparison into separate, explicitly ordered operations.
 
 But... what if we want to see that difference in action? What happens under the hood when we add those parentheses? We can't break down the code any more while preserving the behavior we're trying to observe, so `print()` statements or Python debuggers are of limited use. But we still have ways to look closer.
 
 ## Avengers... Disassemble!
 
-Python's [dis](https://docs.python.org/3/library/dis.html) module can help us break down Python code into the internal instructions ([bytecode](https://docs.python.org/3/glossary.html#term-bytecode)) that the CPython interpreter sees. That can be very helpful for understanding how Python code works. Reading disassembled output can be a bit rough at first, but fortunately we've already simplified the code!
+Python's [dis](https://docs.python.org/3/library/dis.html) module can help us break down Python code into the internal instructions ([bytecode](https://docs.python.org/3/glossary.html#term-bytecode)) that the CPython interpreter sees. That can be very helpful for understanding how Python code works. Reading disassembled output can be tricky at first, but you don't need to understand every detail to spot differences between two pieces of code.
 
-So let's look at some bytecode for these two comparisons. If this is your first time looking at disassembled Python code, don't panic! Just check out how much longer the first block of code is:
+So let's look at some bytecode for these two comparisons. And if this is your first time looking at disassembled Python code, don't panic! Focus on how much longer the first block of instructions is:
 
 ```python
 >>> import dis
@@ -112,7 +113,7 @@ So let's look at some bytecode for these two comparisons. If this is your first 
 
 Those extra instructions in the first block are the work Python has to do to manage [chained comparisons](https://docs.python.org/3/reference/expressions.html#comparisons). Have some fun playing with `dis` - send it some code you understand, or some that you don't (yet)!
 
-Here are some homespun animations that loop through the bytecode instructions, showing the evaluation stack along the way. If you want to follow along with a reference, [this section](https://docs.python.org/3/library/dis.html#python-bytecode-instructions) of the `dis` documentation explains how each instruction interacts with the evaluation stack.
+Here are some homespun animations that loop through the bytecode instructions, showing the evaluation stack along the way. If you want to follow along with a reference, [this section](https://docs.python.org/3/library/dis.html#python-bytecode-instructions) of the `dis` documentation explains how each bytecode instruction interacts with the evaluation stack.
 
 Here's the breakdown of `3 < 1 == False` ([full size]({filename}/images/comparison-anim-no-parens-full.gif)):
 
@@ -147,9 +148,17 @@ if not a < b:
     ...
 ```
 
-But if you're coming to Python from another language, Python's operator precedence rules can catch you off guard. In languages such as C, C#, Java and JavaScript, relational comparisons like `<` have higher precedence than equality checks like `==`. That makes `3 < 1 == false` functionally equivalent to `(3 < 1) == false`. [Rust](https://doc.rust-lang.org/1.22.1/reference/expressions/operator-expr.html#comparison-operators) sidesteps this confusion entirely by forcing you to be explicit:
+If you're coming to Python from another language though, Python's operator precedence rules can catch you off guard. In languages such as C, C#, Java and JavaScript, relational comparisons like `<` have higher precedence than equality checks like `==`. That makes `3 < 1 == false` functionally equivalent to `(3 < 1) == false`. [Rust](https://doc.rust-lang.org/1.22.1/reference/expressions/operator-expr.html#comparison-operators) sidesteps this confusion entirely by forcing you to be explicit:
 
 >Parentheses are required when chaining comparison operators. For example, the expression a == b == c is invalid and may be written as (a == b) == c.
+
+## Takeaways and Related Reading
+
+The thing I hope people take away from this post is that if you're not sure what a line of Python code is doing, try disassembling it. It can't hurt, and it might lead to some fun discoveries.
+
+The post that inspired _me_ to pull out the `dis` module more often was:
+
+[Weird Python Integers Part II: Constants in Bytecode](https://kate.io/blog/2017/08/24/python-constants-in-bytecode/) by Kate Murphy
 
 ---
 
