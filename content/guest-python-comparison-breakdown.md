@@ -1,5 +1,5 @@
 Title: Under the Hood: Python Comparison Breakdown
-Date: 2019-10-24 23:20
+Date: 2019-10-27 23:20
 Category: Concepts
 Tags: guest, learning, dis, precedence, chaining
 Slug: guest-python-comparison-breakdown

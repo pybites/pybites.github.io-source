@@ -115,6 +115,12 @@ status: hidden
 </div>
 <br>
 
+<div id="ajkerrigan">
+       <h3><a name="ajkerrigan"></a>AJ Kerrigan</h3>
+        <p>AJ tries to understand how things work (code, books, music, people...) and share things along the way. Come say hi on <a href="https://twitter.com/aj_kerrigan">Twitter</a>, <a href="https://dev.to/ajkerrigan">DEV</a> or <a href="https://github.com/ajkerrigan/">GitHub</a>. Tell him something interesting you learned, and he'll probably be as excited as you are!</p>
+       <p>AJ's <a href="https://pybit.es/author/aj-kerrigan.html">posts</a>.</p>
+</div>
+<br>
 
 <hr>
 
