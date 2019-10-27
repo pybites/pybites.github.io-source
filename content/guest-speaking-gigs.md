@@ -29,7 +29,7 @@ I am no different. The haunting feeling that every other person around me knows 
 
 Just for a moment, leaving all "what if" questions aside, exploring the communities around me, I sent a talk proposal titled "Introduction to APIs" to one of them. Little did I know about how to write a proposal so I just jotted down the ideas I had. While doing so again this feeling nagged me: "This topic seems vast, what should I talk about?". I procrastinated.
  
-A couple of weeks before the deadline I was opening a talk issue on GitHub for the PyData Delhi Meetup, I did a write-up on _Virtual Environment in Python_. I was fortunate that a colleague reached out to me that I must also include `virtualenvwrapper`, and a cousin recommended I'd cover `Pipenv`. With Introduction to APIs left unfinished, I opened a new issue for this topic. The talk got scheduled, so now the challenge was to come up with the full presentation on the subject!
+A couple of weeks before the deadline I was opening a talk issue on GitHub for the PyData Delhi Meetup, I did a write-up on _Virtual Environments in Python_. I was fortunate that a colleague reached out to me that I must also include `virtualenvwrapper`, and a cousin recommended I'd cover `Pipenv`. With Introduction to APIs left unfinished, I opened a new issue for this topic. The talk got scheduled, so now the challenge was to come up with the full presentation on the subject!
  
 A part of the initial write-up would be part of the presentation together with the ideas I received from my readers. Things were still not very intuitive though. All I knew was, *when stuck, ask*. So, I reached out to the person I met at a community workshop, sharing my ideas. I took his inputs and finished preparing the presentation. He reviewed the flow and gave me tips on how I needed to practice.
 
@@ -37,7 +37,7 @@ A part of the initial write-up would be part of the presentation together with t
 
 The day came, December 2018, my first tech talk at a community meetup! Luckily positive influence won over the feeble voice deep inside of me which said I should fear the stage. I knew this would be the opportunity to pay it forward. This talk would teach me the traits I always wanted to have. This knowledge was thousand times more powerful than letting fear hold me back. My energy, enthusiasm and happiness during the event was different than usual. I had fun and from then on I started volunteering as a speaker every weekend, grabbing almost every opportunity I could.
  
-8-9 months of weekend community meetups in, I submitted my first proposal to a technical conference (PyData Delhi 2019). And I got selected. It was not my goal from the start to deliver a talk at such a big conference. It happened the way it did though. 
+8-9 months of weekend community meetups in, I submitted my first proposal to a technical conference (PyData Delhi 2019). I got selected. It was not my goal from the start to deliver a talk at such a big conference. It happened the way it did though. 
  
 ## Why is it worth getting over the fear and just get started?
 
@@ -47,13 +47,13 @@ The day came, December 2018, my first tech talk at a community meetup! Luckily p
  
 3. You will be valued for your contribution. Out of the blue you will get some random messages of goodwill. 
  
-4. 40 minutes are all yours to experiment. Talk about something you would love to share. Expect smiling faces after your session, thank you’s and happiness overall.
+4. The 40 minutes are all yours to experiment. Talk about something you would love to share. Expect smiling faces after your session, thank you’s and happiness overall.
  
-5. You cannot make an impact on everyone in the classroom. This wisdom somebody I look up to shared with me. Can you make an impact on at least one person who actually needs it? This alone brings great satisfaction.
+5. You cannot make an impact on everyone in the classroom. This is wisdom that somebody I look up to shared with me. Can you make an impact on at least one person who actually needs it? This alone brings great satisfaction.
  
-6. Feedback always helps improving yourself, and make you prepare better for your next presentation.
+6. Feedback always helps with improving yourself and ensures you prepare better for your next presentation.
  
-7. When you make an attempt in explaining a concept to the rest you end up simplifying it in every possible manner so that it is easier to understand. And in that process you will actually learn a lot yourself.
+7. When you make an attempt to explain a concept to the rest, you end up simplifying it in every possible manner so that it is easier to understand. And in that process you will actually learn a lot yourself.
  
 8. Questions are all about visualising one concept from different angles. They make you understand the knowledge gaps you have. This is something that is often overlooked when working in isolation.
  
@@ -85,7 +85,7 @@ Looking back, all I can say is that my journey so far is the result of guidance,
 
 I have been blessed to be surrounded by people who loved to teach. Try to listen to these kind of people, then practice, learn and teach!
  
-Moving forward, I will be working on the feedback I get, perform more speaking engagements, and organize Pyladies Delhi and DjangoGirls Indore. I hope to bring smiles on a couple of more faces and of course to learn more tech. :o)
+Moving forward, I will be working on the feedback I get, perform more speaking engagements, and organize Pyladies Delhi and DjangoGirls Indore. I hope to bring smiles to a few more faces and of course to learn more tech. :o)
 
 ---
 
