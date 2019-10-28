@@ -166,4 +166,4 @@ Thanks for reading! Please leave any questions or comments below, especially if 
 
 Keep calm and code in Python!
 
--- AJ
+-- [AJ](pages/guests.html#ajkerrigan)
