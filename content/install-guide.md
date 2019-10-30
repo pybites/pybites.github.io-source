@@ -7,11 +7,13 @@ Authors: Pybites
 Summary: This is a short post for Julian to get this Pelican blog up and running on his system.
 cover: images/featured/pb-article.png
 
-This is also a useful ref for future collaborators ...
+This is also a useful reference for future collaborators ...
 
 We're open source right? ;)
 
-## Pybites install guide
+> Out of Date: Pelican now allows us to have a single repo for the source files *and* the generated HTML/output files. There's no longer a need to have two separate repos. This will need to be confirmed with the PyBites use case before updaitng the steps in this document.
+
+## PyBites install guide
 
 	# we have a src, output and theme (Flex) repo, use --recursive to get all
 	$ git clone --recursive https://github.com/pybites/pybites.github.io-src pybites
@@ -41,6 +43,6 @@ We're open source right? ;)
 
 As we have 2 repos: -src for code, -io for generated static content, ideally we want to automate the publishing to -io, so we can just focus on the main repo (-src). 
 
-Here is where [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) come into play. cd into .git/hooks and add below script, name it "pre-push", update your WORKING_DIR and chmod 755 it ...
+> We abandonded this hook, because it led to some conflicts / unnecessary work, not worth automating this step. We push manually to -src / -io these days.
 
-UPDATE: we abondonded this hook, because it led to some conflicts / unnecessary work, not worth automating this step. We push manually to -src / -io these days. 
+Here is where [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) come into play. cd into .git/hooks and add below script, name it "pre-push", update your WORKING_DIR and chmod 755 it ...
