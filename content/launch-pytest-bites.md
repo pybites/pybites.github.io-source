@@ -4,10 +4,10 @@ Category: Testing
 Tags: pytest, platform, feature, mutpy, mutation testing, fizzbuzz, fibonacci
 Slug: launch-pytest-bites
 Authors: Bob
-Summary: Writing test code is an essential skill. As PyBites we believe in writing code as being the only solution to becoming a master (Ninja) at programming. Same applies to test code. For that reason we extended our regular exercises with **Test Bites**. In this article you will read about the feature showcasing it on our first ever Test Bite. We also share some details around implementation and a challenge we hit getting it to work. Enjoy and start honing your testing skills today!
+Summary: Writing test code is an essential skill. As PyBites we believe writing code is the only solution to becoming a master (Ninja) at programming. The same applies to test code. For that reason we extended our regular exercises with **Test Bites**. In this article you will read about the feature showcasing it on our first ever Test Bite. We also share some details around implementation and a challenge we hit getting it to work. Enjoy and start honing your testing skills today!
 cover: images/featured/pb-article.png
 
-Writing test code is an essential skill. As PyBites we believe in writing code as being the only solution to becoming a master (Ninja) at programming. Same applies to test code. For that reason we extended our regular exercises with **Test Bites**.
+Writing test code is an essential skill. As PyBites we believe writing code is the only solution to becoming a master (Ninja) at programming. The same applies to test code. For that reason we extended our regular exercises with **Test Bites**.
 
 In this article you will read about the feature showcasing it on our first ever Test Bite. We also share some details around implementation and a challenge we hit getting it to work. Enjoy and start honing your testing skills today!
 
@@ -15,7 +15,7 @@ In this article you will read about the feature showcasing it on our first ever 
 
 It was one of the most requested features. Period.
 
-It is also a logical progression. So far coding our 200+ Bites of Py you have _looked_ at test code and _analyzed_ its output when Bites did not pass. This is of course very useful, but it does not teach you **how to write tests** for your code. Many users expressed how cool it would be if they could learn how to code in `pytest` on our platform. Well, now you can! We [just added 3 Test Bites](https://codechalleng.es/bites/catalogue) and stay tuned for more soon ...
+It is also a logical progression. So far, coding our 200+ Bites of Py you have _looked_ at test code and _analyzed_ its output when Bites did not pass. This is of course very useful, but it does not teach you **how to write tests** for your code. Many users expressed how cool it would be if they could learn how to code in `pytest` on our platform. Well, now you can! We [just added 3 Test Bites](https://codechalleng.es/bites/catalogue) - stay tuned for more soon ...
 
 ## How to test test code?
 
@@ -80,7 +80,7 @@ Here we run it manually on [Bite 05](https://codechalleng.es/bites/5/):
 		- timeout: 0 (0.0%)
 		[*] Coverage: 113 of 113 AST nodes (100.0%)
 
-To see the mutations it tried run it with the `-m` switch:
+To see the mutations it tried, run it with the `-m` switch:
 
 		$ mut.py --target names.py --unit-test test_names.py --runner pytest --coverage -m
 		[*] Start mutation process:
@@ -117,7 +117,7 @@ Pretty cool eh? There is also a good explanation and simple example on [MutPy's 
 
 ## How it works on our platform
 
-As said a Test Bite just looks like a regular Bite but instead of a given set of tests, you are provided with a code module that gets imported. You are asked to write one or more test functions:
+As previously mentioned, a Test Bite looks like a regular Bite but instead of a given set of tests, you are provided with a code module that gets imported. You are asked to write one or more test functions:
 
 ![test bite interface]({filename}/images/testbites/test-bite-interface1.png)
 
@@ -127,7 +127,7 @@ Let's write some code [for this Bite](https://codechalleng.es/bites/238/) and se
 
 ### Bad syntax
 
-It first checks if your test code runs, here I forgot a colon after my function declaration:
+It first checks if your test code runs. Here I forgot a colon after my function declaration:
 
 ![syntax error]({filename}/images/testbites/syntax-error1.png)
 
@@ -147,7 +147,7 @@ And it doesn't like that:
 
 ### Coverage
 
-Next step is code coverage. Our first go was [pytest-cov](https://pypi.org/project/pytest-cov/) but that would mean two commands to run on the code. If possible it's preferrable to use **one** tool. Luckily [MutPy](https://pypi.org/project/MutPy/) had us _covered_ (no pun intended). As long as we run it with the `--coverage` flag (see above).
+Next step is code coverage. Our initial thought was to use [pytest-cov](https://pypi.org/project/pytest-cov/) but that would mean two commands to run on the code. If possible it's preferable to use **one** tool. Luckily [MutPy](https://pypi.org/project/MutPy/) had us _covered_ (pun intended). As long as we run it with the `--coverage` flag (see above).
 
 The code so far has a coverage of 50%:
 
@@ -155,7 +155,7 @@ The code so far has a coverage of 50%:
 
 ### Mutation testing
 
-At this point we also see MutPy's mutation test output we included (using the `-m` switch). Again use _Show pytest output_ to reveal the full output. 
+At this point we also see MutPy's mutation test output that we included (using the `-m` switch). Again use _Show pytest output_ to reveal the full output. 
 
 As you can see MutPy started the _mutants generation and execution_. Sounds like a game no? It tries to _kill the mutants_ using your test code. 
 
@@ -165,7 +165,7 @@ More in a bit. Scrolling down you see the coverage for which it uses Python's [`
 
 ![coverage calculation]({filename}/images/testbites/coverage-calc.png)
 
-Deleting one of the lines we have written so far we see that not all muttans get killed. Scrolling down you see 2 survivors:
+Deleting one of the lines we have written so far we see that not all mutants get killed. Scrolling down you see 2 survivors:
 
 ![mutants fail]({filename}/images/testbites/mutants-fail.png)
 
@@ -195,7 +195,7 @@ Finally when you pass syntax + pytest run + 100% coverage + 100% mutation score 
 
 ![pass feedback]({filename}/images/testbites/pass-feedback.png)
 
-As we're still testing the waters of this feature / the MutPy module, minimum coverage and mutation required scores might go down a bit if the Test Bites become too challenging ...
+> As we're still testing the waters of this feature / the MutPy module, minimum coverage and mutation required scores might go down a bit if the Test Bites become too challenging ...
 
 ## Remember MutPy == multiprocessing
 
@@ -211,9 +211,9 @@ Just leaving this note here if somebody runs into this.
 
 We hope this will not only improve your `pytest` skills, but also **how you think about writing test code**.
 
-We are putting all Test Bites into a new / dedicated learning path soon, stay tuned ...
+We are putting all Test Bites into a new / dedicated learning path soon so stay tuned ...
 
-As always have fun and let us know if you have any feedback on this new feature, preferrably on Slack:
+As always have fun and let us know if you have any feedback on this new feature, preferably on Slack:
 
 - For platform questions use the [#codechallenges](https://pybites.slack.com/archives/C6BGDQQ3B) channel.
 
