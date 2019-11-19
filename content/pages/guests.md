@@ -122,6 +122,13 @@ status: hidden
 </div>
 <br>
 
+<div id="cedricsambre">
+	<h3><a name="cedricsambre"></a>Cedric Sambre</h3>
+	<p>Cedric has been passionate about computers for as long as he can remember. He started working as a service provider in 2010 and still loves doing what he does. When he's not working, soldering or programming, he likes to pick-up a guitar or play video games.</p>
+	<p>Cedric's <a href="https://pybit.es/author/cedric-sambre.html">posts</a>.</p>
+</div>
+<br>
+
 <hr>
 
 <p>And to read about PyBites co-creators Bob and Julian you can head over to our <a href="https://pybit.es/pages/about.html">about page</a>.</p>
