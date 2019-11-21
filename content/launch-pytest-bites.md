@@ -80,7 +80,7 @@ Here we run it manually on [Bite 05](https://codechalleng.es/bites/5/):
 		- timeout: 0 (0.0%)
 		[*] Coverage: 113 of 113 AST nodes (100.0%)
 
-To see the mutations it tried, run it with the `-m` switch:
+To see the mutations it tried, run it with the `-m` switch (**update**: we dropped the `--coverage` switch in favor of `pytest-cov`, more below ...):
 
 		$ mut.py --target names.py --unit-test test_names.py --runner pytest --coverage -m
 		[*] Start mutation process:
@@ -148,6 +148,12 @@ And it doesn't like that:
 ### Coverage
 
 Next step is code coverage. Our initial thought was to use [pytest-cov](https://pypi.org/project/pytest-cov/) but that would mean two commands to run on the code. If possible it's preferable to use **one** tool. Luckily [MutPy](https://pypi.org/project/MutPy/) had us _covered_ (pun intended). As long as we run it with the `--coverage` flag (see above).
+
+**Update 21st of Nov 2019**: MutPy's coverage was not that obvious and did not show the missing lines. So we DO use `pytest-cov` now making the output much better / didactic!
+
+![pytest-cov now available]({filename}/images/testbites/new_output.png)
+
+--
 
 The code so far has a coverage of 50%:
 
