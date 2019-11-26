@@ -11,6 +11,14 @@ The [Bites of Py](https://codechalleng.es/bites/) exercises from PyBites are a w
 
 Here are a few different ways I might work on a bite. I hope some of these are useful - please share your own habits in the comments!
 
+* [Quickstart: Working Directly in the Browser](#quickstart-working-directly-in-the-browser)
+* [Interactive Exploration: Using a REPL](#interactive-exploration-using-a-repl)
+* [Testing/Debugging Support: A Full-Featured Editor](#testingdebugging-support-a-full-featured-editor)
+  * [First-time setup](#first-time-setup)
+  * [Per-bite setup](#per-bite-setup)
+* [Test Bites: A New Spin](#test-bites-a-new-spin)
+* [There's No Wrong Way...](#theres-no-wrong-way)
+
 ### Quickstart: Working Directly in the Browser
 
 If a bite appears to have a short solution with reasonably straightforward test cases, I'll probably give it a try right in the browser. PyBites uses the [Ace](https://github.com/ajaxorg/ace) editor with some nice Python-specific additions such as:
