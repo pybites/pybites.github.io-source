@@ -39,12 +39,22 @@ As long as you have Python installed on your local machine, you'll be able to ru
 Depending on the bite you're working on, you might need to install additional packages. It pays to do a little bit of work to keep your PyBites environment isolated, by following steps like these:
 
 * Prepare a new `pybites` virtual environment. [Real Python](https://realpython.com/) has a [primer](https://realpython.com/python-virtual-environments-a-primer/) on virtual environments that can help you get started.
+
+```bash
+$ python -m venv pybites
+$ source pybites/bin/activate
+```
+
 * Install required packages inside your `pybites` virtual environment. The specific requirements vary from bite to bite, but here are some packages that you'll need eventually:
   * requests
   * bs4 - for BeautifulSoup/web scraping bites
   * feedparser
   * python-dateutil
   * pandas
+
+```bash
+$ python -m pip install requests bs4 feedparser python-dateutil pandas
+```
 
 Aside from running `python`, there are a number of alternative REPLs available. This includes local tools such as [bpython](https://bpython-interpreter.org/) or [ptpython](https://github.com/prompt-toolkit/ptpython/), and web-based options like [repl.it](https://repl.it/). My REPL of choice is the `ptipython` component of [ptpython](https://github.com/prompt-toolkit/ptpython/), with vim keybindings. This is mostly personal preference though, so find the experience that best fits your style!
 
@@ -61,6 +71,11 @@ When I set up my editor of choice (currently VS Code) to work on a bite, it goes
 #### First-time setup
 
 * Set up a directory where pybites code will live. For me, that is `~/code/pybites`.
+
+```bash
+mkdir -p ~/code/pybites
+```
+
 * Activate the same `pybites` virtual environment I created for use with my REPL. Microsoft has some [helpful guidance](https://code.visualstudio.com/docs/python/environments) for working with virtual environments in VS Code.
 
 <a name="per-bite-setup"></a>
@@ -76,6 +91,14 @@ With the setup steps done, I can [discover](https://code.visualstudio.com/docs/p
 ### Test Bites: A New Spin
 
 Now that [Test Bites](https://pybit.es/launch-pytest-bites.html) are live, there's an extra wrinkle to the coding and testing workflow. If you've already got a local environment set up though, you've already laid the groundwork for testing your tests! The last piece you need is the [MutPy](https://github.com/mutpy/mutpy) [mutation testing](https://en.wikipedia.org/wiki/Mutation_testing) tool. With that installed, you can run your mutation tests locally just like [Bob](author/bob.html) did in the [launch post](https://pybit.es/launch-pytest-bites.html)!
+
+<a name="related-reading"></a>
+### Related Reading
+
+Here are some ways that other PyBites community members get ready for practice:
+
+* [Martin](pages/guests.html#martinuribe) [manages his environments](guest-anaconda-workflow.html) with [Anaconda](https://anaconda.org/)
+* [J-O Eriksson](https://joeriksson.io/) [works from his iPad](https://joeriksson.io/blog/how-i-work-with-pybites-exercises-on-my-ipad/)
 
 <a name="theres-no-wrong-way"></a>
 ### There's No Wrong Way...
