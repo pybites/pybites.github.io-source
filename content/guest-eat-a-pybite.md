@@ -1,8 +1,8 @@
 Title: There's no wrong way... to eat a Bite of Py
 Date: 2019-11-27 12:02
 Category: Tips
-Tags: guest, pybites, learning, tips
-Slug: guest-eat-a-pybite
+Tags: guest, pybites, learning, tips, editors, setup, ptpython, bpython, mutpy
+Slug: guest-eat-a-bite-of-py
 Authors: AJ Kerrigan
 Summary: There are many ways to tackle a Bites of Py exercise, try them all!
 cover: images/featured/pb-guest.png
@@ -19,6 +19,7 @@ Here are a few different ways I might work on a bite. I hope some of these are u
 * [Test Bites: A New Spin](#test-bites-a-new-spin)
 * [There's No Wrong Way...](#theres-no-wrong-way)
 
+<a name="quickstart-working-directly-in-the-browser"></a>
 ### Quickstart: Working Directly in the Browser
 
 If a bite appears to have a short solution with reasonably straightforward test cases, I'll probably give it a try right in the browser. PyBites uses the [Ace](https://github.com/ajaxorg/ace) editor with some nice Python-specific additions such as:
@@ -30,6 +31,7 @@ This is a great way to start coding. It's pleasant to use, with no requirements 
 
 If a bite deals with concepts or modules that I'm not familiar with though, I often want to work more interactively. I'm not just submitting code for tests in that case - I'm also reading documentation and experimenting to get a better feel for the concepts in the bite. The browser editor falls short for me in those cases, so I might switch to...
 
+<a name="interactive-exploration-using-a-repl"></a>
 ### Interactive Exploration: Using a REPL
 
 As long as you have Python installed on your local machine, you'll be able to run `python` to launch the Python interpreter in interactive mode. This gives you a helpful REPL (Read-Eval-Print Loop) where you can explore, try things out, and see the output in real-time.
@@ -48,17 +50,20 @@ Aside from running `python`, there are a number of alternative REPLs available. 
 
 Sometimes after I've done some exploring and feel comfortable with the concepts of a bite, I find that I'm getting hung up with a few failing tests. In that case I am looking for a smoother flow for testing and debugging. I might jump over to...
 
+<a name="testingdebugging-support-a-full-featured-editor"></a>
 ### Testing/Debugging Support: A Full-Featured Editor
 
 With an editor like [PyCharm](https://www.jetbrains.com/pycharm/) or [VS Code](https://code.visualstudio.com/docs/languages/python), you can run the same tests locally that PyBites runs in the browser. However, locally you've got a quicker test cycle _and_ you can debug along the way!
 
 When I set up my editor of choice (currently VS Code) to work on a bite, it goes something like this:
 
+<a name="first-time-setup"></a>
 #### First-time setup
 
 * Set up a directory where pybites code will live. For me, that is `~/code/pybites`.
 * Activate the same `pybites` virtual environment I created for use with my REPL. Microsoft has some [helpful guidance](https://code.visualstudio.com/docs/python/environments) for working with virtual environments in VS Code.
 
+<a name="per-bite-setup"></a>
 #### Per-bite setup
 
 * Create a directory for the bite. In my case, code for bite `20` goes into `~/code/pybites/20`.
@@ -67,14 +72,16 @@ When I set up my editor of choice (currently VS Code) to work on a bite, it goes
 
 With the setup steps done, I can [discover](https://code.visualstudio.com/docs/python/testing#_test-discovery), [run](https://code.visualstudio.com/docs/python/testing#_run-tests) and [debug](https://code.visualstudio.com/docs/python/testing#_debug-tests) tests quickly.
 
+<a name="test-bites-a-new-spin"></a>
 ### Test Bites: A New Spin
 
 Now that [Test Bites](https://pybit.es/launch-pytest-bites.html) are live, there's an extra wrinkle to the coding and testing workflow. If you've already got a local environment set up though, you've already laid the groundwork for testing your tests! The last piece you need is the [MutPy](https://github.com/mutpy/mutpy) [mutation testing](https://en.wikipedia.org/wiki/Mutation_testing) tool. With that installed, you can run your mutation tests locally just like [Bob](author/bob.html) did in the [launch post](https://pybit.es/launch-pytest-bites.html)!
 
+<a name="theres-no-wrong-way"></a>
 ### There's No Wrong Way...
 
 If you're practicing on PyBites, you'll definitely be submitting code from the browser. But what other tools will help you along the way? The options are endless - so go nuts, find something that works for you, and share your own tips in the comments!
 
-Thanks for reading!
+Keep calm and code in Python!
 
 -- [AJ](pages/guests.html#ajkerrigan)

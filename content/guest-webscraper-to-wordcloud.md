@@ -1,7 +1,7 @@
 Title: From webscraper to wordcloud
 Date: 2019-11-27 12:01
 Category: Learning
-Tags: Scraping, BeautifulSoup, NLP, SpaCy, WordCloud, python3.7
+Tags: Scraping, BeautifulSoup, NLP, SpaCy, WordCloud, python3.7, webscraping, data, cookiewall, error handling, ajax
 Slug: guest-webscraper-to-wordcloud
 Authors: Cedric Sambre
 summary: After going through the web scraping learning paths, I decided to get my hands dirty and apply my freshly gathered knowledge on a real life project. I explain some difficulties you might encounter while scraping and I also show some libraries that can help you visualizing data you have obtained.  
@@ -114,13 +114,13 @@ Knowing there were 100's of comments on some of the articles in my article datas
 
 Back at the drawing board, we found the problem. A little thing called Ajax.
 
-Every article loaded a couple of comments, and a link that said 'Load more comments'. 
+Every article loaded a couple of comments, and a link that said 'Show more comments'. 
 ![Comments](images/scraper-wordcloud/recursive-comments.png)
 
 When clicking this link, an Ajax call was made to get the next comments.
 If there were more after that, a link was also included for the next ajax call.
 
-The solution came with Regex, as the Ajax links all were in a very specific pattern! 
+The solution came with _regex_, as the Ajax links all were in a very specific pattern! 
 
 Still, the recursiveness in the puzzle was a bit challenging.
 
@@ -193,7 +193,8 @@ def get_wordtype_dict(raw_comment_list):
     return wordtype_dict
 ```
 
-> Outputting the first 5 words for each token:
+Outputting the first 5 words for each token:
+
 ```text
 ADV:
     Eindelijk
@@ -271,12 +272,22 @@ For ALL the words, this resulted in:
 <a name="future"></a>
 ## Things for the future
 There's room for a lot of improvement in this project, below are some things I *really* want to get done and you might see me write about in the future:
+
 * Improve the spacy model for dutch/belgian POS Tagging.
+
 * This same project but with a more Object Oriented approach 
+
 * Fix the encoding issues in the scraper
+
 * Sentiment Analysis
+
 * Merging word groups by combining POS Tagging and Dependency Parsing 
 
-Thanks for reading, I hope you enjoyed it as much as I enjoyed writing it. 
-If you have any remarks or questions, you can likely find me on the [Pybites Slack Channel](https://pybites.slack.com) as 'Jarvis'.
+--
 
+Thanks for reading, I hope you enjoyed it as much as I enjoyed writing it. 
+If you have any remarks or questions, you can likely find me on the [Pybites Slack Channel](http://localhost:8000/pages/community.html) as 'Jarvis'.
+
+Keep calm and code in Python!
+
+-- [Cedric](pages/guests.html#cedricsambre)
