@@ -1,7 +1,7 @@
-Title: There's no wrong way... to eat a Bite of Py
+Title: There's no Wrong Way... to Eat a Bite of Py
 Date: 2019-11-27 12:02
 Category: Tips
-Tags: guest, pybites, learning, tips, editors, setup, ptpython, bpython, mutpy
+Tags: guest, pybites, platform, REPL, virtualenv, learning, tips, editors, setup, ptpython, bpython, mutpy, Anaconda, iPad
 Slug: guest-eat-a-bite-of-py
 Authors: AJ Kerrigan
 Summary: There are many ways to tackle a Bites of Py exercise, try them all!

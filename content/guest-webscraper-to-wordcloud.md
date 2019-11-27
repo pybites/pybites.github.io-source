@@ -1,4 +1,4 @@
-Title: From webscraper to wordcloud
+Title: From Webscraper to Wordcloud
 Date: 2019-11-27 12:01
 Category: Learning
 Tags: Scraping, BeautifulSoup, NLP, SpaCy, WordCloud, python3.7, webscraping, data, cookiewall, error handling, ajax
