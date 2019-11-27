@@ -14,6 +14,7 @@ SITELOGO = 'https://pybit.es/theme/img/profile.png'
 
 PATH = 'content'
 THEME = 'Flex'
+PYGMENTS_STYLE = 'github'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 
