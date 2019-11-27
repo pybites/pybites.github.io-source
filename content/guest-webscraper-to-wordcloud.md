@@ -1,13 +1,11 @@
 Title: From webscraper to wordcloud
-Date: 2019-11-19 22:40
+Date: 2019-11-27 12:01
 Category: Learning
 Tags: Scraping, BeautifulSoup, NLP, SpaCy, WordCloud, python3.7
 Slug: guest-webscraper-to-wordcloud
 Authors: Cedric Sambre
 summary: After going through the web scraping learning paths, I decided to get my hands dirty and apply my freshly gathered knowledge on a real life project. I explain some difficulties you might encounter while scraping and I also show some libraries that can help you visualizing data you have obtained.  
-cover: images/scraper-wordcloud/wordcloud-NOUN.png
-
-# From webscraper to wordcloud
+cover: images/featured/pb-guest.png
 
 Living in Belgium, I decided to scrape the Belgian newspaper [Het Laatste Nieuws](https://www.hln.be/).
 I wanted to know what kept people busy when reading the news, so I went for a collection of all comments on all articles in the news section.

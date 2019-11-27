@@ -1,5 +1,5 @@
-Title: There's no wrong way... to eat a PyBite
-Date: 2019-11-25 21:55
+Title: There's no wrong way... to eat a Bite of Py
+Date: 2019-11-27 12:02
 Category: Tips
 Tags: guest, pybites, learning, tips
 Slug: guest-eat-a-pybite
