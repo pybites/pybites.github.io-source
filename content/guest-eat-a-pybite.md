@@ -98,7 +98,7 @@ Now that [Test Bites](https://pybit.es/launch-pytest-bites.html) are live, there
 Here are some ways that other PyBites community members get ready for practice:
 
 * [Martin](pages/guests.html#martinuribe) [manages his environments](guest-anaconda-workflow.html) with [Anaconda](https://anaconda.org/)
-* [J-O Eriksson](https://joeriksson.io/) [works from his iPad](https://joeriksson.io/blog/how-i-work-with-pybites-exercises-on-my-ipad/)
+* [J-O Eriksson](https://joeriksson.io/) [works from his iPad](https://joeriksson.io/blog/new-ipados-and-new-improved-pybites-exercise-workflow/)
 
 <a name="theres-no-wrong-way"></a>
 ### There's No Wrong Way...
