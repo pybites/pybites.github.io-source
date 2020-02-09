@@ -117,7 +117,7 @@ status: hidden
 
 <div id="ajkerrigan">
        <h3><a name="ajkerrigan"></a>AJ Kerrigan</h3>
-        <p>AJ tries to understand how things work (code, books, music, people...) and share things along the way. Come say hi on <a href="https://twitter.com/aj_kerrigan">Twitter</a>, <a href="https://dev.to/ajkerrigan">DEV</a> or <a href="https://github.com/ajkerrigan/">GitHub</a>. Tell him something interesting you learned, and he'll probably be as excited as you are!</p>
+        <p>AJ tries to understand how things work (code, books, music, people...) and share things along the way. Come say hi on <a href="https://twitter.com/aj_kerrigan" target="_blank">Twitter</a>, <a href="https://dev.to/ajkerrigan" target="_blank">DEV</a> or <a href="https://github.com/ajkerrigan/" target="_blank">GitHub</a>. Tell him something interesting you learned, and he'll probably be as excited as you are!</p>
        <p>AJ's <a href="https://pybit.es/author/aj-kerrigan.html">posts</a>.</p>
 </div>
 <br>
@@ -126,6 +126,13 @@ status: hidden
 	<h3><a name="cedricsambre"></a>Cedric Sambre</h3>
 	<p>Cedric has been passionate about computers for as long as he can remember. He started working as a service provider in 2010 and still loves doing what he does. When he's not working, soldering or programming, he likes to pick-up a guitar or play video games.</p>
 	<p>Cedric's <a href="https://pybit.es/author/cedric-sambre.html">posts</a>.</p>
+</div>
+<br>
+
+<div id="harrison">
+	<h3><a name="harrisonmorgan"></a>Harrison Morgan</h3>
+	<p>Harrison has been a hobbyist Python programmer for several years. He enjoys learning, solving hard problems, and teaching others. When not programming, you can probably find him in a tree, reading a book. You can follow him on <a href="https://twitter.com/HarrisonMorgan8" target="_blank">Twitter</a> and <a href="#" target="_blank">GitHub</a>.</p>
+	<p>Harrison's <a href="https://pybit.es/author/harrison-morgan.html">posts</a>.</p>
 </div>
 <br>
 
