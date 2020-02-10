@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = 10
 ADD_THIS_ID = 'ra-5859c6a67eb6254d'
 DISQUS_SITENAME = 'http-pybit-es'
 GOOGLE_ANALYTICS = 'UA-89294245-1'
-CC_ES = True
+CC_ES = False
 
 STATIC_PATHS = [
     'images',
