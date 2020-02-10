@@ -129,9 +129,9 @@ status: hidden
 </div>
 <br>
 
-<div id="harrison">
+<div id="harrisonmorgan">
 	<h3><a name="harrisonmorgan"></a>Harrison Morgan</h3>
-	<p>Harrison has been a hobbyist Python programmer for several years. He enjoys learning, solving hard problems, and teaching others. When not programming, you can probably find him in a tree, reading a book. You can follow him on <a href="https://twitter.com/HarrisonMorgan8" target="_blank">Twitter</a> and <a href="#" target="_blank">GitHub</a>.</p>
+	<p>Harrison has been a hobbyist Python programmer for several years. He enjoys learning, solving hard problems, and teaching others. When not programming, you can probably find him in a tree, reading a book. You can follow him on <a href="https://twitter.com/HarrisonMorgan8" target="_blank">Twitter</a> and <a href="https://github.com/Harrison88" target="_blank">GitHub</a>.</p>
 	<p>Harrison's <a href="https://pybit.es/author/harrison-morgan.html">posts</a>.</p>
 </div>
 <br>
