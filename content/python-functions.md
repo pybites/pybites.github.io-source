@@ -129,4 +129,6 @@ Keep Calm and Code in Python!
 
 -- Julian
 
-> With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some direction or want to take your Python code and career to the next level, [schedule a call with us now](https://go.oncehub.com/pybites). We can help!
+<div class="ctaBox">
+	<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://go.oncehub.com/pybites" target="_blank">schedule a call with us now</a>. We can helpyou!</p>
+</div>
