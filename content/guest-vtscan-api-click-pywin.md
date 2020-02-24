@@ -1,8 +1,8 @@
 Title: Talking to API's and goodlooking tools
-Date: 2020-02-20 22:25
+Date: 2020-02-24 21:39
 Category: Learning
-Tags: click rest requests API win10toast directorywatcher pywin32 
-Slug: talking-to-apis-goodlooking-tools
+Tags: click, rest, requests, API, win10toast, directorywatcher, pywin32 
+Slug: guest-talking-to-apis-goodlooking-tools
 Authors: Cedric Sambre
 summary: I recently ran into a tool called VTScan that uses the VirusTotal API to scan a file and print the results. I figured I could write the same, and add some functionality!
 cover: images/featured/pb-guest.png
@@ -51,7 +51,7 @@ According to Wikipedia:
 So in human language, a REST API is just a web-based endpoint that we can send HTTP requests to.
 This endpoint in turn will query an application on the backend and will return some data based on what the application does.
 
-In our example, we will post a file to a webserver, and the webserver will send the file to a number of anti-virus.
+In our example, we will post a file to a webserver, and the webserver will send the file to a number of anti-virus scanners.
 The results of all these scans will be put in a report to indicate if a file has been flagged as a virus or not.
 
 <a name="api-key-protection"></a>
@@ -277,7 +277,7 @@ When you've done all that, you can come back here and we'll get to making things
 
 <a name="pretty-with-click"></a>
 ## Making pretty CLI Tools with Click
-If you've read my previous post, you know I like my data pretty!
+If you've read [my previous post](https://pybit.es/guest-webscraper-to-wordcloud.html), you know I like my data pretty!
 
 So the end goal in this chapter will be to go from this:
 
@@ -318,10 +318,14 @@ def _print_prefixed_message(character, color, message):
 ```
 
 *What's going on?*
-* We're echo'ing a bracket, without starting a new line
-* We print the characters that our `_print_prefix` received as an argument, together with the color of our choice, again no new line!
-* We close off our prefix with a closing bracket, still no new line!
-* In `_print_prefixed_message`, we simple call a function that does the above, and we add a message!
+
+- We're echo'ing a bracket, without starting a new line
+
+- We print the characters that our `_print_prefix` received as an argument, together with the color of our choice, again no new line!
+
+- We close off our prefix with a closing bracket, still no new line!
+
+- In `_print_prefixed_message`, we simple call a function that does the above, and we add a message!
 
 Instead of having to write 4 `click.secho's` every time I want to print a message, I can simply call:
 
@@ -343,7 +347,7 @@ def print_vendor_table(vendordict):
 ``` 
 
 And even here we have some duplicate pieces that we could optimize. Everything in these helpers could probably also have been done with decorators.
-But the code is functional, readable and works, so that's enough for now (feel free to submit a PR if you like!)
+But the code is functional, readable and works, so that's enough for now (feel free to [submit a PR](https://github.com/xWhiteListed/vt-scanner-python/pulls) if you like!)
 
 <a name="options-flags"></a>
 ### Options and flags
@@ -364,21 +368,31 @@ def main(**kwargs):
 ```
 
 *What's going on?*
-* First we're saying that the following function is our command, click automatically adds a `--help` to commands.
-* We add a number of `-X` or `--Y` options and specify their types and defaults.
-    * These options will be stored in `Y` (the second argument, stripped off `--`)
-* We define the `w` option as a *flag*, which means it can be set or unset, but no value has to be specified.
-    * For options we have to do `--option VALUE`
-    * For flags we can simply say `--flag` and it's toggled `True`
-* The wrappers pass the options as **named arguments** to `main`    
+- First we're saying that the following function is our command, click automatically adds a `--help` to commands.
+
+- We add a number of `-X` or `--Y` options and specify their types and defaults.
+
+    - These options will be stored in `Y` (the second argument, stripped off `--`)
+
+- We define the `w` option as a *flag*, which means it can be set or unset, but no value has to be specified.
+
+    - For options we have to do `--option VALUE`
+
+    - For flags we can simply say `--flag` and it's toggled `True`
+
+- The wrappers pass the options as **named arguments** to `main`    
 
 So if I now run:
 
 `python vtscan.py --file ./myfile.exe`
-* the `./myfile.exe` string is stored and passed to `main`
-* `directory` gets a default value of `None`
-* the `watcher` flag is set to it's default `False`
-* `main` receives this as `main(file="./myfile.exe", directory=None, watcher=False)`
+
+- the `./myfile.exe` string is stored and passed to `main`
+
+- `directory` gets a default value of `None`
+
+- the `watcher` flag is set to it's default `False`
+
+- `main` receives this as `main(file="./myfile.exe", directory=None, watcher=False)`
 
 This is where I'll close up around `click`, if you want to know more about this awesome library be sure to [read the docs](https://click.palletsprojects.com/en/7.x/)!
 
@@ -440,17 +454,28 @@ def main(**kwargs):
 ```
 
 *What's going on?*
-* First, I expose the global variable `is_watcher`
-    * global variables can always be read
-    * if you want to write to a global variable, your function needs a line that exposes it: `global is_watcher`
-    * depending on the -w flag, we want to toggle our watcher behavior.
-* Next, I get the function arguments out of `kwargs`, these all have a default value, so they all exist.
-    * If the watcher option is set:
-        * We change our global is_watcher (which is `False` by default)
-        * we verify that the directory was provided
-    * Otherwise we check that the file name was provided.
-* Now we're done with these extra prints and checks, we return the options to main.
-    * in main we check our watcher option and choose the correct path with it's respective argument.
+
+- First, I expose the global variable `is_watcher`
+
+    - global variables can always be read
+
+    - if you want to write to a global variable, your function needs a line that exposes it: `global is_watcher`
+
+    - depending on the -w flag, we want to toggle our watcher behavior.
+
+- Next, I get the function arguments out of `kwargs`, these all have a default value, so they all exist.
+
+    - If the watcher option is set:
+
+        - We change our global is_watcher (which is `False` by default)
+
+        - we verify that the directory was provided
+
+    - Otherwise we check that the file name was provided.
+
+- Now we're done with these extra prints and checks, we return the options to main.
+
+    - in main we check our watcher option and choose the correct path with it's respective argument.
 
 Here's an example use of that global variable to toggle some functionality:
 
@@ -518,19 +543,32 @@ def run_as_watcher(directory):
 ```
 
 *What's going on?*
-* First we create a handle `hDir` to a directory using `CreateFile` ([Win32 API Reference](http://winapi.freetechsecrets.com/win32/WIN32CreateFile.htm))
-    * Windows uses a lot of `handles` in it's API.
-    * `ReadDirectoryChangesW` needs this handle to check that directory for changes.
-    * We pass our directory function argument to the file handle along with the required permissions and options.
-* Next, an infinite loop is started, wrapped with a try catch to check for `CTRL+C`
-* This runs `ReadDirectoryChangesW` over and over again ([Microsoft docs](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw))
-    * When the contents of a directory changed, we check what change occured (Creation, deletion, modification)
-        * If a file is created, it means a new file got pasted.
-        * We're only interested in new files
-    * When a file gets pasted, the operating system first Creates an empty file, and then copies the original data to the copy.
-        * This means that when the CREATE action occurs, our file will be in use
-        * So we sleep for a bit so Windows has time to finish the paste (or we wont have read access)
-        * finally, we just run the `single_scan` part again, and our `is_watcher` global flag will take care of the rest!
+
+- First we create a handle `hDir` to a directory using `CreateFile` ([Win32 API Reference](http://winapi.freetechsecrets.com/win32/WIN32CreateFile.htm))
+
+    - Windows uses a lot of `handles` in it's API.
+
+    - `ReadDirectoryChangesW` needs this handle to check that directory for changes.
+
+    - We pass our directory function argument to the file handle along with the required permissions and options.
+
+- Next, an infinite loop is started, wrapped with a try catch to check for `CTRL+C`
+
+- This runs `ReadDirectoryChangesW` over and over again ([Microsoft docs](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw))
+
+    - When the contents of a directory changed, we check what change occured (Creation, deletion, modification)
+
+        - If a file is created, it means a new file got pasted.
+
+        - We're only interested in new files
+
+    - When a file gets pasted, the operating system first Creates an empty file, and then copies the original data to the copy.
+
+        - This means that when the CREATE action occurs, our file will be in use
+
+        - So we sleep for a bit so Windows has time to finish the paste (or we wont have read access)
+
+        - finally, we just run the `single_scan` part again, and our `is_watcher` global flag will take care of the rest!
 
 One way to replace `sleep` would be to wait for the file to no longer be in use, which is something for the future.
 Right now, the program will fail with an "Access Denied" if you paste a large file that takes longer than 1 second.
