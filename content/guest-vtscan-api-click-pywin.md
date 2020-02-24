@@ -78,15 +78,15 @@ Either way, hide those keys!
 
 1. Get a free API key at [VirusTotal](https://www.virustotal.com) by creating an account and getting the API-key from your profile:
 
-![API Menu](images/vtscan/virustotal-profile.png) 
+	![API Menu](images/vtscan/virustotal-profile.png) 
 
 2. Install the required packages:
 
-`pip3 install pywin32 click requests win10toast`
+	`pip3 install pywin32 click requests win10toast`
 
-(Optional):  Install the `colorama` package if you would like colors!
+3. (Optional) Install the `colorama` package if you would like colors!
 
-`pip3 install colorama`
+	`pip3 install colorama`
 
 This package is used by `click` to draw terminal colors, but `click` can run perfectly without it.
 
@@ -121,10 +121,14 @@ print(response.json())
 ```
 
 *What is going on?*
-* We make a very simple HTTP Post request to the VirusTotal scan endpoint.
-* As parameter, we send our API-key for authorization
-* We add the file to our body
-* We print out the response in json.
+
+- We make a very simple HTTP Post request to the VirusTotal scan endpoint.
+
+- As parameter, we send our API-key for authorization
+
+- We add the file to our body
+
+- We print out the response in json.
 
 Let's run this and have a look at the data that's being returned:
 
@@ -161,18 +165,24 @@ print(response.json())
 ```
 
 *What is going on?*
-* We make a HTTP GET Request to the `/file/report` endpoint this time.
-* As parameter, we send our API-key for authorization, and a resource.
-    * According to the documentation, this resource can be either and MD5, SHA1, SHA256 or Resource value
-    * We have obtained all these values above through the /file/scan endpoint
+
+- We make a HTTP GET Request to the `/file/report` endpoint this time.
+
+- As parameter, we send our API-key for authorization, and a resource.
+
+    - According to the documentation, this resource can be either and MD5, SHA1, SHA256 or Resource value
+
+    - We have obtained all these values above through the /file/scan endpoint
 
 <a name="api-chain-endpoints"></a>
 ### VT API: Chaining the endpoints together
 
 What we ultimately want to reach, is that we can run the script, pass a file to it, and it uploads and scans the file and prints the result without our intervention.
 By now we know a few things:
-* In order to get a scan report, we need to request the report  from `/file/report` based on the resource-id
-* We can get a resource-id for a file by posting the file to the `/file/scan` endpoint.
+
+- In order to get a scan report, we need to request the report  from `/file/report` based on the resource-id
+
+- We can get a resource-id for a file by posting the file to the `/file/scan` endpoint.
 
 Here's the function I wrote to contact the `/file/scan` endpoint:
 
@@ -251,15 +261,24 @@ def generate_scan_report(resource_id):
 			scan_date = json_resp[key]
 	print_scan_report(vendor_table, permalink, scan_date, result_message, total_scans, total_positives)
 ```
+
 *What is going on?*
-* Why are you updating dicts?
-    * We have to send a GET request, with our `resource`-id as a parameter
-    * We also (still) have to pass our API-key parameter!
-    * Parameters to `requests` POST or GET, are `dict`s.
-    * By calling `one_dict.update(other_dict)` we can put 2 dicts together into a single one!
-* After the parameter-preparation is done, we make our request and capture the response
-* We get some interesting values from the scan report
-* We pass it on to get printed (Next up!)
+
+- Why are you updating dicts?
+
+    - We have to send a GET request, with our `resource`-id as a parameter
+
+    - We also (still) have to pass our API-key parameter!
+
+    - Parameters to `requests` POST or GET, are `dict`s.
+
+    - By calling `one_dict.update(other_dict)` we can put 2 dicts together into a single one!
+
+- After the parameter-preparation is done, we make our request and capture the response
+
+- We get some interesting values from the scan report
+
+- We pass it on to get printed (Next up!)
 
 If we look at the data that's coming back from the report endpoint we see it looks like this:
 
