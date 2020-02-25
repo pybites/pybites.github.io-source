@@ -52,7 +52,7 @@ A branch is a copy of our local copy at a certain point in time that will go on 
 
 You can either create a branch while checking it out, or you can create a branch, and later switch to it with checkout.
 
-![Git branch](images/howtoguest/git_branching.png)
+![Git branch](images/howtoguest/github_branching.png)
 
 You might want to set your branch name to something that you can recognize. Some trees have a lot of branches!
 
