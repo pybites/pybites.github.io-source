@@ -61,7 +61,6 @@ I'm currently writing this "how to add guest articles", so I'll give mine an obv
 ![My branch name](images/howtoguest/howto_guest_article.png)
 
 Branching is mainly important when you want to verify that your new modifications are not conflicting with any new changes in the upstream.
-Some more about this later when we'll need it!
 
 ### 5. Writing your article
 
