@@ -136,6 +136,9 @@ status: hidden
 </div>
 <br>
 
+
+<!-- insert your new bio above this line -->
+
 <hr>
 
 <p>And to read about PyBites co-creators Bob and Julian you can head over to our <a href="https://pybit.es/pages/about.html">about page</a>.</p>
