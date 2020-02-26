@@ -1,9 +1,13 @@
-Title: Adding a guest article!
-status: hidden
+Title: How to Write a Guest Article for PyBites
+Date: 2020-02-26 08:21
+Category: Tools
+Tags: guest posting, blogging, contribution, PyBites, git, Github, pull request, fork
+Slug: guest-howto-write-guest-posts
+Authors: Cedric Sambre
+summary: Hello Everybody! In this article I'll run through the procedure of using git and github to submit a guest article to PyBites.
+cover: images/featured/pb-guest.png
 
-Hello Everybody!
-
-I'll run through the procedure of using git and github to submit a guest article to PyBites.
+Hello Everybody! In this article I'll run through the procedure of using git and github to submit a guest article to PyBites.
 
 ### 1. Forking the Repository
 
@@ -70,7 +74,7 @@ Guest articles are stored in [content](https://github.com/pybites/pybites.github
 
 ![Guest posts](images/howtoguest/guest_posts.png)
 
-I've added a template you can use [here](https://github.com/pybites/pybites.github.io-src/content/templates)
+I've added a template you can use [here](https://github.com/pybites/pybites.github.io-src/templates)
 
 It contains the structure of most articles and some basic markdown syntax as example, [here]'s another cheat sheet for if you want to do even more!
 
@@ -89,7 +93,7 @@ If this is your first article, you should also add a small bio in content/pages/
 
 `<!-- insert your new bio above this line -->`
 
-You can copy copy one from the guests file yourself, or use the [template](https://github.com/pybites/pybites.github.io-src/tree/master/content/templates) for the bio. 
+You can copy one from the guests file yourself, or use the [template](https://github.com/pybites/pybites.github.io-src/tree/master/templates) for the bio. 
 
 ### 6. Adding and commiting your changes
 
@@ -118,3 +122,11 @@ And you can create a pull request, which effectively asks the maintainer to pull
 
 Now all you have to do is wait for someone to review your changes and if they are approved, your article will soon be ours to read on the PyBites blog!
 
+--
+
+Thanks for reading, I hope you enjoyed it as much as I enjoyed writing it.
+If you have any remarks or questions, you can likely find me on the [Pybites Slack Channel](pages/community.html) as 'Jarvis'.
+
+Keep calm and code in Python!
+
+-- [Cedric](pages/guests.html#cedricsambre)
