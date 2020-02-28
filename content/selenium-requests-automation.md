@@ -4,10 +4,10 @@ Category: Modules
 Tags: Selenium, Requests, selenium-requests, Click, Pillow, automation, scraping, tools, PyBites Banner Generator, images
 Slug: selenium-requests-automation
 Authors: Bob
-Summary: In part 3 of the *PyBites Banner Generator* article series I show you how to automatically generate a banner with [Requests](http://docs.python-requests.org/en/master/) and [Selenium](http://selenium-python.readthedocs.io/index.html).
+Summary: In part 3 of the *PyBites Banner Generator* article series I show you how to automatically generate a banner with [Requests](https://requests.readthedocs.io/en/master/) and [Selenium](http://selenium-python.readthedocs.io/index.html).
 cover: images/featured/pb-article.png
 
-In part 3 of the *PyBites Banner Generator* article series I show you how to automatically generate a banner with [Requests](http://docs.python-requests.org/en/master/) and [Selenium](http://selenium-python.readthedocs.io/index.html).
+In part 3 of the *PyBites Banner Generator* article series I show you how to automatically generate a banner with [Requests](https://requests.readthedocs.io/en/master/) and [Selenium](http://selenium-python.readthedocs.io/index.html).
 
 For both scripts I used [Click](http://click.pocoo.org/5/) to build the CLI interface.
 
@@ -138,7 +138,7 @@ Now imagine using this script to automatically generate 100 banners from a csv f
 
 * Check them out if not done already: 
 
-	* [Requests](http://docs.python-requests.org/en/master/)
+	* [Requests](https://requests.readthedocs.io/en/master/)
 	* [Selenium](http://selenium-python.readthedocs.io/index.html)
 	* [Click](http://click.pocoo.org/5/)
 	
