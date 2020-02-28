@@ -20,7 +20,7 @@ Sounds exciting? You bet it is! Let's jump straight in!
 
 _If you want to follow along, the final code is [here](https://github.com/pybites/python_tips)_.
 
-First we make [a virtual environment](https://pybit.es/the-beauty-of-virtualenv.html) and `pip install` [the requirements](https://github.com/pybites/python_tips/requirements.txt) which include:
+First we make [a virtual environment](https://pybit.es/the-beauty-of-virtualenv.html) and `pip install` [the requirements](https://github.com/pybites/python_tips/blob/master/requirements.txt) which include:
 
 - `django` to build the app,
 - `django-rest` to build the API,
