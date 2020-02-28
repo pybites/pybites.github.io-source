@@ -74,7 +74,7 @@ Guest articles are stored in [content](https://github.com/pybites/pybites.github
 
 ![Guest posts](images/howtoguest/guest_posts.png)
 
-I've added a template you can use [here](https://github.com/pybites/pybites.github.io-src/templates)
+I've added a template you can use [here](https://github.com/pybites/pybites.github.io-src/tree/master/templates)
 
 It contains the structure of most articles and some basic markdown syntax as example, [here]'s another cheat sheet for if you want to do even more!
 
