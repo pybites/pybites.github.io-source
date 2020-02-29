@@ -38,7 +38,7 @@ For the web scraping you could use [Beautiful Soup](https://www.crummy.com/softw
 
 If you really want to challenge yourself, you could have the script login to your Packt account and click the 'Claim Your Free eBook', making it fully automated. It might not be easy because they use a [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA), but hey we like a good challenge, right? It would definitely be a useful tool and a good skill to add.
 
-Not sure where to start? Check out [this repo](https://github.com/igbt6/Packt-Publishing-Free-Learning) (Github is your friend!). They used [Requests / Session](http://docs.python-requests.org/en/master/user/advanced/#session-objects) to do this.
+Not sure where to start? Check out [this repo](https://github.com/igbt6/Packt-Publishing-Free-Learning) (Github is your friend!). They used [Requests / Session](https://requests.readthedocs.io/en/master/user/advanced/#session-objects) to do this.
 
 You could also look at [Selenium](http://selenium-python.readthedocs.io/) (here is [some 100days code](https://github.com/pybites/100DaysOfCode/blob/master/066/packt.py)).
 

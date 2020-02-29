@@ -35,7 +35,7 @@ The use of Python in many other areas, and the fact that devops is focused on br
 
 ## Compared with other languages
 
-While Python is certainly a leading choice, there is still the case for Ruby, where tools like [Chef](https://www.chef.io) and [puppet](https://puppet.com) are used. What both languages (as well as JS) can suffer from though is the need to install additional packages. I feel Python is a lot better as you can get most things done with the standard library. However external modules will often allow you to do things in an easier way, [requests](http://docs.python-requests.org/en/master/) being the perfect example.
+While Python is certainly a leading choice, there is still the case for Ruby, where tools like [Chef](https://www.chef.io) and [puppet](https://puppet.com) are used. What both languages (as well as JS) can suffer from though is the need to install additional packages. I feel Python is a lot better as you can get most things done with the standard library. However external modules will often allow you to do things in an easier way, [requests](https://requests.readthedocs.io/en/master/) being the perfect example.
 
 This difficulty has moved some developers into using [Golang](https://golang.org), which has many of the benefits of Python, but in addition can produce a _deployable_ component fast and capable of running on anything. This is certainly another language to look out for.
 
