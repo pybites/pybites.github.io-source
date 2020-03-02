@@ -39,15 +39,15 @@ This can be a monstrous goal. Depending where you are in your journey, it will a
 
 However if you translate this into smaller steps you'll be amazed how much more likely this becomes:
 
-- Read 30 min about SW development -> this can result in 10-15 books after a year.
+- Read 30 min about SW development a day -> this can result in 10-15 books after a year.
 
 - Write a post about SW / Python every week -> 52 articles on your blog after a year.
 
 - Connect with 3-5 people on IN every week -> 200-250 people added to your network after a year who see your stuff and might reach out.
 
-- Solve an exercise every day -> become a black belt on our platform in 6-12 months.
+- Solve a coding exercise every day -> become a black belt on our platform in 6-12 months.
 
-- Write 30 min of code towards your project every day -> have some high quality projects on your porfolio after 6-12 months.
+- Write 30 min of code towards your project every day -> have some high quality projects on your portfolio after 6-12 months.
 
 - Etc.
 
