@@ -1,12 +1,12 @@
 Title: Productivity Mondays - What Can You Do Consistently This Week?
-Date: 2020-03-02 9:00
+Date: 2020-03-02 7:40
 Category: Leadership
 Tags: productivity, lead, lag, lagging indicators, leading indicators, performance, exercise, confidence, control
 Slug: consistency
 Authors: Bob
 Summary: Last week I learned about lagging and leading indicators and why it's important to focus on the latter.
 
-> Consistency is what transforms average into excellence
+> Continuous effort - not strength or intelligence - is the key to unlocking our potential ― Winston S. Churchill.
 
 Last week I learned about lagging and leading indicators and why it's important to focus on the latter.
 
