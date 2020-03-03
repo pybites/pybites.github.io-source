@@ -53,6 +53,14 @@ Similarly avoid the + operator on strings:
 	# or better:
 	msg = 'hello {} world'.format(my_var)
 
+**Update 03/03/2020**: cleanest are _f-strings_:
+
+	msg = f'hello {my_var} world'
+
+They also are [fast](https://realpython.com/python-f-strings/#speed)!
+
+---
+
 Pythonic code is not only more readable but also faster, another example: 'if variable:' is faster than the un-idiomatic 'if variable == True:' 
 
 Other memory saving techniques:
