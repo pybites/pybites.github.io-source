@@ -102,9 +102,12 @@ Here I pulled a fork of `requests` and:
 
 - cd'd into the _requests_ subfolder and did a `pip install -e .` to install THIS modified version (as opposed the one on the net).
 
+		(venv) [bobbelderbos@imac test-debug]$ pip freeze|grep request
+		-e git+git@github.com:bbelderbos/requests.git@4bda7b66e7ece5be51b459edd046a70915b4792c#egg=requests
+
 And ... boom!
 
-	(venv) [bobbelderbos@imac test-debug]$ pytest test_script.py --timeout=3
+	(venv) [bobbelderbos@imac test-debug]$ pytest --timeout=3
 	===================================================================== test session starts ======================================================================
 	platform darwin -- Python 3.8.0, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
 	rootdir: /Users/bobbelderbos/code/test-debug
@@ -152,13 +155,13 @@ In that case you can swap the default `signal` of the `--timeout_method` flag fo
 
 This can be very useful for debugging:
 
-	(venv) [bobbelderbos@imac test-debug]$ pytest test_script.py --timeout=3 --timeout_method=thread
+	(venv) [bobbelderbos@imac test-debug]$ pytest --timeout=3 --timeout_method=thread
 	===================================================================== test session starts ======================================================================
 	platform darwin -- Python 3.8.0, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
 	rootdir: /Users/bobbelderbos/code/test-debug
 	plugins: timeout-1.3.4
 	timeout: 3.0s
-	timeout method: thread
+	timeout method: thread <== using "thread now"
 	timeout func_only: False
 	collected 2 items
 
@@ -166,18 +169,17 @@ This can be very useful for debugging:
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Timeout ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stack of MainThread (4523748800) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	File "/Users/bobbelderbos/code/test-debug/venv/bin/pytest", line 10, in <module>
-		sys.exit(main())
-		...
-		many more calls
-		...
+	...
+	many calls
+	...
+
 	File "/Users/bobbelderbos/code/test-debug/venv/lib/python3.8/site-packages/_pytest/python.py", line 184, in pytest_pyfunc_call
 		result = testfunction(**testargs)
 	File "/Users/bobbelderbos/code/test-debug/test_script.py", line 10, in test_call_api
 		resp = call_api()
 	File "/Users/bobbelderbos/code/test-debug/script.py", line 5, in call_api
 		requests.get('https://pybit.es')
-	File "/Users/bobbelderbos/code/test-debug/requests/requests/api.py", line 71, in get
+	File "/Users/bobbelderbos/Downloads/requests.org/requests/api.py", line 71, in get <== external module
 		time.sleep(60)
 
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Timeout ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
