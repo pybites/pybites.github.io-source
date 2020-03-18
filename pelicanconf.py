@@ -62,6 +62,7 @@ LINKS = (
   ('Join our Slack', '/pages/community.html'),
   ('Search', '/pages/search.html'),
 )
+LINKS_IN_NEW_TAB = 'external'
 
 # embed jupyter notebooks and post stats
 MARKUP = ('md', 'ipynb')
