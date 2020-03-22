@@ -4,7 +4,7 @@ Category: Tools
 Tags: pandas, excel, os
 Slug: using-python-to-check-for-file-changes-in-excel
 Authors: Ryan Cheley
-summary: TBD
+summary: Finding differences in excel files using Pandas!
 cover: images/featured/pb-guest.png
 
 
