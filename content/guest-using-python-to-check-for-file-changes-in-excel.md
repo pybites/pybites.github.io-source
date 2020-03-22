@@ -12,15 +12,17 @@ cover: images/featured/pb-guest.png
 ## Index
 * [The Problem](#problem)
 * [The Solution](#solution)
+* [Future Enhancement](#future)
+* [Conclusion](#conclusion)
 	
 <a name="problem"></a>
 ## The Problem 
 
-Data exchange in healthcare is ... harder than it needs to be. Not all partners in the healthcare arena understand and use technology to it's fullest beenfit. 
+Data exchange in healthcare is ... harder than it needs to be. Not all partners in the healthcare arena understand and use technology to it's fullest benefit. 
 
 Take for example several health plans which want data reported to them for CMS (Centers for Medicare and Medicaid Services) regulations. They will ask their 'delegated' groups to fill out ann excel file. As in, they expect you will *actually* fill out an excel file, either by manually entering the data OR by potentially copying and asting your data into their excel file. 
 
-They will also, quite frequently, change their mind on what they want AND the order in which they want the data to appear in their excle file. But there's no change log to tell you what (if anything has changed). All that you will get is an email which states, "Here's the new template to be used for report XYZ" ... even if this 'new' report is the same as the last one that was sent. 
+They will also, quite frequently, change their mind on what they want AND the order in which they want the data to appear in their excel file. But there's no change log to tell you what (if anything has changed). All that you will get is an email which states, "Here's the new template to be used for report XYZ" ... even if this 'new' report is the same as the last one that was sent. 
 
 Some solutions might be to use versioning software (like Git) but all they will do is tell you that there is a difference, not *what* the difference is. For example, when looking at a simple excel file added to git and using `git diff` you see:
 
@@ -136,6 +138,7 @@ Difference Found: person who made the request -> who made the request?
 
 ```
 
+<a name="future"></a>
 ## Future Enhancements
 
 In just using it a couple of times I've already spotted a couple of spots for enhancements:
@@ -144,6 +147,7 @@ In just using it a couple of times I've already spotted a couple of spots for en
 2. Read the tab names and allow user to select from command line
 
 
+<a name="conclusion"></a>
 ## Conclusion
 
 I'm looking forward to implementing the enhancemnts mentioned above to make this even more user friendly. In the mean time, it'll get the job done and allow someone on my team to work on something more interesting than comparing excel files to try (and hopefully find) differences.
