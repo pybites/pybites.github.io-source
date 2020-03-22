@@ -1,5 +1,5 @@
 Title: Using Python to Check for File Changes in Excel
-Date: Date: 2020-03-22 12:59
+Date: 2020-03-22 12:59
 Category: Tools
 Tags: pandas, excel, os
 Slug: using-python-to-check-for-file-changes-in-excel
