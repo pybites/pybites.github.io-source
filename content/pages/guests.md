@@ -136,6 +136,12 @@ status: hidden
 </div>
 <br>
 
+<div id="ryancheley">
+	<h3><a name="ryancheley"></a>Ryan Cheley</h3>
+	<p>Ryan uses code to solve problems. He enjoys writing Python, but to pay the bills he works for a Healthcare organization and manages people and goes to meetings day to day. You can follow him on <a href="https://twitter.com/ryancheley" target="_blank">Twitter</a>, <a href="https://github.com/ryancheleye" target="_blank">GitHub</a>, or his personal blog<a href="https://www.ryancheley.com" target="_blank_">RyanCheley.com</a>.</p>
+	<p>Harrison's <a href="https://pybit.es/author/ryan-cheley.html">posts</a>.</p>
+</div>
+<br>
 
 <!-- insert your new bio above this line -->
 
