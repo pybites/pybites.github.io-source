@@ -18,7 +18,7 @@ There is just too much stuff out there when it comes to being more productive. I
 
 3. Plan how long each task will take
 
-	Parkinson's law: a task will blow up in size as we alot time to it. So make sure each task has a dedicated time slot so you can actually complete it. This way you can guarantee you can cross those 6 tasks off your list and keep the momentum.
+	Parkinson's law: a task will blow up in size as we allot time to it. So make sure each task has a dedicated time slot so you can actually complete it. This way you can guarantee you can cross those 6 tasks off your list and keep the momentum.
 
 4. Assign each task a specific time slot
 
