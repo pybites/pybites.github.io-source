@@ -59,6 +59,7 @@ LINKS = (
   ('Blog Challenges', '/pages/challenges.html'),
   ('Python Exercises', 'https://codechalleng.es/'),
   ('#100DaysOfCode', 'https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python'),
+  ('Join our Slack', '/pages/community.html'),
   ('Search', '/pages/search.html'),
 )
 LINKS_IN_NEW_TAB = 'external'
