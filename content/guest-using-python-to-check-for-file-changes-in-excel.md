@@ -18,9 +18,9 @@ cover: images/featured/pb-guest.png
 <a name="problem"></a>
 ## The Problem 
 
-Data exchange in healthcare is ... harder than it needs to be. Not all partners in the healthcare arena understand and use technology to it's fullest benefit. 
+Data exchange in healthcare is ... harder than it needs to be. Not all partners in the healthcare arena understand and use technology to its fullest benefit. 
 
-Take for example several health plans which want data reported to them for CMS (Centers for Medicare and Medicaid Services) regulations. They will ask their 'delegated' groups to fill out ann excel file. As in, they expect you will *actually* fill out an excel file, either by manually entering the data OR by potentially copying and asting your data into their excel file. 
+Take for example several health plans which want data reported to them for CMS (Centers for Medicare and Medicaid Services) regulations. They will ask their 'delegated' groups to fill out an excel file. As in, they expect you will *actually* fill out an excel file, either by manually entering the data OR by potentially copying and pasting your data into their excel file. 
 
 They will also, quite frequently, change their mind on what they want AND the order in which they want the data to appear in their excel file. But there's no change log to tell you what (if anything has changed). All that you will get is an email which states, "Here's the new template to be used for report XYZ" ... even if this 'new' report is the same as the last one that was sent. 
 
