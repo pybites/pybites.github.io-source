@@ -98,8 +98,8 @@ NEST_FOOTER_HTML = ''
 NEST_LINKS_COLUMN_TITLE = u'Reach Out'
 LINKS = (
     ('Email', 'mailto:info@pybit.es'),
-    ('Twitter', '/archives.html'),
-    ('Facebook','http://facebook.com/pybites/'),
+    ('Twitter', 'https://twitter.com/pybites'),
+    ('Facebook','https://facebook.com/pybites'),
     ('Github','https://github.com/pybites'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
     ('YouTube','https://www.youtube.com/channel/UCBn-uKDGsRBfcB0lQeOB_gA'),
