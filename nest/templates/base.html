@@ -113,9 +113,9 @@
                     <div class="nav pull-right">
                         {% for title, link in MENUITEMS %}
                             {% if 'http://' in link or 'https://' in link %}
-                                <a {% if "Apply" in title %} style="background-color: #ba9926!important; border-radius: 5px;"{% endif %} href="{{ link }}" target="_blank">{{ title }}</a>
+                                <a href="{{ link }}" target="_blank">{{ title }}</a>
                             {% else %}
-                                <a href="{{ SITEURL }}{{ link }}">{{ title }}</a>
+                                <a {% if "Apply" in title %} style="background-color: #ba9926!important; border-radius: 5px;"{% endif %} href="{{ SITEURL }}{{ link }}">{{ title }}</a>
                             {% endif %}
                         {% endfor %}
                         {% if DISPLAY_PAGES_ON_MENU %}
