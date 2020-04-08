@@ -4,8 +4,11 @@ Category: Productivity
 Tags: tools, ag, vim, unix, kindle, shell, perl, bookcision
 Slug: developer-tools
 Authors: Bob
+Illustration: tools.jpg
 Summary: Last week I did a couple of shared screen sessions debugging and teaching. I paused and reflected on the tools I used and how I sharpened my sword over the years. 
 cover: images/featured/pb-article.png
+
+(Photo by Fleur on Unsplash)
 
 > Compound interest is the 8th wonder of the world. He who understands it, earns it; he who doesn’t, pays it. - Albert Einstein
 
@@ -122,6 +125,5 @@ Keep Calm and Code in Python!
 -- Bob
 
 <div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://go.oncehub.com/pybites" target="_blank">schedule a call with us now</a>. We can help you!</p>
+<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
 </div>
-

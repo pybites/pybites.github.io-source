@@ -61,5 +61,5 @@ Now go crush it this week and comment below which of these tips boosted your pro
 -- Bob
 
 <div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://go.oncehub.com/pybites" target="_blank">schedule a call with us now</a>. We can help you!</p>
+<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
 </div>
