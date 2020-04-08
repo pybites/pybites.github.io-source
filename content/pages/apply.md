@@ -3,7 +3,7 @@ status: hidden
 
 ## Book Your Private Python Career Consult With Bob & Julian Now!
 
-<iframe class="video" src="https://player.vimeo.com/video/392926929?embedparameter=value" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/392926929" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 ### PyBites Calendar
 
@@ -14,4 +14,7 @@ status: hidden
 
 ### Accelerate your progress and confidence
 
-<iframe class="video" src="https://player.vimeo.com/video/404595902?embedparameter=value" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/404595902" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
