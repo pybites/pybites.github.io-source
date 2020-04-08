@@ -1,6 +1,3 @@
-[submodule "Flex"]
-	path = Flex
-	url = https://github.com/pybites/Flex.git
 [submodule "output"]
 	path = output
 	url = https://github.com/pybites/pybites.github.io
