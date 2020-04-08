@@ -8,11 +8,11 @@ Seriously, Python is here to stay!
 
 (<a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">source</a>)
 
-In the last years we have grown our PyBites community producing amazing results for our clients.
+Over the last few years of growing our PyBites Community we've produced amazing results for our clients.
 
-We tackled common pitfalls like tutorial paralysis, improper sequencing and staying comfortable which won't get you anywhere.
+We've tackled common pitfalls like tutorial paralysis, improper sequencing and staying comfortable, which won't get you anywhere.
 
-And now, after a lot of iterations, we have our unique system which creates rockstar Python developers.
+And now, after many iterations, we have our unique system which creates rockstar Python developers.
 
 > I recently interviewed for this Data Engineer position. I was able to answer questions during their technical phone screening that I otherwise wouldn’t have known because I kept up with the bites. I ended up getting an offer and I start next Monday! - Marin M.
 
@@ -22,17 +22,17 @@ And now, after a lot of iterations, we have our unique system which creates rock
 
 However coding is just one part of the equation and often the "easier" bit to learn.
 
-In order to grow your career you need to be strategic as well, build up relevant portfolio assets, drop perfectionism and develop confidence in your abilities.
+In order to grow your career you need to also be strategic, build up relevant portfolio assets, drop perfectionism and develop confidence in your abilities.
 
 > I feel like I had a big win with confidence today. Today I reached out to the biggest python groups on Facebook to promote my message. Bob and Julian' s mentorship kicked my ass into gear and proved to me that my skills are ready to showcase to the world. Thanks Bob and Julian. - Ben M.
 
 ---
 
-Congratulations. You have come to the right place. We deeply care about helping other people succeed in their careers using Python and leadership skills.
+We deeply care about helping other people succeed in their careers using Python and leadership skills. If you care about being the best Python developer you can be and want to boost your career, congratulations. You're in the right place.
 
 #### Don't miss out
 
-Start to write more Pythonic code now using our <i>Become a Better Python Developer</i> cheat sheet. <a href="https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef" target="_blank">Subscribe to our list</a> and we'll send it to you as well as some training how to market yourself better as a developer (<a href="https://pybit.es/pages/privacy-policy">Privacy Policy</a>)
+Start to write more Pythonic code now using our <i>Become a Better Python Developer</i> cheat sheet. <a href="https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef" target="_blank">Subscribe to our list</a> and we'll send it to you as well as some training on how to market yourself better as a developer (<a href="https://pybit.es/pages/privacy-policy">Privacy Policy</a>).
 
 ## Wait, who are these guys?
 
