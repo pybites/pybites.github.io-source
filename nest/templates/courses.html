@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Courses') }}{% endblock %}
+
+{% block content %}
+<article class="single">
+
+  <header>
+    <h1>PyBites {{ _('Courses') }}</h1>
+  </header>
+  <p>At PyBites we love to teach what we learn! We gain immense satisfaction out of doing so but more importantly, it encourages us to keep learning!</p>
+  <p>Below you'll find the online courses we currently teach:</p>
+
+  <div class='project'>
+    <div class="ribbon right yellow">
+      <a href="https://talkpython.fm/100days?s=pybites" target="_blank">Go to Course</a>
+    </div>
+
+    <h3 class='projectHeader'>PyBites and Talk Python present: #100DaysOfCode in Python</h3>
+    <h4>Your perfect companion to take the 100 days of code challenge and be successful.</h4>
+
+    <blockquote>We highly recommend doing 100 Days no matter your level. Being aspiring or experienced programmers, you need deliberate practice. A lot of it. We can now assure you that 100Days makes you practice. And with the public commitment it's also a way to enhance your portfolio. - <a href="https://pybit.es/special-100days-of-code.html" target="_blank" class="smallLink">200 Days of PyBites, 100 Days of Code and our Next Project </a></blockquote>
+
+    <p><i>Help! I am doing the <a href="http://www.100daysofcode.com/" target="_blank">#100DaysOfCode</a>, how do I fill it with projects and exercises? Where do I even start?! </i></p>
+
+    <p>We are glad you asked! We partnered up with <a href="https://training.talkpython.fm" target="_blank">Talk Python</a> and made a dedicated <a href="https://talkpython.fm/100days?s=pybites"><i>100 Days of code in Python</i></a> course. Its hands-on nature will have you hit the ground running! Complete with <a href="https://codechalleng.es/100days/" target="_blank">integration into our Platform</a>, you get to track your progress and flex your coding muscles 💪</p>
+
+    <video width="100%" src="https://talk-python-courses.s3.amazonaws.com/transcoded/100daysofpython/00-intro/100days-marketing-video.mp4" controls="" poster="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/100days-course.png">Sorry, your browser doesn't support this video format. </video>
+
+    <h4>Still not convinced?</h4>
+    <p>Listen to Bob and Julian talk about their experience on the Talk Python podcast: </p>
+    <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/362616857&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+    <br>
+    <p style="font-size: 120%;">Ready to become a better Python 🐍 developer? <a href="https://talkpython.fm/100days?s=pybites" target="_blank">Buy the course on Talk Python</a></p>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class='project'>
+    <div class="ribbon right yellow">
+      <a href="https://www.udemy.com/python-flask-for-beginners/?couponCode=PYBITES" target="_blank">Go to Course</a>
+    </div>
+
+    <h3 class='projectHeader'>Python Flask for Beginners</h3>
+    <h4>Learn the skills to start converting your existing CLI scripts into functional web apps.</h4>
+    <ul>
+      <li>Lectures: 12</li>
+      <li>Video: 2 hours</li>
+      <li>Skill level: Beginner Level</li>
+    </ul>
+    <div class='courseContent'>
+      <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/pybites-courses-flask-1.png' alt='Course banner'></p>
+      <p>Python Flask for Beginners is a course that will teach you how to write your first Python Flask web application. It's a practical course: by the second video we'll have you writing your first, basic Flask app.</p>
+      <p>Continue on and you'll learn the concepts needed to start writing your own cool Flask applications. The best part is that you'll start to see how you can convert your existing CLI based scripts into functional web apps (warning: it's addictive!)</p>
+      <p>We do expect you to be somewhat competent in Python but don't stress if you're not an expert, we'll supply additional resources where needed. Enjoy!</p>
+    </div>
+  </div>
+
+</article>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Resources') }}{% endblock %}
+
+{% block content %}
+<article class="single">
+  <header>
+    <h1>{{ _('Resources') }}</h1>
+  </header>
+  <ul>
+      {% for article in dates %}
+      	<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+      {% endfor %}
+  </ul>
+</article>
+{% endblock %}

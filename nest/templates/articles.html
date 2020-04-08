@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Articles') }}{% endblock %}
+
+{% block content %}
+<article class="single">
+  <header>
+    <h1>{{ _('Articles') }}</h1>
+	<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/page-articles.png" alt='article logo' class='theme-logo'>
+  </header>
+
+  <p>Below is a listing of our articles. Every week we share our learning, one bite at the time. If you have anything you struggle with in Python, suggestions or ideas for topics please do <a href='https://twitter.com/intent/tweet?text=%40pybites'>reach out</a> ...</p>
+
+  <br>
+  <input type="text" id="search" onkeyup="filterList()" placeholder="Search Articles .." title="What do you like to learn about?"<>
+  <ul id='articleList' class='articleList'>
+      {% for article in dates %}
+		{% if 'codechallenge' not in article.url and 'twitter_digest' not in article.url %}
+      		<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+		{% endif %}
+      {% endfor %}
+  </ul>
+</article>
+{% endblock %}

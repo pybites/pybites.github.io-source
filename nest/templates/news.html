@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Python News') }}{% endblock %}
+
+{% block content %}
+<article class="single">
+  <header>
+    <h1>{{ _('Python News') }}</h1>
+	<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/page-news.png" alt='article logo' class='theme-logo'>
+  </header>
+
+  <p>Every weekend we will share a curated list of 15 cool things (mostly Python related) that we found / tweeted during the week.</p>
+
+  <p>You can submit news items to us <a href="https://twitter.com/intent/tweet?text=%40pybites">via Twitter</p>
+
+  <ul id='articleList' class='articleList'>
+      {% for article in dates %}
+		{% if 'twitter_digest' in article.url %}
+      		<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+		{% endif %}
+      {% endfor %}
+  </ul>
+</article>
+{% endblock %}

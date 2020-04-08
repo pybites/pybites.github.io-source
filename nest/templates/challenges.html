@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Code Challenges') }}{% endblock %}
+
+{% block content %}
+
+<article class="single">
+  <header>
+    <h1>{{ _('Code Challenges') }}</h1>
+    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/page-challenges.png" alt='article logo' class='theme-logo'>
+  </header>
+
+  <blockquote>The only way to learn a new programming language is by writing programs in it. - Dennis Ritchie</blockquote>
+
+  <p>We encourage you to join our Blog Code Challenges below because you learn so much more actually building working apps! </p>
+
+  <p>And we recommend you use our <a href="https://codechalleng.es/challenges/" target="_blank">Code Challenge Platform</a>* to work on them.</p>
+
+  <p>We do our best merging PRs into our repo's <a href="https://github.com/pybites/challenges/tree/community" target="_blank">Community branch</a> and we might highlight your PR in our review posts (soon a feature on our platform). We try to do a quick scan of your code but if you need a full code review <a href="https://codechalleng.es/inbox/new" target="_blank">contact us</a> with specific questions. </p>
+  
+  <p><small>* <a href="https://pybit.es/special-birthday-new-platform.html">PyBites 1 Year Special - Taking Python Code Challenges to the Next Level ...</a></small></p>
+
+  <h3>Need another format?</h3>
+  <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/pybites-ninja.png" alt='pybites ninja badge' class='theme-logo'>
+  <p>If you want to work on self-contained Python challenges, in the comfort of your browser, consider our <a href="https://codechalleng.es/via/pybites" target="_blank">Bites of Py</a> challenges instead. Become a PyBites Ninja and learn a ton of Python!</p>
+
+  <p>If you want to get structured/daily practice consider signing up for the #100DaysOfCode <a href="https://codechalleng.es/100days/" target="_blank">using our platform</a>. You will make a head start!</p>
+
+  <p>Enjoy and become a better Pythonista!</p>  
+  <pre>
+  >>> from pybites import Bob, Julian
+  Keep Calm and Code in Python!
+  </pre>
+
+  <br>
+  <input type="text" id="search" onkeyup="filterList()" placeholder="Search Challenges  .." title="What do you like to code?"<>
+  <ul id='articleList' class='articleList'>
+      {% for article in dates %}
+		{% if 'codechallenge' in article.url %}
+      		<li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+		{% endif %}
+      {% endfor %}
+  </ul>
+</article>
+{% endblock %}

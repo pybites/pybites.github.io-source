@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ _('Projects') }}{% endblock %}
+
+{% block content %}
+<article class="single">
+
+  <header>
+    <h1>PyBites {{ _('Projects') }}</h1>
+  </header>
+
+  <p>Here at PyBites we like to stretch ourselves. This means that we dedicate time not only to Articles, Challenges and News but also to additional projects. Below is a chronicling of <strong>our apps</strong> and the various <strong>100 Days Projects</strong> we've completed and are currently working on.</p> 
+
+  <div class='project'>
+    <div class="ribbon right purple">
+      <a href="https://github.com/pybites" target="_blank">Follow us on GitHub</a>
+    </div>
+
+    <h3 class='projectHeader'>0. PyBites Apps (first 100 days)</h3>
+
+    <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/pybites-projects.png' alt='Projects banner'></p>
+
+    <ul class='articleList'>
+      <li><a href='https://pybites-banners.herokuapp.com' target="_blank">PyBites Banner Generator</a> (<a href='https://pybit.es/pillow-banner-flask.html'>article</a>)</li>
+      <li><a href='https://pybites-notifier.herokuapp.com/' target="_blank">Django Registration App</a> (<a href='https://pybit.es/django-registration-app.html'>article</a>)</li>
+      <li><a href='http://pyplanet.herokuapp.com/pyplanet' target="_blank">PyPlanet Article Sharer App</a> (<a href='https://pybit.es/learning-django.html'>article</a>)</li>
+      <li><a href='https://github.com/pybites/karmabot' target="_blank">Slack Karma Bot</a> (<a href='https://pybit.es/slack-karma-bot.html'>article</a>)</li>
+      <li><a href='http://weathercompare.herokuapp.com/' target="_blank">Weather Compare App</a> (<a href='https://pybit.es/flask-simple-weather-app.html'>article</a>)</li>
+      <li><a href='https://github.com/pybites/deepwork' target="_blank">Deep Work Logger</a> (<a href='https://pybit.es/flask-api-part2.html'>article</a>)</li>
+    </ul>
+  </div><!-- end project -->
+
+
+  <div class='project'>
+    <div class="ribbon right purple">
+      <a href="https://github.com/pybites/100DaysOfCode" target="_blank">Fork me on GitHub</a>
+    </div>
+
+    <h3 class='projectHeader'>1. #100DaysOfCode (Mar 30, 2017 - Jul 07, 2017)</h3>
+
+    <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/100days-code.png' alt='Django logo'></p>
+
+    <ul class='articleList'>
+      <li><a href='https://pybit.es/special-100days.html'>Launch project: 100 Days of PyBites, 100 Days of Code</a></li>
+      <li><a href='https://pybit.es/special-100days-of-code.html'>Review article: 200 Days of PyBites, 100 Days of Code and our Next Project</a></li>
+      <li><a href='https://github.com/pybites/100DaysOfCode' target="_blank">Github repo</a></li>
+      <li><a href='https://github.com/pybites/100DaysOfCode/blob/master/LOG.md' target="_blank">Progress log of the 100 scripts</a></li>
+      <li><a href='https://pythonbytes.fm/episodes/show/34/the-real-threat-of-artificial-intelligence' target="_blank">Featured on Python Bytes Podcast</a></li>
+    </ul>
+  </div><!-- end project -->
+
+
+  <div class='project'>
+    <div class="ribbon right purple">
+      <a href="https://github.com/pybites/pybites-django" target="_blank">Fork me on GitHub</a>
+    </div>
+
+    <h3 class='projectHeader'>2. #100DaysOfDjango (Jul 08, 2017 - Oct 15, 2017)</h3>
+
+    <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/100days-django.png' alt='Django logo'></p>
+
+    <ul class='articleList'>
+      <li><a href='https://pybit.es/special-100days-of-code.html'>Announcing the project</a></li>
+      <li><a href='https://github.com/pybites/pyplanet-django' target="_blank">First app: PyPlanet Article Sharer</a></li>
+      <li><a href='https://github.com/pybites/django-registration' target="_blank">Django Registration App</a></li>
+      <li><a href='https://pbreadinglist.herokuapp.com' target="_blank">Pb Reading List (PCC 33)</a></li>
+      <li>Code Challenges: <a href='https://pybit.es/codechallenge29.html'>29</a>, <a href='https://pybit.es/codechallenge32.html'>32</a>, <a href='https://pybit.es/codechallenge33.html'>33</a>, <a href='https://pybit.es/codechallenge34.html'>34</a></li>
+      <li>Django Article tag: <a href='https://pybit.es/tag/100daysofdjango.html'>#100DaysOfDjango</a></li>
+    </ul>
+  </div><!-- end project -->
+
+
+  <div class='project'>
+    <div class="ribbon right purple">
+      <a href="https://codechalleng.es" target="_blank">Start Coding</a>
+    </div>
+
+    <h3 class='projectHeader'>3. PyBites Code Challenges Platform (Oct 16, 2017 - Jan 23, 2018)</h3>
+    <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/codechallenges.png' alt='Code Challenges banner'></p>
+
+    <ul class='articleList'>
+      <li><a href="https://codechalleng.es" target="_blank">PyBites Code Challenge Platform</a></li>
+      <li><a href="https://twitter.com/pybites/status/943811489537945600" target="_blank">Launch tweet</a></li>
+      <li><a href="https://pythonbytes.fm/episodes/show/59/instagram-disregards-python-s-gc-again" target="_blank">Featured on Python Bytes</a></li>
+    </ul>
+  </div><!-- end project -->
+
+
+  <div class='project'>
+    <div class="ribbon right purple">
+      <a href="https://github.com/pybites/100DaysOfCode/blob/master/LOG.md" target="_blank">Need inspiration?</a>
+    </div>
+
+    <h3 class='projectHeader'>4. PyBites Community #100DaysOfCode (Jan 24, 2017 - May 03, 2018)</h3>
+    <p><img src='{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/community.png' alt='Code Challenges banner'></p>
+
+    <ul class='articleList'>
+      <li><a href="https://twitter.com/pybites100" target="_blank">Mention @pybites100 in your #100DaysOfCode tweets!</a></li>
+    </ul>
+  </div><!-- end project -->
+
+
+</article>
+{% endblock %}
