@@ -1,4 +1,4 @@
-Title: Guests
+Title: PyBites Authors
 status: hidden
 
 <p>On this page we maintain short bios of all the awesome folks that have been guest posting on our site (in order of appearance):</p>
@@ -140,8 +140,6 @@ status: hidden
 <!-- insert your new bio above this line -->
 
 <hr>
-
-<p>And to read about PyBites co-creators Bob and Julian you can head over to our <a href="https://pybit.es/pages/about.html">about page</a>.</p>
 
 <script type="text/javascript">
     var author = window.location.hash.substr(1);
