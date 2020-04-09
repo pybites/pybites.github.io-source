@@ -136,6 +136,13 @@ status: hidden
 </div>
 <br>
 
+<div id="christoolivier">
+	<h3><a name="christoolivier"></a>Christo Olivier</h3>
+	<p>Christo has spent his entire career (and life) tinkering with computers. He currently builds out data engineering platforms in the cloud and can generally be found sneaking more Python into any project he touches. You can follow him on <a href="https://twitter.com/oli4twist" target="_blank">Twitter</a> and <a href="https://github.com/christo-olivier" target="_blank">GitHub</a>.</p>
+	<p>Christo's <a href="https://pybit.es/author/christo-olivier.html">posts</a>.</p>
+</div>
+<br>
+
 
 <!-- insert your new bio above this line -->
 
