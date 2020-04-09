@@ -85,7 +85,7 @@ Julian launched his [Flask Udemy Course](https://www.udemy.com/python-flask-for-
 
 ## 8. Some Stats
 
-We published [116 articles](https://pybit.es/pages/articles.html), [58 code challenges](https://pybit.es/pages/challenges.html) and [89 news digests](https://pybit.es/pages/news.html). Bob wrote guest articles on [dbader.org](https://dbader.org/blog/python-dunder-methods), [Twilio](https://www.twilio.com/blog/2017/09/never-forget-friends-birthday-python-flask-twilio.html) and [RealPython](https://realpython.com/building-a-simple-web-app-with-bottle-sqlalchemy-twitter-api/). We are grateful for the [13 guest authors](https://pybit.es/pages/guests.html) that wrote blog posts on PyBites, as well the [almost 400 (!) PRs that were submitted](https://github.com/pybites/challenges/pulls) for our challenges.
+We published [116 articles](https://pybit.es/archives.html), [58 code challenges](https://pybit.es/pages/challenges.html) and [89 news digests](https://pybit.es/pages/news.html). Bob wrote guest articles on [dbader.org](https://dbader.org/blog/python-dunder-methods), [Twilio](https://www.twilio.com/blog/2017/09/never-forget-friends-birthday-python-flask-twilio.html) and [RealPython](https://realpython.com/building-a-simple-web-app-with-bottle-sqlalchemy-twitter-api/). We are grateful for the [13 guest authors](https://pybit.es/pages/guests.html) that wrote blog posts on PyBites, as well the [almost 400 (!) PRs that were submitted](https://github.com/pybites/challenges/pulls) for our challenges.
 
 ![keeping it fun with PyBites Code Challenges]({filename}/images/pybites-code-challenges.jpg)
 
