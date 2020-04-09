@@ -83,9 +83,9 @@ NEST_ARCHIVES_HEADER_TITLE = 'Archive'
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [
     ('Community', '/pages/community.html'),
-    ('#100DaysOfCode', 'https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python'),
+    ('100 Days Of Code', 'https://codechalleng.es/100days/'),
     ('Search', '/pages/search.html'),
-    ('Privacy', '/pages/privacy-policy.html'),
+    ('Privacy Policy', '/pages/privacy-policy.html'),
 ]
 
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
