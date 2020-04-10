@@ -64,7 +64,7 @@ There is no shame in that. As [Tim Ferriss said](https://en.wikiquote.org/wiki/T
 
 Anybody performing on stage gets criticized at some point, it goes with the territory. It is hard to please everybody, nor should you want that.
 
-We wanted our blog to be original which meant not limiting ourselves to just [articles](http://pybit.es/pages/articles.html). We cannot exactly recall how the [code challenges](http://pybit.es/pages/challenges.html) came about, but we needed a vehicle to learn and it didn’t seem prevalent elsewhere. 
+We wanted our blog to be original which meant not limiting ourselves to just [articles](https://pybit.es/archives.html). We cannot exactly recall how the [code challenges](http://pybit.es/pages/challenges.html) came about, but we needed a vehicle to learn and it didn’t seem prevalent elsewhere. 
 
 We inquired HN again and [people seemed interested](https://news.ycombinator.com/item?id=13352447). Our weekly code challenges ([140 forks at this writing](https://github.com/pybites/challenges)) turned out to be a great way to learn from each other, and it is adding an interesting dynamic to our site and brand.
 

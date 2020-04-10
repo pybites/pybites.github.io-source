@@ -23,7 +23,7 @@ Steps:
 
 1. Make a virtual env and pip install `selenium` (and optionally `bs4` or `feedparser`), however this is not a requirement, use your favorite tools ...
 
-2. Scrape all [blog code challenge titles](https://pybit.es/pages/challenges.html) and/or [PyBites articles](https://pybit.es/pages/articles.html) (feel free to `feedparse` our [RSS feed](https://pybit.es/feeds/all.rss.xml)). We want images for all of them.
+2. Scrape all [blog code challenge titles](https://pybit.es/pages/challenges.html) and/or [PyBites articles](https://pybit.es/archives.html) (feel free to `feedparse` our [RSS feed](https://pybit.es/feeds/all.rss.xml)). We want images for all of them.
 
 3. Using Selenium navigate to [Featured Image Creator](http://projects.bobbelderbos.com/featured_image/) and set the canvas (button ID `#submitDimensions`) to your preferred size (e.g. w=300/ h=100, or w=200 / h=200)
 

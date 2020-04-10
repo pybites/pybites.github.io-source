@@ -25,7 +25,7 @@ Hi Pythonistas, a new week, a new 'bite' of Python coding! What movies are in th
 
 * If the resource has an API we recommend using it. One nice API for example is [The Movie DB](https://www.themoviedb.org/?language=en). Another open database you could use is [TheTVDB.com](http://thetvdb.com/).
 
-* If you want to make a bot, we did a few, just search [our articles](https://pybit.es/pages/articles.html).
+* If you want to make a bot, we did a few, just search [our articles](https://pybit.es/archives.html).
 
 ## Getting ready
 

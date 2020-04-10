@@ -2,11 +2,9 @@ Title: We Create Rockstar Python Developers
 Status: hidden
 save_as: index.html
 
-Seriously, Python is here to stay!
+Seriously, <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/" target="_blank">Python is here to stay</a>:
 
-<img src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/growth_major_languages-1-1400x1200.png" alt="Python is taking over graph" style="width: 400px;">
-
-(<a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">source</a>)
+<img src="images/python-growth.png" alt="Python is taking over graph" style="width: 600px;">
 
 Over the last few years of growing our PyBites Community we've produced amazing results for our clients.
 
