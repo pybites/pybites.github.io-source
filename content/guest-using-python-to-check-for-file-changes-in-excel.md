@@ -1,5 +1,5 @@
 Title: Using Python to Check for File Changes in Excel
-Date: 2020-03-22 12:59
+Date: 2020-04-10 22:53
 Category: Tools
 Tags: pandas, excel, os
 Slug: using-python-to-check-for-file-changes-in-excel
@@ -7,6 +7,7 @@ Authors: Ryan Cheley
 summary: Finding differences in excel files using Pandas!
 cover: images/featured/pb-guest.png
 
+Finding differences in excel files using Pandas!
 
 <!-- Indexes are always a good start! -->
 ## Index
@@ -37,7 +38,7 @@ This has been a giant pain in the butt for a while, but with the recent shelter-
 <a name="solution"></a>
 ## The Solution
 
-Why Python of Course! 
+Python of Course! 
 
 Only two libraries are needed to make the comparison: (1) os, (2) pandas
 
@@ -150,6 +151,6 @@ In just using it a couple of times I've already spotted a couple of spots for en
 <a name="conclusion"></a>
 ## Conclusion
 
-I'm looking forward to implementing the enhancemnts mentioned above to make this even more user friendly. In the mean time, it'll get the job done and allow someone on my team to work on something more interesting than comparing excel files to try (and hopefully find) differences.
+I'm looking forward to implementing the enhancements mentioned above to make this even more user friendly. In the mean time, it'll get the job done and allow someone on my team to work on something more interesting than comparing excel files to try (and hopefully find) differences.
 
 -- [Ryan](pages/guests.html#ryancheley)

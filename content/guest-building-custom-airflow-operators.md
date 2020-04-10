@@ -1,4 +1,11 @@
-# Introduction to Building Custom Apache Airflow Operators
+Title: Introduction to Building Custom Apache Airflow Operators
+Date: 2020-04-10 22:55
+Category: Data
+Tags: Apache, Airflow, data
+Slug: introduction-airflow
+Authors: Christo Olivier
+summary: If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
+cover: images/featured/pb-guest.png
 
 If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
 
@@ -13,8 +20,8 @@ This post is to help give you a starting point for building you own custom Airfl
 There are mainly three options available to you when you run into a situation for which an existing [Operator](https://airflow.apache.org/docs/stable/concepts.html#tasks) is not available:
 
 1. Write a custom Python function and call it via the PythonOperator.
-1. Call a Python application or external application via the BashOperator.
-1. Create a custom Operator that performs the functionality you require.
+2. Call a Python application or external application via the BashOperator.
+3. Create a custom Operator that performs the functionality you require.
 
 Of the three methods only option 3 integrates into Airflow's core. It allows you to make use of all of the functionality Airflow provides.
 
@@ -41,7 +48,6 @@ An _Operator_ contains all of the "business" logic of what will be a Task in one
 
 It should never communicate with the service, API or system interface directly but should always do that through the _hook_.
 
-\
 Below is a simple diagram of the logical components.
 
 ![Logical diagram](images/airflow-logical-components-operator-plugin.png)
@@ -111,7 +117,6 @@ An example of a complex plugin would be if our CRM package contained operators f
 
 The moment you feel that it becomes difficult to manage the amount of code for your plugin then it might be time to consider the complex layout.
 
-\
 Next let's look at the different Python objects that you will need to create.
 
 ## The code of your plugin
@@ -183,7 +188,6 @@ class AirflowCrmPlugin(AirflowPlugin):
     operator_extra_links = []
 ```
 
-\
 Note the comment in both examples for the `name` attribute. The value of this attribute creates the namespace you will reference in your Airflow DAGs when importing the operators and hooks. It does not need to match the name of your package. I prefer to give it the same name as the package. This avoids any confusion when you receive errors in Airflow which would show the namespace instead of the package name in the stack trace. 
 
 We will get into more detail about importing our operators and hooks in a later section.
