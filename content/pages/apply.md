@@ -1,5 +1,6 @@
-Title: Apply
+Title: Work With Us
 status: hidden
+Slug: apply
 
 ## Book Your Private Python Career Consult With Bob & Julian Now!
 
