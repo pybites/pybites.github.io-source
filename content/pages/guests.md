@@ -136,6 +136,13 @@ status: hidden
 </div>
 <br>
 
+<div id="christoolivier">
+	<h3><a name="christoolivier"></a>Christo Olivier</h3>
+	<p>Christo has spent his entire career (and life) tinkering with computers. He currently builds out data engineering platforms in the cloud and can generally be found sneaking more Python into any project he touches. You can follow him on <a href="https://twitter.com/oli4twist" target="_blank">Twitter</a> and <a href="https://github.com/christo-olivier" target="_blank">GitHub</a>.</p>
+	<p>Christo's <a href="https://pybit.es/author/christo-olivier.html">posts</a>.</p>
+</div>
+<br>
+
 <div id="ryancheley">
 	<h3><a name="ryancheley"></a>Ryan Cheley</h3>
 	<p>Ryan uses code to solve problems. He enjoys writing Python, but to pay the bills he works for a Healthcare organization and manages people and goes to meetings day to day. You can follow him on <a href="https://twitter.com/ryancheley" target="_blank">Twitter</a>, <a href="https://github.com/ryancheleye" target="_blank">GitHub</a>, or his personal blog<a href="https://www.ryancheley.com" target="_blank_">RyanCheley.com</a>.</p>
