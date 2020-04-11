@@ -82,6 +82,7 @@ NEST_ARCHIVES_HEADER_TITLE = 'Archive'
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [
+    ('Authors', '/pages/guests.html'),
     ('Community', '/pages/community.html'),
     ('100 Days Of Code', 'https://codechalleng.es/100days/'),
     ('Search', '/pages/search.html'),
