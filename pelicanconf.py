@@ -84,7 +84,7 @@ NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [
     ('Authors', '/pages/guests.html'),
     ('Community', '/pages/community.html'),
-    ('100 Days Of Code', 'https://codechalleng.es/100days/'),
+    ('100 Days Of Code', '/pages/100days.html'),
     ('Search', '/pages/search.html'),
     ('Privacy Policy', '/pages/privacy-policy.html'),
 ]
