@@ -432,3 +432,7 @@ blockquote{
 .footer a{
     color: #fff;
 }
+.hl-ipython3 pre {
+  /* fix new theme + pygments + jupypter notebooks */
+  background: #212223 !important;
+}
