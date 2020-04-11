@@ -10,7 +10,7 @@ SITEDESCRIPTION = SITESUBTITLE
 SITEURL = 'https://pybit.es'
 SITELOGO = 'https://pybit.es/theme/img/profile.png'
 # local testing / document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 PATH = 'content'
 THEME = 'nest'
