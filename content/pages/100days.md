@@ -6,7 +6,7 @@ Slug: 100days
 
 We are 100 Days of Code survivors. Even better: what started as an innocent little project morphed into a complete product line.
 
-It all started hitting 100 days of our blog and we thought: [let's celebrate with a challenge](100 Days of PyBites, 100 Days of Code)
+It all started hitting 100 days of our blog and we thought: [let's celebrate with a challenge](https://pybit.es/special-100days.html)
 
 We made it and 100 days later we reflected and [had built up quite a code base](https://pybit.es/special-100days-of-code.html) ([repo](https://github.com/pybites/100DaysOfCode) - 378 stars and counting, not too shabby)
 
