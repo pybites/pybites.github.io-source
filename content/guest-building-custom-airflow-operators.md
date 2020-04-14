@@ -4,9 +4,11 @@ Category: Data
 Tags: Apache, Airflow, data
 Slug: introduction-airflow
 Authors: Christo Olivier
-Illustration: AirflowLogo.png
+Illustration: airballoon.jpg
 summary: If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
 cover: images/featured/pb-guest.png
+
+(Photo by Thomas Griggs on Unsplash)
 
 If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
 
