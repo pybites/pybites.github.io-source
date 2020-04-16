@@ -28,10 +28,6 @@ In order to grow your career you need to also be strategic, build up relevant po
 
 We deeply care about helping other people succeed in their careers using Python and leadership skills. If you care about being the best Python developer you can be and want to boost your career, congratulations. You're in the right place.
 
-#### Don't miss out
-
-Start to write more Pythonic code now using our <i>Become a Better Python Developer</i> cheat sheet. <a href="https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef" target="_blank">Subscribe to our list</a> and we'll send it to you as well as some training on how to market yourself better as a developer (<a href="https://pybit.es/pages/privacy-policy">Privacy Policy</a>).
-
 ## Wait, who are these guys?
 
 Glad you asked.
