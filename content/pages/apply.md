@@ -27,11 +27,11 @@ In a relatively short period of time I gained the Python and leadership skills, 
 
 <img src="https://avatars3.githubusercontent.com/u/43783718?s=200" alt="Alex K profile pic" style="width:200px;">
 
-I was at the point when I did not want to continue to do coding. I was faced with a choice: to stay on the same level and go slow or to get started on bigger project I always wanted to build.
+I had reached a point where I did not want to continue coding. I was faced with a choice: stay on the same level and go slow or get started on the bigger projects I always wanted to build.
 
 I decided to do something bigger, but I did not know how to carry out the large parts of that project technically.
 
-The PyBites Developer Mindset Program helped me push my experience to collaborate, choose the right custom framework and formulate my project draft using real software design principles.
+The PyBites Developer Mindset Program helped me push my experience to collaborate, choose the right custom framework and formulate my project drafts using real software design principles.
 
 Julian and Bob not only guided me on what I needed to know but, as an unexpected bonus, taught me the skills and mindset I needed to be confident in myself and my coding ability.
 
