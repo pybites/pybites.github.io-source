@@ -4,13 +4,13 @@ Slug: package
 
 ## 1. Become a Better Python Developer Cheat Sheet
 
-<a href="https://gallery.mailchimp.com/822043293f280259d4b8d2a3e/files/fa85b60d-3713-47e7-a7b4-5542d463d2fe/pybites_cheatsheet.pdf" target="_blank"><img src="https://pybit.es/images/pythonic-cheatsheet.png" alt="Pythonic Cheatsheet" style="width: 600px;"></a> 
+<a href="https://gallery.mailchimp.com/822043293f280259d4b8d2a3e/files/fa85b60d-3713-47e7-a7b4-5542d463d2fe/pybites_cheatsheet.pdf" target="_blank"><img src="https://pybit.es/images/pythonic-cheatsheet.png" alt="Pythonic Cheatsheet" style="max-width: 600px;"></a> 
 
 ---
 
 ## 2. Earn the _PyBites Beginner Certificate_
 
-<a href="https://codechalleng.es/bites/" target="_blank"><img src="https://pybit.es/images/pybites-beginner-certificate.png" alt="PyBites Beginner Certificate" style="width: 600px;"></a> 
+<a href="https://codechalleng.es/bites/" target="_blank"><img src="https://pybit.es/images/pybites-beginner-certificate.png" alt="PyBites Beginner Certificate" style="max-width: 600px;"></a> 
 
 ---
 
@@ -22,7 +22,7 @@ Slug: package
 
 ## 4. Productivity Cheat Sheet
 
-<a href="https://www.dropbox.com/s/eqolo9j3u189b2r/PyBites%20Productivity%20Cheatsheet.pdf?dl=0" target="_blank"><img src="https://pybit.es/images/productivity-cheatsheet.png" alt="Productivity Cheatsheet" style="width: 600px;"></a> 
+<a href="https://www.dropbox.com/s/eqolo9j3u189b2r/PyBites%20Productivity%20Cheatsheet.pdf?dl=0" target="_blank"><img src="https://pybit.es/images/productivity-cheatsheet.png" alt="Productivity Cheatsheet" style="max-width: 600px;"></a> 
 
 ---
 
