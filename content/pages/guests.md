@@ -151,6 +151,13 @@ Slug: guests
 </div>
 <br>
 
+<div id="robinbeer">
+	<h3><a name="robinbeer"></a>Robin Beer</h3>
+	<p>Robin is an energy data scientist leveraging Python to accelerate the transition to a sustainable energy system. You can follow him on <a href="https://www.robin-beer.de/" target="_blank">his website</a>.</p>
+	<p>Robin's <a href="https://pybit.es/author/robin-beer.html">posts</a>.</p>
+</div>
+<br>
+
 <!-- insert your new bio above this line -->
 
 <hr>
