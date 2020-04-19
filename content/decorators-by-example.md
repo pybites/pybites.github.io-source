@@ -179,9 +179,7 @@ See [this article](https://www.codementor.io/sheena/advanced-use-python-decorato
 
 ## Practice!
 
-The best way to learn decorators is to roll your own!
-
-Join [our decorator challenge #14](https://pybit.es/codechallenge14.html) and PR your result (instructions in the challenge). You can peak at some solutions [here](https://pybit.es/codechallenge14_review.html).
+The best way to learn decorators is to roll your own. Take your Python to the next level using our [Decorators and Context Managers Learning Path](https://codechalleng.es/bites/paths/decorators-context)
 
 ## Further reading
 
