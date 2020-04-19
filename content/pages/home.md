@@ -4,7 +4,7 @@ save_as: index.html
 
 Seriously, <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/" target="_blank">Python is here to stay</a>:
 
-<img src="images/python-growth.png" alt="Python is taking over graph" style="width: 600px;">
+<img src="images/python-growth.png" alt="Python is taking over graph" style="max-width: 600px;">
 
 Over the last few years of growing our PyBites Community we've produced amazing results for our clients.
 
