@@ -74,7 +74,7 @@ MENUITEMS = [
     ('Home', '/'),
     ('Blog', '/archives.html'),
     ('Platform','https://codechalleng.es'),
-    ('Members','http://pybites.mykajabi.com'),
+    ('Members','http://pybites.mykajabi.com/login'),
     ('Apply','/pages/apply.html')
 ]
 
