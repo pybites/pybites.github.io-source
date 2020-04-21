@@ -1,10 +1,13 @@
-Title: Skip the Tutorial, Grinding out my Django Blog
+Title: a Django Blog From Scratch (
 Date: 2020-04-21 9:35
 Category: Django
 Tags: guest, django, pybites, challenges, tutorial paralysis, blogging, Heroku
 Slug: creating-django-blog
 Authors: Peter Babalola
+Illustration: dont-give-up.jpg
 summary: Have you ever wanted to create awesome stuff with Django like making your own blog or any other app but don't know where to start? Or are you tired of taking lazy tutorials?
+
+(Photo by Rosie Kerr on Unsplash)
 
 Have you ever wanted to create awesome stuff with Django like making your own blog or any other app but don't know where to start? Or are you tired of taking lazy tutorials?
 
@@ -14,48 +17,55 @@ I found myself in the same situation but all it really takes is to [get started 
 
 I've been "learning" and "programming" in Python for a while now, but I still find it very difficult to build projects.
 
-I've always wanted to build because I think that I don't have enough knowledge and experiences to make them happen.
+I've always wanted to build because I think that I don't have enough knowledge and experience to make them happen.
 
-I've learned enough to be able to help others in my school and workplace from time to time, but new enough that I still get distracted by the next shiny package I hear about on a podcast or twitter.
-
-So I began to devour articles and biographies of various tech giants and best programmers on the planet, started following them on twitter and github.
+I've learned enough to be able to help others in my school and workplace from time to time, but I still get distracted by the next shiny package I hear about on a podcast or twitter.
 
 ## What changed
 
 Fortunately I saw [Pybites' challenge post](https://twitter.com/pybites/status/1249635354736541697).
 
-When I looked at it, I thought this challenge is tough, but I will give it a try.
+When I looked at it, I thought this challenge was tough, but I was determined to give it a try.
 
 Today I can't believe I solved the challenge even beyond the scope of what was asked.
 
-I made a [Django blog](https://github.com/developerayyo/django-blog). You can modify it to your taste and I believe it will be a great way to start you django journey.
+For the challenge I created a [Django blog](https://github.com/developerayyo/django-blog), which you can modify to your taste. I believe it's a great way to start your django journey.
 
-The main piont here is: you need to get started, persist through, and work with what other developers have created, and contribute to open source. Do those things and you will be among the best developer out there. 
+The main piont here is: you need to get started, persist through, and work with what other developers have created, contributing back to open source.
+
+Do those things and you will be among the best developer out there. 
 
 ## Lessons learned
 
-I learned that it's one thing to build Django app locally and it's another thing to be able to deploy it for productions successfully.
+I learned that it's one thing to build a Django app locally, it's another thing to be able to successfully deploy it for production.
 
-I learned the basics of bootstrap framework.
+I also learned the basics of the bootstrap framework.
 
-Challenges I faced: serve my static and media files through amazone S3.
+Some challenges I faced:
 
-I'm not really a fan of frontend development, so I had a difficult time setting up my template views and making them responsive, using CLI to interact with my S3 bucket, the PostgreSQL database and deployment to Heroku (check it out [here](https://devayo.herokuapp.com/blog/)).
+- Serve my static and media files through amazone S3.
 
-In brief, the project itself was a real challenge for me.
+- I'm not really a fan of frontend development, so I had a difficult time setting up my template views and making them responsive.
+
+- Using CLI to interact with my S3 bucket.
+
+- Setting up the PostgreSQL database.
+
+- Deployment to Heroku (you can check it out [here](https://devayo.herokuapp.com/blog/)).
+
+This project itself was a real challenge for me!
 
 ## Overcoming these challenges
 
-I overcame these challenges through lots of research online, patience and 
-persistence.
+I overcame these challenges through a lot of research online and patience.
 
-I persisted because of I am passionate about solving problems and building solutions.
+My passion for solving problems and building solutions made me persist through.
 
 ![Blog sample](images/Developerayo.png)
 
 ## Blog features
 
-I had quite a lot of fun:
+As you can see I had quite a lot of fun:
 
 - Admin Interface
 
@@ -73,9 +83,9 @@ I had quite a lot of fun:
 
 - Custom templates tags and filter
 
-- Sitemap functionality(XML)
+- Sitemap functionality (XML)
 
-- Feeds for blog posts(XML)
+- Blog post feed (XML)
 
 - Full text search postgresql functionality
 
@@ -95,7 +105,7 @@ I had quite a lot of fun:
 
 7. Run `python manage.py migrate`
 
-8. Create a superuser for admin access `python manage.py createsuperuser`
+8. Create a superuser for admin access: `python manage.py createsuperuser`
 
 9. Finally run `python manage.py runserver` and navigate to localhost:8000
 
@@ -130,4 +140,4 @@ DATABASES = {
 
 Keep calm and code in Python!
 
--- [PeterBabalola](pages/guests.html#peterbabalola)
+-- [Peter Babalola](pages/guests.html#peterbabalola)
