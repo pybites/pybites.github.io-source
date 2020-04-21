@@ -1,4 +1,4 @@
-Title: a Django Blog From Scratch (
+Title: Dropping Tutorial Paralysis, Building a Django Blog From Scratch
 Date: 2020-04-21 9:35
 Category: Django
 Tags: guest, django, pybites, challenges, tutorial paralysis, blogging, Heroku
