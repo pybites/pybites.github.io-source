@@ -158,6 +158,13 @@ Slug: guests
 </div>
 <br>
 
+<div id="peterbabalola">
+	<h3><a name="peterbabalola"></a>Peter Babalola</h3>
+	<p>Peter is an undergraduate computer science major, freelance developer and open source contributor leveraging Python and Django Framework to create stunning web applications. You can follow him on <a href="https://twitter.com/Developerayyo" target="_blank">Twitter</a>, or <a href="https://developerayo.tech/" target="_blank">his website</a></p>
+	<p>Peter's <a href="https://pybit.es/author/peter-babalola.html">posts</a>.</p>
+</div>
+<br>
+
 <!-- insert your new bio above this line -->
 
 <hr>
