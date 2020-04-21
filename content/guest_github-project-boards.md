@@ -7,7 +7,7 @@ Author: Robin Beer
 Illustration: github-board.png
 Summary: In this article you will learn how to setup a project in GitHub and to use boards to organize you issues using agile methods.
 
-In this article you will learn how to setup a project in GitHub and to use boards to organize you issues using agile methods.
+In this article you will learn how to setup a project in GitHub and to use boards to organize your issues using agile methods.
 
 We all have been there, long lists of issues overwhelming our brain.
 
@@ -31,7 +31,7 @@ Subsequently, create some dummy issues that describe different tasks that you ha
 
 ![Issue Creation on GitHub]({filename}/images/gh-projects/2020-04-14-22-07-58.png)
 
-If you don't want to create those issues yourself, you might also want to fork the [github_board_tutorial](https://github.com/Zaubeerer/github_board_tutorial) that I created for the purpose of this article. Your issue list might look like the following:
+Your issue list might look like the following:
 
 ![GitHub issue list]({filename}/images/gh-projects/2020-04-14-22-16-40.png)
 
