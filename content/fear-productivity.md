@@ -1,12 +1,12 @@
-Title: Productivity Mondays - Break Fear to Boost Productivity
+Title: Break Fear to Boost Productivity
 Date: 2020-03-09 22:50
-Category: Leadership
+Category: Productivity
 Tags: productivity, motivation, mindset, fear
 Slug: fear-productivity
 Authors: Julian
-Summary: Another week, another edition of Productivity Mondays! This week I'm looking at how fear can help you be more productive and, no I don't mean the fear of not delivering on time... although that is a good motivator right? Actually no, that's a terrible motivator. This is all about empowering *you* to break down fear barriers by getting uncomfortable then using that as a motivator to kick some goals!
+Summary: This week I'm looking at how fear can help you be more productive and, no I don't mean the fear of not delivering on time... although that is a good motivator right? Actually no, that's a terrible motivator. This is all about empowering *you* to break down fear barriers by getting uncomfortable then using that as a motivator to kick some goals!
 
-Another week, another edition of Productivity Mondays! This week I'm looking at how fear can help you be more productive and, no I don't mean the fear of not delivering on time... although that is a good motivator right? Actually no, that's a terrible motivator. This is all about empowering *you* to break down fear barriers by getting uncomfortable then using that as a motivator to kick some goals!
+This week I'm looking at how fear can help you be more productive and, no I don't mean the fear of not delivering on time... although that is a good motivator right? Actually no, that's a terrible motivator. This is all about empowering *you* to break down fear barriers by getting uncomfortable then using that as a motivator to kick some goals!
 
 > "You're not growing if you're not uncomfortable at least once a week." - Bob and Julian, and likely some other smart people.
 

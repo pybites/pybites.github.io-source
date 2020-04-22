@@ -1,6 +1,6 @@
-Title: Productivity Mondays - Tips from Adam Grant 
+Title: Tips from Adam Grant 
 Date: 2020-03-16 23:59
-Category: Leadership
+Category: Productivity
 Tags: productivity, motivation, email, maker schedule, timferriss, time management, attention, uncomfortable, career
 Slug: adam-grant
 Authors: Bob

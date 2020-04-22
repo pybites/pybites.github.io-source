@@ -1,6 +1,6 @@
-Title: Productivity Mondays - What Can You Do Consistently This Week?
+Title: What Can You Do Consistently This Week?
 Date: 2020-03-02 7:40
-Category: Leadership
+Category: Productivity
 Tags: productivity, lead, lag, lagging indicators, leading indicators, performance, exercise, confidence, control
 Slug: consistency
 Authors: Bob

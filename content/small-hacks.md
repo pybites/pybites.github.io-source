@@ -1,6 +1,6 @@
-Title: Productivity Mondays - 5 tips that will boost your performance
+Title: 5 tips that will boost your performance
 Date: 2020-02-17 23:00
-Category: Leadership
+Category: Productivity
 Tags: productivity, career, follow up, time audit, mindset, email, ask, procrastination
 Slug: small-hacks
 Authors: Bob

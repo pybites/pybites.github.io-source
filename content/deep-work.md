@@ -1,12 +1,12 @@
-Title: Productivity Mondays - Are You Producing Enough Value? 5 Tips to Boost Your Deep Work
+Title: Are You Producing Enough Value? 5 Tips to Boost Your Deep Work
 Date: 2020-02-24 21:40
-Category: Leadership
+Category: Productivity
 Tags: productivity, focus, deep work, distraction, procrastination, mindset
 Slug: deep-work
 Authors: Bob
-Summary: Here is another edition of Productivity Mondays geared towards getting you closer towards your goals. This weekend I picked up [Deep work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) again. Every time I read it is a revelation. The better you manage your time, the more successful you will become. It all comes down to the amount of value you can produce. And for that deep work is essential.
+Summary: This article is all about getting you closer towards your goals. This weekend I picked up [Deep work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) again. Every time I read it is a revelation. The better you manage your time, the more successful you will become. It all comes down to the amount of value you can produce. And for that deep work is essential.
 
-Here is another edition of Productivity Mondays geared towards getting you closer towards your goals. This weekend I picked up [Deep work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) again. Every time I read it is a revelation. The better you manage your time, the more successful you will become. It all comes down to the amount of value you can produce. And for that deep work is essential.
+This article is all about getting you closer towards your goals. This weekend I picked up [Deep work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) again. Every time I read it is a revelation. The better you manage your time, the more successful you will become. It all comes down to the amount of value you can produce. And for that deep work is essential.
 
 > "If you don’t produce, you won’t thrive—no matter how skilled or talented you are." (Cal Newport - Deep Work)
 

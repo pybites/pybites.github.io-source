@@ -1,6 +1,6 @@
-Title: Productivity Mondays - a Simple yet Effective System
+Title: A Simple yet Effective System
 Date: 2020-03-23 10:00
-Category: Leadership
+Category: Productivity
 Tags: productivity, time management, sales, Chet Holmes, procrastination, focus, planning, Parkinson's law, Brian Tracy, email
 Slug: simple-productivity
 Authors: Bob
