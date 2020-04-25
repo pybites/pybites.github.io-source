@@ -1,7 +1,7 @@
-Title: Making my First Django App
+Title: Building a Stadia Tracker Site Using Django
 Date: 2020-04-25 17:20
 Category: Django
-Tags: Django, blog, challenges
+Tags: Django, blog, challenges, Heroku, 100 Days of Code, portfolio, DRF, Django REST, learning by doing, MLB API
 Slug: my-first-django-app
 Authors: Ryan Cheley
 Illustration: baseball.jpg
@@ -58,20 +58,17 @@ That's great and all, but what does it look like?
 
 ### The Search Tool
 
-![Search](images/making-a-django-app/add-a-game.png)
-
+![Search]({filename}/images/making-a-django-app/add-a-game.png)
 
 ### Stadia Listing
 
-
 #### National League West
 
-![Search](images/making-a-django-app/visited-stadia-nl-west.png)
-
+![Search]({filename}/images/making-a-django-app/visited-stadia-nl-west.png)
 
 #### American League West
 
-![Search](images/making-a-django-app/visited-stadia-al-west.png)
+![Search]({filename}/images/making-a-django-app/visited-stadia-al-west.png)
 
 
 <a name="next"></a>
