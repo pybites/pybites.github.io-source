@@ -15,7 +15,7 @@ Classes are incredibly useful and robust, but you need to know when to use them.
 
 ## 1. You need to keep state
 
-For example, if you need to manage a bunch of students and grades, or when you build a game that keeps track of attempts, score etc ([Hangman example](https://github.com/pybites/challenges/blob/solutions/10/hangman-pb.py)).
+For example, if you need to manage a bunch of students and grades, or when you build a game that keeps track of attempts, score, etc ([Hangman example](https://github.com/pybites/challenges/blob/solutions/10/hangman-pb.py)).
 
 Basically, when you have data and behavior (= variables and methods) that go together, you would use a class.
 
