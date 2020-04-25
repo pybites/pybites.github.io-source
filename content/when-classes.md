@@ -15,19 +15,19 @@ Classes are incredibly useful and robust, but you need to know when to use them.
 
 ## 1. You need to keep state
 
-For example, if you need to manage a bunch of students and grades, or when you build a game (e.g. [we used a class for Hangman](https://github.com/pybites/challenges/blob/solutions/10/hangman-pb.py)). Basically, when you have data and behavior (= variables and methods), you would use a class.
+For example, if you need to manage a bunch of students and grades, or when you build a game that keeps track of attempts, score etc ([Hangman example](https://github.com/pybites/challenges/blob/solutions/10/hangman-pb.py)).
 
-Again, games make for good practice for OOP. For example, try to to create a card game ([and submit it here](https://codechalleng.es/challenges/20/)).
+Basically, when you have data and behavior (= variables and methods) that go together, you would use a class.
 
 ## 2. Bigger projects - classes favor code organization and reusability
 
 I often use the example of a `Report` class. You can have a base class with shared attributes like report name, location and rows. But when you go into specifics like formats (xml, json, html), you could override a `generate_report` method in the subclass.
 
-Or think about animals. Mammals would be the base class (hair or fur, warm-blooded, young born alive, mammary glands and complex brain).
+Or think about [vehicles](https://en.wikipedia.org/wiki/Vehicle):
 
-Herbivores and carnivores are more _specific_ animals, so they inherit from their base class, but add individual details to the mix (here being vegetarian or not).
+> Vehicles include wagons, bicycles, motor vehicles (motorcycles, cars, trucks, buses), railed vehicles (trains, trams), watercraft (ships, boats), amphibious vehicles (screw-propelled vehicle, hovercraft), aircraft (airplanes, helicopters) and spacecraft ([Wikipedia](https://en.wikipedia.org/wiki/Vehicle))
 
-As you see, this hierarchy leads to better organization and less duplication of your code. And you can more easily extend it.
+When you see hierarchies like this, using classes leads to better code organization, less duplication, and reusable code.
 
 This becomes specially powerful if you have hundreds of subclasses and you need to make a fundamental change. You can make a single change in the base class (parent) and all child classes pick up the change (keeping things DRY).
 
@@ -90,6 +90,8 @@ And there is no better way to learn more about them through some of our resource
 2. Don't spend more than 10-15 min on it though. The best way to learn is to ACTUALLY CODE! So [start our OOP learning path](https://codechalleng.es/bites/paths/oop) today and start to write classes / code OOP.
 
 3. Once you get past the basics, read my article about Python's magic / special methods: [Enriching Your Python Classes With Dunder (Magic, Special) Methods](https://dbader.org/blog/python-dunder-methods)
+
+4. As we said before, games make for good OOP practice. Try to to create a card game ([and submit it here](https://codechalleng.es/challenges/20/)).
 
 Comment your wins below in the comments and hope to see you in the forums [on our platform](https://codechalleng.es) ...
 
