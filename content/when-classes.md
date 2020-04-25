@@ -25,7 +25,7 @@ I often use the example of a `Report` class. You can have a base class with shar
 
 Or think about [vehicles](https://en.wikipedia.org/wiki/Vehicle):
 
-> Vehicles include wagons, bicycles, motor vehicles (motorcycles, cars, trucks, buses), railed vehicles (trains, trams), watercraft (ships, boats), amphibious vehicles (screw-propelled vehicle, hovercraft), aircraft (airplanes, helicopters) and spacecraft ([Wikipedia](https://en.wikipedia.org/wiki/Vehicle))
+> Vehicles include wagons, bicycles, motor vehicles (motorcycles, cars, trucks, buses), railed vehicles (trains, trams), watercraft (ships, boats), amphibious vehicles (screw-propelled vehicle, hovercraft), aircraft (airplanes, helicopters) and spacecraft.
 
 When you see hierarchies like this, using classes leads to better code organization, less duplication, and reusable code.
 
