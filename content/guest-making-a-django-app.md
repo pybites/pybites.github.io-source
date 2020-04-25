@@ -1,12 +1,12 @@
 Title: Making my First Django App
-Date: 2020-04-23 21:15
-Category: TBD
-Tags: Django
+Date: 2020-04-25 17:20
+Category: Django
+Tags: Django, blog, challenges
 Slug: my-first-django-app
 Authors: Ryan Cheley
+Illustration: baseball.jpg
 summary: Building my first Django Site and learning so much more than Django
 cover: images/featured/pb-guest.png
-
 
 # My First Django Project
 
@@ -100,3 +100,5 @@ Finally, it introduced me to the wonderful ecosystem around Django. There is so 
 The site is deployed on [Heroku](https://www.heroku.com) and can be seen [here](https://stadium-tracker-api.herokuapp.com). The code for the site can be seen [here](https://github.com/ryancheley/StadiumTrackerAPI). 
 
 -- [Ryan](pages/guests.html#ryancheley)
+
+(Cover photo by Jose Morales on Unsplash)

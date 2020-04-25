@@ -7,8 +7,6 @@ Authors: Peter Babalola
 Illustration: dont-give-up.jpg
 summary: Have you ever wanted to create awesome stuff with Django like making your own blog or any other app but don't know where to start? Or are you tired of taking lazy tutorials?
 
-(Photo by Rosie Kerr on Unsplash)
-
 Have you ever wanted to create awesome stuff with Django like making your own blog or any other app but don't know where to start? Or are you tired of taking lazy tutorials?
 
 I found myself in the same situation but all it really takes is to [get started with Pybites challenges](https://codechalleng.es/challenges/), Stackoverflow and Github.  
@@ -141,3 +139,5 @@ DATABASES = {
 Keep calm and code in Python!
 
 -- [Peter Babalola](pages/guests.html#peterbabalola)
+
+(Cover photo by Rosie Kerr on Unsplash)

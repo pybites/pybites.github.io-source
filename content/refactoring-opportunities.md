@@ -8,8 +8,6 @@ Illustration: multicolored-pins.jpg
 Summary: Refactoring is all about making your code more maintainable. In this article I will provide you with Python and generic software tips to write better code.
 cover: images/featured/pb-article.png
 
-(Photo by Jonah Pettrich on Unsplash)
-
 Refactoring is all about making your code easier to understand and more maintainable.
 
 Remember, code runs on machines, but you write code for humans!
@@ -139,3 +137,5 @@ With so many avenues to pursue in Python it can be tough to know what to do.
 If you're looking for some **direction**, [book a free strategy session with us now](https://pybit.es/pages/apply.html). We can help you!
 
 ---
+
+(Cover photo by Jonah Pettrich on Unsplash)

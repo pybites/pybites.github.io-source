@@ -8,8 +8,6 @@ Illustration: postits.jpg
 Summary: We hear it so often: I need to ace algorithms to land a SW job. To a certain extent yes. You surely need to understand what data structure to use and make efficiency trade-offs. 
 cover: images/featured/pb-article.png
 
-(Photo by Patrick Perkins on Unsplash)
-
 We hear it so often: I need to ace algorithms to land a SW job.
 
 To a certain extent yes. You surely need to understand what data structure to use and make efficiency trade-offs. 
@@ -49,3 +47,5 @@ Stop obsessing about algorithms and start focussing on getting (the right) thing
 <div class="ctaBox">
 <p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
 </div>
+
+(Cover photo by Patrick Perkins on Unsplash)

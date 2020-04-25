@@ -8,8 +8,6 @@ Illustration: airballoon.jpg
 summary: If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
 cover: images/featured/pb-guest.png
 
-(Photo by Thomas Griggs on Unsplash)
-
 If you work in data engineering, then the chance are high that you are using or have used Apache Airflow.
 
 This orchestration tool has become a firm favourite of many organisations. It was chosen by Google when they were looking at an orchestration tool to include in their cloud offering [Google Cloud Composer.](https://cloud.google.com/composer/)
@@ -372,3 +370,5 @@ The Airflow documentation is a great resource to gain additional knowledge. Howe
 
 
 -- [Christo](pages/guests.html#christoolivier)
+
+(Cover photo by Thomas Griggs on Unsplash)
