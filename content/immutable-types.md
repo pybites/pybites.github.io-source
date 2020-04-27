@@ -4,7 +4,7 @@ Category: Concepts
 Tags: mutable, immutable, types, data integrity, strings, lists, functional programming, javascript, react
 Slug: immutable-types
 Authors: Bob
-Illustration: locked.jpg
+Illustration: ripple.jpg
 Summary: Knowing the difference between mutable and immutable types in Python is important. In this article I give you some practical examples and show you some of the advantages of using immutable types. We even look at JS / React / functional programming a bit towards the end.
 cover: images/featured/pb-article.png
 
