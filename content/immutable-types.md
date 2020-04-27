@@ -5,10 +5,10 @@ Tags: mutable, immutable, types, data integrity, strings, lists, functional prog
 Slug: immutable-types
 Authors: Bob
 Illustration: ripple.jpg
-Summary: Knowing the difference between mutable and immutable types in Python is important. In this article I give you some practical examples and show you some of the advantages of using immutable types. We even look at JS / React / functional programming a bit towards the end.
+Summary: Knowing the difference between mutable and immutable types in Python is important. In this article I will give you some practical examples of both and show you some of the advantages of using immutable types. We even look at JS / React / functional programming a bit towards the end.
 cover: images/featured/pb-article.png
 
-Have you ever wondered why there are mutable and immutable in Python?
+Have you ever wondered why there are mutable and immutable types in Python?
 
 Have you ever encountered this error in Python?
 
@@ -18,7 +18,7 @@ Have you ever encountered this error in Python?
 	File "<stdin>", line 1, in <module>
 	TypeError: 'str' object does not support item assignment
 
-In this article I give you some practical examples and show you some of the advantages of using immutable types. 
+In this article I will give you some practical examples and show you some of the advantages of using immutable types. 
 
 ## Types
 
@@ -81,7 +81,7 @@ Or here are some more insidious problems:
 
 - [Compound objects](https://pybit.es/mutability.html)
 
-- Multiple threads modiying an object (although [you can use _locking_](https://www.oreilly.com/content/python-cookbook-concurrency/))
+- Multiple threads modifying an object (although [you can use _locking_](https://www.oreilly.com/content/python-cookbook-concurrency/))
 
 - Mutable objects / shared state (OOP) can lead to race conditions ([example given here](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0))
 
