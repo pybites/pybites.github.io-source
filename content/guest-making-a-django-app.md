@@ -94,7 +94,7 @@ Second, it taught me how to use git more effectively. This directly lead to me [
 
 Finally, it introduced me to the wonderful ecosystem around Django. There is so much to learn, but the great thing is that EVERYONE is learning something. There isn’t anyone that knows it all which makes it easier to ask questions! And helps me in feeling more confident to answer questions when asked.
 
-The site is deployed on [Heroku](https://www.heroku.com) and can be seen [here](https://stadium-tracker-api.herokuapp.com). The code for the site can be seen [here](https://github.com/ryancheley/StadiumTrackerAPI). 
+The site is deployed on [Heroku](https://www.heroku.com) and can be seen [here](https://stadium-tracker-api.herokuapp.com). The code for the site can be seen [here](https://github.com/ryancheley/StadiumTrackerAPIPublic). 
 
 -- [Ryan](pages/guests.html#ryancheley)
 
