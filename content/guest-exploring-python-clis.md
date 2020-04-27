@@ -1,12 +1,12 @@
 Title: Exploring the Modern Python Command-Line Interface
-Date: 2020-04-27 14:00
+Date: 2020-04-27 22:00
 Category: 
 Tags: python, unix, cli, history, argparse, click, typer
 Slug: guest-exploring-python-clis
+Illustration: mixer.jpg
 Authors: Erik O'Shaughnessy
 summary: Delve into the why and the how of writing command-line tools using Python. 
 cover: images/featured/pb-article.png
-
 
 # Exploring the Modern Python Command-Line Interface
 
@@ -311,6 +311,10 @@ different packages. My advice is to start with these and see where you
 end up.
 
 Go write something cool.
+
+-- [Erik](pages/guests.html#erikoshaughnessy)
+
+(Cover photo by Dylan McLeod on Unsplash)
 
 <!-- URLS -->
 [0]: https://opensource.com/article/19/5/how-write-good-c-main-function
