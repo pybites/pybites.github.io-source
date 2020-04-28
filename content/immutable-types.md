@@ -58,7 +58,7 @@ Lists are cheaper here, because you can change the size of this type of object o
 
 On the other hand, the size of immutable types is known in memory from the start, which makes them quicker to access.
 
-This can really add up as [Michael Kennedy's shows here featuring \_\_slots\_\_](https://www.youtube.com/watch?v=FUJf-eEF1GY).
+This can really add up as [Michael Kennedy shows here featuring \_\_slots\_\_](https://www.youtube.com/watch?v=FUJf-eEF1GY).
 
 ## Immutability
 
