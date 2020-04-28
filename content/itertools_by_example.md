@@ -127,6 +127,8 @@ This example is based on the one I found at [pymotw](https://pymotw.com/2/iterto
 	email ['frank', 'tim', 'sue']
 	phone ['bob', 'maria']
 
-## Other uses? 
+## Practice
 
-Where do you use itertools mostly for? Share your experience in the comments below ...
+Enough theory. This stuff only sinks in when you actively start using it.
+
+You can now get plenty of exercise via [our itertools learning path](https://codechalleng.es/bites/paths/itertools).
