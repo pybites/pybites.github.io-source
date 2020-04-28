@@ -27,7 +27,7 @@ under Unix is [C][12], which has amazing power for both [good][23] and
 [evil][22].
 
 >
->      "C get's sh*t done."
+>      "C gets sh*t done."
 >
 >          - a handsome and yet strangely anonymous C programmer
 >
