@@ -1,14 +1,14 @@
-Title: The Best Career Advice I Received
+Title: My Favorite Career Development Book
 Date: 2020-05-02 12:16
-Category: Softskills
-Tags: career, deliberate practica, books, leadership, learning, uncomfortable, platform, programming, career assets, 10.000 hour rule
-Slug: so-good
+Category: Books
+Tags: career, deliberate practice, soft skills, leadership, learning, uncomfortable, platform, programming, career assets, 10.000 hour rule
+Slug: career-advice
 Authors: Bob
 Illustration: mountain.jpg
 Summary: If there is one career book we could recommend you it's "So Good They Can't Ignore You". In this article some of the main takeaways for me.
 cover: images/featured/pb-article.png
 
-For me the most succinct career advice [comes from Steve Martin](https://www.youtube.com/watch?v=teAvv6jnuXY):
+For me one of the most succinct pieces of career advice [comes from Steve Martin](https://www.youtube.com/watch?v=teAvv6jnuXY):
 
 > Be So Good They Can't Ignore You.
 
