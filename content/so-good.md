@@ -14,15 +14,15 @@ For me one of the most succinct pieces of career advice [comes from Steve Martin
 
 Which is also the title of one of [my favorite career books by Cal Newport](http://www.amazon.com/dp/1455509124/?tag=pyb0f-20).
 
-In his book Cal demonstrates that following your passion is generally bad advice. Skills trump passion!
+In his book Cal demonstrates that following your passion is generally bad advice.
 
-Yes I love programming now, but it was not love at first sight per se. 
+Skill trumps passion!
 
-I did have a knack for automating things (using Excel) but that alone did not make me marketable.
+- Yes I love programming, but the journey to become a programmer is filled with mistakes and frustrating moments (machines don't think like humans). Only after you grasp the fundamentals does it become any fun.
 
-Yes, I got excited by hacker scenes of movies like Swordfish and Antitrust, but real programmer life is of course nothing like that ;)
+- Yes I did have a knack for automating things (using Excel) but that alone did not make me marketable as a programmer.
 
-Actually the journey to learn to code is filled with doubt and frustrating moments. Only after you grasp the fundamentals does it become any fun.
+- Yes, I got excited by hacker scenes of movies like Swordfish and Antitrust, but real programmer life is of course nothing like that ;)
 
 So one of the main takeaways from "So Good They Can't Ignore You" is that passion does not precede skills, and it's the strategic  focus on the latter that will determine how succesful you will be.
 
