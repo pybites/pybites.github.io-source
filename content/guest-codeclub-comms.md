@@ -1,14 +1,14 @@
-Title: Rockstar Python Developers need great communication skills too.
-Date: 2020-05-04 09:05
+Title: Rockstar Python Developers Need Great communication Skills Too
+Date: 2020-05-04 09:15
 Category: Communication
-Tags: Communication, Code Club, Python, Mentoring
+Tags: communication, Code Club, mentoring, coaching, soft skills, kids, duck typing, meetups
 Slug: guest-communication-skills
 Authors: Anthony Lister
 Illustration: communication.jpg
 summary: Mentoring children is a whole new challenge, and one that served to help me think about my own communication and empathy skills at work too.
 cover: images/featured/pb-guest.png
 
-Rockstar Python Developers need great communication skills too.
+Mentoring children is a whole new challenge, and one that served to help me think about my own communication and empathy skills at work too.
 
 ## Introduction
 
@@ -21,8 +21,6 @@ Who was it that inspired you?
 What was it about their character that got you fired up and writing ```print("hello world")``` for the first time? 
 
 How did someone make you feel when they recently guided you to a solution that you came up with by yourself?
-
-> Mentoring children is a whole new challenge, and one that served to help me think about my own communication and empathy skills at work too. 
 
 ## Coding is perhaps the easiest part of being a developer
 
@@ -82,8 +80,6 @@ And immediately a dialog starts in my head that goes something like this:
 
 "Python uses duck typing and has typed objects but untyped variable names. Type constraints are not checked at compile time; rather, operations on an object may fail, signifying that the given object is not of a suitable type. Despite being dynamically typed, Python is strongly typed, forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them."
 
-> But I can't say any of that to a nine year old! 
-
 But I can't say any of that to a nine year old! 
 
 "Erm, it's because of... ", and I mentally pause because what I was about to say is "there's this thing called duck typing in Python. If it walks like a duck and it quacks like a duck, then it must be a duck!", and I just know that I'm going to be laughed out of the classroom and be admonished forever if I said that.
@@ -136,23 +132,20 @@ Why not make that a positive experience for beginners in the best way you can?
 
 At the time of writing many of us will be locked down in our bubbles due to Covid-19. As we get through this and life returns to a new normal, I urge you to seek out your local opportunities to volunteer for an organisation like Code Club in your region. If working with children isn't your thing, perhaps go to a Python Meetup and explain something technically deep to an inexperienced audience, or even just try to explain something clearer at your next project meeting at work. Start high level, set the scene, go technically deep as your audience needs to and then summarise at that high level what you just spoke about. 
 
+> Rockstar Python Developers need great communication skills too.
+
 Remember that communication is as much about the receiver as it is the transmitter! It's another way to give back to the community if you like. You might find it very rewarding and enlightening about your own skills and development too. Let me know how it goes. What are your experiences?
 
 All the best!
 
 -- [Anthony](pages/guests.html#anthonylister)
 
+(Cover photo by Volodymyr Hryshchenko on Unsplash)
 
 ## Code Club
 
-Code Club Aotearoa comes under the umbrella Code Club organisation. Code Club volunteers join a local club and help children aged 9-13 learn to make games, animations and websites using the Code Club resources.
+Code Club Aotearoa comes under the umbrella [Code Club organisation](https://codeclub.org/en/). Code Club volunteers join a local club and help children aged 9-13 learn to make games, animations and websites using the Code Club resources.
 
 You don't even need to consider yourself a specialist either if you can readily ask enquiring and supportive questions. I'm certainly no expert in Python and suffer imposter syndrome as much as the next person. Also, students don't mind being shown how to search for answers if you don't know there and then, but be prepared to have your Google-Fu search skills shown up by these digital natives! 
 
-There are a variety of projects provided to you as a volunteer in the Code Club curriculum. These include projects in Scratch, HTML/CSS, Python and Raspberry Pi, and even MicroPython on Lego Mindstorms. Code Club students are traditionally 9-13 years old. Very often students enter their first club with no prior coding experience so they will need to get started with the basics. However, Code Club students are from all varying levels of technical ability, ethnicity, gender and are all excited to learn to code!
-
-Useful links:
-
-1. [Code Club](https://codeclub.org/en/)
-
-2. [Code Club project resources](https://projects.raspberrypi.org/en/codeclub)
+There are a variety of projects provided to you as a volunteer in [the Code Club curriculum](https://projects.raspberrypi.org/en/codeclub). These include projects in Scratch, HTML/CSS, Python and Raspberry Pi, and even MicroPython on Lego Mindstorms. Code Club students are traditionally 9-13 years old. Very often students enter their first club with no prior coding experience so they will need to get started with the basics. However, Code Club students are from all varying levels of technical ability, ethnicity, gender and are all excited to learn to code!
