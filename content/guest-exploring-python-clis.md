@@ -279,9 +279,9 @@ resulting in code that's easier to read and maintain.
 ```python
 import typer
 
-typer = typer.Typer()
+app = typer.Typer()
 
-@typer.command()
+@app.command()
 def echo(foo: str = 'foo', bar: str = 'bar'):
     """My Cool Program
     
@@ -290,7 +290,7 @@ def echo(foo: str = 'foo', bar: str = 'bar'):
     print(foo, bar)
     
 if __name__ == '__main__':
-    typer.run()
+    app()
 ```
 
 ## Time to Start Writing Some Code
