@@ -4,7 +4,7 @@ Category: Communication
 Tags: communication, Code Club, mentoring, coaching, soft skills, kids, duck typing, meetups
 Slug: guest-communication-skills
 Authors: Anthony Lister
-Illustration: communication.jpg
+Illustration: kids.jpg
 summary: Mentoring children is a whole new challenge, and one that served to help me think about my own communication and empathy skills at work too.
 cover: images/featured/pb-guest.png
 
@@ -140,7 +140,7 @@ All the best!
 
 -- [Anthony](pages/guests.html#anthonylister)
 
-(Cover photo by Volodymyr Hryshchenko on Unsplash)
+(Cover photo by Rachel on Unsplash)
 
 ## Code Club
 
