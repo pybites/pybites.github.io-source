@@ -1,21 +1,20 @@
 Title: Rockstar Python Developers need great communication skills too.
-Date: Sunday 3 May 2020
+Date: 2020-05-04 09:05
 Category: Communication
 Tags: Communication, Code Club, Python, Mentoring
-Slug: 
-Authors: https://pybit.es/author/anthony-lister.html
+Slug: guest-communication-skills
+Authors: Anthony Lister
+Illustration: communication.jpg
 summary: Mentoring children is a whole new challenge, and one that served to help me think about my own communication and empathy skills at work too.
-cover:
-
+cover: images/featured/pb-guest.png
 
 Rockstar Python Developers need great communication skills too.
-
 
 ## Introduction
 
 I wonder how people get into software programming, whether it be for a job or hobby? 
 
-It's one of the first things I often listen for at the start of Michael Kennedy's Talk Python To Me podcast.
+It's one of the first things I often listen for at the start of [Michael Kennedy's Talk Python To Me podcast](https://talkpython.fm/).
 
 Who was it that inspired you? 
 
@@ -140,7 +139,8 @@ At the time of writing many of us will be locked down in our bubbles due to Covi
 Remember that communication is as much about the receiver as it is the transmitter! It's another way to give back to the community if you like. You might find it very rewarding and enlightening about your own skills and development too. Let me know how it goes. What are your experiences?
 
 All the best!
--- Anthony
+
+-- [Anthony](pages/guests.html#anthonylister)
 
 
 ## Code Club
@@ -156,5 +156,3 @@ Useful links:
 1. [Code Club](https://codeclub.org/en/)
 
 2. [Code Club project resources](https://projects.raspberrypi.org/en/codeclub)
-
-
