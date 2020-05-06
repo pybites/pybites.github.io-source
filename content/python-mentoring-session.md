@@ -66,7 +66,3 @@ Have you had a similar experience, be it as a mentee or a mentor? Share it in th
 Keep Calm and Code in Python!
 
 -- Bob
-
-<div class="ctaBox">
-	<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
-</div>

@@ -63,7 +63,3 @@ Here are 5 tips to get more deep work done. Don't just read this, please comment
 Now go crush it this week and share in the comments below how this week is going so far ...
 
 -- Bob
-
-<div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://codechalleng.es/coaching" target="_blank">book a strategy session with us</a>. We can help you!</p>
-</div>

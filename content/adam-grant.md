@@ -41,7 +41,3 @@ How will you use productivity as your tool this week?
 Stay safe ([and at home](https://staythefuckhome.com)!)
 
 -- Bob
-
-<div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://codechalleng.es/coaching" target="_blank">book a strategy session with us</a>. We can help you!</p>
-</div>

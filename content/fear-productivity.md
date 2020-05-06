@@ -72,7 +72,3 @@ Examples include:
 Whatever it is, this week you're going to face your fear, own it and use the rush to WIN. Do it and let us know the details in the comments!
 
 -- Julian
-
-<div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://codechalleng.es/coaching" target="_blank">book a strategy session with us</a>. We can help you!</p>
-</div>
