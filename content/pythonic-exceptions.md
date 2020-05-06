@@ -4,26 +4,32 @@ Category: Concepts
 Tags: exceptions, exception handling, anti-patterns, EAFP, best practices, pitfalls
 Slug: pythonic-exceptions
 Authors: Bob
-Summary: Error handling in Python can be simplified by following these 7 tips.
+Summary: Proper error handling can make your Python code simpler, more readable, and idiomatic. Here are 7 tips to help you.
 cover: images/featured/pb-article.png
 
-Error handling in Python can be simplified by following these 7 tips.
+Proper error handling can make your Python code simpler, more readable, and idiomatic. Here are 7 tips to help you.
 
 ## 1. Explicit is better than implicit
 
-This is basic exception clause breakdown in Python:
+Exceptions in Python have the following clauses:
 
-	try:
+- Required:
+
+		try:
+			...
+		except ...:
+			# handle exception
+		except ...:
+			# handle another exception
 		...
-	except ...:
-		# handle exception
-	except ...:
-		# handle another exception
-	(optionally)
-	else:
-		# code if no exception was hit
-	finally:
-		# cleanup code, always executes
+
+- And optionally after the except clauses:
+
+		...
+		else:
+			# code if no exception was hit
+		finally:
+			# cleanup code, always executes
 
 So `try` + `except` is all it takes, but with freedom comes responsibility. A bare `try except:` might cause you headaches debugging. So name your exceptions specificly.
 
