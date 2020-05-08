@@ -88,6 +88,8 @@ It's more idiomatic (_pythonic_) to just _try_ things and catch the correspondin
 	except OSError:
 		# if not, handle the exception
 
+Here is another good example and a bit more about the advantage of EAFP: [Idiomatic Python: EAFP versus LBYL](https://devblogs.microsoft.com/python/idiomatic-python-eafp-versus-lbyl/)
+
 ## 6. Verbose logging
 
 Be verbose in your logging. As stated [here](https://stackoverflow.com/a/5191885) can use [`logger.exception`](https://docs.python.org/3/library/logging.html#logging.Logger.exception) to log the stack trace alongside the error message.
