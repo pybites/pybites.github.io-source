@@ -56,7 +56,7 @@ This is not efficient. So here you want to use a mutable type:
 
 Lists are cheaper here, because you can change the size of this type of object on the fly.
 
-On the other hand, the size of immutable types is known in memory from the start, which makes them quicker to access.
+On the other hand, the size of immutable types is known in memory from the start, which makes them quicker to access (interesting read: [Tuples tend to perform better than lists](https://stackoverflow.com/a/22140115)).
 
 This can really add up as [Michael Kennedy shows here featuring \_\_slots\_\_](https://www.youtube.com/watch?v=FUJf-eEF1GY).
 
