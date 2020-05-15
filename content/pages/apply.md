@@ -14,9 +14,22 @@ Get your name on an **open source project**?
 
 Become one of those linchpins who has **complete control** over their career?
 
-<div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/392926929" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<div id="introVideo"></div>
 
-<br>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const redirected = urlParams.get('redirected');
+if(!redirected){
+	let html = '<div class="vimeo-space" ';
+	html += 'style="padding: 56.25% 0 0 0; position: relative;">';
+	html += '<iframe src="https://player.vimeo.com/video/392926929" ';
+	html += 'style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" ';
+	html += 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>';
+	html += '</iframe></div><br>';
+	document.getElementById('introVideo').innerHTML = html;
+}
+</script>
+
 What took us many years to figure out, we have now distilled in a _fastlane_ that gets clients results in a few months, some even in a matter of weeks.
 
 You don't have to go at it alone, start leveraging our experience by getting on a call with us.
