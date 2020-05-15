@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'pybites'
 SITENAME = 'PyBites'
 SITETITLE = 'PyBites'
-SITESUBTITLE = u'We Create Rockstar Python Developers'
+SITESUBTITLE = 'We Create Well-Rounded Python Developers'
 SITEDESCRIPTION = SITESUBTITLE
 SITEURL = 'https://pybit.es'
 SITELOGO = 'https://pybit.es/theme/img/profile.png'

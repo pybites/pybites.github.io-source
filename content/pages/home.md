@@ -1,4 +1,4 @@
-Title: We Create Rockstar Python Developers
+Title: We Create Well-Rounded Python Developers
 Status: hidden
 save_as: index.html
 
