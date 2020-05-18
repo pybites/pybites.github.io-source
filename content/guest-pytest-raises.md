@@ -1,6 +1,6 @@
-Title: Assertions about Exceptions with pytest.raises()
-Date: 2020-05-16 20:20
-Category: Concepts
+Title: Assertions About Exceptions With pytest.raises()
+Date: 2020-05-18 09:14
+Category: Testing
 Tags: guest, pybites, pytest, testing, contextmanagers
 Slug: guest-pytest-raises
 Authors: AJ Kerrigan
@@ -33,7 +33,7 @@ with open('my_delicious_file.txt') as f:
 
 When we get comfortable using `open()` in a [with](https://docs.python.org/2.5/whatsnew/pep-343.html) block like that, we pick up some lessons about context manager behavior. Context managers are good! They handle runtime context like opening and closing a file for us, sweeping details under the rug as any respectable abstraction should. As long as we only touch `f` inside that `with` block, our lives are long and happy. We probably don't try to access `f` _outside_ the block, and if we do things go awry since the file is closed. `f` is effectively dead to us once we leave that block.
 
-I didn't realize how much I had internalized that subtle lesson until the first time I saw examples of `pytest.raises`. It felt wrong to use `excinfo` after the `with` block... like an _animal_! But when you think about it, that's the only way it can work. We're testing for an _exception_ after all - once an exception happens we get booted out of that block. The pytest docs explain this well in a note [here](https://docs.pytest.org/en/latest/reference.html#pytest-raises):
+I didn't realize how much I had internalized that subtle lesson until the first time I saw examples of `pytest.raises`. It felt wrong to use `excinfo` after the `with` block, but when you think about it, that's the only way it can work. We're testing for an _exception_ after all - once an exception happens we get booted out of that block. The pytest docs explain this well in a note [here](https://docs.pytest.org/en/latest/reference.html#pytest-raises):
 
 > **Note**
 > 
@@ -136,6 +136,8 @@ assert "maximum recursion" in str(excinfo.value)
 ```
 
 And that's a beautiful thing!
+
+-- [AJ](pages/guests.html#ajkerrigan)
 
 ### References
 
