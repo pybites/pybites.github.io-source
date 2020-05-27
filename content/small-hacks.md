@@ -59,7 +59,3 @@ I hope this gives you some healthy inspiration to start off your week.
 Now go crush it this week and comment below which of these tips boosted your productivity/ motivation/ moved you closer to your goal. See you next week.
 
 -- Bob
-
-<div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
-</div>

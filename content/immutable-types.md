@@ -56,7 +56,7 @@ This is not efficient. So here you want to use a mutable type:
 
 Lists are cheaper here, because you can change the size of this type of object on the fly.
 
-On the other hand, the size of immutable types is known in memory from the start, which makes them quicker to access.
+On the other hand, the size of immutable types is known in memory from the start, which makes them quicker to access (interesting read: [Tuples tend to perform better than lists](https://stackoverflow.com/a/22140115)).
 
 This can really add up as [Michael Kennedy shows here featuring \_\_slots\_\_](https://www.youtube.com/watch?v=FUJf-eEF1GY).
 
@@ -101,6 +101,18 @@ Notice that _immutable_ is sometimes not 100% guaranteed. For instance, you can 
 	(1, [2, 3, 3.5], 4)
 
 Not 100% immutable. Just something to be wary of.
+
+---
+
+**Update**: somebody on FB added something interesting to be aware of:
+
+> The example about list being an element of a tuple is right - on the surface. It is perfectly in line with tuple immutability notion. Tuple holds a reference to a list - so that list may be modified, but cannot be replaced by another list. Yes, tuple can hold a reference to a mutable - it does not contradict the notion of its immutability.
+
+Researching a bit more, I stumbled upon Luciano Ramalho's ["Python tuples: immutable but potentially changing" article](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html) which is an interesting read in this context:
+
+> What is immutable is the physical content of a tuple, consisting of the object references only. The value of the list referenced by dum[1] changed, but the referenced object id is still the same. A tuple has no way of preventing changes to the values of its items, which are independent objects and may be reached through references outside of the tuple, like the skills name we used earlier. Lists and other mutable objects inside tuples may change, but their ids will always be the same.
+
+---
 
 ## React & functional programming
 

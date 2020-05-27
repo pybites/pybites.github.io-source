@@ -39,7 +39,3 @@ I hope this helps controlling your time more effectively.
 What one thing was critical in making you more productive this week?
 
 -- Bob
-
-<div class="ctaBox">
-<p>With so many avenues to pursue in Python it can be tough to know what to do. If you're looking for some <strong>direction</strong> or want to take your Python code and career to the next level, <a href="https://pybit.es/pages/apply.html" target="_blank">schedule a call with us now</a>. We can help you!</p>
-</div>
