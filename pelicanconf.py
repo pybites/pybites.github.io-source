@@ -10,7 +10,7 @@ SITEDESCRIPTION = SITESUBTITLE
 SITEURL = 'https://pybit.es'
 SITELOGO = 'https://pybit.es/theme/img/profile.png'
 # local testing / document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 PATH = 'content'
 THEME = 'nest'
@@ -70,9 +70,16 @@ NEST_HEADER_LOGO = '/images/logo.png'
 
 NEST_CSS_MINIFY = True
 
-MENUITEMS = [
+RESOURCES = [
     ('Home', '/'),
     ('Blog', '/archives.html'),
+    ('Platform','https://codechalleng.es'),
+    ('Members','https://members.pybit.es/login'),
+    ('Apply','/pages/apply.html')
+]
+SERVICES = [
+    ('Newbies', '/newbie.html'),
+    ('Blog', '/.html'),
     ('Platform','https://codechalleng.es'),
     ('Members','https://members.pybit.es/login'),
     ('Apply','/pages/apply.html')

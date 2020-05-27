@@ -14,6 +14,7 @@
         <!-- Stylesheets -->
         {% if NEST_CSS_MINIFY %}
         <link href="{{ SITEURL }}/theme/css/all.min.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet">
         {% else %}
         <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
         <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet">
@@ -138,6 +139,12 @@
                         <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo"></a>
                     </div>
                     <div class="nav pull-right">
+                        <div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
                         {% for title, link in MENUITEMS %}
                             {% if 'http://' in link or 'https://' in link %}
                                 <a href="{{ link }}" target="_blank">{{ title }}</a>
