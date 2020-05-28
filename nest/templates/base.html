@@ -139,6 +139,7 @@
                         <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo"></a>
                     </div>
                     <div class="nav pull-right">
+
                         <div class="dropdown">
                           <span>RESOURCES</span>
                           <div class="dropdown-content">
@@ -151,6 +152,7 @@
                             {% endfor %}
                           </div>
                         </div>
+
                         <div class="dropdown">
                           <span>SERVICES</span>
                           <div class="dropdown-content">
@@ -163,13 +165,20 @@
                             {% endfor %}
                           </div>
                         </div>
+
                         <div class="dropdown">
                           <span>TALK TO US</span>
                           <div class="dropdown-content">
-                             <a href="mailto:info@pybit.es">Contact us</a>
-                             <a href="https://go.oncehub.com/pybites">Schedule a call</a>
+                            {% for title, link in CONTACT %}
+                                <a href="{{ link }}"
+                                  {% if 'http://' in link or 'https://' in link %}
+                                    target="_blank"
+                                  {% endif %}
+                                >{{ title }}</a>
+                            {% endfor %}
                           </div>
                         </div>
+
                         {% if DISPLAY_PAGES_ON_MENU %}
                         {% for pg in PAGES %}
                             <a {% if pg == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
