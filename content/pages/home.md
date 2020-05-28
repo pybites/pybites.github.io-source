@@ -6,7 +6,7 @@ save_as: index.html
 
 Thanks for stopping by. If you love coding, Python and self improvement, you have come to the right place.
 
-We started out in the IT business 15 years ago and how we could leverage code and soft skills to boost our careers.
+We started out in the IT business 15 years ago and over the years we discovered how we could leverage code and soft skills to boost our careers.
 
 End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant community of Pythonistas, survived multiple 100 Days of Code challenges, built out our coding platform with over 270 _Bite_ exercises, and started coaching aspiring developers 1:1.
 
