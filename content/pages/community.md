@@ -1,5 +1,6 @@
 Title: PyBites Community
 status: hidden
+Slug: community
 
 <p>Learning alone sucks!</p>
 
