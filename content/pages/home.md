@@ -2,35 +2,31 @@ Title: We Create Well-Rounded Python Developers
 Status: hidden
 save_as: index.html
 
-Seriously, <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/" target="_blank">Python is here to stay</a>:
+## Welcome to PyBites
 
-<img src="images/python-growth.png" alt="Python is taking over graph" style="max-width: 600px;">
+Thanks for stopping by. If you love coding, Python and self improvement, you have come to the right place.
 
-Over the last few years of growing our PyBites Community we've produced amazing results for our clients.
+We started out in the IT business 15 years ago and how we could leverage code and soft skills to boost our careers.
 
-We've tackled common pitfalls like tutorial paralysis, improper sequencing and staying comfortable, which won't get you anywhere.
-
-And now, after many iterations, we have our unique system which creates rockstar Python developers.
+End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant community of Pythonistas, survived multiple 100 Days of Code challenges, built out our coding platform with over 270 _Bite_ exercises, and started coaching aspiring developers 1:1.
 
 > I recently interviewed for this Data Engineer position. I was able to answer questions during their technical phone screening that I otherwise wouldn’t have known because I kept up with the bites. I ended up getting an offer and I start next Monday! - Marin M.
 
-> We set up a go grpc server and created a Python client for it today. Thanks to the web dev knowledge I learned with you in the last weeks, I knew all important things and was able to discuss API design etc. with the other backend dev 👌 Thanks again for the PyBites Developer Mindest Program 🙏 - Robin B
+## Our Mission
 
----
+Simple and plain: we are passionate and committed to creating well-rounded Python developers, be it through our courses, exercises or mentoring clients individually.
 
-However coding is just one part of the equation and often the "easier" bit to learn.
+**What sets us apart is our practical approach, real-world experience in our materials, and the focus on leadership skills that are crucial to gaining optimal performance in your career.**
 
-In order to grow your career you need to also be strategic, build up relevant portfolio assets, drop perfectionism and develop confidence in your abilities.
+## Why Python
 
-> I feel like I had a big win with confidence today. Today I reached out to the biggest python groups on Facebook to promote my message. Bob and Julian' s mentorship kicked my ass into gear and proved to me that my skills are ready to showcase to the world. Thanks Bob and Julian. - Ben M.
+We started using a combination of C++, Java, PHP and Perl. Each language has its own strengths, but once we met Python we never looked back. Nor was there a need to.
 
----
+Currently Python is used everywhere: data science, web development, devops, you name it <a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/" target="_blank">Python is clearly here to stay</a>:
 
-We deeply care about helping other people succeed in their careers using Python and leadership skills. If you care about being the best Python developer you can be and want to boost your career, congratulations. You're in the right place.
+<img src="images/python-growth.png" alt="Python is taking over graph" style="max-width: 600px;">
 
-## Wait, who are these guys?
-
-Glad you asked.
+## About Us
 
 #### Meet Bob:
 
@@ -44,11 +40,11 @@ Since then he has coded <a href="https://blogs.oracle.com/jobsatoracle/bob-belde
 
 He deeply cares about helping other people succeed. His biggest win will be your next win!
 
-#### ...and Julian:
+#### ... and Julian:
 
 <img src="https://pybit.es/images/julian.jpg" alt="meet Julian" style="width:200px;">
 
-With a background in Servers and Data Centers at 3 of the largest companies on the planet, Julian made the challenging switch to a Python software developer role in 2019.
+With a background in Servers, Data Centers and Communications at 3 of the largest companies on the planet, Julian made the challenging switch to a Python software developer role in 2019.
 
 After learning Python teaching it on <a href="https://pybit.es" target="_blank">PyBites</a> with best friend Bob, Julian has made it his mission to spread not only his love of Python but also his expertise in communication and mindset.
 
