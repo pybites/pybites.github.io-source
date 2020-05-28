@@ -8,7 +8,7 @@ Thanks for stopping by. If you love coding, Python and self improvement, you hav
 
 We started out in the IT business 15 years ago and over the years we discovered how we could leverage code and soft skills to boost our careers.
 
-End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant community of Pythonistas, survived multiple 100 Days of Code challenges, built out our coding platform with over 270 _Bite_ exercises, and started coaching aspiring developers 1:1.
+End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant [community of Pythonistas](pages/community.html), survived multiple [100 Days of Code challenges](pages/100days.html), built out our [coding platform](https://codechalleng.es/) with over 270 _Bite_ exercises, and started [coaching](pages/apply.html) aspiring developers 1:1.
 
 > I recently interviewed for this Data Engineer position. I was able to answer questions during their technical phone screening that I otherwise wouldn’t have known because I kept up with the bites. I ended up getting an offer and I start next Monday! - Marin M.
 
