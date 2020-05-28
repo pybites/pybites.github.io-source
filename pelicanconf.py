@@ -71,19 +71,24 @@ NEST_HEADER_LOGO = '/images/logo.png'
 NEST_CSS_MINIFY = True
 
 RESOURCES = [
-    ('Home', '/'),
-    ('Blog', '/archives.html'),
-    ('Platform','https://codechalleng.es'),
-    ('Community','https://pybit.es/pages/community.html'),
-    ('Members','https://members.pybit.es/login'),
-    ('Apply','/pages/apply.html')
+    # ('Start here', '/start.html'),
+    ('Articles', '/archives.html'),
+    ('Community','/community.html'),
+    ('Open Source','https://github.com/PyBites-Open-Source'),
+    ('Newsletter','https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef'),
 ]
 SERVICES = [
     ('Newbies', '/newbie.html'),
-    ('Blog', '/.html'),
-    ('Platform','https://codechalleng.es'),
-    ('Members','https://members.pybit.es/login'),
-    ('Apply','/pages/apply.html')
+    ('Python Exercises','https://codechalleng.es'),
+    ('100 Days Of Code','/100days.html'),
+    ('Schools','/schools.html'),
+    ('Enterprise','/enterprise.html'),
+    ('Recruiter','/recruiter.html'),
+    ('Coaching','/apply.html'),
+]
+CONTACTS = [
+    ('Email', 'mailto:info@pybit.es'),
+    ('Twitter','https://twitter.com/pybites'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'

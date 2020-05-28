@@ -140,18 +140,36 @@
                     </div>
                     <div class="nav pull-right">
                         <div class="dropdown">
-  <span>Mouse over me</span>
-  <div class="dropdown-content">
-    <p>Hello World!</p>
-  </div>
-</div>
-                        {% for title, link in MENUITEMS %}
-                            {% if 'http://' in link or 'https://' in link %}
-                                <a href="{{ link }}" target="_blank">{{ title }}</a>
-                            {% else %}
-                                <a {% if "Apply" in title %} style="background-color: #ba9926!important; border-radius: 5px;"{% endif %} href="{{ SITEURL }}{{ link }}">{{ title }}</a>
-                            {% endif %}
-                        {% endfor %}
+                          <span>RESOURCES</span>
+                          <div class="dropdown-content">
+                            {% for title, link in RESOURCES %}
+                                <a href="{{ link }}"
+                                  {% if 'http://' in link or 'https://' in link %}
+                                    target="_blank"
+                                  {% endif %}
+                                >{{ title }}</a>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <span>SERVICES</span>
+                          <div class="dropdown-content">
+                            {% for title, link in SERVICES %}
+                                <a href="{{ link }}"
+                                  {% if 'http://' in link or 'https://' in link %}
+                                    target="_blank"
+                                  {% endif %}
+                                >{{ title }}</a>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <span>TALK TO US</span>
+                          <div class="dropdown-content">
+                             <a href="mailto:info@pybit.es">Contact us</a>
+                             <a href="https://go.oncehub.com/pybites">Schedule a call</a>
+                          </div>
+                        </div>
                         {% if DISPLAY_PAGES_ON_MENU %}
                         {% for pg in PAGES %}
                             <a {% if pg == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
