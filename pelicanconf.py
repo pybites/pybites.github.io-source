@@ -72,7 +72,7 @@ NEST_CSS_MINIFY = True
 
 RESOURCES = [
     # ('Start here', '/pages/start.html'),
-    ('Articles', '/pages/archives.html'),
+    ('Articles', '/archives.html'),
     ('Community','/pages/community.html'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
     ('Newsletter','https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef'),
@@ -83,7 +83,7 @@ SERVICES = [
     ('100 Days Of Code','/pages/100days.html'),
     ('Schools','/pages/schools.html'),
     ('Enterprise','/pages/enterprise.html'),
-    ('Recruiter','/pages/recruiter.html'),
+    ('Recruiter','/pages/recruiting.html'),
     ('Coaching','/pages/apply.html'),
 ]
 CONTACT_LINKS = [
