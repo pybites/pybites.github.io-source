@@ -6,7 +6,7 @@ It's no secret that recruiting for a developer position is an arduous process.
 
 The time wastage is largely due to the inability to gauge a candidate's coding level prior to them coming in for an on-site interview.
 
-This painful process is something the PyBites Recruiter Tier solves.
+This painful process is something the PyBites Code Challenges Recruiter Tier solves.
 
 By sending candidates a unique link to specific exercises from our library or exercises written by you, you're able to remove the pressure and time investment from an on-site interview.
 

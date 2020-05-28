@@ -18,3 +18,9 @@ There's so much more to the PyBites Code Challenges platform and we'd love nothi
 
 Select a calendar slot below and book us in for a call!
 
+<!-- ScheduleOnce button START -->
+<p class="buttonWrapper">
+	<button id="SOIBTN_pybites-platform" style="background: #BA9926; color: #ffffff; padding: 10px 20px; border: 1px solid #c8c8c8; font: bold 14px Arial; cursor: pointer;" data-height="580" data-psz="00" data-so-page="pybites-platform" data-delay="1">Schedule a Demo</button>
+</p>
+<script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>
+<!-- ScheduleOnce button END -->
