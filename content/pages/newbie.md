@@ -4,7 +4,7 @@ Slug: newbie
 
 If you're looking for a place to start learning Python, look no further.
 
-Our [_PyBites Code Challenges Newbie Bites_](https://gumroad.com/l/Xhxeo) are a series of 25 Python exercises (Bites) designed to teach you the basics of Python you need to start writing your own Python programs.
+Our [_PyBites Code Challenges Newbie Bites_](https://codechalleng.es/bites/newbie) are a series of 25 Python exercises (Bites) designed to teach you the basics of Python you need to start writing your own Python programs.
 
 Each Newbie Bite teaches a single concept that is introduced via a detailed explanation.
 
