@@ -1,4 +1,4 @@
-Title: Community
+Title: PyBites Community
 status: hidden
 
 <p>Learning alone sucks!</p>
