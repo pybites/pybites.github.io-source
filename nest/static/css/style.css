@@ -3,6 +3,37 @@
   background: #212223 !important;
 }
 
+body.landingPage {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.42857143;
+  background-color: #f2f2f2;
+  color: #333;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+p.buttonWrapper {
+  text-align: center;
+}
+.button {
+  background-color: #ba9926;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 8px;
+}
+.vimeo-space {
+  margin: 40px auto;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
 .header-nav {
   line-height: 30px;
 }
