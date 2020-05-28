@@ -86,7 +86,7 @@ SERVICES = [
     ('Recruiter','/pages/recruiter.html'),
     ('Coaching','/pages/apply.html'),
 ]
-CONTACTS = [
+CONTACT_LINKS = [
     ('Email', 'mailto:info@pybit.es'),
     ('Twitter','https://twitter.com/pybites'),
 ]
