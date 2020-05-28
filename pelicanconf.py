@@ -71,20 +71,20 @@ NEST_HEADER_LOGO = '/images/logo.png'
 NEST_CSS_MINIFY = True
 
 RESOURCES = [
-    # ('Start here', '/start.html'),
-    ('Articles', '/archives.html'),
-    ('Community','/community.html'),
+    # ('Start here', '/pages/start.html'),
+    ('Articles', '/pages/archives.html'),
+    ('Community','/pages/community.html'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
     ('Newsletter','https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef'),
 ]
 SERVICES = [
-    ('Newbies', '/newbie.html'),
+    ('Newbies', '/pages/newbie.html'),
     ('Python Exercises','https://codechalleng.es'),
-    ('100 Days Of Code','/100days.html'),
-    ('Schools','/schools.html'),
-    ('Enterprise','/enterprise.html'),
-    ('Recruiter','/recruiter.html'),
-    ('Coaching','/apply.html'),
+    ('100 Days Of Code','/pages/100days.html'),
+    ('Schools','/pages/schools.html'),
+    ('Enterprise','/pages/enterprise.html'),
+    ('Recruiter','/pages/recruiter.html'),
+    ('Coaching','/pages/apply.html'),
 ]
 CONTACTS = [
     ('Email', 'mailto:info@pybit.es'),
