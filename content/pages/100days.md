@@ -1,22 +1,37 @@
-Title: 100 Days Of Code
+Title: Code Python for 100 days straight
 status: hidden
 Slug: 100days
 
-### Write Code
+### If one thing matters
 
-We are 100 Days of Code survivors. Even better: what started as an innocent little project morphed into a complete product line.
+... it is to write code. Consistently!
+
+We are [#100DaysOfCode survivors](https://github.com/pybites/100DaysOfCode). This challenge was one of the best things we did in our PyBites journey and for our careers.
 
 It all started hitting 100 days of our blog and we thought: [let's celebrate with a challenge](https://pybit.es/special-100days.html).
 
-We made it and 100 days later we reflected and [had built up quite a code base](https://pybit.es/special-100days-of-code.html) ([repo](https://github.com/pybites/100DaysOfCode) - 378 stars and counting, not too shabby).
+We persisted through and 100 days later [we reflected on what we built](https://pybit.es/special-100days-of-code.html): we learned a lot of new modules and had a ton of reusable code.
 
-### Get Noticed
+Hear us talk about the challenge [on Episode 140 of Talk Python](https://talkpython.fm/episodes/show/140/level-up-your-python-with-100daysofcode-challenge).
 
-This did not go unnoticed: we were honored to talk about it [on Episode 140 of Talk Python](https://talkpython.fm/episodes/show/140/level-up-your-python-with-100daysofcode-challenge).
+### What to code?
 
-### Opportunity
+Filling 100 days with coding can be really challenging! What to work on? What NOT to work on?
 
-This led to partnering up with Mike producing the [#100DaysOfCode in Python](https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python) and its sequel the [#100DaysOfWeb in Python](https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python) (featured on [Episode 224 of Talk Python](https://talkpython.fm/episodes/show/224/12-lessons-from-100-days-of-web)).
+After mentioned podcast we got together with Mike and produced the [#100DaysOfCode in Python](https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python).
 
-If you are a self directed, fast learner, check them out, you will hit the ground running.
+![first 100 days course]({filename}/images/100days-classic.png)
+
+It got quite some traction so we decided to do another round focusing on web development: [#100DaysOfWeb in Python](https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python). 
+
+![second 100 days course]({filename}/images/100days-web.png)
+
+You can hear us talk about this course and what we learned on [Episode 224 of Talk Python](https://talkpython.fm/episodes/show/224/12-lessons-from-100-days-of-web).
+
+If you are a self directed and fast learner, you will hit the ground running with these courses.
+
+<p class="buttonWrapper">
+	<a href="https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python" class="button">100 Days of Code</a>
+	<a href="https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python" class="button">100 Days of Web</a>
+</p>
 
