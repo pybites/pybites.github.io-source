@@ -3,6 +3,12 @@
   background: #212223 !important;
 }
 
+.header-container {
+  /* TODO
+   * min-height: 220px;
+  height: 220px; */
+}
+
 body.landingPage {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -15,12 +21,13 @@ body.landingPage {
   margin: 0 auto;
 }
 p.buttonWrapper {
+  margin-top: 40px;
   text-align: center;
 }
 .button {
   background-color: #ba9926;
+  color: #fff !important;
   border: 1px solid #ccc;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
