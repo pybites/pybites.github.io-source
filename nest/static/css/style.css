@@ -20,9 +20,12 @@ body.landingPage {
   padding: 0 10px;
   margin: 0 auto;
 }
-p.buttonWrapper {
-  margin-top: 40px;
+.buttonWrapper {
+  margin-top: 20px;
   text-align: center;
+}
+.buttonWrapper a {
+  margin: 10px;
 }
 .button {
   background-color: #ba9926;
