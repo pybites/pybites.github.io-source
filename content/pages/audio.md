@@ -4,37 +4,38 @@ Slug: audio-resources
 
 Confined or walking on the street, we should always nourish our minds.
 
-We are firm believers that all starts with mindset and there is always more to learn :)
+We are firm believers that it all starts with mindset and that there is always more to learn :)
 
 Here are our favorite audio resources:
 
-## Business / self development
-
-- tim ferris show (and just being launched: tools of titan)
-- noah kagan
-- naval (mindblowing)
-- smart passive income
-- derek sivers (and his book "Anything You Want")
-- Masters of Scale (Reid Hoffman)
-- Happier with Gretchen Rubin
-
 ## Tech / Python
 
-- talk python
-- python bytes
-- testandcode
-- teaching python
-- tryexceptpass
-- profitable python
-- IT career energizer (Bob was on recently)
+- [Talk Python To Me](https://talkpython.fm/)
+- [Python Bytes](https://pythonbytes.fm/)
+- [Test & Code](https://testandcode.com/)
+- [Teaching Python](https://www.teachingpython.fm/)
+- [tryexceptpass](https://tryexceptpass.org/podcast/)
+- [Profitable Python](https://anchor.fm/profitablepythonfm)
+- [IT Career Energizer](https://itcareerenergizer.com/) (Bob was recently a guest!)
+
+
+## Business / self development
+
+- [The Tim Ferris Show](https://tim.blog/podcast/) (and just being launched: tools of titan)
+- [Noah Kagan Presents](https://podcasts.apple.com/us/podcast/id1187402810?ls=1&mt=2)
+- [Naval](https://nav.al/) (mindblowing podcast by Naval Ravikant)
+- [Smart Passive Income](https://www.smartpassiveincome.com/listen/)
+- [Derek Sivers](https://sivers.org/podcast) (and his book "Anything You Want")
+- [Masters of Scale](https://mastersofscale.com/) (Reid Hoffman)
+- [Happier with Gretchen Rubin](https://gretchenrubin.com/podcasts/)
 
 
 ## Bonus: our favorite audible books:
 
-- The Ultimate Jim Rohn Library
-- Mastering Fear
-- The Obstacle Is the Way
-- David Attenborough - Life on Air: Memoirs of a Broadcaster
-- Sapiens
-- A Short History of Nearly Everything
-- Linchpin
+- [The Ultimate Jim Rohn Library](https://www.audible.com.au/pd/The-Ultimate-Jim-Rohn-Library-Audiobook/B076PQQGCQ)
+- [Mastering Fear](https://www.audible.com.au/pd/Mastering-Fear-Audiobook/B07CSF7Q2J)
+- [The Obstacle Is the Way](https://www.audible.com.au/pd/The-Obstacle-Is-the-Way-Audiobook/B00K257NIK)
+- [David Attenborough - Life on Air: Memoirs of a Broadcaster](https://www.audible.com.au/pd/David-Attenborough-Life-on-Air-Memoirs-of-a-Broadcaster-Audiobook/B00FEZ7ZVI)
+- [Sapiens](https://www.audible.com.au/pd/Sapiens-Audiobook/B00VY24R3Y)
+- [A Short History of Nearly Everything](https://www.audible.com.au/pd/A-Short-History-of-Nearly-Everything-Audiobook/B00FH2TVH4)
+- [Linchpin](https://www.audible.com.au/pd/Linchpin-Are-You-Indispensable-Audiobook/B00FGIFHPO)
