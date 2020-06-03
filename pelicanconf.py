@@ -75,6 +75,7 @@ RESOURCES = [
     ('Articles', '/archives.html'),
     ('Community','/pages/community.html'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
+    ('Flask Intro','https://www.udemy.com/course/python-flask-for-beginners/'),
     ('Newsletter','https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef'),
 ]
 SERVICES = [
