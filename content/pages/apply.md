@@ -2,43 +2,15 @@ Title: Work With Us
 status: hidden
 Slug: apply
 
-## Does a career with Python sound appealing to you?
+## Are you ready to accelerate your Python career? Watch this ...
 
-What if you can leverage Python to do more _fulfilling_ work, _earn_ more and have total _freedom_ over your schedule?
-
-If you landed here you probably **already know Python** (if not [get some more reps in](https://codechalleng.es/bites/)), but you want to get to the **next level**.
-
-Do you want to impress people with your **unique portfolio**?
-
-Get your name on an **open source project**?
-
-Become one of those linchpins who has **complete control** over their career?
-
-<div id="introVideo"></div>
-
-<script>
-const urlParams = new URLSearchParams(window.location.search);
-const redirected = urlParams.get('redirected');
-if(!redirected){
-	let html = '<div class="vimeo-space" ';
-	html += 'style="padding: 56.25% 0 0 0; position: relative;">';
-	html += '<iframe src="https://player.vimeo.com/video/392926929" ';
-	html += 'style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" ';
-	html += 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>';
-	html += '</iframe></div><br>';
-	document.getElementById('introVideo').innerHTML = html;
-}
-</script>
-
-What took us many years to figure out, we have now distilled in a _fastlane_ that gets clients results in a few months, some even in a matter of weeks.
+<div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/392926929" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 You don't have to go at it alone, start leveraging our experience by getting on a call with us.
 
 By the way, this is **NOT** a sales call, this is a FREE **strategy session** in which you will gain **clarity** in your career. We are passionate about giving you some **valuable insights** we earned over time leveraging our careers using software.
 
-## Book Your Private Python Career Consult With Bob & Julian Now!
-
-**NOTE**: once you pick a date and time it will redirect you to a few mandatory questions to help us prepare for your call.
+## Book a Strategy Session with us
 
 <!-- ScheduleOnce embed START -->
 <div id="SOIDIV_pybites" data-so-page="pybites" data-height="510" data-style="width: 80%;" data-psz="00"></div>
