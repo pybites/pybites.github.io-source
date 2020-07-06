@@ -19,7 +19,7 @@ By the way, this is **NOT** a sales call, this is a FREE **strategy session** in
 
 ### Robin B - Becoming a succesful Python developer / data scientist at an Energy Startup
 
-<img src="https://avatars1.githubusercontent.com/u/60844432?s=200" alt="meet Robin" style="width:200px;">
+<img src="https://pybit.es/images/robbin.jpeg" alt="meet Robin" style="width:200px;">
 
 The PyBites Developer Mindset Program has given me confidence and clarity in direction and allowed me to make life changing decisions regarding my career.
 
@@ -29,7 +29,7 @@ In a relatively short period of time I gained the Python and leadership skills, 
 
 ### Alex K - Coded his dream project, improved Python and boosted confidence
 
-<img src="https://avatars3.githubusercontent.com/u/43783718?s=200" alt="meet Alex" style="width:200px;">
+<img src="https://pybit.es/images/alex.jpeg" alt="meet Alex" style="width:200px;">
 
 I had reached a point where I did not want to continue coding. I was faced with a choice: stay on the same level and go slow or get started on the bigger projects I always wanted to build.
 
