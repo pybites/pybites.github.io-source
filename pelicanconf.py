@@ -102,6 +102,7 @@ NEST_SITEMAP_MENU = [
     ('100 Days Of Code', '/pages/100days.html'),
     ('Search', '/pages/search.html'),
     ('Privacy Policy', '/pages/privacy-policy.html'),
+    ('Contact Us', 'mailto:info@pybit.es'),
 ]
 
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
