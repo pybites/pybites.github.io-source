@@ -80,7 +80,7 @@ Which means that a lot of data dancing in front of your eyes can cause you to co
 #### Pandas
 Great, we have the data!
 
-JSON is pretty clearly structured and in many cases, it's more than sufficient to use in you python code.
+JSON is pretty clearly structured and in many cases, it's more than sufficient to use in your python code.
 However, if you open the json file, you can see that there are hundreds of entries that are nested into the hundred country codes.
 
 When working with data that's this size, things get complicated fast.
