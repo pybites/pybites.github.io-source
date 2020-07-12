@@ -72,12 +72,74 @@ Have a look at `datafetcher.py` on [my github](https://github.com/jarviscodes/co
 <a name="forest-trees"></a>
 ### Part 2: The forest and the trees.
 
-I want to dedicate a small section to Jupyter Notebooks!
-
 In Dutch there's a saying: 
 > "You can't see the forest through the trees anymore".
 
 Which means that a lot of data dancing in front of your eyes can cause you to completely miss the bigger picture the data is portraying.
+
+#### Pandas
+Great, we have the data!
+
+JSON is pretty clearly structured and in many cases, it's more than sufficient to use in you python code.
+However, if you open the json file, you can see that there are hundreds of entries that are nested into the hundred country codes.
+
+When working with data that's this size, things get complicated fast.
+
+In comes `pandas`!
+
+Pandas is described as follows on the package website:
+
+> pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python.
+
+In short, pandas provides ways to make working with large data programmatically accessible.
+
+One example would be a `DataFrame`, which you can see as some sort of table object with a lot of information about the content.
+It can have indexes and column names to address or group data properly, which is exactly what we are going to be using.
+
+Here's an example pprinted dataframe, so you can get an idea what they look like.
+
+```
+                 date  new_cases  stringency_index
+date                                              
+2019-12-31 2019-12-31        0.0               NaN
+2020-01-01 2020-01-01        0.0              0.00
+2020-01-02 2020-01-02        0.0              0.00
+2020-01-03 2020-01-03        0.0              0.00
+2020-01-04 2020-01-04        0.0              0.00
+...               ...        ...               ...
+2020-07-08 2020-07-08       65.0             42.59
+2020-07-09 2020-07-09       87.0             42.59
+2020-07-10 2020-07-10        0.0               NaN
+2020-07-11 2020-07-11      259.0               NaN
+2020-07-12 2020-07-12      137.0               NaN
+
+[195 rows x 3 columns]
+
+```
+
+You can see that the dataframe knows the shape of our data (195x3), it has a date index and column names.
+
+There's also a bunch of methods that are being exposed to inspect your data.
+
+The `head()` function for example, shows a specified number of records of the dataframe you apply it to:
+
+So let's say that instead of printing the entire dataset, I would print `df_slice.head(5)`, the result would be this:
+
+```python
+
+                 date  new_cases  stringency_index
+date                                              
+2019-12-31 2019-12-31        0.0               NaN
+2020-01-01 2020-01-01        0.0               0.0
+2020-01-02 2020-01-02        0.0               0.0
+2020-01-03 2020-01-03        0.0               0.0
+2020-01-04 2020-01-04        0.0               0.0
+```
+
+And this is just a small example of what you can do with pandas!
+
+#### Jupyter
+I want to dedicate a small section to Jupyter Notebooks!
 
 For people who commonly work with data, `Jupyter` will likely be a very familiar tool, for others that struggle with `pprint`'ed `df.head()`'s, a new door might open. 
 Jupyter notebooks are basically python powered scratchpads.
