@@ -67,7 +67,7 @@ Next, all we have to do is compare the date in the local file against the date i
 
 And if these differ, we can download the data to our data folder! 
 
-Have a look at `datafetcher.py` on my github to see how I pulled all this together.
+Have a look at `datafetcher.py` on [my github](https://github.com/jarviscodes/covid-19-view/blob/master/code/datafetcher.py) to see how I pulled all this together.
 
 <a name="forest-trees"></a>
 ### Part 2: The forest and the trees.
@@ -82,7 +82,7 @@ Which means that a lot of data dancing in front of your eyes can cause you to co
 For people who commonly work with data, `Jupyter` will likely be a very familiar tool, for others that struggle with `pprint`'ed `df.head()`'s, a new door might open. 
 Jupyter notebooks are basically python powered scratchpads.
 
-The notebook I used for this project will also be on my github after I've cleaned it up a bit.
+The notebook I used for this project will also be on [my github](https://github.com/jarviscodes/covid-19-view).
 But honestly, take this thing as the scratchpad that it is where I randomly try to correlate stuff ;-)
 
 `Jupyter` has support for `matplotlib` and `pandas` which make it awesome to use for analyzing data:
