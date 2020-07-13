@@ -1,12 +1,12 @@
 Title: Analyzing covid-19 data with pandas and matplotlib
-Date: 2020-07-12
-Category: Learning
+Date: 2020-07-13 09:13
+Category: Data
 Tags: guest, pandas, matplotlib, data analysis
 Slug: guest-covid-19-data-analysis-pandas
 Authors: Cedric Sambre
 summary: One moment I was solving a pandas challenge, next I was analyzing real world covid-19 data with python...
 
-Some time ago, I was talking to [Martin](https://twitter.com/clamytoe) on the Pybites Slack about a challenge that involved the `pandas` library.
+Some time ago, I was talking to [Martin](https://twitter.com/clamytoe) on the [Pybites Slack](https://pybit.es/pages/community.html) about a challenge that involved the `pandas` library.
 
 I never really looked at data analysis, but triggered to complete the challenge ahead, I dove into the library and immediately noticed how strong it was to manage large data collections.
 
@@ -342,3 +342,4 @@ It was really a fun puzzle to connect the numbers to reality and figure out why 
 
 Both `pandas` and `matplotlib` can be very powerful tools to analyse all sorts of data and seeing the bigger picture.
 
+-- [Cedric](pages/guests.html#cedricsambre)
