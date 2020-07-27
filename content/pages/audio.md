@@ -39,3 +39,15 @@ Here are our favorite audio resources:
 - [Sapiens](https://www.audible.com.au/pd/Sapiens-Audiobook/B00VY24R3Y)
 - [A Short History of Nearly Everything](https://www.audible.com.au/pd/A-Short-History-of-Nearly-Everything-Audiobook/B00FH2TVH4)
 - [Linchpin](https://www.audible.com.au/pd/Linchpin-Are-You-Indispensable-Audiobook/B00FGIFHPO)
+
+## Bob & Julian featured on podcasts:
+
+- [TalkPython Episode #140: Level up your Python with #100DaysOfCode challenge](https://talkpython.fm/140)
+- [TalkPython Episode #224: 12 lessons from 100 days of web](https://talkpython.fm/224)
+- [Test & Code - Episode #60: 100 Days of Code](https://testandcode.com/60)
+- [Test & Code - Episode #83: PyBites CodeChalleng.es behind the scenes](https://testandcode.com/83)
+- [Python Bytes - Episode #154: Code, frozen in carbon, on display for all](https://pythonbytes.fm/episodes/show/154/code-frozen-in-carbon-on-display-for-all)
+- [Python Bytes - Episode #86: Make your NoSQL async and await-able with uMongo](https://pythonbytes.fm/episodes/show/86/make-your-nosql-async-and-await-able-with-umongo)
+- [Teaching Python - Episode #12: Intercontinental Python](https://www.teachingpython.fm/12)
+- [Profitable Python - Developer Mindset](https://anchor.fm/profitablepythonfm/episodes/Developer-Mindset--Julian--Bob-of-Pybit-es-egkcmc)
+- [I.T. Career Energizer - Episode 248 – Bob Belderbos](https://itcareerenergizer.com/episode-248-career-use-mentor-set-goals-make-plan-bob-belderbos/)
