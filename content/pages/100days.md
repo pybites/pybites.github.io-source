@@ -18,11 +18,11 @@ Hear us talk about the challenge [on Episode 140 of Talk Python](https://talkpyt
 
 Filling 100 days with coding can be really challenging! What to work on? What NOT to work on?
 
-After mentioned podcast we got together with Mike and produced the [#100DaysOfCode in Python](https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python).
+After mentioned podcast we got together with Mike and produced the [#100DaysOfCode in Python](https://talkpython.fm/100days?s=pybites).  
 
 ![first 100 days course]({filename}/images/100days-classic.png)
 
-It got quite some traction so we decided to do another round focusing on web development: [#100DaysOfWeb in Python](https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python). 
+It got quite some traction so we decided to do another round focusing on web development: [#100DaysOfWeb in Python](https://talkpython.fm/100web?s=pybites). 
 
 ![second 100 days course]({filename}/images/100days-web.png)
 
@@ -31,7 +31,7 @@ You can hear us talk about this course and what we learned on [Episode 224 of Ta
 If you are a self directed and fast learner, you will hit the ground running with these courses.
 
 <p class="buttonWrapper">
-	<a href="https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python" class="button">100 Days of Code</a>
-	<a href="https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python" class="button">100 Days of Web</a>
+	<a href="https://talkpython.fm/100days?s=pybites" class="button">100 Days of Code</a>
+	<a href="https://talkpython.fm/100web?s=pybites" class="button">100 Days of Web</a>
 </p>
 

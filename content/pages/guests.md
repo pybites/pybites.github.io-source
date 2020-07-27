@@ -104,7 +104,7 @@ Slug: guests
 
 <div id="anthonylister">
         <h3><a name="anthonylister">Anthony Lister</a></h3>
-        <p>Anthony is qualified in baseband hardware electronics and system design engineering having worked for a handful of mobile phone and mission-critical comms companies. Now works in another industry which is also an all encompassing passion of his; aviation. Also a self confessed gadget geek, Scotch malt whisky fan, cyclist and now fledgling Pythonista in training. Can often be found building robots using micropython with his two sons at weekends. Active participant of the <a href="https://training.talkpython.fm/courses/explore_100days_in_python/100-days-of-code-in-python?s=pybites" target="_blank">#100daysofcode course</a>. Follow his progress on Twitter at <a href="https://twitter.com/Anthlis" target="_blank">@Anthlis</a>.</p>
+        <p>Anthony is qualified in baseband hardware electronics and system design engineering having worked for a handful of mobile phone and mission-critical comms companies. Now works in another industry which is also an all encompassing passion of his; aviation. Also a self confessed gadget geek, Scotch malt whisky fan, cyclist and now fledgling Pythonista in training. Can often be found building robots using micropython with his two sons at weekends. Active participant of the <a href="https://talkpython.fm/100days?s=pybites" target="_blank">#100daysofcode course</a>. Follow his progress on Twitter at <a href="https://twitter.com/Anthlis" target="_blank">@Anthlis</a>.</p>
         <p>Anthony's <a href="https://pybit.es/author/anthony-lister.html">posts</a>.</p>
 </div>
 <br>
