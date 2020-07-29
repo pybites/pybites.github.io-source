@@ -38,6 +38,18 @@ body.landingPage {
   font-size: 25px;
   border-radius: 8px;
 }
+.ctaButton {
+  background: #BA9926;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #c8c8c8;
+  font: bold 14px Arial;
+  cursor: pointer;
+  width: 400px;
+  height: 60px;
+  font-size: 120%;
+  border-radius: 5px;
+}
 .vimeo-space {
   margin: 40px auto;
   padding: 56.25% 0 0 0;
