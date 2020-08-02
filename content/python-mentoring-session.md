@@ -66,3 +66,7 @@ Have you had a similar experience, be it as a mentee or a mentor? Share it in th
 Keep Calm and Code in Python!
 
 -- Bob
+
+<div class="ctaBox">
+<p>This is how we coach our clients every day. There are no shortcuts to becoming a proficient Pythonista, but you can definitely get major gains if guided into the right direction and applying the 80/20 that will make you a great developer. <a href="https://pybit.es/pages/apply.html" target="_blank">Book us in for a strategy session</a> and let's talk about your career and how we can help you.</p>
+</div>

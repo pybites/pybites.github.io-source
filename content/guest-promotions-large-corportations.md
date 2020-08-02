@@ -103,3 +103,7 @@ When I was naive and early in my career, I definitely wish someone sat me down a
 Keep Calm and Code in Python!
 
 [Cris](pages/guests.html#crismedina)
+
+<div class="ctaBox">
+<p>Are you stuck on how to successfully position yourself as a software developer? We can help, <a href="https://pybit.es/pages/apply.html" target="_blank">book a strategy session with us now</a>.</p>
+</div>

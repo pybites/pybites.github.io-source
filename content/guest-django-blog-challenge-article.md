@@ -141,3 +141,7 @@ Keep calm and code in Python!
 -- [Peter Babalola](pages/guests.html#peterbabalola)
 
 (Cover photo by Rosie Kerr on Unsplash)
+
+<div class="ctaBox">
+<p>Is tutorial paralysis preventing you from building your big dream project in Python? Don't procrastinate on a successful programming career, <a href="https://pybit.es/pages/apply.html" target="_blank">book a strategy session with us now</a>.</p>
+</div>

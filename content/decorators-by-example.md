@@ -95,6 +95,14 @@ Make sure to add [`functools.wraps`](https://docs.python.org/3.7/library/functoo
 		def wrapped(*args, **kwargs):
 		...
 
+---
+
+Before you read any further, maybe it's a good time to roll a decorator of your own!
+
+Check out our [Decorators and Context Managers Learning Path](https://codechalleng.es/bites/paths/decorators-context) and write some code. Decorators (or any Python concept for that matter) only really stick if you write the code yourself ...
+
+---
+
 ## Some practical examples
 
 I went back to our code base and found two examples where we used decorators:
@@ -177,20 +185,11 @@ One less obvious aspect of decorators for me was the passing of optional argumen
 
 See [this article](https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv) for more examples of decorators that take arguments and how to decorate classes.
 
-## Practice!
+## Don't stop here ... practice!
 
-The best way to learn decorators is to roll your own. Take your Python to the next level using our [Decorators and Context Managers Learning Path](https://codechalleng.es/bites/paths/decorators-context)
+All you've read so far is only useful if you PUT IT INTO PRACTICE!
 
-## Further reading
-
-There are many good resources on decorators:
-
-* The PEP on decorators: [PEP 318 -- Decorators for Functions and Methods](https://www.python.org/dev/peps/pep-0318/)
-* Real Python's [Primer on Python Decorators](https://realpython.com/blog/python/primer-on-python-decorators/)
-* Dan Bader's [Python Decorators: A Step-By-Step Introduction](https://dbader.org/blog/python-decorators)
-* Jeff Knupp's [Improve Your Python: Decorators Explained](https://jeffknupp.com/blog/2013/11/29/improve-your-python-decorators-explained/)
-* Start with why: [5 reasons you need to learn to write Python decorators](https://www.oreilly.com/ideas/5-reasons-you-need-to-learn-to-write-python-decorators)
-* As spotted in [our last Twitter Digest](https://pybit.es/twitter_digest_201741.html): [The decorators they won't tell you about](https://github.com/hchasestevens/posts/blob/master/notebooks/the-decorators-they-wont-tell-you-about.ipynb#blob_contributors_box)
+So head over to our [Decorators and Context Managers Learning Path](https://codechalleng.es/bites/paths/decorators-context) and start coding ...
 
 ---
 
