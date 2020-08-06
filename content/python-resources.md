@@ -56,6 +56,9 @@ In this article a list of useful Python resources to boost up your skills. It go
 * For an understanding of algorithms I recommend [Grokking algorithms](http://amzn.to/2lxGLNP) we detailed [here](http://pybit.es/grokking_algorithms.html). Another resource is [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html).
 
 * If you want to learn Flask and Django, and Python web development and database programming in general, check out [Real Python's great courses](https://realpython.com). 
+
+* If you want to use Microsoft Excel as a user friendly front-end to your Python code, check out [pyxll](http://www.pyxll.com/blog/).
+
 * [Awesome Python](https://awesome-python.com/) - a curated list of awesome Python frameworks, libraries, software and resources (discussed [here](http://pybit.es/awesome_python_resources.html)).
 
 * [Python progression path - From apprentice to guru SO thread](http://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru) contains some useful advice as well.
