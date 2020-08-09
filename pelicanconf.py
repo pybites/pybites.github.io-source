@@ -88,7 +88,7 @@ SERVICES = [
     ('Coaching','/pages/apply.html'),
 ]
 CONTACT_LINKS = [
-    ('Email', 'mailto:info@pybit.es'),
+    ('Email', 'mailto:support@pybit.es'),
     ('Twitter','https://twitter.com/pybites'),
 ]
 
@@ -113,7 +113,7 @@ NEST_FOOTER_HTML = ''
 
 NEST_LINKS_COLUMN_TITLE = u'Reach Out'
 LINKS = (
-    ('Email', 'mailto:info@pybit.es'),
+    ('Email', 'mailto:support@pybit.es'),
     ('Twitter', 'https://twitter.com/pybites'),
     ('Facebook','https://facebook.com/pybites'),
     ('Github','https://github.com/pybites'),

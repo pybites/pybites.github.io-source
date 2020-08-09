@@ -16,7 +16,7 @@ If intentionally requested by an individual we’ll also use email addresses to 
 
 <p><strong>Deleting your data</strong></p>
 
-<p>Simple! If for any reason you want your data deleted, simply email <a href="mailto:info@pybit.es">info@pybit.es</a> requesting that we delete your email address and name (if recorded).
+<p>Simple! If for any reason you want your data deleted, simply email <a href="mailto:support@pybit.es">support@pybit.es</a> requesting that we delete your email address and name (if recorded).
 
 
 <p><strong>Data Protection Officers (DPOs)</strong></p>
@@ -26,10 +26,10 @@ If intentionally requested by an individual we’ll also use email addresses to 
 <ul>
   <li>Julian Sequeira</li>
   <li>Bob Belderbos</li>
-  <li>Contact: <a href="mailto:info@pybit.es">info@pybit.es</a></li>
+  <li>Contact: <a href="mailto:support@pybit.es">support@pybit.es</a></li>
 </ul>
 
 
 <p><strong>Further information</strong></p>
 
-<p>If you need any further information on how we collect and use your data (or anything else really!), please send us an email at <a href="mailto:info@pybit.es">info@pybit.es</a>.
+<p>If you need any further information on how we collect and use your data (or anything else really!), please send us an email at <a href="mailto:support@pybit.es">support@pybit.es</a>.

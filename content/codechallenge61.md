@@ -55,7 +55,7 @@ Good luck and have fun!
 
 ## Ideas and feedback
 
-If you have ideas for a future challenge or find any issues, open a [GH Issue](https://github.com/pybites/challenges/issues) or reach out via [Twitter](https://twitter.com/pybites), [Slack](https://codechalleng.es/settings/) or [Email](mailto:info@pybit.es).
+If you have ideas for a future challenge or find any issues, open a [GH Issue](https://github.com/pybites/challenges/issues) or reach out via [Twitter](https://twitter.com/pybites), [Slack](https://codechalleng.es/settings/) or [Email](mailto:support@pybit.es).
 
 Last but not least: there is no best solution, only learning more and better Python. Good luck!
 
