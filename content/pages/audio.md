@@ -44,6 +44,7 @@ Here are our favorite audio resources:
 
 - [TalkPython Episode #140: Level up your Python with #100DaysOfCode challenge](https://talkpython.fm/140)
 - [TalkPython Episode #224: 12 lessons from 100 days of web](https://talkpython.fm/224)
+- [TalkPython Episode #277: 10 tips every Django developer should know](https://talkpython.fm/277)
 - [Test & Code - Episode #60: 100 Days of Code](https://testandcode.com/60)
 - [Test & Code - Episode #83: PyBites CodeChalleng.es behind the scenes](https://testandcode.com/83)
 - [Python Bytes - Episode #154: Code, frozen in carbon, on display for all](https://pythonbytes.fm/episodes/show/154/code-frozen-in-carbon-on-display-for-all)
