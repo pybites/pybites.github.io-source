@@ -1,7 +1,7 @@
 Title: Freezegun - Real Joy for Fake Dates in Python
-Date: 2020-07-31 19:44
-Category: Tools
-Tags: packages, testing, mocking
+Date: 2020-08-14 19:10
+Category: Modules
+Tags: packages, testing, mocking, freezegun, datetime, timedelta
 Slug: guest-freezegun
 Authors: AJ Kerrigan
 Summary: Freezegun is a library for mocking Python datetimes. It does one thing, does it well, and lets you get on with your life.
@@ -189,3 +189,7 @@ Thanks to the [PyBites](https://pybit.es/) community for inspiring this post. No
 * Bob Belderbos, for pointing out that this topic deserved a post
 
 And of course, thanks to [Steve Pulec](https://github.com/spulec/) for creating freezegun. (While I'm at it, thanks for [moto](https://github.com/spulec/moto) too!)
+
+Keep calm and code in Python!
+
+-- [AJ](pages/guests.html#ajkerrigan)
