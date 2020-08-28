@@ -1,6 +1,6 @@
 Title: The Pythonic Fast Lane, Digest of a 30 Min Mentoring Session
 Date: 2020-02-12 13:00
-Category: Coaching
+Category: Productivity
 Tags: mentoring, developer mindset, requests, APIs, environment variables, kwargs, f-strings, pdb
 Slug: python-mentoring-session
 Authors: Bob

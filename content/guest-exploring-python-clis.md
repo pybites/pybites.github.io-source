@@ -1,6 +1,6 @@
 Title: Exploring the Modern Python Command-Line Interface
 Date: 2020-04-27 22:00
-Category: 
+Category: Concepts
 Tags: python, unix, cli, history, argparse, click, typer
 Slug: guest-exploring-python-clis
 Illustration: mixer.jpg

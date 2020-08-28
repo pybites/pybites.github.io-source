@@ -1,6 +1,6 @@
 Title: Rockstar Python Developers Need Great communication Skills Too
 Date: 2020-05-04 09:15
-Category: Communication
+Category: Productivity
 Tags: communication, Code Club, mentoring, coaching, soft skills, kids, duck typing, meetups
 Slug: guest-communication-skills
 Authors: Anthony Lister
