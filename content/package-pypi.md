@@ -90,6 +90,7 @@ These resources really helped me going through this process end-to-end:
 Setup.py is still the way to go in many cases, but [Poetry](https://python-poetry.org/) and the standardized `toml` file is a strong contender.
 
 Check it out for yourself:
+
 - [What the heck is pyproject.toml](https://snarky.ca/what-the-heck-is-pyproject-toml/)
 - [We (Patrick G) used it in our own Karmabot](https://github.com/PyBites-Open-Source/karmabot)
 
