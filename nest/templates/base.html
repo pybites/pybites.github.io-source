@@ -167,16 +167,7 @@
                         </div>
 
                         <div class="dropdown">
-                          <span>TALK TO US</span>
-                          <div class="dropdown-content">
-                            {% for title, link in CONTACT_LINKS %}
-                                <a href="{{ link }}"
-                                  {% if 'http://' in link or 'https://' in link %}
-                                    target="_blank"
-                                  {% endif %}
-                                >{{ title }}</a>
-                            {% endfor %}
-                          </div>
+                          <a href="https://pybit.es/pages/workshop" class="workshopButton">Dev Workshop</a>
                         </div>
 
                         {% if DISPLAY_PAGES_ON_MENU %}

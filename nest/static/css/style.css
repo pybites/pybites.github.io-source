@@ -38,6 +38,14 @@ body.landingPage {
   font-size: 25px;
   border-radius: 8px;
 }
+.workshopButton {
+  background-color: #BA9926;
+  color: #ffffff;
+  border: 1px solid #c8c8c8;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
 .ctaButton {
   background: #BA9926;
   color: #ffffff;

@@ -72,24 +72,20 @@ NEST_CSS_MINIFY = True
 
 RESOURCES = [
     # ('Start here', '/pages/start.html'),
-    ('Articles', '/archives.html'),
-    ('Community','/pages/community.html'),
+    ('Articles', '/archives'),
+    ('Friends List','/pages/friendslist'),
+    ('Community','/pages/community'),
+    ('Blog Challenges', '/category/challenges'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
-    ('Flask Intro','https://www.udemy.com/course/python-flask-for-beginners/'),
-    ('Newsletter','https://pybit.us14.list-manage.com/subscribe?u=822043293f280259d4b8d2a3e&id=ac7e2eb9ef'),
+    ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
 ]
 SERVICES = [
-    ('Newbies', '/pages/newbie.html'),
+    ('Newbies', '/pages/newbie'),
     ('Python Exercises','https://codechalleng.es'),
-    ('100 Days Of Code','/pages/100days.html'),
-    ('Schools','/pages/schools.html'),
-    ('Enterprise','/pages/enterprise.html'),
-    ('Recruiter','/pages/recruiting.html'),
-    ('Coaching','/pages/apply.html'),
-]
-CONTACT_LINKS = [
-    ('Email', 'mailto:support@pybit.es'),
-    ('Twitter','https://twitter.com/pybites'),
+    ('Schools','/pages/schools'),
+    ('Enterprise','/pages/enterprise'),
+    ('Recruiter','/pages/recruiting'),
+    ('100 Days Of Code','/pages/100days'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
