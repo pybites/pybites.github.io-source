@@ -43,7 +43,7 @@ body.landingPage {
   color: #ffffff;
   border: 1px solid #c8c8c8;
   cursor: pointer;
-  padding: 5px;
+  padding: 0 8px;
   border-radius: 5px;
 }
 .ctaButton {
