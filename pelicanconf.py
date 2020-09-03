@@ -73,7 +73,7 @@ NEST_CSS_MINIFY = True
 RESOURCES = [
     # ('Start here', '/pages/start.html'),
     ('Articles', '/archives'),
-    ('Friends List','/pages/friendslist'),
+    ('Friends List','/pages/friends'),
     ('Community','/pages/community'),
     ('Blog Challenges', '/category/challenges'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
