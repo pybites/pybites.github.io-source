@@ -86,6 +86,7 @@ SERVICES = [
     ('Enterprise','/pages/enterprise'),
     ('Recruiter','/pages/recruiting'),
     ('100 Days Of Code','/pages/100days'),
+    ('Coaching','/pages/apply'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
