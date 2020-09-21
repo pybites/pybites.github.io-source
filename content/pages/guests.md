@@ -167,7 +167,7 @@ Slug: guests
 
 <div id="davidcolton">
 	<h3><a name="davidcolton"></a>David Colton</h3>
-	<p>Peter is an undergraduate computer science major, freelance developer and open source contributor leveraging Python and Django Framework to create stunning web applications. You can follow him on <a href="https://twitter.com/David__Colton" target="_blank">Twitter</a>, <a href="https://www.linkedin.com/in/davidcolton/" target="_blank">LinkedIN</a>, <a href="https://github.com/davidcolton/" target="_blank">GitHub</a> or <a href="https://davidcolton.github.io/" target="_blank">his website</a></p>
+	<p>David is an undergraduate computer science major, freelance developer and open source contributor leveraging Python and Django Framework to create stunning web applications. You can follow him on <a href="https://twitter.com/David__Colton" target="_blank">Twitter</a>, <a href="https://www.linkedin.com/in/davidcolton/" target="_blank">LinkedIN</a>, <a href="https://github.com/davidcolton/" target="_blank">GitHub</a> or <a href="https://davidcolton.github.io/" target="_blank">his website</a></p>
 	<p>David's <a href="https://pybit.es/author/david-colton.html">posts</a>.</p>
 </div>
 

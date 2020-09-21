@@ -6,6 +6,7 @@ Slug: guest-clean-text-data
 Authors: David Colton
 Summary: Machine Learning is super powerful if your data is numeric. What do you do, however, if you want to mine text data to discover hidden insights or to predict the sentiment of the text. What, for example, if you wanted to identify a post on a social media site as cyber bullying. In this article we introduce some methods to clean your text and prepare it for modelling.
 cover: images/featured/pb-guest.png
+status: draft
 
 # Table of Contents
 
@@ -15,7 +16,7 @@ cover: images/featured/pb-guest.png
 4. [Remove All Punctuation](#remove-punctuation)
 5. [Stop Words](#stop-words)
 6. [Spelling and Repeated Characters (Word Standardisation)](#word-standardisation)
-7. [Remove URL's, Email Addresses and Emojis](#remove)
+7. [Remove URLs, Email Addresses and Emojis](#remove)
 8. [Stemming and Lemmatisation](#stemming-lemmatisation)
 9. [A Simple Demonstration](#demonstration)
 
@@ -25,11 +26,11 @@ cover: images/featured/pb-guest.png
 
 Machine Learning is super powerful if your data is numeric. What do you do, however, if you want to mine text data to discover hidden insights or to predict the sentiment of the text. What, for example, if you wanted to identify a post on a social media site as cyber bullying. 
 
-One way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). A full explanation of TF-IDF is beyond the scope of this quick introduction, however, a detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
+One way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). A full explanation of TF-IDF is beyond the scope of this quick introduction, however, a detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice it to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
 
-However, before you can use TD-IDF you need to clean up your text data. But why do we need to clean text, can we not just eat it straight out of the tin. The answer is yes you can, you can use the raw data exactly as you've received it, however, cleaning your data will increase the accuracy of your model. This guide is a very basic introduction to some of the approaches used in cleaning text data. Some techniques are simple, some more advanced. For the more advanced concepts, consider their inclusion here as pointers for further personal research. 
+However, before you can use TF-IDF you need to clean up your text data. But why do we need to clean text, can we not just eat it straight out of the tin? The answer is yes, you can use the raw data exactly as you've received it, however, cleaning your data will increase the accuracy of your model. This guide is a very basic introduction to some of the approaches used in cleaning text data. Some techniques are simple, some more advanced. For the more advanced concepts, consider their inclusion here as pointers for further personal research. 
 
-In the following sections I'm assuming that you have plain text and your text is not embedded in HTML or Markdown or anything like that. If is is you should handle this first to get access to the raw text before proceeding.
+In the following sections I'm assuming that you have plain text and your text is not embedded in HTML or Markdown or anything like that. If that is the case you should handle this first to get access to the raw text before proceeding.
 
 <a name="tokenisation"></a>
 
@@ -41,19 +42,19 @@ Typically the first thing to do is to tokenise the text. This is just a fancy wa
 
 ## Normalising Case
 
-This is just a fancy way of saying convert all your text to lowercase. If using Tf-IDF `Hello` and `hello` are two different tokens. This has the side affect or reducing the total size of the vocabulary, or corpus, and some knowledge will be lost such as Apple the company versus eating an apple. In all cases you should consider if each of these actions actually makes sense to the text analysis you are performing. If you are not sure, or you want to see the impact of a particular cleaning technique try the before and after text to see which approach gives you a more predictive model. Sometimes, in text mining, there are multiple right answers.
+This is just a fancy way of saying convert all your text to lowercase. If using Tf-IDF `Hello` and `hello` are two different tokens. This has the side effect of reducing the total size of the vocabulary, or corpus, and some knowledge will be lost such as Apple the company versus eating an apple. In all cases you should consider if each of these actions actually make sense to the text analysis you are performing. If you are not sure, or you want to see the impact of a particular cleaning technique try the before and after text to see which approach gives you a more predictive model. Sometimes, in text mining, there are multiple right answers.
 
 <a name="remove-punctuation"></a>
 
 ## Remove All Punctuation
 
-Punctuation doesn't bring anything to the table when text mining so just remove it all. In fact sentence structure and word order is irrelevant when using TD-IDF.  Word of caution though. If you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
+Punctuation doesn't bring anything to the table when text mining so just remove it all. In fact sentence structure and word order is irrelevant when using TF-IDF.  Word of caution though. If you are also going to remove URLs and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
 
 <a name="stop-words"></a>
 
 ## Stop Words
 
-[Stop Words](https://en.wikipedia.org/wiki/Stop_word) are the most commonly used words in a language. You could consider them the glue that binds the important words into a sentence together. Sample stop words are `I, me, you, is, are, was` etc. Removing stop words have the advantage or reducing the size of your corpus and your model will also train faster which is great for tasks like Classification or Spam Filtering. However, another word or warning. If you are doing sentiment analysis consider these two sentences:
+[Stop Words](https://en.wikipedia.org/wiki/Stop_word) are the most commonly used words in a language. You could consider them the glue that binds the important words into a sentence together. Sample stop words are `I, me, you, is, are, was` etc. Removing stop words have the advantage of reducing the size of your corpus and your model will also train faster which is great for tasks like Classification or Spam Filtering. However, another word or warning. If you are doing sentiment analysis consider these two sentences:
 
 * _this movie was not good_
 * _movie good_
@@ -64,17 +65,17 @@ By removing stop words you've changed the sentiment of the sentence. Who said NL
 
 ## Spelling and Repeated Characters (Word Standardisation)
 
-Fixing obvious spelling errors can both increase the predictiveness of you model and speed up processing by reducing the size of your corpora. A good example of this is on Social Media sites when words are either truncated, deliberately misspelt or accentuated by adding unnecessary repeated characters. Consider:
+Fixing obvious spelling errors can both increase the predictiveness of your model and speed up processing by reducing the size of your corpora. A good example of this is on Social Media sites when words are either truncated, deliberately misspelt or accentuated by adding unnecessary repeated characters. Consider:
 
 * `love, luv, lovvvvv, lovvveeee`
 
-To an English speaker it pretty obvious that the single word the represents all these tokens is `love`. Standardising your text in this manner has the potential to improve your model significantly. 
+To an English speaker it's pretty obvious that the single word that represents all these tokens is `love`. Standardising your text in this manner has the potential to improve your model significantly. 
 
 <a name="remove"></a>
 
-## Remove URL's, Email Addresses and Emojis
+## Remove URLs, Email Addresses and Emojis
 
-Depending on your modelling requirements your might want to either leave these items in you text or further preprocess them as required. A general approach though is to assume these are not required and should be excluded. Consider if is it worth converting your emojis to text, would this bring extra predictiveness to your model. Regular expressions are the go to solution for removing URL's and email addresses.
+Depending on your modelling requirements you might want to either leave these items in your text or further preprocess them as required. A general approach though is to assume these are not required and should be excluded. Consider if it is worth converting your emojis to text, would this bring extra predictiveness to your model? Regular expressions are the go to solution for removing URLs and email addresses.
 
 <a name="stemming-lemmatisation"></a>
 
@@ -84,7 +85,7 @@ Stemming is a process by which derived or inflected words are reduced to their s
 
 **Lemmatisation** in linguistics, is the process of grouping together the different inflected forms of a word so they can be analysed as a single item. In languages, words can appear in several inflected forms. For example, in English, the verb 'to walk' may appear as 'walk', 'walked', 'walks', 'walking'. The base form, 'walk', that one might look up in a dictionary, is called the lemma for the word.
 
-So stemming uses *predefined rules* to transform the word into a *stem* whereas lemmatisation uses *context* and *lexical library* to derive *lemma*. *Stem* doesn’t always have to be a valid word whereas *lemma* will always be a valid word because *lemma* is a dictionary form of a word.
+So stemming uses *predefined rules* to transform the word into a *stem* whereas lemmatisation uses *context* and *lexical library* to derive a *lemma*. The *stem* doesn’t always have to be a valid word whereas *lemma* will always be a valid word because *lemma* is a dictionary form of a word.
 
 <a name="demonstration"></a>
 
