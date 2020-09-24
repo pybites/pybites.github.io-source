@@ -58,7 +58,7 @@ PyBites Developer Mindset has given me the technical knowledge, methodologies an
 
 This is something I always wanted to do but never knew where to start. The confidence I gained by building actual web applications allowed me to reach out to other developers and start contributing to an important open source project.
 
-<br><br>
+<br>
 
 ### Daniel S - From Newbie to Confident Pythonista
 
