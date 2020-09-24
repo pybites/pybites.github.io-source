@@ -57,7 +57,8 @@ The skills I learned through this program seriously boosted my confidence and pu
 PyBites Developer Mindset has given me the technical knowledge, methodologies and confidence to pursue a career as a developer and contribute to open source.
 
 This is something I always wanted to do but never knew where to start. The confidence I gained by building actual web applications allowed me to reach out to other developers and start contributing to an important open source project.
-<br>
+
+<br><br>
 
 ### Daniel S - From Newbie to Confident Pythonista
 
@@ -67,6 +68,7 @@ When I started the PyBites Developer Mindset Program I was a total newbie. When 
 
 Throughout the program though, I got up-to-speed with Python in record time. More importantly I became a critical thinker, developing a 360º view of my coding skills and how I could become more valuable to my current employer and the market.
 
+<br>
 <p class="buttonWrapper">
     <a href="https://forms.gle/oUPLpVfMHWmZov3v9" target="_blank" class="button">Work With Us</a>
 </p>
