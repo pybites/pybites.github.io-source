@@ -73,7 +73,7 @@ Throughout the program though, I got up-to-speed with Python in record time. Mor
     <a href="https://forms.gle/oUPLpVfMHWmZov3v9" target="_blank" class="button">Work With Us</a>
 </p>
 
-### Robin B - Becoming a succesful Python developer / data scientist at an Energy Startup
+### Robin B - Becoming a Succesful Python Developer / Data Scientist at an Energy Startup
 
 <img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/robin.jpeg" alt="meet Robin" class="profilePic">
 
@@ -83,7 +83,7 @@ Julian and Bob helped me see that I was underappreciated in my job and was wasti
 
 In a relatively short period of time I gained the Python and leadership skills, self-awareness and confidence I needed to become a successful Python developer / data scientist in an Energy Startup.
 
-### Alex K - Coded his dream project, improved Python and boosted confidence
+### Alex K - Coded his Dream Project, Improved Python and Boosted Confidence
 
 <img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/alex.jpeg" alt="meet Alex" class="profilePic">
 
@@ -97,7 +97,7 @@ Julian and Bob not only guided me on what I needed to know but, as an unexpected
 
 The improvements to my Python and newfound self-confidence made in just a few weeks would have undoubtedly taken me 10 years to achieve without the coaching in this program.
 
-### Ben M - Accelerate your progress and confidence
+### Ben M - Accelerate Your Progress and Confidence
 
 <div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/404595902" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
