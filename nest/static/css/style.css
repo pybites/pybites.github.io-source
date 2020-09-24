@@ -109,3 +109,12 @@ body.landingPage {
   padding: 0px;
   width: 200px;
 }
+.profilePic {
+  width: 150px !important;
+  float: left;
+  padding: 8px;
+  margin: 0 20px 0 0 !important;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2 !important;
+}
+
