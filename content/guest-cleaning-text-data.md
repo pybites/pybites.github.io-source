@@ -6,7 +6,6 @@ Slug: guest-clean-text-data
 Authors: David Colton
 Summary: Machine Learning is super powerful if your data is numeric. What do you do, however, if you want to mine text data to discover hidden insights or to predict the sentiment of the text. What, for example, if you wanted to identify a post on a social media site as cyber bullying. In this article we introduce some methods to clean your text and prepare it for modelling.
 cover: images/featured/pb-guest.png
-status: draft
 
 # Table of Contents
 
@@ -26,11 +25,34 @@ status: draft
 
 Machine Learning is super powerful if your data is numeric. What do you do, however, if you want to mine text data to discover hidden insights or to predict the sentiment of the text. What, for example, if you wanted to identify a post on a social media site as cyber bullying. 
 
-One way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). A full explanation of TF-IDF is beyond the scope of this quick introduction, however, a detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice it to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
+The first concept to be aware of is a Bag of Words. When training a model or classifier to identify documents of different types a bag of words approach is a commonly used, but basic, method to help determine a documents class. A bag of words is a representation of text that describes the occurrence of words within a document. It is called a “*bag*” of words, because any information about the order or structure of words in the document is discarded. The model is only concerned with whether known words occur in the document, not where in the document.  It involves two things:
 
-However, before you can use TF-IDF you need to clean up your text data. But why do we need to clean text, can we not just eat it straight out of the tin? The answer is yes, you can use the raw data exactly as you've received it, however, cleaning your data will increase the accuracy of your model. This guide is a very basic introduction to some of the approaches used in cleaning text data. Some techniques are simple, some more advanced. For the more advanced concepts, consider their inclusion here as pointers for further personal research. 
+1. A vocabulary of known words.
+2. A measure of the presence of known words.
 
-In the following sections I'm assuming that you have plain text and your text is not embedded in HTML or Markdown or anything like that. If that is the case you should handle this first to get access to the raw text before proceeding.
+Consider the phrases 
+
+* "*The cat in the hat sat in the window*"
+* "*The dog sat on the hat*"
+
+These phases can be broken down into the following vector representations with a simple measure of the count of the number of times each word appears in the document (phrase):
+
+| Word        | the  | cat  | dog  | in   | on   | hat  | sat  | window |
+| ----------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |
+| **Phase 1** | 3    | 1    | 0    | 2    | 0    | 1    | 1    | 1      |
+| **Phase 2** | 2    | 0    | 1    | 0    | 1    | 1    | 1    | 0      |
+
+These two vectors `[3, 1, 0, 2, 0, 1, 1, 1]` and `[2, 0, 1, 0, 1, 1, 1, 0]` can be be used as input into your data mining model.
+
+A more sophisticated way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). Term Frequency (TF) is the number of times a word appears in a document. This means that the more times a word appears in a document the larger its value for TF will get. The TF weighting of a word in a document shows its importance within that single document. Inverse Document Frequency (IDF) then shows the importance of a word within the entire collection of documents or corpus. The nature of the IDF value is such that terms which appear in a lot of documents will have a lower score or weight. This means terms that only appear in a single document, or in a small percentage of the documents, will receive a higher score. This higher score makes that word a good discriminator between documents. The TD-IDF weight for a word `i` in document `j` is given as:
+$$
+TFIDFij = TFij . IDFi
+$$
+A detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice it to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
+
+However, before you can use TF-IDF you need to clean up your text data. But why do we need to clean text, can we not just eat it straight out of the tin? The answer is yes, if you want to, you can use the raw data exactly as you've received it, however, cleaning your data will increase the accuracy of your model. This guide is a very basic introduction to some of the approaches used in cleaning text data. Some techniques are simple, some more advanced. For the more advanced concepts, consider their inclusion here as pointers for further personal research. 
+
+In the following sections I'm assuming that you have plain text and your text is not embedded in HTML or Markdown or anything like that. If your data is embedded in HTML, for example, you could look at using a package like [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to get access to the raw text before proceeding. You could use [Markdown](https://pypi.org/project/Markdown/) if your text is stored in Markdown.
 
 <a name="tokenisation"></a>
 
@@ -42,19 +64,19 @@ Typically the first thing to do is to tokenise the text. This is just a fancy wa
 
 ## Normalising Case
 
-This is just a fancy way of saying convert all your text to lowercase. If using Tf-IDF `Hello` and `hello` are two different tokens. This has the side effect of reducing the total size of the vocabulary, or corpus, and some knowledge will be lost such as Apple the company versus eating an apple. In all cases you should consider if each of these actions actually make sense to the text analysis you are performing. If you are not sure, or you want to see the impact of a particular cleaning technique try the before and after text to see which approach gives you a more predictive model. Sometimes, in text mining, there are multiple right answers.
+This is just a fancy way of saying convert all your text to lowercase. If using Tf-IDF `Hello` and `hello` are two different tokens. This has the side effect of reducing the total size of the vocabulary, or corpus, and some knowledge will be lost such as Apple the company versus eating an apple. In all cases you should consider if each of these actions actually make sense to the text analysis you are performing. If you are not sure, or you want to see the impact of a particular cleaning technique try the before and after text to see which approach gives you a more predictive model. Sometimes, in text mining, there are multiple different ways of achieving one's goal, and this is not limited to text mining as it is the same for standardisation in normal Machine Learning.
 
 <a name="remove-punctuation"></a>
 
-## Remove All Punctuation
+## Remove Punctuation
 
-Punctuation doesn't bring anything to the table when text mining so just remove it all. In fact sentence structure and word order is irrelevant when using TF-IDF.  Word of caution though. If you are also going to remove URLs and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
+When a bag of word approach, like described above is used, punctuation can be removed as sentence structure and word order is irrelevant when using TF-IDF.  Some words of caution though. Punctuation can be vital when doing sentiment analysis or other NLP task so understand your requirements. Also, if you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
 
 <a name="stop-words"></a>
 
 ## Stop Words
 
-[Stop Words](https://en.wikipedia.org/wiki/Stop_word) are the most commonly used words in a language. You could consider them the glue that binds the important words into a sentence together. Sample stop words are `I, me, you, is, are, was` etc. Removing stop words have the advantage of reducing the size of your corpus and your model will also train faster which is great for tasks like Classification or Spam Filtering. However, another word or warning. If you are doing sentiment analysis consider these two sentences:
+[Stop Words](https://en.wikipedia.org/wiki/Stop_word) are the most commonly used words in a language. You could consider them the glue that binds the important words into a sentence together. Sample stop words are `I, me, you, is, are, was` etc. Removing stop words have the advantage of reducing the size of your corpus and your model will also train faster which is great for tasks like Classification or Spam Filtering. Removing stop words also has the advantage of reducing the noise signal ratio as we don't want to analyse stop words because they are very unlikely to contribute to the classification task. However, another word or warning. If you are doing sentiment analysis consider these two sentences:
 
 * _this movie was not good_
 * _movie good_
@@ -69,7 +91,7 @@ Fixing obvious spelling errors can both increase the predictiveness of your mode
 
 * `love, luv, lovvvvv, lovvveeee`
 
-To an English speaker it's pretty obvious that the single word that represents all these tokens is `love`. Standardising your text in this manner has the potential to improve your model significantly. 
+To an English speaker it's pretty obvious that the single word that represents all these tokens is `love`. Standardising your text in this manner has the potential to improve the predictiveness of your model significantly. 
 
 <a name="remove"></a>
 
