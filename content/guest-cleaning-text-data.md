@@ -25,7 +25,7 @@ cover: images/featured/pb-guest.png
 
 Machine Learning is super powerful if your data is numeric. What do you do, however, if you want to mine text data to discover hidden insights or to predict the sentiment of the text. What, for example, if you wanted to identify a post on a social media site as cyber bullying. 
 
-The first concept to be aware of is a Bag of Words. When training a model or classifier to identify documents of different types a bag of words approach is a commonly used, but basic, method to help determine a documents class. A bag of words is a representation of text that describes the occurrence of words within a document. It is called a “*bag*” of words, because any information about the order or structure of words in the document is discarded. The model is only concerned with whether known words occur in the document, not where in the document.  It involves two things:
+The first concept to be aware of is a Bag of Words. When training a model or classifier to identify documents of different types a bag of words approach is a commonly used, but basic, method to help determine a document's class. A bag of words is a representation of text as a set of independent words with no relationship to each other. It is called a “*bag*” of words, because any information about the order or structure of words in the document is discarded. The model is only concerned with whether known words occur in the document, not where in the document.  It involves two things:
 
 1. A vocabulary of known words.
 2. A measure of the presence of known words.
@@ -35,16 +35,16 @@ Consider the phrases
 * "*The cat in the hat sat in the window*"
 * "*The dog sat on the hat*"
 
-These phases can be broken down into the following vector representations with a simple measure of the count of the number of times each word appears in the document (phrase):
+These phrases can be broken down into the following vector representations with a simple measure of the count of the number of times each word appears in the document (phrase):
 
-| Word        | the  | cat  | dog  | in   | on   | hat  | sat  | window |
-| ----------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |
-| **Phase 1** | 3    | 1    | 0    | 2    | 0    | 1    | 1    | 1      |
-| **Phase 2** | 2    | 0    | 1    | 0    | 1    | 1    | 1    | 0      |
+| Word         | the  | cat  | dog  | in   | on   | hat  | sat  | window |
+| ------------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |
+| **Phrase 1** | 3    | 1    | 0    | 2    | 0    | 1    | 1    | 1      |
+| **Phrase 2** | 2    | 0    | 1    | 0    | 1    | 1    | 1    | 0      |
 
-These two vectors `[3, 1, 0, 2, 0, 1, 1, 1]` and `[2, 0, 1, 0, 1, 1, 1, 0]` can be be used as input into your data mining model.
+These two vectors `[3, 1, 0, 2, 0, 1, 1, 1]` and `[2, 0, 1, 0, 1, 1, 1, 0]` could now be be used as input into your data mining model.
 
-A more sophisticated way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). Term Frequency (TF) is the number of times a word appears in a document. This means that the more times a word appears in a document the larger its value for TF will get. The TF weighting of a word in a document shows its importance within that single document. Inverse Document Frequency (IDF) then shows the importance of a word within the entire collection of documents or corpus. The nature of the IDF value is such that terms which appear in a lot of documents will have a lower score or weight. This means terms that only appear in a single document, or in a small percentage of the documents, will receive a higher score. This higher score makes that word a good discriminator between documents. The TD-IDF weight for a word `i` in document `j` is given as:
+A more sophisticated way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). Term Frequency (TF) is the number of times a word appears in a document. This means that the more times a word appears in a document the larger its value for TF will get. The TF weighting of a word in a document shows its importance within that single document. Inverse Document Frequency (IDF) then shows the importance of a word within the entire collection of documents or corpus. The nature of the IDF value is such that terms which appear in a lot of documents will have a lower score or weight. This means terms that only appear in a single document, or in a small percentage of the documents, will receive a higher score. This higher score makes that word a good discriminator between documents. The TF-IDF weight for a word `i` in document `j` is given as:
 $$
 TFIDFij = TFij . IDFi
 $$
@@ -70,7 +70,7 @@ This is just a fancy way of saying convert all your text to lowercase. If using 
 
 ## Remove Punctuation
 
-When a bag of word approach, like described above is used, punctuation can be removed as sentence structure and word order is irrelevant when using TF-IDF.  Some words of caution though. Punctuation can be vital when doing sentiment analysis or other NLP task so understand your requirements. Also, if you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
+When a bag of word approach, like described above is used, punctuation can be removed as sentence structure and word order is irrelevant when using TF-IDF.  Some words of caution though. Punctuation can be vital when doing sentiment analysis or other NLP tasks so understand your requirements. Also, if you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
 
 <a name="stop-words"></a>
 
