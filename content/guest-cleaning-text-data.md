@@ -46,7 +46,7 @@ These two vectors `[3, 1, 0, 2, 0, 1, 1, 1]` and `[2, 0, 1, 0, 1, 1, 1, 0]` coul
 
 A more sophisticated way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). Term Frequency (TF) is the number of times a word appears in a document. This means that the more times a word appears in a document the larger its value for TF will get. The TF weighting of a word in a document shows its importance within that single document. Inverse Document Frequency (IDF) then shows the importance of a word within the entire collection of documents or corpus. The nature of the IDF value is such that terms which appear in a lot of documents will have a lower score or weight. This means terms that only appear in a single document, or in a small percentage of the documents, will receive a higher score. This higher score makes that word a good discriminator between documents. The TF-IDF weight for a word `i` in document `j` is given as:
 
-[TF-IDF weight image]({filename}/images/TFIDFij.png)
+![TF-IDF weight image]({filename}/images/TFIDFij.png)
 
 A detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice it to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
 
