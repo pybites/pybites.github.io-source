@@ -1,5 +1,5 @@
 Title: Cleaning Text Data With Python
-Date: 2020-09-17 23:00
+Date: 2020-09-30 20:34
 Category: Data Science
 Tags: guest, tokenisation, case, punctuation, stop words, spelling, urls, email, stemming, lemmatisation
 Slug: guest-clean-text-data
@@ -45,9 +45,9 @@ These phrases can be broken down into the following vector representations with 
 These two vectors `[3, 1, 0, 2, 0, 1, 1, 1]` and `[2, 0, 1, 0, 1, 1, 1, 0]` could now be be used as input into your data mining model.
 
 A more sophisticated way to analyse text is to use a measure called Term Frequency - Inverse Document Frequency (TF-IDF). Term Frequency (TF) is the number of times a word appears in a document. This means that the more times a word appears in a document the larger its value for TF will get. The TF weighting of a word in a document shows its importance within that single document. Inverse Document Frequency (IDF) then shows the importance of a word within the entire collection of documents or corpus. The nature of the IDF value is such that terms which appear in a lot of documents will have a lower score or weight. This means terms that only appear in a single document, or in a small percentage of the documents, will receive a higher score. This higher score makes that word a good discriminator between documents. The TF-IDF weight for a word `i` in document `j` is given as:
-$$
-TFIDFij = TFij . IDFi
-$$
+
+[TF-IDF weight image]({filename}/images/TFIDFij.png)
+
 A detailed background and explanation of TF-IDF, including some Python examples, is given here [Analyzing Documents with TF-IDF](https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf). Suffice it to say that TF-IDF will assign a value to every word in every document you want to analyse and, the higher the TF-IDF value, the more important or predictive the word will typically be.
 
 However, before you can use TF-IDF you need to clean up your text data. But why do we need to clean text, can we not just eat it straight out of the tin? The answer is yes, if you want to, you can use the raw data exactly as you've received it, however, cleaning your data will increase the accuracy of your model. This guide is a very basic introduction to some of the approaches used in cleaning text data. Some techniques are simple, some more advanced. For the more advanced concepts, consider their inclusion here as pointers for further personal research. 
@@ -70,7 +70,7 @@ This is just a fancy way of saying convert all your text to lowercase. If using 
 
 ## Remove Punctuation
 
-When a bag of word approach, like described above is used, punctuation can be removed as sentence structure and word order is irrelevant when using TF-IDF.  Some words of caution though. Punctuation can be vital when doing sentiment analysis or other NLP tasks so understand your requirements. Also, if you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
+When a bag of words approach, like described above is used, punctuation can be removed as sentence structure and word order is irrelevant when using TF-IDF.  Some words of caution though. Punctuation can be vital when doing sentiment analysis or other NLP tasks so understand your requirements. Also, if you are also going to remove URL's and Email addresses you might want to the do that before removing punctuation characters otherwise they'll be a bit hard to identify. Another consideration is hashtags which you might want to keep so you may need a rule to remove `#` unless it is the first character of the token.
 
 <a name="stop-words"></a>
 
@@ -177,4 +177,3 @@ lovveee:	lovveee	{'lovveee'}
 ```
 
 In lines 1 and 2 a [Spell Checker](https://pypi.org/project/pyspellchecker/) is imported and initialised. Line 3 creates a list of misspelt words. Then in line 4 each misspelt word, the corrected word, and possible correction candidate are printed. This is not suggested as an optimised solution but only provided as a suggestion.
-
