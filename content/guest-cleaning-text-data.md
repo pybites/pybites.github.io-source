@@ -177,3 +177,8 @@ lovveee:	lovveee	{'lovveee'}
 ```
 
 In lines 1 and 2 a [Spell Checker](https://pypi.org/project/pyspellchecker/) is imported and initialised. Line 3 creates a list of misspelt words. Then in line 4 each misspelt word, the corrected word, and possible correction candidate are printed. This is not suggested as an optimised solution but only provided as a suggestion.
+
+Keep calm and code in Python!
+
+-- [David](pages/guests.html#davidcolton)
+
