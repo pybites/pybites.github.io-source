@@ -171,6 +171,13 @@ Slug: guests
 	<p>David's <a href="https://pybit.es/author/david-colton.html">posts</a>.</p>
 </div>
 
+<div id="michaelaydinbas">
+	<h3><a name="michaelaydinbas"></a>Michael Aydinbas</h3>
+	<p>Michael is a data scientist and data engineer who can't (and doesn't want to) decide which of the two worlds he belongs to, so he tries to love them both. His background is in psychology and computer science as well as environmental engineering. He uses the Python data stack along with large-scale data technologies to help his customers migrate their workflows into the 21st century. You can follow him on <a href="https://www.linkedin.com/in/michael-aydinbas/" target="_blank">LinkedIn</a> and <a href="https://github.com/pmayd/" target="_blank">GitHub</a>.
+	<p>Michaels's <a href="https://pybit.es/author/michael-aydinbas.html">posts</a>.</p>
+</div>
+
+
 
 
 <!-- insert your new bio above this line -->
