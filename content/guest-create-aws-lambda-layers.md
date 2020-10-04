@@ -4,7 +4,7 @@ Category: Tools
 Tags: AWS, cloud, lambda, Docker, packages, deployment, Klayers, scikit-learn, AWS cli
 Slug: guest-create-aws-lambda-layers
 Authors: Michael Aydinbas
-summary: I finally managed to get scikit-learn running on the platform. On the way, I learned a lot about AWS Lambda Layers, AWS cli, and AWS cloud infrastructure in general. And now it's time I share this knowledge with you. In this article you will learn about creating your own AWS Lambda Layer to support any Python package you may need.
+Summary: I finally managed to get scikit-learn running on the platform. On the way, I learned a lot about AWS Lambda Layers, AWS cli, and AWS cloud infrastructure in general. And now it's time I share this knowledge with you. In this article you will learn about creating your own AWS Lambda Layer to support any Python package you may need.
 cover: images/featured/pb-article.png
 
 This article continues where [How to Run External Python Libraries in AWS Cloud](https://pybit.es/aws-lambda-external-libraries.html) ended. 
@@ -79,7 +79,6 @@ To test your scikit-learn dependency, you should now be able to call
 
 ```PYTHON
 import sklearn
-
 print(sklearn.__version__)
 ```
 
