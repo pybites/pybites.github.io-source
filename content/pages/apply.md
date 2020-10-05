@@ -26,16 +26,18 @@ Do you want to:
 
 - Bridge the gap from intermediate to advanced Python?
 
-Yes? Then it's time to talk with us.
+Yes? Then it's time to <strong><a id="SOIBTN_pybites" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1" style="cursor: pointer;" title="Let's hop on a Strategy Session call ...">talk with us</a></strong>.
 
 You know what all these things have in common? They require highly **practical, expert skills** that you don't get from books or videos. You'll need **real-world experience**, to be held **accountable to your goals**, to be pushed **outside of your comfort zone**!
 
 We deliver this much needed **environment and strategy** by coaching you through building **mature apps** you care about. What would normally take you years to learn we have condensed into months, seeing your first results in a matter of weeks.
 
-You don't have to go it alone, start leveraging our experience.
+You don't have to go it alone, start leveraging **our experience**.
+
+**Book a call with us.** We will help you get clarity in your Python journey, see what is holding you back and how we can best help you move forward.
 
 <p class="buttonWrapper">
-    <a href="https://forms.gle/oUPLpVfMHWmZov3v9" target="_blank" class="button">Work With Us</a>
+	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
 
 ### Robin B - Becoming a Succesful Python Developer / Data Scientist at an Energy Startup
@@ -66,10 +68,8 @@ The improvements to my Python and newfound self-confidence made in just a few we
 
 <div class="vimeo-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/404595902" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
-<script src="https://player.vimeo.com/api/player.js"></script>
-
 <p class="buttonWrapper">
-    <a href="https://forms.gle/oUPLpVfMHWmZov3v9" target="_blank" class="button">Work With Us</a>
+	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
 
 ### Piotr R - Becoming a Confident Django Web Developer
@@ -104,5 +104,8 @@ Throughout the program though, I got up-to-speed with Python in record time. Mor
 
 <br>
 <p class="buttonWrapper">
-    <a href="https://forms.gle/oUPLpVfMHWmZov3v9" target="_blank" class="button">Work With Us</a>
+	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>
