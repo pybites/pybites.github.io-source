@@ -1,5 +1,5 @@
 Title: How to Create an AWS Lambda Layer For Any Python Dependency
-Date: 2020-10-03 21:00
+Date: 2020-10-05 14:22
 Category: Tools
 Tags: AWS, cloud, lambda, Docker, packages, deployment, Klayers, scikit-learn, AWS cli
 Slug: guest-create-aws-lambda-layers
