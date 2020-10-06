@@ -52,3 +52,4 @@ Here are our favorite audio resources:
 - [Teaching Python - Episode #12: Intercontinental Python](https://www.teachingpython.fm/12)
 - [Profitable Python - Developer Mindset](https://anchor.fm/profitablepythonfm/episodes/Developer-Mindset--Julian--Bob-of-Pybit-es-egkcmc)
 - [I.T. Career Energizer - Episode 248 – Bob Belderbos](https://itcareerenergizer.com/episode-248-career-use-mentor-set-goals-make-plan-bob-belderbos/)
+- [Bob Belderbos: On How To Build and Grow Communities In Technology | Founding PyBites](https://exploit.chat/episodes/ep15)
