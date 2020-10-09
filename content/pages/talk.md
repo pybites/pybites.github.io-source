@@ -4,7 +4,7 @@ Slug: talk
 
 ## Take advantage of our Free Coaching Call
 
-<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/bob-and-julian-small.jpg" alt="Bob and Julian at Pycon" class="profilePicBig">
+<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/bob-and-julian-small.jpg" alt="Bob and Julian at Pycon" class="profilePicBig" style="width: 400px !important; margin: 0 30px 0 0 !important;">
 
 Welcome to PyBites! We are Julian and Bob, both software developers, instructors, coaches and co-founders of PyBites.
 
