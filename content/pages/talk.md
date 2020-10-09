@@ -50,21 +50,3 @@ _The confidence I gained by building actual web applications allowed me to reach
 _I got up-to-speed with Python in record time. More importantly I became a critical thinker, developing a 360º view of my coding skills and how I could become more valuable to my current employer and the market. - Daniel S_
 
 <script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>
-
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '204929054292880');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=204929054292880&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
