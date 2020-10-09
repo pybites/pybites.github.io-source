@@ -78,6 +78,7 @@ body.landingPage {
   margin-left: 0px;
   display: block;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -109,6 +110,7 @@ body.landingPage {
   padding: 0px;
   width: 200px;
 }
+
 .profilePic, .profilePicBig {
   float: left;
   padding: 8px;
