@@ -6,7 +6,7 @@ Keep your team engaged with [PyBites Code Challenges](http://codechalleng.es/)!
 
 Coding daily in Python is key to keeping Python development skills sharp.
 
-The _PyBites Code Challenges Enterprise Tier_ is designed to ensure your team keeps their Python skill up by challenging them with over 270 Python exercises (Bites). The Bites can be taken adhoc or via curated Learning Paths.
+The _PyBites Code Challenges Enterprise Tier_ is designed to ensure your team keeps their Python skill up by challenging them with 300+ Python exercises (Bites). The Bites can be taken adhoc or via curated Learning Paths.
 
 Such a varied range of exercises will not only keep your team interested but will also expose them to the many facets of Python.
 

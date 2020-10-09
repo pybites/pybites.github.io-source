@@ -8,7 +8,7 @@ Thanks for stopping by. If you love coding, Python and self improvement, you hav
 
 We started out in the IT business 15 years ago and over the years we discovered how we could leverage code and soft skills to boost our careers.
 
-End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant [community of Pythonistas](pages/community.html), survived multiple [100 Days of Code challenges](pages/100days.html), built out our [coding platform](https://codechalleng.es/) with over 270 _Bite_ exercises, and started [coaching](pages/apply.html) aspiring developers 1:1.
+End of 2016 we started a Python blog to share our learning. Over the years we've grown a vibrant [community of Pythonistas](pages/community.html), survived multiple [100 Days of Code challenges](pages/100days.html), built out our [coding platform](https://codechalleng.es/) with 300+ _Bite_ exercises, and started [coaching](pages/apply.html) aspiring developers 1:1.
 
 ## Our Mission
 
