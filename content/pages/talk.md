@@ -8,7 +8,7 @@ Slug: talk
 
 Welcome to PyBites! We are Julian and Bob, both software developers, instructors, coaches and co-founders of PyBites.
 
-We've worked with people like you taking them from beginner / intermediate coder to **confident developers**. Like them you could be:
+We've worked with people like you taking them from beginner / intermediate coders to **confident developers**. Like them you could be:
 
 <span>- Building fully fledged Flask and Django apps.</span>
 
