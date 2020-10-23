@@ -1,4 +1,4 @@
 Title: PyBites Developer Workshop
 status: hidden
-Slug: workshop2
+Slug: promotion
 Template: workshop2
