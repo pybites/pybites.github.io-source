@@ -2,6 +2,8 @@ Title: Teaching kids to code with PyBites
 status: hidden
 Slug: schools
 
+## Use the PyBites Platform in the Classroom
+
 As a technology teacher, you know the benefits of teaching kids to code.
 
 Not only is it a necessary skill in today's tech driven industries but it inspires creativity!

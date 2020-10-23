@@ -2,7 +2,7 @@ Title: Build Real-World Python Projects
 status: hidden
 Slug: apply
 
-## Accelerate Your Python Career
+## Accelerate your Python Career, it's easier than you think ...
 
 So you know Python, you have written a fair bit of code, but you still feel like you "only" write scripts. Where to from here?
 
@@ -28,17 +28,22 @@ Do you want to:
 
 Yes? Then it's time to <strong><a id="SOIBTN_pybites" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1" style="cursor: pointer;" title="Let's hop on a Strategy Session call ...">talk with us</a></strong>.
 
+<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/bob-and-julian-small.jpg" alt="Bob and Julian at Pycon" style="width: 400px !important; margin: 30px auto;">
+
 You know what all these things have in common? They require highly **practical, expert skills** that you don't get from books or videos. You'll need **real-world experience**, to be held **accountable to your goals**, to be pushed **outside of your comfort zone**!
 
 We deliver this much needed **environment and strategy** by coaching you through building **mature apps** you care about. What would normally take you years to learn we have condensed into months, seeing your first results in a matter of weeks.
 
 You don't have to go it alone, start leveraging **our experience**.
 
-**Book a call with us.** We will help you get clarity in your Python journey, see what is holding you back and how we can best help you move forward.
+**Book a free call with us.** We will help you get clarity in your Python journey, see what is holding you back and how we can best help you move forward.
 
 <p class="buttonWrapper">
 	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
+<br>
+
+# Here is what our clients achieved ...
 
 ### Robin B - Becoming a Succesful Python Developer / Data Scientist at an Energy Startup
 
@@ -71,6 +76,7 @@ The improvements to my Python and newfound self-confidence made in just a few we
 <p class="buttonWrapper">
 	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
+<br>
 
 ### Piotr R - Becoming a Confident Django Web Developer
 
@@ -103,9 +109,14 @@ When I started the PyBites Developer Mindset Program I was a total newbie. When 
 Throughout the program though, I got up-to-speed with Python in record time. More importantly I became a critical thinker, developing a 360º view of my coding skills and how I could become more valuable to my current employer and the market.
 
 <br>
+
+# You can become a succesfull Python Developer
+<br>
+
 <p class="buttonWrapper">
 	<button id="SOIBTN_pybites" class="ctaButton" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1">Book a Strategy Session</button>
 </p>
+<br><br>
 
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js"></script>

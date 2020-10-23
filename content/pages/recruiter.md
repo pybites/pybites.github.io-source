@@ -2,6 +2,8 @@ Title: Hire Python Developers the better way
 status: hidden
 Slug: recruiting
 
+## PyBites Platform Recruiter Tier
+
 It's no secret that recruiting for a developer position is an arduous process.
 
 The time wastage is largely due to the inability to gauge a candidate's coding level prior to them coming in for an on-site interview.

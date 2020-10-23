@@ -2,6 +2,8 @@ Title: Create a team of proficient Pythonistas
 status: hidden
 Slug: enterprise
 
+## PyBites Platform Enterprise Tier
+
 Keep your team engaged with [PyBites Code Challenges](http://codechalleng.es/)!
 
 Coding daily in Python is key to keeping Python development skills sharp.
