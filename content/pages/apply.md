@@ -18,7 +18,7 @@ Do you want to:
 
 - Earn more money?
 
-<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/average-salaries.png" alt="average IT vs Python salaries" style="width: 700px !important; margin: 30px 0;">
+<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/average-salaries.png" alt="average IT vs Python salaries" style="width: 100%; max-width: 700px !important; margin: 30px 0;">
 
 <small>(source: DevSkiller.com)</small>
 
@@ -38,7 +38,7 @@ Do you want to:
 
 Yes? Then it's time to <strong><a id="SOIBTN_pybites" data-height="580" data-psz="00" data-so-page="pybites" data-delay="1" style="cursor: pointer;" title="Let's hop on a Strategy Session call ...">talk with us</a></strong>.
 
-<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/bob-and-julian-small.jpg" alt="Bob and Julian at Pycon" style="width: 400px !important; margin: 30px auto;">
+<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/bob-and-julian-small.jpg" alt="Bob and Julian at Pycon" style="width: 100%; max-width: 400px !important; margin: 30px auto;">
 
 You know what all these things have in common? They require highly **practical, expert skills** that you don't get from books or videos. You'll need **real-world experience**, to be held **accountable to your goals**, to be pushed **outside of your comfort zone**!
 
