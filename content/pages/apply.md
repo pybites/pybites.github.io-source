@@ -16,6 +16,16 @@ Do you want to:
 
 - Validate your code, learning about important Python idioms and software best practices?
 
+- Earn more money?
+
+<img src="https://pb-cc-avatars-private.s3.us-east-2.amazonaws.com/average-salaries.png" alt="average IT vs Python salaries" style="width: 700px !important; margin: 30px 0;">
+
+<small>(source: DevSkiller.com)</small>
+
+<br>
+
+... or do you want to:
+
 - Boost your confidence, tackling imposter syndrome?
 
 - Position yourself better as a developer?
