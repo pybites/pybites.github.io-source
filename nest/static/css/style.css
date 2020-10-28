@@ -20,6 +20,18 @@ body.landingPage {
   padding: 0 10px;
   margin: 0 auto;
 }
+body.landingPage h2, body.landingPage h3 {
+  clear: both;
+  margin-bottom: 20px;
+}
+body.landingPage #testimonials p {
+  font-size: 85%;
+}
+body.landingPage .source {
+  font-size: 70%; 
+  clear: both;
+  padding: 10px;
+}
 .buttonWrapper {
   margin-top: 20px;
   text-align: center;
@@ -39,7 +51,7 @@ body.landingPage {
   border-radius: 8px;
 }
 #workshopButton {
-  background-color: #BA9926;
+  background-color: #43ac6a;
   color: #ffffff;
   border: 1px solid #c8c8c8;
   cursor: pointer;
@@ -49,7 +61,7 @@ body.landingPage {
   z-index: 999;
 }
 .ctaButton {
-  background: #BA9926;
+  background-color: #43ac6a;
   color: #ffffff;
   padding: 10px 20px;
   border: 1px solid #c8c8c8;
@@ -116,7 +128,7 @@ body.landingPage {
   padding: 8px;
   margin: 0 20px 0 0 !important;
   border-radius: 8px;
-  border: 1px solid #f2f2f2 !important;
+  border: 1px solid #ddd !important;
 }
 .profilePic {
   width: 150px !important;
