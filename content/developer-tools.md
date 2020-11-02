@@ -1,7 +1,7 @@
 Title: Effective Developers Leverage Their Toolset
 Date: 2020-04-06 10:00
 Category: Productivity
-Tags: tools, ag, vim, unix, kindle, shell, perl, bookcision
+Tags: tools, ag, vim, unix, kindle, shell, perl, bookcision, howdoi
 Slug: developer-tools
 Authors: Bob
 Illustration: tools.jpg
