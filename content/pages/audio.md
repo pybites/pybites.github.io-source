@@ -55,3 +55,4 @@ Here are our favorite audio resources:
 - [I.T. Career Energizer - #248 – Own Your Career, Use a Mentor, Set Goals ... (Bob)](https://itcareerenergizer.com/e248)
 - [I.T. Career Energizer - #274 – Involve Yourself In As Many Things As Possible ... (Julian)](https://itcareerenergizer.com/e274)
 - [Exploit.chat - How To Build and Grow Communities In Technology](https://exploit.chat/episodes/ep15)
+- [Taquitos de Python con @bbelderbos (Spanish)](https://open.spotify.com/episode/6ba1ux1OAElHxtlVbb82iT?si=ey7qxnneRGSDBXRvpbtGuw)
