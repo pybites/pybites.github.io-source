@@ -84,7 +84,7 @@ SERVICES = [
     ('Schools','/pages/schools'),
     ('Enterprise','/pages/enterprise'),
     ('Recruiter','/pages/recruiting'),
-    ('100 Days Of Code','/pages/100days'),
+    ('#100DaysOfCode','100days'),
     ('Coaching','/pages/apply'),
 ]
 
@@ -93,7 +93,7 @@ NEST_ARCHIVES_HEADER_TITLE = 'Archive'
 default_pages = ['index', 'authors', 'categories', 'tags', 'archives']
 pybites_pages = ("apply build community confidence courses devtools friends "
                  "hacktoberfest marketing pareto pbcall resources sscall "
-                 "techblog workshop workshop2 tips consejos").split()
+                 "techblog workshop workshop2 tips consejos 100days").split()
 DIRECT_TEMPLATES = default_pages + pybites_pages
 
 # Footer
@@ -101,7 +101,7 @@ NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [
     ('Authors', '/pages/guests.html'),
     ('Community', '/pages/community.html'),
-    ('100 Days Of Code', '/pages/100days.html'),
+    ('#100DaysOfCode', '100days'),
     ('Search', '/pages/search.html'),
     ('Privacy Policy', '/pages/privacy-policy.html'),
 ]
