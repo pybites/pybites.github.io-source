@@ -84,7 +84,7 @@ SERVICES = [
     ('Schools','/pages/schools'),
     ('Enterprise','/pages/enterprise'),
     ('Recruiter','/pages/recruiting'),
-    ('#100DaysOfCode','100days'),
+    ('#100DaysOfCode','/100days'),
     ('Coaching','/pages/apply'),
 ]
 
@@ -101,7 +101,7 @@ NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [
     ('Authors', '/pages/guests.html'),
     ('Community', '/pages/community.html'),
-    ('#100DaysOfCode', '100days'),
+    ('#100DaysOfCode', '/100days'),
     ('Search', '/pages/search.html'),
     ('Privacy Policy', '/pages/privacy-policy.html'),
 ]
