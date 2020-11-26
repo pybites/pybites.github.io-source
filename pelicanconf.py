@@ -72,8 +72,8 @@ NEST_CSS_MINIFY = True
 
 RESOURCES = [
     ('Articles', '/archives'),
-    ('Friends List','/pages/friends'),
-    ('Community','/pages/community'),
+    ('Friends List','/friends'),
+    ('Community','/community'),
     ('Blog Challenges', '/category/challenges'),
     ('Open Source','https://github.com/PyBites-Open-Source'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
@@ -85,7 +85,7 @@ SERVICES = [
     ('Enterprise','/pages/enterprise'),
     ('Recruiter','/pages/recruiting'),
     ('#100DaysOfCode','/100days'),
-    ('Coaching','/pages/apply'),
+    ('Coaching','/apply'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
