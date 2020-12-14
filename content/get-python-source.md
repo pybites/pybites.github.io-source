@@ -1,4 +1,4 @@
-Title: Get to Python source code instantly using inspect and importlib
+Title: Get to Python source code instantly using importlib and inspect
 Date: 2020-12-14 19:05
 Category: Tools
 Tags: importlib, inspect, vim, bash, source code, pathlib, Standard Library, argparse, pydoc
@@ -13,7 +13,6 @@ Have you ever wondered how to get Python source code quickly? It turns out the S
 
 The source is [here](https://gist.github.com/pybites/87318a06c8cfef8b40ddd1967768a446):
 
-	#!/usr/bin/env python3.9
 	import argparse
 	import importlib
 	import inspect
@@ -38,7 +37,7 @@ To make it stick, check out [another example of `importlib.import_module`](https
 
 ---
 
-Lastly [under `if __name__ == "__main__":`](https://codechalleng.es/tips/if-name-main) we handle command line arguments. We require a `module(.submodule).name` for which we want to see the source and we have an optional `pager` argument. Then we call the 2 functions.
+Lastly [under `if __name__ == "__main__":`](https://codechalleng.es/tips/if-name-main) we handle command line arguments. We require a `module(.submodule).name` for which we want to see the source and we have an optional `pager` argument. Then we call the two functions:
 
 	if __name__ == "__main__":
 		parser = argparse.ArgumentParser(description='Read Python source.')
@@ -55,11 +54,11 @@ Lastly [under `if __name__ == "__main__":`](https://codechalleng.es/tips/if-name
 
 ## Calling it from within Vim
 
-I stored this script in my `$HOME/bin` folder and [Michael](https://michaelabrahamsen.com/) was so kind to come up with this alias and gif demo:
+I stored this script in my `$HOME/bin` folder and [Michael](https://michaelabrahamsen.com/) was so kind to come up with an alias to use it in Vim:
 
-	autocmd FileType python map <leader>py :exec '!$HOME/bin/pysource.py <C-R><C-A>'<CR>
+	autocmd FileType python map <leader>py :exec '!python3.9 $HOME/bin/pysource.py -m <C-R><C-A>'<CR>
 
-So when you are on a `module.class` or `module.function` it calls the script:
+He even made this nice little gif demo how it calls the script when you press `<leader>py` when you are on `module.class` or `module.function`:
 
 ![demo of this script]({filename}/images/pysource-example.gif)
 
