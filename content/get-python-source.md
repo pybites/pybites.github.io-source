@@ -56,7 +56,7 @@ Lastly [under `if __name__ == "__main__":`](https://codechalleng.es/tips/if-name
 
 I stored this script in my `$HOME/bin` folder and [Michael](https://michaelabrahamsen.com/) was so kind to come up with an alias to use it in Vim:
 
-	autocmd FileType python map <leader>py :exec '!python3.9 $HOME/bin/pysource.py -m <C-R><C-A>'<CR>
+	autocmd FileType python map <leader>py :exec '!python3.9 $HOME/bin/pysource.py -m <C-R><C-A> -p'<CR>
 
 He even made this nice little gif demo how it calls the script when you press `<leader>py` when you are on `module.class` or `module.function`:
 
