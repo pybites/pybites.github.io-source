@@ -76,9 +76,9 @@ Or when using paging:
 
 	$ pysource -m pathlib.PurePath -p
 
-## Deployment
+## PyPI
 
-I will write some test code and ([put it on PyPI](https://pybit.es/opensource-package-pypi.html)) soon so you can just `pip install` it.
+I turned it into a package and [uploaded it to PyPI](https://pypi.org/project/pybites-pysource/1.0.0/) (if you're curious how you can do this, check out [this article](https://pybit.es/opensource-package-pypi.html)).
 
 ---
 
