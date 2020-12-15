@@ -11,7 +11,7 @@ Have you ever wondered how to get Python source code quickly? It turns out the S
 
 ## The code
 
-The source is [here](https://gist.github.com/pybites/87318a06c8cfef8b40ddd1967768a446):
+The source / project is [here](https://github.com/PyBites-Open-Source/pysource):
 
 	import argparse
 	import importlib
@@ -20,6 +20,7 @@ The source is [here](https://gist.github.com/pybites/87318a06c8cfef8b40ddd196776
 
 Here is where the magic happens (credit to [this Stack Overflow](https://stackoverflow.com/a/8790232) thread): we use `importlib` to import the module from a string and get the class or function from this imported module using `getattr`:
 
+	# src/pysource.py
 	def get_callable(arg):
 		module_str, name = arg.rsplit(".", 1)
 		module = importlib.import_module(module_str)
@@ -27,6 +28,7 @@ Here is where the magic happens (credit to [this Stack Overflow](https://stackov
 
 Then we print it out. By default we use `print`, but if `pager` is `True` we use `pydoc.pager` which works like Unix `more`: it waits for you to press spacebar and you can use `/` for searching / string matching, pretty cool!
 
+	# src/pysource.py
 	def print_source(func, pager=False):
 		output = pydoc.pager if pager else print
 		output(inspect.getsource(func))
@@ -37,9 +39,10 @@ To make it stick, check out [another example of `importlib.import_module`](https
 
 ---
 
-Lastly [under `if __name__ == "__main__":`](https://codechalleng.es/tips/if-name-main) we handle command line arguments. We require a `module(.submodule).name` for which we want to see the source and we have an optional `pager` argument. Then we call the two functions:
+Lastly in `src/__main__.py` we handle command line arguments. We require a `module(.submodule).name` for which we want to see the source and we have an optional `pager` argument. Then we call the two functions:
 
-	if __name__ == "__main__":
+	# src/__main__.py
+	def main():
 		parser = argparse.ArgumentParser(description='Read Python source.')
 		parser.add_argument("-m", "--module", required=True, dest='module',
 							help='module(.submodule).name')
