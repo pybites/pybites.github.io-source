@@ -83,6 +83,10 @@ Or when using paging:
 
 I turned it into a package and [uploaded it to PyPI](https://pypi.org/project/pybites-pysource/1.0.0/) (if you're curious how you can do this, check out [this article](https://pybit.es/opensource-package-pypi.html)).
 
+By the way, lesson learned: [call your source folder something relevant](https://github.com/PyBites-Open-Source/pysource/commit/7a2b8dae046280530e3e558a52a141d52422e435) because that is how it ends up in your virtual environment's `site-packages` folder.
+
+Try it out yourself! Just install it like `pip install pybites-pysource` (not to be confused with `pysource` which is another / unrelated package on PyPI, thanks Nils).
+
 ---
 
 This is still experimental but I hope it will already make it easier for you to read more Python (Standard Library) code.
