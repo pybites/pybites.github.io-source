@@ -71,21 +71,22 @@ NEST_HEADER_LOGO = '/images/logo.png'
 NEST_CSS_MINIFY = True
 
 RESOURCES = [
-    ('Articles', '/archives'),
-    ('Friends List','/friends'),
-    ('Community','/community'),
-    ('Blog Challenges', '/category/challenges'),
-    ('Open Source','https://github.com/PyBites-Open-Source'),
+    ('PyBites Podcast', 'https://www.pybitespodcast.com'),
+    ('PyBites Friends', '/friends'),
+    ('PyBites Community', '/community'),
+    ('PyBites Articles', '/archives'),
+    ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
+    ('Blog Challenges', '/category/challenges'),
 ]
 SERVICES = [
-    ('Newbies', '/pages/newbie'),
-    ('Python Exercises','https://codechalleng.es'),
-    ('Schools','/pages/schools'),
-    ('Enterprise','/pages/enterprise'),
-    ('Recruiter','/pages/recruiting'),
-    ('#100DaysOfCode','/100days'),
-    ('Coaching','/apply'),
+    ('Python CodeChalleng.es','https://codechalleng.es'),
+    ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
+    ('Teach Python to Kids','/pages/schools'),
+    ('Use PyBites at Work','/pages/enterprise'),
+    ('Recruit Python Talent','/pages/recruiting'),
+    ('100 Days of Code Courses','/100days'),
+    ('Work With Us','/apply'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
