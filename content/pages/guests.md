@@ -177,6 +177,11 @@ Slug: guests
 	<p>Michaels' <a href="https://pybit.es/author/michael-aydinbas.html">posts</a>.</p>
 </div>
 
+<div id="jessebrink">
+    <h3><a name="jessebrink"></a>Jesse Brink</h3>
+    <p>My name is Jesse. I'm an avid Pythonista trying to learn as much as I can about the language and programming in general. I first started learning to code about six or seven months ago. As quarantine started, I was looking for something new to learn, and boy, did I ever find it! If I'm not coding, you can find me working, playing my guitar, or spending time with my family.</p>
+</div>
+
 <!-- insert your new bio above this line -->
 
 <hr>
