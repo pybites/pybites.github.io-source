@@ -71,7 +71,6 @@ NEST_HEADER_LOGO = '/images/logo.png'
 NEST_CSS_MINIFY = True
 
 RESOURCES = [
-    ('PyBites Podcast', 'https://www.pybitespodcast.com'),
     ('PyBites Friends', '/friends'),
     ('PyBites Community', '/community'),
     ('PyBites Articles', '/archives'),
@@ -80,8 +79,9 @@ RESOURCES = [
     ('Blog Challenges', '/category/challenges'),
 ]
 SERVICES = [
-    ('Python CodeChalleng.es','https://codechalleng.es'),
     ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
+    ('Python Platform','https://codechalleng.es'),
+    ('Python Tips','https://pybit.es/tips'),
     ('Teach Python to Kids','/pages/schools'),
     ('Use PyBites at Work','/pages/enterprise'),
     ('Recruit Python Talent','/pages/recruiting'),
