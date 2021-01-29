@@ -147,21 +147,19 @@ body.landingPage .source {
 #pbproducts {
   margin: 30px auto;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 0 20px;
   background: #f2f2f2;
   border-radius: 8px;
   overflow: hidden;
 }
-#pbproducts div {
-  width: 31%;
-  margin: 1%;
-  padding: 1%;
-  border: 1px solid #ddd;
+#pbproducts #testimonials {
+  width: 65%;
   float: left;
 }
 #pbproducts img {
-  width: 95%;
-  margin: 10px auto;
+  width: 30%;
+  float: right;
+  margin: 0 15px 0 0;
 }
 #pbproducts .button {
   background-color: #43ac6a;
