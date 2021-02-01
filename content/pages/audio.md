@@ -18,6 +18,7 @@ Here are our favorite audio resources:
 - [Profitable Python](https://anchor.fm/profitablepythonfm)
 - [IT Career Energizer](https://itcareerenergizer.com/) (Bob was recently a guest!)
 
+And since the end of 2020 we host our own [PyBites Podcast](https://www.pybitespodcast.com/)!
 
 ## Business / self development
 
