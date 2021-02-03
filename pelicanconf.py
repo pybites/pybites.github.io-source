@@ -94,7 +94,7 @@ NEST_ARCHIVES_HEADER_TITLE = 'Archive'
 default_pages = ['index', 'authors', 'categories', 'tags', 'archives']
 pybites_pages = ("apply talk build community confidence courses devtools friends "
                  "hacktoberfest marketing pareto pbcall resources sscall "
-                 "techblog workshop workshop2 tips consejos 100days").split()
+                 "techblog workshop workshop2 tips 100days").split()
 DIRECT_TEMPLATES = default_pages + pybites_pages
 
 # Footer
