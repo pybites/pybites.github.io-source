@@ -14,6 +14,11 @@ Today, I'll take you with me on my path through the circuits of the ESP32-CAM!
 * [A little different](#a-little-different)
 * [Requirements](#requirements)
 * [Laying it out](#laying-it-out)
+* [Wiring it up](#wiring-it-up)
+* [Micropython](#micropython)
+* [Thonny: Accessing the interpreter](#thonny-interpreter)
+* [Automation the MicroPython way](#automation-themicropython-way)
+* [Installing packages: upip](#installing-packages-upip)
 
 
 <a name="a-little-different"></a>
@@ -91,6 +96,7 @@ Not like that boot code is written in Python, but again. It's the same, but diff
 
 By connecting that GPIO pin to Ground, we're giving the current an easier road to take towards ground, so it wont flow to the chips GPIO0, and that pin state will turn LOW (no / low voltage), entering programming mode.
 
+<a name="micropython"></a>
 ## MicroPython: For really tiny computers
 
 If anyone would've told me a couple years ago that I would be working on 512KB of RAM and a blasting 240MHz dual core processor again, I wouldn't believe 'em, yet here we are.
@@ -102,6 +108,7 @@ Enter [Micropython](http://micropython.org)!
 
 There's a lot to be said about the Micropython project. But the most important thing to know is that it's a very lightweight python compiler and runtime that exposes some additional libraries for direct control of the hardware.
 
+<a name="firmware-flashing-esptool"></a>
 ## Flashing the firmware with esptool.py
 
 If you've wired everything up like I said and connect the FTDI programmer to your computer, we can get to a cozy new pip environment and install `esptool`.
@@ -206,6 +213,8 @@ Hash of data verified.
 
 ```
 
+You can find the different MicroPython firmware versions for ESP32 [here](https://micropython.org/download/esp32/)!
+
 When this is done we can disconnect the wire running from GPIO0 to GND, so the ESP will know it can boot.
 It will start booting from that address 0x1000 where the bootloader for our micropython environment is now waiting!
 
@@ -216,6 +225,7 @@ TX and RX will be used to communicate with the interpreter on the board, and our
 
 We don't have to worry about the draw on the USB port, as a single USB port usually allows at least 500mA to be drawn, and from what I've found, the highest peak draw from an esp32 was about 450 mA.
 
+<a name="thonny-accessing-interpreter"></a>
 ## Accessing the interpreter with Thonny
 
 I had never heard of Thonny before reading about MicroPython, but it's a very minimalistic Python IDE that also integrates smoothly with Micropython.
@@ -275,6 +285,75 @@ object ('192.168.0.187', '255.255.255.0', '192.168.0.1', '42.2.24.0') is of type
 
 ```
 
+<a name="automation-themicropython-way"></a>
+## The microcontroller way.
+
+Now this is all very nice, but as soon as we pull the power from this thing, the interpreter shuts down, the memory is emptied, and things like the `sta_if` object above that contains our configuration will be gone.
+
+Normally, we can just open our IDE or shell, run python with some arguments and control what script is running basically 'through' the OS.
+
+But now, just like we had to place the bootloader on position 0x1000 in the flash memory, we'll tell Micropython what to do on startup by placing a simple `boot.py` on the device.
+
+I'll start by making the network connection and setting up the static IP like above, and we'll make a GET request to a `http.server` running on a different machine to check if everything worked.
+
+
+```python3
+import network
+import socket
+
+def connect_to_wifi(wait_connection=True):
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    wlan.connect("telenet-37854A", "")
+    if wait_connection:
+        while not wlan.isconnected():
+            pass
+    wlan.ifconfig(('192.168.0.6', '255.255.255.0', '192.168.0.1', '8.8.8.8'))
+
+
+def send_test_request():
+    s = socket.socket()
+
+    ai = socket.getaddrinfo("192.168.0.4", 8000)
+    print("Address infos:", ai)
+    addr = ai[0][-1]
+    
+    s.connect(addr)
+    s.send(b"GET /hello-from-esp HTTP/1.0\r\n\r\n")
+    s.recv(4096) # Let's be polite.
+    s.close()
+
+def main():
+    connect_to_wifi()
+    send_test_request()
+    
+main()
+```
+
+And save it to micropython as `boot.py`, again, Thonny makes this a breeze and just gives us the choice:
+
+![Where to save to?](images/guest-something-completely-different-micropython/thonny-save-to.jpg)
+
+After saving, just press the reset button on the ESP and soon you'll see the request come in on your `http.server`.
+
+`::ffff:192.168.0.6 - - [03/Feb/2021 20:02:59] "GET /hello-from-esp HTTP/1.0" 404 -`
+
+<a name="installing-packages-upip"></a>
+## Installing packages: upip
+Micropython is tiny but it does have multiple package management systems, one of them being upip.
+Packages on the micropython filesystem are stored in the `/lib/` directory.
+
+In order to install a package, you just go into your remote interpreter through Thonny, `import upip` and you can  
+
+
+
+
+
+
+
+
+
+
 --
 
 Thanks for reading, I hope you enjoyed it as much as I enjoyed writing it. 
@@ -283,3 +362,4 @@ If you have any remarks or questions, you can likely find me on the [Pybites Sla
 Keep calm and code in Python!
 
 -- [Cedric](pages/guests.html#cedricsambre)
+

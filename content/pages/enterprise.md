@@ -20,6 +20,8 @@ If that isn't enough, then the leaderboard system will encourage them to code re
 
 It wouldn't be an Enterprise product though without metrics. The dashboard for the account owner displays progress of all licence holders allowing admins to see when accounts are being underutilised.
 
+> Regular coding practice outside of your normal work role is important to keep a learning mindset and to remain excited about being a software engineer. However, it's sometimes difficult to find time to work on a side project that really pushes you to learn. That's why I highly recommend PyBytes CodeChalleng.es platform. You can easily fit a few challenges a week into even a crazy schedule. The learning paths are a great way to focus your learning, but you can also just jump around and try new things. The team plan allows you to see who is participating, which is awesome. I've used this to encourage team members to keep pushing themselves to learn more, or to help someone who is running into difficulties. It's also fun to work on challenges in a group setting, mob programming style, and learn from each other. - Brian Okken
+
 Get on the phone with us to talk about how [PyBites Code Challenges](http://codechalleng.es/) can be used to inspire, grow and educate your development team now!
 
 <!-- ScheduleOnce button START -->
