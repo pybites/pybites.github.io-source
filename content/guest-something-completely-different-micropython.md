@@ -434,6 +434,9 @@ It's hard to say if this is because of the instability of the version I'm using,
 ## Conclusion
 
 A lot of food for thought! Allthough I didn't get to test the full power of microPython, something tells me that it will run smoother on [a specialized board](https://store.micropython.org/) than on an ESP32, especially when it comes to the camera.
+If I manage to get my hands on one, I'll be sure to report back!
+
+Here's the summary when it comes to the ESP32CAM:
 
 ##### Upsides of MicroPython on esp32:
 * The official firmware is easy to set up
@@ -445,7 +448,13 @@ A lot of food for thought! Allthough I didn't get to test the full power of micr
 * A lot of people resorted to making their own modules = a lot of incompatible firmware / packages scattered all over the internet
 * Compiling your own firmware and keeping it maintained can take a lot of time and can be hard if you haven't done it before.
 
+Running micropython on these ESP boards to get acquainted with the whole process is really fun. It's also a good way into the microcontroller world if you're not familiar with C.
+The workload required to get specialized modules working, in my opinion, isn't really worth it when you also get a serious performance decrease with it.
 
+Maybe it's better to resort to the original ESP32-Wrover firmware, and then build something cool around that, since it also includes face detection and recognition.  
+You could probably even go as far as building a FastAPI powered face-recognition doorbell with that!
+
+I'm heading back to the lab! 
 
 --
 
