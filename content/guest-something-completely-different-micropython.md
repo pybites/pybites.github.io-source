@@ -19,6 +19,9 @@ Today, I'll take you with me on my path through the circuits of the ESP32-CAM!
 * [Thonny: Accessing the interpreter](#thonny-interpreter)
 * [Automation the MicroPython way](#automation-themicropython-way)
 * [Installing packages: upip](#installing-packages-upip)
+* [Moving forward](#moving-forward)
+* [A different approach](#a-different-approach)
+* [Conclusion](#conclusion)
 
 
 <a name="a-little-different"></a>
@@ -282,11 +285,10 @@ object ('192.168.0.187', '255.255.255.0', '192.168.0.1', '42.2.24.0') is of type
   index -- <function>
 >>> sta_if.ifconfig(('192.168.0.6', '255.255.255.0', '192.168.0.1', '8.8.8.8'))
 
-
 ```
 
 <a name="automation-themicropython-way"></a>
-## The microcontroller way.
+## Automation: The Micropython way.
 
 Now this is all very nice, but as soon as we pull the power from this thing, the interpreter shuts down, the memory is emptied, and things like the `sta_if` object above that contains our configuration will be gone.
 
@@ -343,14 +345,105 @@ After saving, just press the reset button on the ESP and soon you'll see the req
 Micropython is tiny but it does have multiple package management systems, one of them being upip.
 Packages on the micropython filesystem are stored in the `/lib/` directory.
 
-In order to install a package, you just go into your remote interpreter through Thonny, `import upip` and you can  
+In order to save memory, upip doesn't come as a separate application like `pip` but as a module.
+To install a package, we can `import upip` and then call the `install()` function.
+
+```python3
+import upip
+upip.install('ujson')
+upip.install('picoweb')
+```
+
+It's a bit limited in the sense that from the code I've seen in the current master branch, it's not possible to select specific versions.
+`upip` will always install the latest version of the package, and when working with different firmwares, that can be annoying.
 
 
+<a name="moving-forward"></a>
+## Moving Forward from here
+Now that we got a good idea of the basics and how our regular flow translates to micropython, it's time to take it a bit further.
+Sadly, the official MicroPython distribution has no support for the Camera module on the ESP32-Cam, and to be completely honest, compiling the firmware with the OV2640 camera module included is a bit of a hassle.
+
+Things got a bit complicated here and eventually even put me to a halt.
+After a small break and a chat with Bob, I decided to try again with renewed effort and found [a blogpost from 2019](https://lemariva.com/blog/2019/09/micropython-how-about-taking-photo-esp32) with a pretty detailed guide to setting up camera enabled firmware.
+ 
+Here's a picture of my stickerspot on my monitor!
+
+![Camera in action](images/guest-something-completely-different-micropython/camera_shot.jpg)
+
+Every picture is requested at a rate of about 400 ms average on the VGA (640x480) resolution:
+![Image Request](images/guest-something-completely-different-micropython/average-request-speed.jpg)
+
+<a name="a-different-approach"></a>
+## A different approach
+Like I said, I was a bit turned down by how hard it was to get the camera working.
+First, the firmware didn't have the camera module, then I found firmware that did, but wasn't compatible with `picoweb`.
+Next it was compatible with `picoweb` but not with `uasyncio` causing `picoweb` to crash on every request.
+Then I found a version that did everything but didn't have the network module.
+
+For compiling my own firmware I went through a maze of versions in order to find one that was compatible with the camera and the WiFi chip, but I kept running into issues. 
+
+Even now, on every request, the interpreter is riddled with errors and warnings, the image occasionally times out or decodes incorrectly, and 400 ms average is about 2-3 FPS which is kinda slow if we wanted to stream this somehow.
+
+MicroPython does have specialized boards out there that seem to work very well, but I don't have one of those laying around. 
+
+I reflashed the old C firmware that ran stable and wrote a piece of code to test the speed now:
+
+```python3
+import requests
+
+CAMERA_IP = "192.168.0.10"
+PROTO = "http"
+ENDPOINT = "CAPTURE"
 
 
+def fetch_image():
+    with requests.Session() as _sess:
+        response = _sess.get(url=f"{PROTO}://{CAMERA_IP}/{ENDPOINT}")
+    millis = response.elapsed.microseconds // 1000
+    print(f"{millis} ms")
+    return millis
 
 
+def main():
+    timings = [fetch_image() for _ in range(0, 50)]
+    average = sum(timings) / 50
+    print(f"Average: {average} ms / image")
 
+main()
+```
+
+And we had a 400% performance increase on a range of 50 images:
+
+```
+[...]
+70 ms
+76 ms
+62 ms
+194 ms
+63 ms
+141 ms
+206 ms
+69 ms
+127 ms
+Average: 104.06 ms / image
+```
+
+It's hard to say if this is because of the instability of the version I'm using, or just because MicroPython is adding a whole bunch of extra overhead cycles on the 160-240MHz ESP32 CPU in camera streaming mode, but it seems that if we care about performance for the camera, we're better off to sticking to python for just the client side.
+
+<a name="conclusion"></a>
+## Conclusion
+
+A lot of food for thought! Allthough I didn't get to test the full power of microPython, something tells me that it will run smoother on [a specialized board](https://store.micropython.org/) than on an ESP32, especially when it comes to the camera.
+
+##### Upsides of MicroPython on esp32:
+* The official firmware is easy to set up
+* The interpreter over Serial allows you to test your code way faster than a C setup.
+* It's python on a PCB, do you really need more ? :-)
+
+##### Downsides of MicroPython on esp32:
+* No native support for some modules like the camera
+* A lot of people resorted to making their own modules = a lot of incompatible firmware / packages scattered all over the internet
+* Compiling your own firmware and keeping it maintained can take a lot of time and can be hard if you haven't done it before.
 
 
 
