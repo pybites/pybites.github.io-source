@@ -371,7 +371,7 @@ class ConstantTransformer(ast.NodeTransformer):
 
 In this example:
 - We registered a callback to be triggered when handing a `ast.Constant` node.
-- The callback generates a random number between (-10, 10), creates a new `ast.Constant()` node with the generated value, and report a message on the standard output.
+- The callback generates a random number between (-10, 10), creates a new `ast.Constant()` node with the generated value, and reports a message on the standard output.
 - Finally, it returns the reference of the new node.
 
 The reference returned by the callbacks represent the node to use in the AST. In this example we are replacing the original node. When returning `None` instead, the visited node is removed from the tree.
@@ -432,7 +432,7 @@ Then we fix a seed for the random number generator via `random.seed()`, so to ha
 
 We create a `ConstantTransformer()` object, and we visit it obtaining `new_tree`, which is a transformed version of the original tree.
 
-To verify the transformations, we can print and run the code related to each tree. To do so, we use the helper function `exec_tree()`:
+To verify the transformations, we can print the AST, and "run it" by transforming into executable code. To do so, we use the helper function `exec_tree()`:
 - We start printing the content of the tree using `ast.dump()` as seen in previous examples.
 - We then apply `ast.fix_missing_locations()` to the tree. Each node in the AST is indeed expected to have `lineno` filled, but rather than filling it when doing the transformations, the helper function `ast.fix_missing_locations()` allows to delay this fix until the compilation is required.
 - Finally, the builtin function `compile()` is used to transform the AST to a code object, which in turn is executed calling the builtin `exec()`.
@@ -531,14 +531,14 @@ Module(
 -4
 ```
 
-The output now is randomized. However, the transformation has overwritten the original tree, as `new_tree` and `tree` are the same object.
+The output now is "randomized", as expected by the transformation. However, the transformation has overwritten the original tree, as `new_tree` and `tree` are the same object.
 
 ```
 >>> id(tree), id(new_tree)
 4350659920, 4350659920
 ```
 
-To avoid this behavior one use the [`copy` module](https://docs.python.org/3.9/library/copy.html?highlight=deepcopy#copy.deepcopy) to clone the whole tree before triggering the transformation, or overwrite the `visit()` method to define the required logic.
+To avoid this however one simply use the [`copy` module](https://docs.python.org/3.9/library/copy.html?highlight=deepcopy#copy.deepcopy) to clone the whole tree before triggering the transformation, or overwrite the `visit()` method and define the ad-hoc logic for the use-case at hand.
 
 
 <!-- add your closer here! -->
