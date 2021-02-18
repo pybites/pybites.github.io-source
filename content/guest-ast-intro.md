@@ -69,7 +69,7 @@ Here some of the results.
 
 ### Builtins popularity
 
-![Pybites code challenges - builtins usage](images/astintro/plot_builtins.png)
+<img src="images/astintro/plot_builtins.png" alt="Pybites code challenges - builtins popularity" height="600px">
 
 The histogram above shows the Python builtin calls sorted by their popularity. In other words, using the `ast` module one can detect when a function call has been made, and if it relates to the `builtins` module or not. Three colors are used to visually distinguish between exception types, the creation of base types (`int`, `float`, `bool`, `list`, and `set`), or other functions. The histogram is a normalized frequency count, i.e., the frequency of each element is cumulated across all code challenges, and divided by the sum of all elements occurrence across all code challenges.
 
@@ -82,7 +82,7 @@ A few observations:
 
 ### Modules popularity
 
-![Pybites code challenges - top 100 modules](images/astintro/plot_modules.png)
+<img src="images/astintro/plot_modules.png" alt="Pybites code challenges - modules popularity" height="600px">
 
 The histogram above shows the ranking for modules. For simplicity we limit to report on the root modules only. If submodules are used, their frequencies are cumulated into the frequency of the respective root modules.
 
