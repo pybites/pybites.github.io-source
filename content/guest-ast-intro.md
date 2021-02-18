@@ -11,16 +11,16 @@ cover:
 
 <!-- Indexes are always a good start! -->
 ## Index 
-* What is an Abstract Syntax Tree (AST)?
-* The `ast` Python module, and real live examples
-* Use the `ast` module to investigate the PyBites code challenges
-    * `builtins` popularity in Pybites code challenges
-    * Modules popularity
-* Dissecting an assignment using the `ast` module
-    * The `Module.type_ignores` attribute and type comments
-* `ast` module APIs
-    * Visiting an AST
-    * Modifying as AST
+* [What is an Abstract Syntax Tree (AST)?](#what-is-an-abstract-syntax-tree-ast)
+* [The `ast` Python module, and real live examples](#the-ast-python-module-and-real-live-examples)
+* [Using the `ast` module to investigate the PyBites code challenges](#using-the-ast-module-to-investigate-the-pybites-code-challenges)
+    * [`builtins` popularity](#builtins-popularity)
+    * [Modules popularity](#modules-popularity)
+* [Dissecting an assignment instruction using the `ast` module](#dissecting-an-assignment-instruction-using-the-ast-module)
+    * [The `Module.type_ignores` attribute and type comments](#the-moduletype_ignores-attribute-and-type-comments)
+* [The `ast` module APIs](#the-ast-module-apis)
+    * [Visiting an AST](#visiting-an-ast)
+    * [Modifying as AST](#modifying-an-ast)
 
 > __Requirement__: All examples are compatible with at least Python v3.6. However to the function `ast.dump()` provide the `indent=` input argument only from Python v3.9, so we recommend to stick to the latest version of Python when replicating the code reported below.
 
@@ -57,7 +57,7 @@ Even if it is part of standard library since a long time, probably is not common
 
 - __code reformating__: [`black`](https://pypi.org/project/black/) and [`flake8`](https://pypi.org/project/flake8/) are two popular tools to enforce code reformatting, both using an AST representation of the source code.
 
-## Use the `ast` module to investigate the PyBites code challenges
+## Using the `ast` module to investigate the PyBites code challenges
 
 Still not convinced of the relevance of an AST? Ok, let's consider something practical, and closer to the PyBites platform.
 
@@ -65,7 +65,7 @@ At the time of this writing I have completed all 300+ code challenges available 
 
 Here some results from the analysis.
 
-### `builtins` popularity in Pybites code challenges
+### Builtins popularity
 
 ![Pybites code challenges - builtins usage](images/astintro/plot_builtins.png)
 
@@ -78,7 +78,7 @@ A few observations:
 - Only 5 of the standard exception are used in the code challenges, with `ValueError` being the most commonly.
 - Most of the builtin functions are already used by code challenges, but considering the [functional programming calls](https://docs.python.org/3/howto/functional.html) you can notice that `map()` appears while `filter()` does not (as indeed the common practice is to prefer [list comprehension](https://realpython.com/list-comprehension-python/#profile-to-optimize-performance)).
 
-### modules popularity in Pybites code challenges
+### Modules popularity
 
 ![Pybites code challenges - top 100 modules](images/astintro/plot_modules.png)
 
@@ -90,7 +90,7 @@ We can observe the presence of non-standard modules, such as `pandas` and `pytes
 
 All this was possible by using about 50 lines of Python code, and the `ast` module. Processing the 300+ source code files with tools like [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html), [`grep`](https://www.gnu.org/software/grep/), or anything else would have been significantly harder.
 
-## Dissecting an assignment using the `ast` module
+## Dissecting an assignment instruction using the `ast` module
 
 To start familiarize with the `ast` module, let's see what happen when we try to analyze a single instruction: `one_plus_two = 1+2`
 
@@ -187,7 +187,7 @@ Module(
         TypeIgnore(lineno=1, tag='')])
 ```
 
-## `ast` module APIs
+## The `ast` module APIs
 
 The `ast` module is mostly a large collection of classes, one for each of the different aspects of the Python grammar. Overall, there are about 100 classes, ranging from literals, to more complex construct such as list comprehensions.
 
