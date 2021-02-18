@@ -26,7 +26,7 @@ cover:
 
 ## What is an Abstract Syntax Tree (AST)?
 
-An Abstract Syntax Tree (AST) is a data structure used to reason about a programming language grammar in the context of the instructions provided into source code.
+An Abstract Syntax Tree (AST) is a data structure used to reason about the grammar of a programming language in the context of the instructions provided into source code.
 
 ![From source code to binary](images/astintro/pipeline.png)
 
