@@ -63,7 +63,7 @@ Still not convinced of the relevance of an AST? Fair enough: let's consider a mo
 
 The PyBites platform is currently offering 300+ code challenges, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available code challenges, and what is instead left to explore.
 
-This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the code challenges (as provided by the authors of the challenged) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
+This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the code challenges (as provided by the authors of the challenges) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
 
 Here some of the results.
 
@@ -90,7 +90,7 @@ As before, the histogram is heavy tailed, a testament that the PyBite code chall
 
 We can observe the presence of non-standard modules, such as `pandas` and `pytest`, as well more ad-hoc modules such as as `zodiac` and `fibonacci` that are created for the purpose of the challenges themselves.
 
-One can easily expand the analysis these stats to understand the specific functions used in each module/submodule, as well as dive into more specific analysis. The results reported are generated with about 50 lines of Python code and using `ast` module. Processing the 300+ source code files with tools like [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html), [`grep`](https://www.gnu.org/software/grep/), or anything else would have been significantly harder.
+One can easily expand the analysis to understand the specific functions used in each module/submodule, as well as dive into more specific analysis. The results reported are generated with about 50 lines of Python code and using `ast` module. Processing the 300+ source code files with tools like [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html), [`grep`](https://www.gnu.org/software/grep/), or anything else would have been significantly harder.
 
 Hopefully this examples gave you a rough idea of what you can achieve with an AST. The next step is to understand how to create such data structures, and investigate their composition.
 
