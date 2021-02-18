@@ -47,7 +47,7 @@ The `ast` module in the Python standard library can be used to create, visit, an
 
 Even if it is part of standard library since a long time, it is not common to use it *directly*. Rather, you might have used it *indirectly* as popular tools use it under-the-hood:
 
-- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of an AST node generated from the code under testing.
+- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of the AST generated from the code under testing.
 
 - __code coverage__: [`vulture`](https://pypi.org/project/vulture/) is a static code analyzer that studies an AST to identify portion of the code not used.
 
