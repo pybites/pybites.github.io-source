@@ -61,7 +61,7 @@ Even if it is part of standard library since a long time, it is not common to us
 
 Still not convinced of the relevance of an AST? Fair enough: let's consider a more practical, and closer to the PyBites platform, use-case.
 
-The PyBites platform is currently offering 300+ code challenges, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to more and more challenging to identify what already covered, or new areas to explore.
+The PyBites platform is currently offering 300+ code challenges, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available code challenges, and what is instead left to explore.
 
 This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the code challenges (as provided by the authors of the challenged) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
 
