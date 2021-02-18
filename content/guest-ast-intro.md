@@ -34,22 +34,22 @@ For instance, compilers use ASTs when transforming source code into binary code:
 
 1. Given some text source code, the compiler first tokenizes the text to identify programming language keywords, variables, literals, etc. Each token represents an "atom" of an instruction.
 
-2. Tokens are then rearranged into an AST, a tree where nodes are the "atoms", and edges the relationships between them. For instance, the AST can explicit the presence of function calls, the related input arguments, the set of instructions composing the function, etc.
+2. Tokens are then rearranged into an AST, a tree where nodes are the "atoms" of the instructions, and edges the relationships between the atoms based on the programming language grammar. For instance, the AST make explicit the presence of a function call, the related input arguments, the instructions composing the function, etc.
 
-3. A compiler then can apply multiple optimizations to the AST, and ultimately is converted into binary code.
+3. The compiler then can apply multiple optimizations to the AST, and ultimately it converts the AST into binary code.
 
-Despite their important for compilers, ASTs are not strictly specific to compilers. Rather, they are a useful data structure used whenever there is the need to static analysis of source code.
+Despite their role for compilers, ASTs are useful for a broader set of use-cases.
 
 
 ## The `ast` Python module, and real live examples
 
 The `ast` module in the Python standard library can be used to create, visit, and modify AST related to Python source code. It has been introduced in [Python 2.6](https://docs.python.org/release/2.6/whatsnew/2.6.html#the-ast-module), and since then it evolved alongside the Python grammar.
 
-Even if it is part of standard library since a long time, probably is not common to use it *directly*, but rather *indirectly* as it is used under-the-hood in different popular tools and use-cases:
+Even if it is part of standard library since a long time, it is not common to use it *directly*. Rather, you might have used it *indirectly* as popular tools use it under-the-hood:
 
-- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of an AST node of the code under testing.
+- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of an AST node generated from the code under testing.
 
-- __code coverage__: [`vulture`](https://pypi.org/project/vulture/) is a static code analyzer that study an AST to identify portion of the code not used.
+- __code coverage__: [`vulture`](https://pypi.org/project/vulture/) is a static code analyzer that studies an AST to identify portion of the code not used.
 
 - __code vulnerabilities__: [`bandit`](https://pypi.org/project/bandit/) uses the AST representation to identify security vulnerabilities.
 
@@ -59,11 +59,13 @@ Even if it is part of standard library since a long time, probably is not common
 
 ## Using the `ast` module to investigate the PyBites code challenges
 
-Still not convinced of the relevance of an AST? Ok, let's consider something practical, and closer to the PyBites platform.
+Still not convinced of the relevance of an AST? Fair enough: let's consider a more practical, and closer to the PyBites platform, use-case.
 
-At the time of this writing I have completed all 300+ code challenges available in the PyBites platform, and I am interested in understanding how to contribute new bites. I would like to focus on elements of the Python standard library that are not sufficiently explored yet. To make such a "snapshot" of the current status of the code challenges in the platform I can use the `ast` module, and investigate on the popular builtin functions and modules used. To avoid biases, I am going to focus on the authors solution, which is available to the users once they completed the challenges.
+The PyBites platform is currently offering 300+ code challenges, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to more and more challenging to identify what already covered, or new areas to explore.
 
-Here some results from the analysis.
+This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the code challenges (as provided by the authors of the challenged) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
+
+Here some of the results.
 
 ### Builtins popularity
 
@@ -75,20 +77,22 @@ A few observations:
 
 - The distribution is heavy tailed, with `len()` representing 13.4% of all builtin calls, while `dir()` being used only once. 
 - All five base types are used, but `bool()` is used only in 1 challenge.
-- Only 5 of the standard exception are used in the code challenges, with `ValueError` being the most commonly.
+- Only 5 of the standard exceptions are used, with `ValueError` being the most common.
 - Most of the builtin functions are already used by code challenges, but considering the [functional programming calls](https://docs.python.org/3/howto/functional.html) you can notice that `map()` appears while `filter()` does not (as indeed the common practice is to prefer [list comprehension](https://realpython.com/list-comprehension-python/#profile-to-optimize-performance)).
 
 ### Modules popularity
 
 ![Pybites code challenges - top 100 modules](images/astintro/plot_modules.png)
 
-The histogram above shows the ranking for modules, and for simplicity we limit to report on root modules only. If submodules are used, their frequencies are cumulated to the related root modules.
+The histogram above shows the ranking for modules. For simplicity we limit to report on the root modules only. If submodules are used, their frequencies are cumulated into the frequency of the respective root modules.
 
-As for builtins, the distribution is heavy tailed, a testament that the PyBite code challenges try to "cover a little bit of everything".
+As before, the histogram is heavy tailed, a testament that the PyBite code challenges try to "cover a little bit of everything".
 
 We can observe the presence of non-standard modules, such as `pandas` and `pytest`, as well more ad-hoc modules such as as `zodiac` and `fibonacci` that are created for the purpose of the challenges themselves.
 
-All this was possible by using about 50 lines of Python code, and the `ast` module. Processing the 300+ source code files with tools like [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html), [`grep`](https://www.gnu.org/software/grep/), or anything else would have been significantly harder.
+One can easily expand the analysis these stats to understand the specific functions used in each module/submodule, as well as dive into more specific analysis. The results reported are generated with about 50 lines of Python code and using `ast` module. Processing the 300+ source code files with tools like [`awk`](https://www.gnu.org/software/gawk/manual/gawk.html), [`grep`](https://www.gnu.org/software/grep/), or anything else would have been significantly harder.
+
+Hopefully this examples gave you a rough idea of what you can achieve with an AST. The next step is to understand how to create such data structures, and investigate their composition.
 
 ## Dissecting an assignment instruction using the `ast` module
 
@@ -111,43 +115,47 @@ Module(
     type_ignores=[])
 ```
 
-It might not be obvious at first, but `ast.dump()` is printing the actual structure of the tree:
+It might not be obvious at first, but the output generated by `ast.dump()` is actually a tree:
 - The words starting with capital letter are nodes of the tree.
 - The attributes of the nodes are either edges of the tree, or metadata.
 
 Let's rework the output into a diagram with the following conventions:
-- In bold we report the node type.
+- One rectangle for each node, marking in bold the related node type.
 - Node attributes collecting metadata are reported in blue.
-- Other node attribytes are annotated with their type.
+- Other node attributes are annotated with their type.
+- Nodes are connected based on their attributes.
 
 ![AST sketch](images/astintro/tree-sketch.png)
 
 With this visualization at hand we can observe a few things.
 
-The root of the tree is a `Module` node. In fact, even if our example is a single line program, it is still a true Python module. The node contains two attributes `body` and `type_ignores`. Let's put the aside `type_ignores` for a moment and focus on `body`.
+The root of the tree is a __`Module`__ node. In fact, even if our example is a single line program, it is still a true Python module. The node contains two attributes `body` and `type_ignores`. Let's put the aside `type_ignores` for a moment and focus on `body`.
 
-As a Python module contains a series of instructions, the `Module.body` attribute is a list of nodes, one for each instruction in the program. Our example consists of a single assignment operation, hence `Module.body` contains only one `Assign` node.
+As a Python module contains a series of instructions, the __`Module`__`.body` attribute is a list of nodes, one for each instruction in the program. Our example consists of a single assignment operation, hence __`Module`__`.body` contains only one __`Assign`__ node.
 
-An assignment operation has a *right-hand side* specifying the *operation* to perform, and a *left-hand side* specifying the *destination* of the operation. The two sides are associated to the `Assign.value` and `Assign.targets` attributes of the `Assign` node.
+An assignment operation has a *right-hand side* specifying the *operation* to perform, and a *left-hand side* specifying the *destination* of the operation. The two sides are associated to the __`Assign`__`.value` and __`Assign`__`.targets` attributes of the __`Assign`__ node.
 
-Considering the right-hand side, the `Assign.value` attribute is a `BinOp` node, since the instruction is a binary operation between two operands, which is fully specified with three attributes: 
+Considering the right-hand side, the __`Assign`__`.value` attribute is a __`BinOp`__ node, since the instruction is a binary operation between two operands, which is fully specified with three attributes: 
 
-- `BinOp.op` is a `Add` node given we are performing an addition.
-- `BinOp.left` and `BinOp.right` are the addition operands and consist of `Constant` nodes, each holding the raw value in the  `Constant.value` attribute.
+- __`BinOp`__`.op` is a __`Add`__ node given we are performing an addition.
+- __`BinOp`__`.left` and __`BinOp`__`.right` are the addition operands and consist of __`Constant`__ nodes, each holding the raw value in the  __`Constant`__`.value` attribute.
 
-Considering the left-side, as Python supports multiple assignments and tuple unpacking, the `Assign.targets` attribute is a list collecting the different destinations of the operation. In our case the assignment is for a single variable, so a single `Name` node is used. In turn, the `Name` node has 2 attributes:
+Considering the left-side, as Python supports multiple assignments and tuple unpacking, the __`Assign`__`.targets` attribute is a list collecting the different destinations of the operation. In our case the assignment is for a single variable, so a single __`Name`__ node is used. In turn, the __`Name`__ node has 2 attributes:
 
-- `Name.id` stores the name of the variable used in the programm (`"one_plus_two"`). 
-- `Name.ctx` specifies how variable reference is used in the program. This can only be one of types `ast.Load`, `ast.Remove` or `ast.Store`, but those are always empty nodes. 
+- __`Name`__`.id` stores the name of the variable used in the programm (`"one_plus_two"`). 
+- __`Name`__`.ctx` specifies how variable reference is used in the program. This can only be one of types `ast.Load`, `ast.Remove` or `ast.Store`, but those are always empty nodes. 
+
 ### The `Module.type_ignores` attribute and type comments
 
-The attribute `Module.type_ignores` in the vast majority of the cases is going to be an empty list. This is why in the sketch is colored in blue. To understand why this is the case, and what is the actual purpose of the attribute we need to make a digression.
+The attribute __`Module`__`.type_ignores` in the vast majority of the cases is going to be an empty list. This is why in the sketch is colored in blue. To understand why this is the case, and what is the actual purpose of the attribute we need to make a digression.
 
 Python 3.0 introduced annotations, and few years later those have been expanded into type hints. If you are not familiar with those concepts, check this [Real Python tutorial](https://realpython.com/lessons/type-comments/) and the [official doc](https://docs.python.org/3/library/typing.html?highlight=typing#module-typing).
 
 Those changes were not back ported to Python 2, which instead was using __type comments__ as a form of annotation. For more information, see [PEP 484](https://www.python.org/dev/peps/pep-0484/#type-comments) or this [Real Python tutorial](https://realpython.com/lessons/type-comments/).
 
-The attribute `Module.type_ignores` refers to a special type comment `# type: ignore` that was used to indicate to type checker (such as [mypy](http://mypy-lang.org)) to suppress errors if one was found. For legacy reasons, the `ast` module is still reporting on those comments, but when asked to do so.
+The attribute __`Module`__`.type_ignores` refers to a special type comment `# type: ignore` that was used to indicate to type checker (such as [mypy](http://mypy-lang.org)) to suppress errors if one was found. For legacy reasons, the `ast` module is still reporting on those comments, but *only when asked* to do so.
+
+Let's see an example.
 
 ```
 >>> code = 'one_plus_two = 1+2 # type: int'
@@ -166,9 +174,9 @@ Module(
     type_ignores=[])
 ```
 
-Notice that the only difference with respect to the detailed analysis of the AST done before is the presence of the attribute `Assign.type_comment='int'`. The attribute reflects the metadata provided by type comment `# type: int`, and is added to the AST tree `Assign` node because we specified `type_comment=True` when triggering the parsing. 
+Notice that the only difference with respect to the detailed analysis of the AST previously discussed is the presence of the attribute __`Assign`__`.type_comment='int'`. The attribute reflects the metadata provided by type comment `# type: int`, and is added to the AST tree __`Assign`__ node because we specified `type_comment=True` when triggering the parsing. 
 
-However, the type comments `# type: ignore` is treated differently. They are stored into the `Module.type_ignores` attribute as `TypeIgnore` objects rather than being collected as metadata in the inner nodes of the tree.
+However, `# type: ignore` is treated differently. Those type comments are stored into the __`Module`__`.type_ignores` attribute as __`TypeIgnore`__ objects rather than being collected as metadata in the inner nodes of the tree.
 
 ```
 >>> code = 'one_plus_two = 1+2 # type: ignore'
@@ -192,26 +200,26 @@ Module(
 The `ast` module is mostly a large collection of classes, one for each of the different aspects of the Python grammar. Overall, there are about 100 classes, ranging from literals, to more complex construct such as list comprehensions.
 
 `ast.AST` is the base class for all other classes in the module, and it defines the following base attributes for all AST nodes:
-- `lineno`, `col_offset`, `end_lineno`, and `end_col_offset` are used to track the precise position in the original text source code related to the node.
-- `_fields` contains the list of attributes of each node (you can think that is a list of "children" names).
+- `lineno`, `col_offset`, `end_lineno`, and `end_col_offset` are used to track the precise position of the related instruction in the source code.
+- `_fields` contains the list of attribute names (you can think that is a list of "children" names).
 
-The trickiest part of an AST is understanding node and attribute semantics because there are a lot of variants.
+When dealing with an AST the trickiest part is understanding nodes and attributes semantic. In fact, there are a lot of variants and corner cases, so it is easy to get confused.
 
 A good way to start to familiarize with an AST is to use an interactive console such as [`ipython`](https://ipython.org) similarly to what we did in the previous examples. If you are used to an IDE, both [PyCharm](https://plugins.jetbrains.com/plugin/227-psiviewer) and [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=azeemba.python-ast-preview) provide plugins to visualize an AST (notice that PyCharm uses its own version of AST called [Program Structure Interface - PSI](https://plugins.jetbrains.com/docs/intellij/psi.html))
 
 No matter your preferred choice, the documentation is a fundamental resource to keep at hand. Yet, a couple of remarks:
 - Given that the Python language is in constant evolution, make sure to use the [most recent version of the Python doc](https://docs.python.org/3/library/ast.html?highlight=ast).
-- The official documentation also suggest to consult [Green Tree Snake](https://greentreesnakes.readthedocs.io/), which indeed does a good job at complementing the default documentation on parts that that otherwise would seem "dry" of details.
+- The official documentation also suggests to consult [Green Tree Snake](https://greentreesnakes.readthedocs.io/), which indeed does a good job at complementing the official documentation on parts that that otherwise would seem "dry" of details.
 
-Beside the classes, the `ast` module defines how to perform a visit of a tree, or to apply transformations.
+Beside the classes, the `ast` module defines how to perform a visit of a tree, and how to do transformations.
 
 ### Visiting an AST
 
 You can visit an AST in two ways: using helper functions, or via an `ast.NodeVisitor` class.
 
-Let's starts from the helper functions.
+Let's starts reviewing the helper functions:
 - `ast.walk()` visit the specified node, and *recursively* all its descendant, but in a non specified order.
-- `ast.iter_fields()` and `ast.iter_child_nodes()` are similar to `.items()` and `.keys()` of a `dict` data structure, but applied to a specific node only, and they are not recursive
+- `ast.iter_fields()` and `ast.iter_child_nodes()` are similar to `.items()` and `.keys()` of a `dict` data structure, but applied to a specific node only, and they are *not recursive.*
 
 Here some examples:
 ```
@@ -254,15 +262,17 @@ class BinOpVisitor(ast.NodeVisitor):
 
 In this example: 
 - We define a class `BinOpVisitor` extending the `ast.NodeVisitor`.
-- We register a callback to be triggered when `ast.BinOp` nodes are visited. The name of callback is always `visit_XYZ` where `XYZ` is one of the predefined node types.
+- We register a callback to be triggered when `ast.BinOp` nodes are visited. The name of callback is always `visit_XYZ` where `XYZ` is one of the predefined node types name (`BinOp` in our case).
 = When the callback is invoked it receives the reference of the node under analysis. In this example we use the node info to print the line number of the instruction it relates to.
 - Finally, we invoke `self.generic_visit(node)` to propagate the visit on the children of the input node.
 
-To trigger a visit a tree is required
+A `ast.NodeVisitor` also defines a `visit()` function, which either invokes the `visit_XYZ` callbacks based on the input node, or trigger the `generic_visit()` on the children. In our example we are not overwriting it, which means that when invoked on a tree it will trigger its visit:
+
 ```
 >>> vis = BinOpVisitor()
 >>> vis.visit(tree)
 ```
+
 
 Here the complete example
 ```
@@ -344,7 +354,7 @@ found BinOp at line: 5
 
 ### Modifying an AST
 
-With a similar logic to how visit callbacks are defined, the `ast.NodeTransformer` can be used as base class for a transformers. This time, rather than simply visiting the nodes, one can modify, replace, add new nodes.
+A `ast.NodeTransformer` can be used as base class for a transformers, similarly to the logic used for the visitor class. This time, rather than simply visiting the nodes, the callbacks are used to modify, replace, add new nodes.
 
 Here an example:
 ```
@@ -364,7 +374,9 @@ In this example:
 - The callback generates a random number between (-10, 10), creates a new `ast.Constant()` node with the generated value, and report a message on the standard output.
 - Finally, it returns the reference of the new node.
 
-To trigger the transformation, we use the same operation used for the visit. However, this time the visit returns a new tree
+The reference returned by the callbacks represent the node to use in the AST. In this example we are replacing the original node. When returning `None` instead, the visited node is removed from the tree.
+
+To trigger the transformation, we use the same operation used for the visit. This time the visit returns the reference of the tree modified:
 ```
 >>> vis = ConstantTransformer()
 >>> new_tree = vis.visit(tree)
@@ -422,7 +434,7 @@ We create a `ConstantTransformer()` object, and we visit it obtaining `new_tree`
 
 To verify the transformations, we can print and run the code related to each tree. To do so, we use the helper function `exec_tree()`:
 - We start printing the content of the tree using `ast.dump()` as seen in previous examples.
-- We then apply `ast.fix_missing_locations()` to the tree. Each node in the AST is indeed expected to have `lineno` filled, but rather than filling it when doing the transformations, the helper function allows to delay this until the compilation is required.
+- We then apply `ast.fix_missing_locations()` to the tree. Each node in the AST is indeed expected to have `lineno` filled, but rather than filling it when doing the transformations, the helper function `ast.fix_missing_locations()` allows to delay this fix until the compilation is required.
 - Finally, the builtin function `compile()` is used to transform the AST to a code object, which in turn is executed calling the builtin `exec()`.
 
 Here the output related to `exec_tree(tree)`:
@@ -526,7 +538,7 @@ The output now is randomized. However, the transformation has overwritten the or
 4350659920, 4350659920
 ```
 
-However, to avoid this, one can either rework the transformer class to create all nodes, or use the [`copy` module](https://docs.python.org/3.9/library/copy.html?highlight=deepcopy#copy.deepcopy) to clone the whole tree before triggering the transformation.
+To avoid this behavior one use the [`copy` module](https://docs.python.org/3.9/library/copy.html?highlight=deepcopy#copy.deepcopy) to clone the whole tree before triggering the transformation, or overwrite the `visit()` method to define the required logic.
 
 
 <!-- add your closer here! -->
