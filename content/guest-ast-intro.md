@@ -22,7 +22,7 @@ cover:
     * [Visiting an AST](#visiting-an-ast)
     * [Modifying as AST](#modifying-an-ast)
 
-> __Requirement__: All examples are compatible with at least Python v3.6. However to the function `ast.dump()` provide the `indent=` input argument only from Python v3.9, so we recommend to stick to the latest version of Python when replicating the code reported below.
+> __Requirement__: All examples are compatible with at least Python v3.6, except for using `ast.dump()` with the attribute `indent=` which has been added in Python v3.9. 
 
 ## What is an Abstract Syntax Tree (AST)?
 
