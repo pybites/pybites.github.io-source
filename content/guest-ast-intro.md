@@ -36,7 +36,7 @@ For instance, compilers use ASTs when transforming source code into binary code:
 
 2. Tokens are then rearranged into an AST, a tree where nodes are the "atoms" of the instructions, and edges the relationships between the atoms based on the programming language grammar. For instance, the AST make explicit the presence of a function call, the related input arguments, the instructions composing the function, etc.
 
-3. The compiler then can apply multiple optimizations to the AST, and ultimately it converts the AST into binary code.
+3. The compiler then can apply multiple optimizations to the AST, and ultimately converts it into binary code.
 
 Despite their role for compilers, ASTs are useful for a broader set of use-cases.
 
