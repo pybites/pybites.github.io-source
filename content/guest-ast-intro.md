@@ -274,7 +274,7 @@ What sort of *black magic* happens behing the scene to trigger the callbacks? It
 ```
 
 
-Here the complete example
+Here the complete example:
 ```
 import ast
 
