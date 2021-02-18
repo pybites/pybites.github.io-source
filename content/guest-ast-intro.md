@@ -55,7 +55,7 @@ Even if it is part of standard library since a long time, it is not common to us
 
 - __code autocompletion__: [`jedi`](https://pypi.org/project/jedi/) is an IDE and text editors autocompletion tool relying on the `ast` module functionality to safely evaluate expressions.
 
-- __code reformating__: [`black`](https://pypi.org/project/black/) and [`flake8`](https://pypi.org/project/flake8/) are two popular tools to enforce code reformatting, both using an AST representation of the source code.
+- __code reformating__: [`black`](https://pypi.org/project/black/) and [`flake8`](https://pypi.org/project/flake8/) are two popular tools to enforce code reformatting, and they both use an AST representation of the source code to apply their formatting rules.
 
 ## Using the `ast` module to investigate the PyBites code challenges
 
