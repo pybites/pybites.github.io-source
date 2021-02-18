@@ -12,7 +12,7 @@ cover:
 <!-- Indexes are always a good start! -->
 ## Index 
 * [What is an Abstract Syntax Tree (AST)?](#what-is-an-abstract-syntax-tree-ast)
-* [The `ast` Python module, and AST use-cases](#the-ast-python-module-and-ast-use-cases)
+* [The `ast` Python module and its use](#the-ast-python-module-and-its-use)
 * [Using the `ast` module to investigate the PyBites code challenges](#using-the-ast-module-to-investigate-the-pybites-code-challenges)
     * [`builtins` popularity](#builtins-popularity)
     * [Modules popularity](#modules-popularity)
@@ -41,7 +41,7 @@ For instance, compilers use ASTs when transforming source code into binary code:
 Despite their role for compilers, ASTs are useful for a broader set of use-cases. Let's discuss this more in details.
 
 
-## The `ast` Python module, and AST use-cases
+## The `ast` Python module and its use
 
 The `ast` module in the Python standard library can be used to create, visit, and modify AST related to Python source code. It has been introduced in [Python 2.6](https://docs.python.org/release/2.6/whatsnew/2.6.html#the-ast-module), and since then it evolved alongside the Python grammar.
 
