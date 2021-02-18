@@ -266,7 +266,7 @@ In this example:
 - When the callback is invoked it receives the reference of the node under analysis. In this example we use the node info to print the line number of the instruction it relates to.
 - Finally, we invoke `self.generic_visit(node)` to propagate the visit on the children of the input node.
 
-What sort of *black magic* happens behing the scene to trigger the callbacks? It is actually simple.  A `ast.NodeVisitor` also defines a `visit()` function which is always invoked first: if the input node type matches one of the callbacks, such callback is called, otherwise `generic_visit()` is invoked to visito the node children. In our example we are not overwriting `visit()`, we can trigger a visit of the tree simply invoking the method:
+What sort of *black magic* happens behing the scene to trigger the callbacks? It is actually simple.  A `ast.NodeVisitor` also defines a `visit()` function which is always invoked first: if the input node type matches one of the callbacks, such callback is called, otherwise `generic_visit()` is invoked to visito the node children. In our example we are not overwriting `visit()`, hence we can trigger a visit of the tree simply invoking the method:
 
 ```
 >>> vis = BinOpVisitor()
