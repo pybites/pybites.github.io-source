@@ -129,31 +129,31 @@ Let's rework the output into a diagram with the following conventions:
 
 With this visualization at hand we can observe a few things.
 
-The root of the tree is a __`Module`__ node. In fact, even if our example is a single line program, it is still a true Python module. The node contains two attributes `body` and `type_ignores`. Let's put the aside `type_ignores` for a moment and focus on `body`.
+The root of the tree is a `Module` node. In fact, even if our example is a single line program, it is still a true Python module. The node contains two attributes `body` and `type_ignores`. Let's put the aside `type_ignores` for a moment and focus on `body`.
 
-As a Python module contains a series of instructions, the __`Module`__`.body` attribute is a list of nodes, one for each instruction in the program. Our example consists of a single assignment operation, hence __`Module`__`.body` contains only one __`Assign`__ node.
+As a Python module contains a series of instructions, the `Module.body` attribute is a list of nodes, one for each instruction in the program. Our example consists of a single assignment operation, hence `Module.body` contains only one `Assign` node.
 
-An assignment operation has a *right-hand side* specifying the *operation* to perform, and a *left-hand side* specifying the *destination* of the operation. The two sides are associated to the __`Assign`__`.value` and __`Assign`__`.targets` attributes of the __`Assign`__ node.
+An assignment operation has a *right-hand side* specifying the *operation* to perform, and a *left-hand side* specifying the *destination* of the operation. The two sides are associated to the `Assign.value` and `Assign.targets` attributes of the `Assign` node.
 
-Considering the right-hand side, the __`Assign`__`.value` attribute is a __`BinOp`__ node, since the instruction is a binary operation between two operands, which is fully specified with three attributes: 
+Considering the right-hand side, the `Assign.value` attribute is a `BinOp` node, since the instruction is a binary operation between two operands, which is fully specified with three attributes: 
 
-- __`BinOp`__`.op` is a __`Add`__ node given we are performing an addition.
-- __`BinOp`__`.left` and __`BinOp`__`.right` are the addition operands and consist of __`Constant`__ nodes, each holding the raw value in the  __`Constant`__`.value` attribute.
+- `BinOp.op` is a `Add` node given we are performing an addition.
+- `BinOp.left` and `BinOp.right` are the addition operands and consist of `Constant` nodes, each holding the raw value in the `Constant.value` attribute.
 
-Considering the left-side, as Python supports multiple assignments and tuple unpacking, the __`Assign`__`.targets` attribute is a list collecting the different destinations of the operation. In our case the assignment is for a single variable, so a single __`Name`__ node is used. In turn, the __`Name`__ node has 2 attributes:
+Considering the left-side, as Python supports multiple assignments and tuple unpacking, the `Assign.targets` attribute is a list collecting the different destinations of the operation. In our case the assignment is for a single variable, so a single `Name` node is used. In turn, the `Name` node has 2 attributes:
 
-- __`Name`__`.id` stores the name of the variable used in the programm (`"one_plus_two"`). 
-- __`Name`__`.ctx` specifies how variable reference is used in the program. This can only be one of types `ast.Load`, `ast.Remove` or `ast.Store`, but those are always empty nodes. 
+- `Name.id` stores the name of the variable used in the programm (`"one_plus_two"`). 
+- `Name.ctx` specifies how variable reference is used in the program. This can only be one of types `ast.Load`, `ast.Remove` or `ast.Store`, but those are always empty nodes. 
 
 ### The `Module.type_ignores` attribute and type comments
 
-The attribute __`Module`__`.type_ignores` in the vast majority of the cases is going to be an empty list. This is why in the sketch is colored in blue. To understand why this is the case, and what is the actual purpose of the attribute we need to make a digression.
+The attribute `Module.type_ignores` in the vast majority of the cases is going to be an empty list. This is why in the sketch is colored in blue. To understand why this is the case, and what is the actual purpose of the attribute we need to make a digression.
 
 Python 3.0 introduced annotations, and few years later those have been expanded into type hints. If you are not familiar with those concepts, check this [Real Python tutorial](https://realpython.com/lessons/type-comments/) and the [official doc](https://docs.python.org/3/library/typing.html?highlight=typing#module-typing).
 
 Those changes were not back ported to Python 2, which instead was using __type comments__ as a form of annotation. For more information, see [PEP 484](https://www.python.org/dev/peps/pep-0484/#type-comments) or this [Real Python tutorial](https://realpython.com/lessons/type-comments/).
 
-The attribute __`Module`__`.type_ignores` refers to a special type comment `# type: ignore` that was used to indicate to type checker (such as [mypy](http://mypy-lang.org)) to suppress errors if one was found. For legacy reasons, the `ast` module is still reporting on those comments, but *only when asked* to do so.
+The attribute `Module.type_ignores` refers to a special type comment `# type: ignore` that was used to indicate to type checker (such as [mypy](http://mypy-lang.org)) to suppress errors if one was found. For legacy reasons, the `ast` module is still reporting on those comments, but *only when asked* to do so.
 
 Let's see an example.
 
@@ -174,9 +174,9 @@ Module(
     type_ignores=[])
 ```
 
-Notice that the only difference with respect to the detailed analysis of the AST previously discussed is the presence of the attribute __`Assign`__`.type_comment='int'`. The attribute reflects the metadata provided by type comment `# type: int`, and is added to the AST tree __`Assign`__ node because we specified `type_comment=True` when triggering the parsing. 
+Notice that the only difference with respect to the detailed analysis of the AST previously discussed is the presence of the attribute `Assign.type_comment='int'`. The attribute reflects the metadata provided by type comment `# type: int`, and is added to the AST tree `Assign` node because we specified `type_comment=True` when triggering the parsing. 
 
-However, `# type: ignore` is treated differently. Those type comments are stored into the __`Module`__`.type_ignores` attribute as __`TypeIgnore`__ objects rather than being collected as metadata in the inner nodes of the tree.
+However, `# type: ignore` is treated differently. Those type comments are stored into the `Module.type_ignores` attribute as `TypeIgnore` objects rather than being collected as metadata in the inner nodes of the tree.
 
 ```
 >>> code = 'one_plus_two = 1+2 # type: ignore'
