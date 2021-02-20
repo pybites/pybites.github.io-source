@@ -1,13 +1,11 @@
 Title: Abstract Syntax Trees in Python
-Date:
-Category:
-Tags: 
-Slug: guest-ast-intro
+Date: 2021-02-20 10:30
+Category: Concepts
+Tags: ast, Mutpy
+Slug: ast-intro
 Authors: Alessandro Finamore
 summary: In this article Alessandro provides an overview of Abstract Syntax Trees (ASTs), introduces a few use-cases, and showcase the ast module in the Python standard library. The content is structured in a top-down fashion, starting from general notion about an AST, and digging deeper up to the point of artificially manipulating an AST to "randomize" the content of some instructions.
 cover: images/featured/pb-article.png
-
-
 
 <!-- Indexes are always a good start! -->
 ## Index 
