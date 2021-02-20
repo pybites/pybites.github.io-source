@@ -1,27 +1,27 @@
 Title: Abstract Syntax Trees in Python
 Date: 2021-02-20 10:30
 Category: Concepts
-Tags: ast, Mutpy
+Tags: ast, Mutpy, Syntax Tree, data structures
 Slug: ast-intro
 Authors: Alessandro Finamore
 summary: In this article Alessandro provides an overview of Abstract Syntax Trees (ASTs), introduces a few use-cases, and showcase the ast module in the Python standard library. The content is structured in a top-down fashion, starting from general notion about an AST, and digging deeper up to the point of artificially manipulating an AST to "randomize" the content of some instructions.
 cover: images/featured/pb-article.png
 
-<!-- Indexes are always a good start! -->
 ## Index 
 * [What is an Abstract Syntax Tree (AST)?](#what-is-an-abstract-syntax-tree-ast)
 * [The `ast` Python module and its use](#the-ast-python-module-and-its-use)
-* [Using the `ast` module to investigate the PyBites code challenges](#using-the-ast-module-to-investigate-the-pybites-code-challenges)
+* [Using the `ast` module to investigate the PyBites Bite exercises](#using-the-ast-module-to-investigate-the-pybites-bite-exercises)
     * [`builtins` popularity](#builtins-popularity)
     * [Modules popularity](#modules-popularity)
 * [Dissecting an assignment instruction using the `ast` module](#dissecting-an-assignment-instruction-using-the-ast-module)
     * [The `Module.type_ignores` attribute and type comments](#the-moduletype_ignores-attribute-and-type-comments)
 * [The `ast` module APIs](#the-ast-module-apis)
     * [Visiting an AST](#visiting-an-ast)
-    * [Modifying as AST](#modifying-an-ast)
+    * [Modifying an AST](#modifying-an-ast)
 
 > __Requirement__: All examples are compatible with at least Python v3.6, except for using `ast.dump()` with the attribute `indent=` which has been added in Python v3.9. 
 
+<a name="what-is-an-abstract-syntax-tree-ast"></a>
 ## What is an Abstract Syntax Tree (AST)?
 
 An Abstract Syntax Tree (AST) is a data structure used to reason about the grammar of a programming language in the context of the instructions provided into source code.
@@ -38,14 +38,14 @@ For instance, compilers use ASTs when transforming source code into binary code:
 
 Despite their role for compilers, ASTs are useful for a broader set of use-cases. Let's discuss this more in details.
 
-
+<a name="the-ast-python-module-and-its-use"></a>
 ## The `ast` Python module and its use
 
 The `ast` module in the Python standard library can be used to create, visit, and modify AST related to Python source code. It has been introduced in [Python 2.6](https://docs.python.org/release/2.6/whatsnew/2.6.html#the-ast-module), and since then it evolved alongside the Python grammar.
 
 Even if it is part of standard library since a long time, it is not common to use it *directly*. Rather, you might have used it *indirectly* as popular tools use it under-the-hood:
 
-- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of the AST generated from the code under testing.
+- __code testing__: [`mutpy`](https://pypi.org/project/MutPy/) is a mutation testing tool used to alters the code under testing to broaden the set of tests in an automated fashion. In practice a mutation is an artificial modification of the AST generated from the code under testing. To see how PyBites uses `mutpy`, check out [this article](https://pybit.es/guest-mutpy-exploration.html).
 
 - __code coverage__: [`vulture`](https://pypi.org/project/vulture/) is a static code analyzer that studies an AST to identify portion of the code not used.
 
@@ -55,36 +55,39 @@ Even if it is part of standard library since a long time, it is not common to us
 
 - __code reformating__: [`black`](https://pypi.org/project/black/) and [`flake8`](https://pypi.org/project/flake8/) are two popular tools to enforce code reformatting, and they both use an AST representation of the source code to apply their formatting rules.
 
-## Using the `ast` module to investigate the PyBites code challenges
+<a name="using-the-ast-module-to-investigate-the-pybites-bite-exercises"></a>
+## Using the `ast` module to investigate the PyBites Bite exercises
 
-Still not convinced of the relevance of an AST? Fair enough: let's consider a more practical, and closer to the PyBites platform, use-case.
+Still not convinced of the relevance of an AST? Fair enough: let's consider a more practical, and closer to the PyBites Platform, use-case.
 
-The PyBites platform is currently offering 300+ code challenges, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available code challenges, and what is instead left to explore.
+The PyBites Platform is currently offering 300+ Bite exercises, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available exercises, and what is instead left to explore.
 
-This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the code challenges (as provided by the authors of the challenges) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
+This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the exercises (as provided by the authors of the challenges) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
 
 Here some of the results.
 
+<a name="builtins-popularity"></a>
 ### Builtins popularity
 
-<img src="images/astintro/plot_builtins.png" alt="Pybites code challenges - builtins popularity" height="600px">
+<img src="images/astintro/plot_builtins.png" alt="Pybites exercises - builtins popularity" height="600px">
 
-The histogram above shows the Python builtin calls sorted by their popularity. In other words, using the `ast` module one can detect when a function call has been made, and if it relates to the `builtins` module or not. Three colors are used to visually distinguish between exception types, the creation of base types (`int`, `float`, `bool`, `list`, and `set`), or other functions. The histogram is a normalized frequency count, i.e., the frequency of each element is cumulated across all code challenges, and divided by the sum of all elements occurrence across all code challenges.
+The histogram above shows the Python builtin calls sorted by their popularity. In other words, using the `ast` module one can detect when a function call has been made, and if it relates to the `builtins` module or not. Three colors are used to visually distinguish between exception types, the creation of base types (`int`, `float`, `bool`, `list`, and `set`), or other functions. The histogram is a normalized frequency count, i.e., the frequency of each element is cumulated across all exercises, and divided by the sum of all elements occurrence across all exercises.
 
 A few observations:
 
 - The distribution is heavy tailed, with `len()` representing 13.4% of all builtin calls, while `dir()` being used only once. 
 - All five base types are used, but `bool()` is used only in 1 challenge.
 - Only 5 of the standard exceptions are used, with `ValueError` being the most common.
-- Most of the builtin functions are already used by code challenges, but considering the [functional programming calls](https://docs.python.org/3/howto/functional.html) you can notice that `map()` appears while `filter()` does not (as indeed the common practice is to prefer [list comprehension](https://realpython.com/list-comprehension-python/#profile-to-optimize-performance)).
+- Most of the builtin functions are already used by exercises, but considering the [functional programming calls](https://docs.python.org/3/howto/functional.html) you can notice that `map()` appears while `filter()` does not (as indeed the common practice is to prefer [list comprehension](https://realpython.com/list-comprehension-python/#profile-to-optimize-performance)).
 
+<a name="modules-popularity"></a>
 ### Modules popularity
 
-<img src="images/astintro/plot_modules.png" alt="Pybites code challenges - modules popularity" height="600px">
+<img src="images/astintro/plot_modules.png" alt="Pybites exercises - modules popularity" height="600px">
 
 The histogram above shows the ranking for modules. For simplicity we limit to report on the root modules only. If submodules are used, their frequencies are cumulated into the frequency of the respective root modules.
 
-As before, the histogram is heavy tailed, a testament that the PyBite code challenges try to "cover a little bit of everything".
+As before, the histogram is heavy tailed, a testament that the PyBites Bite exercises try to "cover a little bit of everything".
 
 We can observe the presence of non-standard modules, such as `pandas` and `pytest`, as well more ad-hoc modules such as as `zodiac` and `fibonacci` that are created for the purpose of the challenges themselves.
 
@@ -92,6 +95,7 @@ One can easily expand the analysis to understand the functions used in each modu
 
 Hopefully this examples gave you a rough idea of what you can achieve with an AST. The next step is to understand how to create such data structures, and investigate their composition.
 
+<a name="dissecting-an-assignment-instruction-using-the-ast-module"></a>
 ## Dissecting an assignment instruction using the `ast` module
 
 To start familiarize with the `ast` module, let's see what happens when we analyze a single instruction: `one_plus_two = 1+2`
@@ -140,9 +144,10 @@ Considering the right-hand side, the `Assign.value` attribute is a `BinOp` node,
 
 Considering the left-side, as Python supports multiple assignments and tuple unpacking, the `Assign.targets` attribute is a list collecting the different destinations of the operation. In our case the assignment is for a single variable, so a single `Name` node is used. In turn, the `Name` node has 2 attributes:
 
-- `Name.id` stores the name of the variable used in the programm (`"one_plus_two"`). 
+- `Name.id` stores the name of the variable used in the program (`"one_plus_two"`). 
 - `Name.ctx` specifies how variable reference is used in the program. This can only be one of types `ast.Load`, `ast.Remove` or `ast.Store`, but those are always empty nodes. 
 
+<a name="the-moduletype_ignores-attribute-and-type-comments"></a>
 ### The `Module.type_ignores` attribute and type comments
 
 The attribute `Module.type_ignores` in the vast majority of the cases is going to be an empty list. This is why in the sketch is colored in blue. To understand why this is the case and what is the actual purpose of the attribute, we need to make a digression.
@@ -193,6 +198,7 @@ Module(
         TypeIgnore(lineno=1, tag='')])
 ```
 
+<a name="the-ast-module-apis"></a>
 ## The `ast` module APIs
 
 The `ast` module is mostly a large collection of classes, one for each of the different aspects of the Python grammar. Overall, there are about 100 classes, ranging from literals, to more complex construct such as list comprehensions.
@@ -211,6 +217,7 @@ No matter your preferred choice, the documentation is a fundamental resource to 
 
 Beside the classes, the `ast` module defines how to perform a visit of a tree, and how to do transformations.
 
+<a name="visiting-an-ast"></a>
 ### Visiting an AST
 
 You can visit an AST in two ways: using helper functions, or via an `ast.NodeVisitor` class.
@@ -264,7 +271,7 @@ In this example:
 - When the callback is invoked it receives the reference of the node under analysis. In this example we use the node info to print the line number of the instruction it relates to.
 - Finally, we invoke `self.generic_visit(node)` to propagate the visit on the children of the input node.
 
-What sort of *black magic* happens behing the scene to trigger the callbacks? It is actually simple.  A `ast.NodeVisitor` also defines a `visit()` function which is always invoked first: if the input node type matches one of the callbacks, such callback is called, otherwise `generic_visit()` is invoked to visito the node children. In our example we are not overwriting `visit()`, hence we can trigger a visit of the tree simply invoking the method:
+What sort of *black magic* happens behind the scene to trigger the callbacks? It is actually simple.  A `ast.NodeVisitor` also defines a `visit()` function which is always invoked first: if the input node type matches one of the callbacks, such callback is called, otherwise `generic_visit()` is invoked to visit the node children. In our example we are not overwriting `visit()`, hence we can trigger a visit of the tree simply invoking the method:
 
 ```
 >>> vis = BinOpVisitor()
@@ -350,6 +357,7 @@ found BinOp at line: 4
 found BinOp at line: 5
 ```
 
+<a name="modifying-an-ast"></a>
 ### Modifying an AST
 
 A `ast.NodeTransformer` can be used as base class for a transformers, similarly to the logic used for the visitor class. This time, rather than simply visiting the nodes, the callbacks are used to modify, replace, add new nodes.
@@ -538,11 +546,6 @@ The output now is "randomized", as expected by the transformation. However, the 
 
 To avoid this however one simply use the [`copy` module](https://docs.python.org/3.9/library/copy.html?highlight=deepcopy#copy.deepcopy) to clone the whole tree before triggering the transformation, or overwrite the `visit()` method and define the ad-hoc logic for the use-case at hand.
 
-
-<!-- add your closer here! -->
-
 Keep calm and happy Python coding!
 
 -- [Alessandro](pages/guests.html#alessandrofinamore)
-
-
