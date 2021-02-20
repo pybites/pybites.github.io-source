@@ -182,6 +182,13 @@ Slug: guests
     <p>My name is Jesse. I'm an avid Pythonista trying to learn as much as I can about the language and programming in general. I first started learning to code about six or seven months ago. As quarantine started, I was looking for something new to learn, and boy, did I ever find it! If I'm not coding, you can find me working, playing my guitar, or spending time with my family.</p>
 </div>
 
+<div id="alessandrofinamore">
+    <h3><a name="alessandrofinamore"></a>Jesse Brink</h3>
+    <p>Alessandro is a principal engineer at the HUAWEI research center in Paris, working on the integration AI technologies into high-speed network monitoring systems. For more info, check <a href="https://afinamore.io" target="_blank">his website</a>.</p>
+	<p>Alessandro's <a href="https://pybit.es/author/michael-aydinbas.html">posts</a>.</p>
+    </p>
+</div>
+
 <!-- insert your new bio above this line -->
 
 <hr>
