@@ -183,9 +183,9 @@ Slug: guests
 </div>
 
 <div id="alessandrofinamore">
-    <h3><a name="alessandrofinamore"></a>Jesse Brink</h3>
+    <h3><a name="alessandrofinamore"></a>Alessandro Finamore</h3>
     <p>Alessandro is a principal engineer at the HUAWEI research center in Paris, working on the integration AI technologies into high-speed network monitoring systems. For more info, check <a href="https://afinamore.io" target="_blank">his website</a>.</p>
-	<p>Alessandro's <a href="https://pybit.es/author/michael-aydinbas.html">posts</a>.</p>
+	<p>Alessandro's <a href="https://pybit.es/author/alessandro-finamore.html">posts</a>.</p>
     </p>
 </div>
 
