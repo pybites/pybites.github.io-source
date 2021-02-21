@@ -3,7 +3,7 @@
 {% block title %}{{ article.title }} - {{ super() }}{% endblock title %}
 {% block description %}{{ article.content|striptags|truncate(200)|escape }}{% endblock description %}
 {% block keywords %}{% for tag in article.tags|sort %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}{% endblock keywords %}
-{% block ogtags %}{% include "partial/og_article.html" %}{% endblock ogtags %}
+{% block meta_og %}{% include "partial/og_article.html" %}{% endblock meta_og %}
 
 {% block headerstyle %}
     {% if article.illustration %}

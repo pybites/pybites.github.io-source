@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
     <head>
-    {% block head %}
+
+    {% block meta_base %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+    {% endblock meta_base %}
 
-        {% block ogtags %}
-          {% include "partial/og.html" %}
-        {% endblock ogtags %}
+    {% block meta_og %}
+      {% include "partial/og.html" %}
+    {% endblock meta_og %}
 
+    {% block head %}
         <link rel="icon" href="{{ SITEURL }}/favicon.ico">
-
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
         <!-- Stylesheets -->
