@@ -6,7 +6,7 @@ Slug: guest-exploring-python-clis
 Illustration: mixer.jpg
 Authors: Erik O'Shaughnessy
 summary: Delve into the why and the how of writing command-line tools using Python. 
-cover: images/featured/pb-article.png
+cover: images/featured/pb-guest.png
 
 # Exploring the Modern Python Command-Line Interface
 

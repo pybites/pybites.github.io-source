@@ -5,7 +5,7 @@ Tags: ast, Mutpy, Syntax Tree, data structures, random, PyBites Platform, Jupyte
 Slug: ast-intro
 Authors: Alessandro Finamore
 summary: In this article Alessandro provides an overview of Abstract Syntax Trees (ASTs), introduces a few use-cases, and showcases the `ast` module in the Python Standard Library. The content is structured in a top-down fashion, starting from general notion about an AST, and digging deeper up to the point of artificially manipulating an AST to "randomize" the content of some instructions.
-cover: images/featured/pb-article.png
+cover: images/featured/pb-guest.png
 
 ## Index 
 * [What is an Abstract Syntax Tree (AST)?](#what-is-an-abstract-syntax-tree-ast)
