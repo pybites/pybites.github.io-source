@@ -1,7 +1,7 @@
 Title: Abstract Syntax Trees in Python
 Date: 2021-02-20 10:30
 Category: Concepts
-Tags: ast, Mutpy, Syntax Tree, data structures
+Tags: ast, Mutpy, Syntax Tree, data structures, random, PyBites Platform, Jupyter notebook, IPython, typing, linters, mypy
 Slug: ast-intro
 Authors: Alessandro Finamore
 summary: In this article Alessandro provides an overview of Abstract Syntax Trees (ASTs), introduces a few use-cases, and showcases the `ast` module in the Python Standard Library. The content is structured in a top-down fashion, starting from general notion about an AST, and digging deeper up to the point of artificially manipulating an AST to "randomize" the content of some instructions.
@@ -60,11 +60,11 @@ Even if it is part of standard library since a long time, it is not common to us
 
 Still not convinced of the relevance of an AST? Fair enough: let's consider a more practical, and closer to the PyBites Platform, use-case.
 
-The PyBites Platform is currently offering 300+ Bite exercises, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available exercises, and what is instead left to explore.
+The [PyBites Platform](https://codechalleng.es/) is currently offering 300+ Bite exercises, and the number is constantly increasing. Given the (semi)hidden intention of the platform is to offer a varied set of challenges covering different Python modules and functionalities, it starts to be more and more challenging to identify what is covered by already available exercises, and what is instead left to explore.
 
 This is where we can take advantage of the `ast` module. Specifically, we can process the source code of the solution of the exercises (as provided by the authors of the challenges) and recover some statistics about their content. For instance, which are the popular modules and builtin functions used.
 
-Here some of the results.
+Here some of the results. To follow along check out [this Jupyter notebook](https://github.com/pybites/notebooks/tree/main/ast-intro).
 
 <a name="builtins-popularity"></a>
 ### Builtins popularity
