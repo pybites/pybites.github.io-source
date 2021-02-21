@@ -251,7 +251,7 @@ Here some examples:
 >>> tree = ast.parse(code)
 
 >>> for node in ast.walk(tree):
-        print(idx, node.__class__.__name__)
+        print(node.__class__.__name__)
 
 Module
 Assign
