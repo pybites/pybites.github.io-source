@@ -1,9 +1,9 @@
 Title: 10 Cool Pytest Tips You Might Not Know About
-Date: 2021-02-26 15:15
+Date: 2021-02-26 15:55
 Category: Testing
 Illustration: pytest-planes.jpeg
 Tags: pytest, testing, tips, exceptions, logging, poetry, fixtures, floats, debugging, command line, pytest-pythonpath, capsys, caplog
-Slug: pytest-tricks
+Slug: pytest-tips
 Authors: Bob
 Summary: Here are 10 things we learned writing `pytest` code that might come in handy.
 cover: images/featured/pb-article.png
