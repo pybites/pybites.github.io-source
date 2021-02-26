@@ -89,7 +89,7 @@ You can use `pytest`'s `-k` switch to filter tests by expression:
                         'test_method' in their names. ...
 ```
 
-Or you can mark them with `@pytest.mark`, for example:
+Or you can mark tests using `@pytest.mark`, for example:
 
 ```
 @pytest.mark.slow
@@ -97,9 +97,16 @@ def test_func_slow():
     pass
 ```
 
-Then target those "marked" tests individually. [The docs](https://docs.pytest.org/en/stable/example/simple.html?highlight=pytest%20mark#control-skipping-of-tests-according-to-command-line-option) show a good example of how to do this.
+For this to work though you need to register the mark in your `pytest.ini` file, as per [docs](https://docs.pytest.org/en/stable/mark.html):
 
-This can be useful if you want to target fast vs. slow tests for example.
+```
+[pytest]
+markers =
+    slow: marks tests as slow (deselect with '-m "not slow"')
+    serial
+```
+
+Now you can run "slow" tests with: `pytest -m slow`.
 
 Another cool use case is `@pytest.mark.skipif` to skip a test based on a condition:
 
