@@ -2,7 +2,7 @@ Title: 10 Cool Pytest Tips You Might Not Know About
 Date: 2021-02-26 15:15
 Category: Testing
 Illustration: pytest-planes.jpeg
-Tags: pytest, testing, tips, exceptions, logging, poetry, fixtures, floats, debugging, command line
+Tags: pytest, testing, tips, exceptions, logging, poetry, fixtures, floats, debugging, command line, pytest-pythonpath, capsys, caplog
 Slug: pytest-tricks
 Authors: Bob
 Summary: Here are 10 things we learned writing `pytest` code that might come in handy.
@@ -63,13 +63,15 @@ Setting your project up with [Poetry](https://python-poetry.org/docs/basic-usage
 
 If you don't turn your code directory into a package (so not including an `__init__.py` file), you might want to use [`pytest-pythonpath`](https://pypi.org/project/pytest-pythonpath/):
 
-> a py.test plugin for adding to the PYTHONPATH from the pytests.ini file before tests run.
+> ... a py.test plugin for adding to the PYTHONPATH from the pytests.ini file before tests run.
+
+Thanks [Martin](https://twitter.com/martin_heroux) for telling us about this plugin.
 
 ## 2. Organize your fixtures
 
-You can use a `conftest.py` file to create [your fixtures](https://pybit.es/pytest-fixtures.html) (setup and tear down code) for reuse across your test modules, making them leaner.
+You can use a `conftest.py` file to create [your fixtures](https://pybit.es/pytest-fixtures.html) (setup and tear down code) for reuse across your test modules.
 
-See more info [in the documentation](https://docs.pytest.org/en/stable/fixture.html?highlight=conftest#conftest-py-sharing-fixtures-across-multiple-files) and a practical example [in one of our projects](https://github.com/PyBites-Open-Source/pysource/tree/main/tests).
+See more info [in the documentation](https://docs.pytest.org/en/stable/fixture.html?highlight=conftest#conftest-py-sharing-fixtures-across-multiple-files) and a practical example [in one of our projects](https://github.com/PyBites-Open-Source/pysource/tree/main/tests). This will definitely make your test modules leaner.
 
 ## 3. Filter out particular tests
 
@@ -160,7 +162,9 @@ def test_only_files(tmp_path):
     assert count_dirs_and_files(tmp_path) == (0, 5)
 ```
 
-## 6. Test exceptions
+The files were created in a temporary directory and I did not have to clean anything up manually.
+
+## 6. Testing exceptions
 
 Here is an example from [Intro Bite #10](https://codechalleng.es/bites/110/) that uses `pytest.raises(...)` to test an exception:
 
@@ -175,7 +179,7 @@ Here is an example from [Intro Bite #10](https://codechalleng.es/bites/110/) tha
 
 ## 7. Enhance your parametrized tests
 
-In this previous example I changed `divide_numbers` to trigger another exception:
+For this tip I changed `divide_numbers` to have `test_divide_numbers_raises_value_error` fail:
 
 ```
 FAILED test_division.py::test_divide_numbers_raises_value_error[2-s] - TypeError: unsupported operand type(s) for /: 'int' and 'str'
@@ -196,21 +200,13 @@ def test_divide_numbers_raises_value_error(numerator, denominator):
         divide_numbers(numerator, denominator)
 ```
 
-Now this will show up in the failing test:
+Now this string will show up in the failing test:
 
 ```
 FAILED test_division.py::test_divide_numbers_raises_value_error[denominator_wrong_type] - TypeError: unsupported operand type(s) for /: 'int' and 'str'
 ```
 
-And we can target these strings with `pytest -k`, for example to only run `both_numerator_denominator_wrong_type`:
-
-	:::console
-	$ pytest -k both_numerator
-	...
-
-	test_division.py .                                                                                                                                                                                           [100%]
-
-	========================================================================================= 1 passed, 8 deselected in 0.11s ==========================================================================================
+And we can target these strings with `pytest -k` as well, for example `pytest -k both_numerator` runs only the third test of `test_divide_numbers_raises_value_error`, `pytest -k numerator` would run two tests.
 
 ## 8. Drop into the debugger upon failure
 
@@ -229,7 +225,7 @@ And in order to debug a hanging test, check out [our related article](https://py
 
 ## 9. Test logging
 
-You can test logging with `pytest`'s `caplog` fixture:
+You can test logging with `pytest`'s [`caplog` fixture](https://docs.pytest.org/en/stable/logging.html):
 
 	# script.py
 	import logging
@@ -264,9 +260,9 @@ In the test we use the `caplog` fixture to grab those logging messages and test 
 
 How to test a function that prints to standard output (as opposed to returning something)?
 
-You can use the `capsys` or `capfd` fixtures for this.
+You can use the [`capsys` / `capfd` fixtures](https://docs.pytest.org/en/stable/capture.html) for this.
 
-Here is an example of [our first intro Bite](https://codechalleng.es/bites/101/).
+Here is an example from [Intro Bite #01](https://codechalleng.es/bites/101/).
 
 Code (spoiler alert!):
 
@@ -292,22 +288,14 @@ def test_not_allowed_to_drive(capfd):
     output = capfd.readouterr()[0].strip()
     assert output == 'tim is not allowed to drive'
 
-
-def test_allowed_to_drive(capfd):
-    allowed_driving('bob', 18)
-    output = capfd.readouterr()[0].strip()
-    assert output == 'bob is allowed to drive'
-
-
-def test_allowed_to_drive_other_name(capfd):
-    allowed_driving('julian', 19)
-    output = capfd.readouterr()[0].strip()
-    assert output == 'julian is allowed to drive'
+...
 ```
 
 ---
 
-I hope you learned something new and that you can use this in your tests. If you want to share other cool `pytest` tips, please comment below ...
+I hope you learned something new and that you can use any of this when you are writing `pytest` code.
+
+If you want to share other cool `pytest` tips, please comment below ...
 
 Keep Calm and Write more Tests!
 
