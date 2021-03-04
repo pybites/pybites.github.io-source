@@ -83,6 +83,7 @@ SERVICES = [
     ('PyBites Platform','https://codechalleng.es'),
     ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
     ('Python Tips Book','https://pybit.es/tips'),
+    ('Python Productivity','https://pybit.es/productivity'),
     ('PyBites Career Advice','/talk'),
     ('Build Bigger Apps','https://pybitesdevelopermindset.com/'),
     ('PyBites in the Classroom','/pages/schools'),
