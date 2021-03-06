@@ -1,4 +1,4 @@
-Title: Are You Working on Your Mindset as Much as Your Python?
+Title: Are You Working on Your Mindset as Much as Your Technical Skills?
 Date: 2021-03-06 07:21
 Category: Mindset
 Tags: consistency, growth, emotions, 1% rule, platform, coaching
@@ -59,7 +59,7 @@ In this post I wanted to share some of our favorite lessons:
 
 These are the kinds of important mindset lessons we include in our _PyBites Developer Mindset_ coaching program.
 
-If you want to be coached on mindset in addition to Python and software development, [book a strategy session with us](https://pybit.es/apply).
+If you want to be coached on mindset in addition to Python and software development, [book a Strategy Session with us](https://pybit.es/apply).
 
 Don't ignore the **mindset** side of things, it's as important (if not more important) as the technical skills!
 
