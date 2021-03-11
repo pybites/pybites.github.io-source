@@ -1,8 +1,11 @@
-Title: Naughts and Crosses gets a little help Date: 12 February 2021 Category: Concepts Tags: guest, games theory, ai,
-tic-tac-toe, python Slug: guest-naughts-and-crosses Authors: Geoff Riley summary: Naughts and Crosses (Tic-Tac-Toe to
-some audiences) is a popular skill game often played by children. It can also be usefully employed to distract dial up
-computers, at NORAD for example, rather than allowing the 'playing' of Global Thermonuclear War. Would you like to play
-a game? cover: images/featured/pb-guest.png
+Title: Naughts and Crosses Gets a Little Help
+Date: 2021-03-11 14:30
+Category: Concepts
+Tags: guest, games theory, AI, tic-tac-toe
+Slug: naughts-and-crosses
+Authors: Geoff Riley
+summary: Naughts and Crosses (Tic-Tac-Toe to some audiences) is a popular skill game often played by children. It can also be usefully employed to distract dial up computers, at NORAD for example, rather than allowing the 'playing' of Global Thermonuclear War. Would you like to play a game?
+cover: images/featured/pb-guest.png
 
 ![Header image: Naughts and Crosses, Os and Xs, Tic Tac Toe](images/guest-naughts-and-crosses-ai/title-bar.png)
 <!-- Indexes are always a good start! -->

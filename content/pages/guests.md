@@ -193,6 +193,7 @@ Slug: guests
     <h3><a name="geoff-riley"></a>Geoff Riley</h3>
     <p>With over 40 years experience, Geoff is a self proclaimed ancient programmer who often reminisces about the days when a single computer filled rooms and had less power than a modern washing machine. Professionally he has been involved with: data collection and statistical process analysis; recruitment payroll, and search and selection systems; and some database analysis. He has a large arsenal of programming languages at his disposal, having started with Basic (an interest main frame version) and moving through assembly code (Z-80 and 6502 initially) before taking up Pascal and C before getting into more scripting languages including Bash, Perl and, of course, Python when managing arrays of servers.</p>
     <p>Beyond computer based tasks, Geoff is also a skilled jewellery maker, model maker and (what the choir leader calls) a useful tenor in the local Anglican Church choir.</p>
+	<p>Geoff's <a href="https://pybit.es/author/geoff-riley.html">posts</a>.</p>
 </div>
 <!-- insert your new bio above this line -->
 
