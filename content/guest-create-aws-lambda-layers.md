@@ -5,7 +5,7 @@ Tags: AWS, cloud, lambda, Docker, packages, deployment, Klayers, scikit-learn, A
 Slug: guest-create-aws-lambda-layers
 Authors: Michael Aydinbas
 Summary: I finally managed to get scikit-learn running on the platform. On the way, I learned a lot about AWS Lambda Layers, AWS cli, and AWS cloud infrastructure in general. And now it's time I share this knowledge with you. In this article you will learn about creating your own AWS Lambda Layer to support any Python package you may need.
-cover: images/featured/pb-article.png
+cover: images/featured/pb-guest.png
 
 This article continues where [How to Run External Python Libraries in AWS Cloud](https://pybit.es/aws-lambda-external-libraries.html) ended. 
 

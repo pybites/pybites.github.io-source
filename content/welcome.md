@@ -3,7 +3,7 @@ Date: 2016-12-19 10:26
 Category: Meta
 Tags: pelican, publishing, blog, pybites
 Slug: hello-world
-Authors: Pybites
+Authors: PyBites
 Summary: Welcome to our new PyBites blog where our goal is to further develop our Python skills and share what we learn.
 cover: images/featured/pb-article.png
 

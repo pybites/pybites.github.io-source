@@ -83,6 +83,7 @@ SERVICES = [
     ('PyBites Platform','https://codechalleng.es'),
     ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
     ('Python Tips Book','https://pybit.es/tips'),
+    ('Python Productivity','https://pybit.es/productivity'),
     ('PyBites Career Advice','/talk'),
     ('Build Bigger Apps','https://pybitesdevelopermindset.com/'),
     ('PyBites in the Classroom','/pages/schools'),
@@ -95,7 +96,8 @@ NEST_ARCHIVES_HEADER_TITLE = 'Archive'
 default_pages = ['index', 'authors', 'categories', 'tags', 'archives']
 pybites_pages = ("apply talk build community confidence courses devtools friends "
                  "hacktoberfest marketing pareto pbcall resources sscall "
-                 "techblog workshop workshop2 tips 100days").split()
+                 "techblog workshop coaching productivity entrepreneur "
+                 "tips 100days").split()
 DIRECT_TEMPLATES = default_pages + pybites_pages
 
 # Footer

@@ -182,12 +182,18 @@ Slug: guests
     <p>My name is Jesse. I'm an avid Pythonista trying to learn as much as I can about the language and programming in general. I first started learning to code about six or seven months ago. As quarantine started, I was looking for something new to learn, and boy, did I ever find it! If I'm not coding, you can find me working, playing my guitar, or spending time with my family.</p>
 </div>
 
+<div id="alessandrofinamore">
+    <h3><a name="alessandrofinamore"></a>Alessandro Finamore</h3>
+    <p>Alessandro is a principal engineer at the HUAWEI research center in Paris, working on the integration AI technologies into high-speed network monitoring systems. For more info, check <a href="https://afinamore.io" target="_blank">his website</a>.</p>
+	<p>Alessandro's <a href="https://pybit.es/author/alessandro-finamore.html">posts</a>.</p>
+    </p>
+</div>
+
 <div id="geoff-riley">
     <h3><a name="geoff-riley"></a>Geoff Riley</h3>
     <p>With over 40 years experience, Geoff is a self proclaimed ancient programmer who often reminisces about the days when a single computer filled rooms and had less power than a modern washing machine. Professionally he has been involved with: data collection and statistical process analysis; recruitment payroll, and search and selection systems; and some database analysis. He has a large arsenal of programming languages at his disposal, having started with Basic (an interest main frame version) and moving through assembly code (Z-80 and 6502 initially) before taking up Pascal and C before getting into more scripting languages including Bash, Perl and, of course, Python when managing arrays of servers.</p>
     <p>Beyond computer based tasks, Geoff is also a skilled jewellery maker, model maker and (what the choir leader calls) a useful tenor in the local Anglican Church choir.</p>
 </div>
-
 <!-- insert your new bio above this line -->
 
 <hr>

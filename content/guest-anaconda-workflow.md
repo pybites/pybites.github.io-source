@@ -5,7 +5,7 @@ Tags: Anaconda, Anaconda workflow, conda, pip, virtual environment, packages, pa
 Slug: guest-anaconda-workflow
 Authors: Martin Uribe
 summary: in this article martin provides an easy-to-follow reference guide of his anaconda workflow. he uses this to make his life easier managing the his python environment and package dependencies. and to great avail as you will soon discover. not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating anaconda, and setting environment variables. warning: this might get you on anaconda, and if you are already you probably want to keep this one nearby for reference.
-cover: images/featured/pb-article.png
+cover: images/featured/pb-guest.png
 
 In this article Martin provides an easy-to-follow reference guide of his Anaconda workflow. He uses this to make his life easier managing the his Python environment and package dependencies. And to great avail as you will soon discover. Not only will you learn the basics of the powerful conda tool, he also goes into more depth on the more niche/advanced features like using alternate channels, distributing and cloning environments, updating Anaconda, and setting environment variables. Warning: this might get you on Anaconda, and if you are already you probably want to keep this one nearby for reference. Enter Martin:
 
