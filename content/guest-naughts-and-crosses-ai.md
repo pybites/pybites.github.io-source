@@ -1,5 +1,5 @@
 Title: Naughts and Crosses Gets a Little Help
-Date: 2021-03-11 14:30
+Date: 2021-03-12 18:45
 Category: Concepts
 Tags: guest, games theory, AI, tic-tac-toe
 Slug: naughts-and-crosses
@@ -7,7 +7,9 @@ Authors: Geoff Riley
 summary: Naughts and Crosses (Tic-Tac-Toe to some audiences) is a popular skill game often played by children. It can also be usefully employed to distract dial up computers, at NORAD for example, rather than allowing the 'playing' of Global Thermonuclear War. Would you like to play a game?
 cover: images/featured/pb-guest.png
 
+<span class="originalWidth">
 ![Header image: Naughts and Crosses, Os and Xs, Tic Tac Toe](images/guest-naughts-and-crosses-ai/title-bar.png)
+</span>
 <!-- Indexes are always a good start! -->
 
 ## Index
@@ -26,7 +28,9 @@ cover: images/featured/pb-guest.png
 <a name="introduction"></a>
 ## Introduction
 
+<span class="originalWidth">
 ![Would you like to play a game?](images/guest-naughts-and-crosses-ai/like-to-play.png)
+</span>
 _([Wargames (1983)](https://www.imdb.com/title/tt0086567/))_
 
 If you happen to have recently hacked into [NORAD (North American Aerospace Defense Command)](https://www.norad.mil/)
@@ -40,7 +44,9 @@ right place. This article was inspired by the [_PyBites Coding Challenge 12_—*
 <a name="game-concept"></a>
 ### Game concept
 
+<span class="originalWidth">
 ![Image of naughts and crosses grid](images/guest-naughts-and-crosses-ai/grid-blank.png)
+</span>
 
 Traditionally, naughts and crosses _([Wikipedia article on Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe))_ is a pencil and paper game for two players: one playing the symbol 'O',
 pronounced 'naught' or 'oh', and the other playing 'X', pronounced 'cross' or 'ex'. The game begins with a 3x3 grid of
@@ -49,7 +55,9 @@ occupation of three cells in a row, horizontally, vertically or diagonally, with
 time_ interfering with their opponents attempts to do likewise. There are eight possible winning lines are shown in the
 figure below.
 
+<span class="originalWidth">
 ![Image of winning positions](images/guest-naughts-and-crosses-ai/winning-positions.png)
+</span>
 
 <a name="basic-game-implementation"></a>
 ## Basic game implementation
@@ -58,7 +66,9 @@ The first thing that is necessary in implementing _any_ game is deciding how it 
 and when it is held in the computer memory. We are working with fixed a three by three grid in this game, so it is easy
 to see that a series of nine consecutive elements of an array can be used. Like this:
 
+<span class="originalWidth">
 ![Image of array of nine memory cells numbered zero to nine](images/guest-naughts-and-crosses-ai/memory-cells.png)
+</span>
 
 These memory cells, in turn, map to the three rows of three cells that will be displayed to the player. To help the
 player to associate the positions of the cells, however, it is convenient to give a different _external_ mapping that is
@@ -71,7 +81,7 @@ This difference in representation can be handled in a few different ways:
 * change the external representation to match the internal representation; or
 * find a way to translate between the two representations as and when needed.
 
-There are implications for each of these options. Firstly, if the internal representation is changed, it wil be
+There are implications for each of these options. Firstly, if the internal representation is changed, it will be
 necessary to extract the details for the grid when it is being displayed in a non-sequential order. This is not an
 impossible situation, but adds a layer of complexity that is probably undesirable. Secondly, if the external
 representation is changed, then it inconveniences the player who will have to think more about the value of the cell
@@ -81,8 +91,12 @@ patrolled appropriately.
 
 Assuming that the third option is taken we have the following representations:
 
+<span class="originalWidth">
 ![Image of internal cell numbering](images/guest-naughts-and-crosses-ai/numbering-internal.png)
+</span>
+<span class="originalWidth">
 ![Image of external cell numbering](images/guest-naughts-and-crosses-ai/numbering-external.png)
+</span>
 
 <a name='starting-the-code'></a>
 ### Starting the code
@@ -165,7 +179,9 @@ Just a couple of other things that need to be taken care of: the translation of 
 vise versa. Looking at the graphical images of the two representations, it is easy to write out a couple of dictionary
 constants mapping between the two:
 
+<span class="originalWidth">
 ![Image of internal and external representations of grid](images/guest-naughts-and-crosses-ai/numbering-int-and-ext.png)
+</span>
 
 ```python
 INTERNAL_TO_EXTERNAL: dict = {
@@ -192,8 +208,12 @@ winning line as a tuple of three integers, so here we have a list of (tuples of 
 another item to import from the `typing` module. The winning lines are describing the _internal_ numbering as per this
 diagram:
 
+<span class="originalWidth">
 ![Image of winning combination in same order as defined array](images/guest-naughts-and-crosses-ai/winning-positions.png)
+</span>
+<span class="originalWidth">
 ![Image of internal numbering](images/guest-naughts-and-crosses-ai/numbering-internal.png)
+</span>
 
 ```python
 # A winning combination exists for three symbols in a row:
@@ -207,7 +227,7 @@ WINNING_COMBINATIONS: List[Tuple[int, int, int]] = [
 <a name='the-main-class'></a>
 ### The main class
 
-Class. Yes, this game is going to be encompassed within an object!  We can start getting into the nitty gritty right off
+Class. Yes, this game is going to be encompassed within an object!  We can start getting into the nitty-gritty right off
 by declaring our class… in deference to our US cousins we'll call our class `TicTacToe`—it's both shorter than
 `NaughtsAndCrosses` and less likely to cause argument over 'Nau…' versus 'Nou…' _([Naught vs. Nought](https://www.grammar.com/naught_vs._nought))_.
 
@@ -283,7 +303,7 @@ method, `_next_turn()`. It is possibly easy to guess what this method does, but 
 Yes, we're using the `_turn_cycle` variable to pick off the next player; this is why it was necessary to assign 
 `_turn_cycle` before `_turn` in the `__init__()` method.  It might seem a little odd to have a 'private' method that 
 just returns the value from a private iterator, but there are two reasons for doing this:
-1. it ensures that the syntax for `next(self._turn_cycle)` is consistantly followed; and, more importantly
+1. it ensures that the syntax for `next(self._turn_cycle)` is consistently followed; and, more importantly
 2. it allows for additional functionality to be performed when the next turn is being selected without having to seek
     out every instance of the operation.
 
@@ -630,18 +650,24 @@ that can be followed when playing a game, these steps are an excellent starting 
 opponent. Let us take a look at the steps from a programming point of view and work out if it is possible to craft an 
 opponent:
 
+<span class="originalWidth">
 ![1. Win](images/guest-naughts-and-crosses-ai/t_1_win.png)
+</span>
 
 Go for the win! What we actually want to seek here is one of the winning rows which has a gap and two of the current
 players symbols in. 
 
+<span class="originalWidth">
 ![Examples of one move short of a winning line](images/guest-naughts-and-crosses-ai/almost_winning_lines.png)
+</span>
 
 It would be useful if we could check each line without actually needing to compare all the values
 individually.  There are actually ten distinct combinations of 'O' and 'X' lines, ignoring ordering and reflections, as 
 can be seen in the following graphic
 
+<span class="originalWidth">
 ![Image of rows of distinct combinations of Os and Xs](images/guest-naughts-and-crosses-ai/combinations.png)
+</span>
 
 We need a method to:
 
@@ -705,7 +731,7 @@ The combinations result in:
 | X X O | 5 5 3 | 13 | 75 |
 
 Now we have unique values for both the two Os and the two Xs, in the sum and the product.  However, in the summation
-there is a conflict of identificaion for the rows consisting of three Os and of a single X.  We could experiment with
+there is a conflict of identification for the rows consisting of three Os and of a single X.  We could experiment with
 other values, but the product values are fully unique across our requirements.
 
 In order to seek a winning move we can scan through the `WINNING_COMBINATIONS` to search for a product of 18 for a 'O'
@@ -758,7 +784,9 @@ there is a set associated with the appropriate index then one item, it doesn't m
 be appropriate 'nearly winning lines.'  A list comprehension searches out the `BLANK_VALUE` and finally returns the 
 _internal_ location of the gap by dereferencing the first, and only, element.
 
+<span class="originalWidth">
 ![2. Block](images/guest-naughts-and-crosses-ai/t_2_block.png)
+</span>
 
 If we cannot win with the next move, then the next priority is to make sure that our opponent doesn't win… we need to 
 play a blocking move; or, to put it another way, put our symbol in the spot when the opponent could make a winning
@@ -779,23 +807,31 @@ opponents symbol instead.
 The similarities of these two pieces of code indicate a good place to examine for refactoring once we have completed
 the function.
 
+<span class="originalWidth">
 ![3. Fork](images/guest-naughts-and-crosses-ai/t_3_fork.png)
+</span>
 
 Creating a fork means placing a piece that can contribute to two separate lines to give a win.
 
+<span class="originalWidth">
 ![Image showing examples of forks](images/guest-naughts-and-crosses-ai/fork_examples.png)
+</span>
 
 In this image the first two grids show 'O' having just played a fork move (indicated by the green 'O'); in the second 
 two grids we see just why these positions are called 'forks,' the cyan '+' marks the alternative places that 'X' could 
 play, in each case 'O' wins on the next turn by playing the alternative.
 
+<span class="originalWidth">
 ![4. Blocking an opponent's fork](images/guest-naughts-and-crosses-ai/t_4_block_fork.png)
+</span>
 
 In a similar case to the above, blocking an opponent's fork means anticipating when your opponent is about to play 
 a move that will lead to a fork and playing in that spot before they can.  If we examine the moves leading up to 
 position _A1_ above:
 
+<span class="originalWidth">
 ![Image of set of boards showing each move leading to OXO on the diagonal](images/guest-naughts-and-crosses-ai/play_to_o_fork_threat.png)
+</span>
 
 'O' starts off playing in the bottom corner, 'X' replies by playing in the middle, then 'O' plays in the opposite 
 corner… at this point 'X' spots that 'O' can play in either of the other two corners (marked with the cyan '+' symbols) 
@@ -805,7 +841,9 @@ the draw and play in a side.
 For now, we'll leave coding of forks because we want some form of weakness in our algorithm that a player might have 
 some small change of winning!
 
+<span class="originalWidth">
 ![5. Centre](images/guest-naughts-and-crosses-ai/t_5_centre.png)
+</span>
 
 This play is a no-brainer: play in the centre. If this is the very first move of a game, then this is not such a good
 move though, as playing in a corner is the move that grants your opponent the most opportunities to make a mistake.
@@ -815,7 +853,9 @@ move though, as playing in a corner is the move that grants your opponent the mo
             return 4
 ```
 
+<span class="originalWidth">
 ![6. Opposite corner](images/guest-naughts-and-crosses-ai/t_6_opposite.png)
+</span>
 
 If we have progressed this far through our algorithm, then the chances are that there haven't been many moves: let's 
 see if we can find an empty space opposite a space occupied by our opponent:
@@ -827,7 +867,9 @@ see if we can find an empty space opposite a space occupied by our opponent:
                 return y
 ```
 
+<span class="originalWidth">
 ![7. Empty corner](images/guest-naughts-and-crosses-ai/t_7_empty_corner.png)
+</span>
 
 Failing to find an opposite corner, we just select an empty corner.
 ```python
@@ -837,7 +879,9 @@ Failing to find an opposite corner, we just select an empty corner.
                 return x
 ```
 
+<span class="originalWidth">
 ![8. Empty side](images/guest-naughts-and-crosses-ai/t_8_empty_side.png)
+</span>
 
 Finally, all other spaces have been checked, so there can only be side(s) remaining. Select one of those.
 ```python
@@ -913,7 +957,9 @@ For your convenience, the completed versions of the naughts and crosses code are
 
 -- [Geoff Riley](pages/guests.html#geoff-riley)
 
+<span class="originalWidth">
 ![Image of slogan: May the code be with you](images/guest-naughts-and-crosses-ai/the_code_be_with_you.png)
+</span>
 
 <a name='references'></a>
 ## References
