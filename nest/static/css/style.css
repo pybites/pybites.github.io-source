@@ -176,3 +176,8 @@ body.landingPage .source {
 #pbproducts .buttonWrapper {
   margin-top: 30px;
 }
+
+/* override for small images that should not scale width */
+.content .originalWidth img {
+  width: auto !important;
+}
