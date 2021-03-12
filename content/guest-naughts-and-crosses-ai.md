@@ -1,7 +1,7 @@
 Title: Naughts and Crosses Gets a Little Help
 Date: 2021-03-12 18:45
 Category: Concepts
-Tags: guest, games theory, AI, tic-tac-toe
+Tags: guest, games theory, AI, tic-tac-toe, classes, data structures, itertools, typing
 Slug: naughts-and-crosses
 Authors: Geoff Riley
 summary: Naughts and Crosses (Tic-Tac-Toe to some audiences) is a popular skill game often played by children. It can also be usefully employed to distract dial up computers, at NORAD for example, rather than allowing the 'playing' of Global Thermonuclear War. Would you like to play a game?
