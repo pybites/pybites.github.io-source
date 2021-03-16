@@ -77,18 +77,14 @@ RESOURCES = [
     ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
     ('Blog Code Challenges', '/category/challenges'),
-    ('100 Days of Code','/100days'),
+    ('#100DaysOfCode','/100days'),
 ]
 SERVICES = [
+    ('PyBites Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
     ('PyBites Platform','https://codechalleng.es'),
-    ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
-    ('Python Tips Book','https://pybit.es/tips'),
-    ('Python Productivity','https://pybit.es/productivity'),
-    ('PyBites Career Advice','/talk'),
-    ('Build Bigger Apps','https://pybitesdevelopermindset.com/'),
-    ('PyBites in the Classroom','/pages/schools'),
-    ('PyBites in Your Team','/pages/enterprise'),
-    ('PyBites for Interviewing','/pages/recruiting'),
+    ('PyBites Tips','https://pybit.es/tips'),
+    ('PyBites Productivity','https://members.pybit.es/offers/3YM2CTby/checkout'),
+    ('PyBites Coaching','https://pybitesdevelopermindset.com/'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
