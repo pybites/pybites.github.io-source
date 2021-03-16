@@ -36,7 +36,7 @@ _([Wargames (1983)](https://www.imdb.com/title/tt0086567/))_
 If you happen to have recently hacked into [NORAD (North American Aerospace Defense Command)](https://www.norad.mil/)
 then it is quite possible that you are stuck in the 1980s and are looking to play **Global Thermonuclear War** 
 _([Wargames (1983)](https://www.imdb.com/title/tt0086567/))_,
-take it from me: it really won't turn out hope you hope.
+take it from me: it really won't turn out how you hope.
 
 On the other hand if you are looking for what is arguably the simplest of all strategy games, then you've come to the
 right place. This article was inspired by the [_PyBites Coding Challenge 12_—**Build a Tic-tac-toe Game**](https://codechalleng.es/challenges/12/).
@@ -688,6 +688,7 @@ X_VALUE: int = 2
 ```
 The combinations result in:
 
+<span class="styledTable">
 | combination | values | sum | product |
 | :---: | :---: | ---: | ---: |
 | _ _ _ | 0 0 0 | 0 | 0 |
@@ -700,6 +701,7 @@ The combinations result in:
 | X X _ | 2 2 0 | 4 | 0 |
 | X X X | 2 2 2 | 6 | 8 |
 | X X O | 2 2 1 | 5 | 4 |
+</span>
 
 From these results it is easy to see that two Xs and a blank uniquely give a sum of four and a product of zero; 
 unfortunately two Os and a blank give exactly the same values as one X and two blanks.  The product value actually only
@@ -717,6 +719,7 @@ X_VALUE: int = 5
 ```
 The combinations result in:
 
+<span class="styledTable">
 | combination | values | sum | product |
 | :---: | :---: | ---: | ---: |
 | _ _ _ | 2 2 2 | 6 | 8 |
@@ -729,6 +732,7 @@ The combinations result in:
 | X X _ | 5 5 2 | 12 | 50 |
 | X X X | 5 5 5 | 15 | 125 |
 | X X O | 5 5 3 | 13 | 75 |
+</span>
 
 Now we have unique values for both the two Os and the two Xs, in the sum and the product.  However, in the summation
 there is a conflict of identification for the rows consisting of three Os and of a single X.  We could experiment with

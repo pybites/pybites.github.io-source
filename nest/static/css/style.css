@@ -181,3 +181,8 @@ body.landingPage .source {
 .content .originalWidth img {
   width: auto !important;
 }
+
+.styledTable th, .styledTable td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
