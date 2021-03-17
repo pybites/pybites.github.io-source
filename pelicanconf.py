@@ -71,20 +71,20 @@ NEST_HEADER_LOGO = '/images/logo.png'
 NEST_CSS_MINIFY = True
 
 RESOURCES = [
-    ('PyBites Friends', '/friends'),
-    ('PyBites Community', '/community'),
-    ('PyBites Articles', '/archives'),
+    ('Podcast', 'https://www.pybitespodcast.com/'),
+    ('Community', '/community'),
+    ('Friends List', '/friends'),
+    ('Blog Articles', '/archives'),
+    ('Blog Code Challenges', '/category/challenges'),
     ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
-    ('Blog Code Challenges', '/category/challenges'),
     ('#100DaysOfCode','/100days'),
 ]
 SERVICES = [
-    ('PyBites Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
-    ('PyBites Platform','https://codechalleng.es'),
-    ('PyBites Tips','https://pybit.es/tips'),
-    ('PyBites Productivity','https://members.pybit.es/offers/3YM2CTby/checkout'),
-    ('PyBites Coaching','https://pybitesdevelopermindset.com/'),
+    ('Platform','https://codechalleng.es'),
+    ('Tips Book','https://pybit.es/tips'),
+    ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
+    ('Productivity Course','https://members.pybit.es/offers/3YM2CTby/checkout'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
