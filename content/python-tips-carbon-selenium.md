@@ -186,7 +186,7 @@ Step by step:
 
 - The tip html is in the second table cell.
 
-- I check if there are any links in the tips html. As you scroll down on the [tips page](https://codechalleng.es/tips) there is always a share link (<img src="https://codechalleng.es/static/img/icon-twitter.9f5315ee958c.png" alt="twitter icon">), and an optional second resource link (<img src="https://codechalleng.es/static/img/info.5b6dc8a26e88.png" alt="more info" title="check out additional info">).
+- I check if there are any links in the tips html. As you scroll down on the [tips page](https://codechalleng.es/tips) there is always a share link and an optional second resource link.
 
 - I put the tip code in a variable called `code`.
 
@@ -284,7 +284,7 @@ Finally I quit the `driver` (this closes the browser) and return the image strin
 Here you can see this automation script in action, generating an image from a random tip as well as when specifying a specific ID:
 
 <div class="container">
-▸␣␣␣<iframe src="https://www.youtube.com/embed/V3-7RvipiSU" frameborder="0" allowfullscreen class="video"></iframe>
+<iframe src="https://www.youtube.com/embed/V3-7RvipiSU" frameborder="0" allowfullscreen class="video"></iframe>
 </div>
 
 And voilà: two new tips I could post to our Twitter ([here](https://twitter.com/pybites/status/1100343735299252225) and [here](https://twitter.com/pybites/status/1100342422473719809)).
