@@ -79,6 +79,7 @@ RESOURCES = [
     ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
     ('#100DaysOfCode','/100days'),
+    ('Weekly Email Tips','https://codechalleng.es/tips'),
 ]
 SERVICES = [
     ('Platform','https://codechalleng.es'),
