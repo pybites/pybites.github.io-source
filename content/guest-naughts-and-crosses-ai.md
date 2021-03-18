@@ -688,7 +688,6 @@ X_VALUE: int = 2
 ```
 The combinations result in:
 
-<span class="styledTable">
 | combination | values | sum | product |
 | :---: | :---: | ---: | ---: |
 | _ _ _ | 0 0 0 | 0 | 0 |
@@ -701,7 +700,6 @@ The combinations result in:
 | X X _ | 2 2 0 | 4 | 0 |
 | X X X | 2 2 2 | 6 | 8 |
 | X X O | 2 2 1 | 5 | 4 |
-</span>
 
 From these results it is easy to see that two Xs and a blank uniquely give a sum of four and a product of zero; 
 unfortunately two Os and a blank give exactly the same values as one X and two blanks.  The product value actually only
@@ -719,7 +717,6 @@ X_VALUE: int = 5
 ```
 The combinations result in:
 
-<span class="styledTable">
 | combination | values | sum | product |
 | :---: | :---: | ---: | ---: |
 | _ _ _ | 2 2 2 | 6 | 8 |
@@ -732,7 +729,6 @@ The combinations result in:
 | X X _ | 5 5 2 | 12 | 50 |
 | X X X | 5 5 5 | 15 | 125 |
 | X X O | 5 5 3 | 13 | 75 |
-</span>
 
 Now we have unique values for both the two Os and the two Xs, in the sum and the product.  However, in the summation
 there is a conflict of identification for the rows consisting of three Os and of a single X.  We could experiment with
