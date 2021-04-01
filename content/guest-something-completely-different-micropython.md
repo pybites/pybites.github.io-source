@@ -1,5 +1,5 @@
 Title: And now for something completely different... MicroPython!
-Date: 2021-02-02 13:37
+Date: 2021-04-01 18:00
 Category: Learning
 Tags: micropython, microcontrollers, esp32, IOT 
 Slug: guest-something-completely-different-micropython
@@ -464,4 +464,3 @@ If you have any remarks or questions, you can likely find me on the [Pybites Sla
 Keep calm and code in Python!
 
 -- [Cedric](pages/guests.html#cedricsambre)
-
