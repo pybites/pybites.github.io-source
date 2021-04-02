@@ -1,8 +1,8 @@
 Title: And now for something completely different... MicroPython!
-Date: 2021-04-01 18:00
+Date: 2021-04-02 16:33
 Category: Learning
 Tags: micropython, microcontrollers, esp32, IOT 
-Slug: guest-something-completely-different-micropython
+Slug: micropython
 Authors: Cedric Sambre
 summary: What if you could control a little circuitboard with a bunch of IO's, integrated WiFi and a camera slot on board? 
 cover: images/featured/pb-guest.png
@@ -30,7 +30,9 @@ Don't worry, I just really wanted to use that <a href="https://en.wikiquote.org/
 
 This article is still going to be about Python, but we'll be using it on a different "level" than we usually do, but then again, it's the same...
 
+<span class="originalWidth">
 ![The Same... but different.](images/guest-something-completely-different-micropython/its-the-same-but-different.jpg)
+</span>
 
 The focus will be more on the setup and exploring the possibilities of running Python on microprocessors, there's no real advanced code in here, just a different way into our habitat!
  
@@ -56,7 +58,9 @@ This are just pages with a lot of info, not necessarily where I bought them. You
 <a name="laying-it-out"></a>
 ## Laying it out
 
+<span class="originalWidth">
 ![Laying it out](images/guest-something-completely-different-micropython/laying-it-out.jpg)
+</span>
 
 From left to right:
 
@@ -79,7 +83,9 @@ Matching types and shapes.
 5V goes into 5V, GND goes into GND, What you T(ransmit)X on one end must be R(eceived)X'ed on the other and vice versa.
 Finally, the F2F jumper goes from GPIO 0 to GND.
 
+<span class="originalWidth">
 ![Wiring it up](images/guest-something-completely-different-micropython/wiring-it-up.jpg)
+</span>
 
 That last wire is because the board's internals check if that pin is set to decide if it will boot in normal mode or in programming (Flash) mode.
 
@@ -233,11 +239,15 @@ We don't have to worry about the draw on the USB port, as a single USB port usua
 
 I had never heard of Thonny before reading about MicroPython, but it's a very minimalistic Python IDE that also integrates smoothly with Micropython.
 
+<span class="originalWidth">
 ![Thonny on startup](images/guest-something-completely-different-micropython/thonny-startup.jpg)
+</span>
 
 In order to set it to talk to our ESP32, all we have to do is go into the settings and set the interpreter accordingly:
 
+<span class="originalWidth">
 ![Interpreter Settings](images/guest-something-completely-different-micropython/thonny-interpreter-settings.jpg)
+</span>
 
 Thonny actually even allows you to do the whole flashing process automatically (I've conveniently cropped out the option above).
 
@@ -334,7 +344,9 @@ main()
 
 And save it to micropython as `boot.py`, again, Thonny makes this a breeze and just gives us the choice:
 
+<span class="originalWidth">
 ![Where to save to?](images/guest-something-completely-different-micropython/thonny-save-to.jpg)
+</span>
 
 After saving, just press the reset button on the ESP and soon you'll see the request come in on your `http.server`.
 
@@ -368,10 +380,15 @@ After a small break and a chat with Bob, I decided to try again with renewed eff
  
 Here's a picture of my stickerspot on my monitor!
 
+<span class="originalWidth">
 ![Camera in action](images/guest-something-completely-different-micropython/camera_shot.jpg)
+</span>
 
 Every picture is requested at a rate of about 400 ms average on the VGA (640x480) resolution:
+
+<span class="originalWidth">
 ![Image Request](images/guest-something-completely-different-micropython/average-request-speed.jpg)
+</span>
 
 <a name="a-different-approach"></a>
 ## A different approach
