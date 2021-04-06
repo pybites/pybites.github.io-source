@@ -77,6 +77,7 @@ RESOURCES = [
     ('Blog Articles', '/archives'),
     ('Blog Code Challenges', '/category/challenges'),
     ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
+    ('PyBites Books','https://pybitesbooks.com'),
     ('Flask Intro Course','https://www.udemy.com/course/python-flask-for-beginners/'),
     ('#100DaysOfCode','/100days'),
     ('Weekly Email Tips','https://codechalleng.es/tips'),
