@@ -72,8 +72,8 @@ NEST_CSS_MINIFY = True
 
 RESOURCES = [
     ('Podcast', 'https://www.pybitespodcast.com/'),
-    ('Community', '/community'),
     ('Friends List', '/friends'),
+    ('Community', '/community'),
     ('Blog Articles', '/archives'),
     ('Blog Code Challenges', '/category/challenges'),
     ('PyBites Open Source','https://github.com/PyBites-Open-Source'),
