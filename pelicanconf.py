@@ -87,6 +87,7 @@ SERVICES = [
     ('Tips Book','https://pybit.es/tips'),
     ('Python Intro Course', 'https://members.pybit.es/offers/mfFWRKHG/checkout'),
     ('Productivity Course','https://pybitesproductivity.com/'),
+    ('PyBites Developer Mindset','https://pybitesdevelopermindset.com'),
 ]
 
 NEST_ARCHIVES_HEADER_TITLE = 'Archive'
