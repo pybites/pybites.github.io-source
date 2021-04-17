@@ -73,8 +73,6 @@ So we challenge you: become a small fish in a big pond again and your future sel
 
 ---
 
-I hope this is helpful. Comment below if you see any other common mistakes people make when learning Python / programming.
+I hope this was helpful. If you struggle with this and you have a deep desire to improve your Python career and to do it fast, then [book a strategy session with us](https://pybit.es/apply).
 
-Keep Calm and Code in Python!
-
--- Bob
+- Bob
