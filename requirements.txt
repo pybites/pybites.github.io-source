@@ -65,7 +65,7 @@ testpath==0.4.2
 tornado==6.0.3
 traitlets==4.3.2
 Unidecode==0.4.20
-urllib3==1.25.3
+urllib3==1.25.8
 wcwidth==0.1.7
 webencodings==0.5.1
 widgetsnbextension==1.2.6
